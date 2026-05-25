@@ -37,18 +37,21 @@ const translations = {
     vision_title: "Visi Kami",
 
     vision_desc:
-      "Menjadi pemimpin global dalam solusi sumber daya manusia profesional, diakui karena standar etika kami yang teguh dan kemampuan kami untuk memberdayakan generasi profesional Indonesia berikutnya di panggung dunia.",
+      "Menjadi perusahaan penempatan tenaga kerja yang terpercaya, profesional, dan berorientasi pada kesejahteraan pekerja migran Indonesia.",
 
     mission_title: "Misi Kami",
 
     mission_1:
-      "Menyediakan pelatihan dan sertifikasi berstandar dunia untuk tenaga kerja Indonesia.",
+      "Menyediakan layanan penempatan pekerja migran yang aman, transparan, dan sesuai dengan peraturan yang berlaku.",
 
     mission_2:
-      "Membangun kemitraan yang berkelanjutan dengan industri internasional terpercaya.",
+      "Meningkatkan kompetensi tenaga kerja melalui pelatihan yang berkualitas sebelum diberangkatkan.",
 
     mission_3:
-      "Menjamin proses rekrutmen yang adil, transparan, dan legal bagi semua pihak.",
+      "Memberikan perlindungan dan pendampingan kepada pekerja migran sebelum, selama, dan setelah bekerja di luar negeri.",
+
+    mission_4:
+      "Membangun kemitraan strategis dengan perusahaan pengguna tenaga kerja di luar negeri.",
 
     srv_tag: "KEAHLIAN KAMI",
     srv_title: "Layanan Profesional Komprehensif",
@@ -188,19 +191,21 @@ const translations = {
     vision_title: "Our Vision",
 
     vision_desc:
-      "To be a global leader in professional human resource solutions, recognized for our unwavering ethical standards and our ability to empower the next generation of Indonesian professionals on the world stage.",
+      "To become a trusted, professional, and welfare-oriented labor placement company for Indonesian migrant workers.",
 
     mission_title: "Our Mission",
 
     mission_1:
-      "Provide world-class training and certification for the Indonesian workforce.",
+      "Providing migrant worker placement services that are safe, transparent, and in accordance with applicable regulations.",
 
     mission_2:
-      "Build sustainable partnerships with trusted international industries.",
+      "Improving workforce competency through quality training before departure.",
 
     mission_3:
-      "Ensure a fair, transparent, and legal recruitment process for all parties.",
+      "Providing protection and assistance to migrant workers before, during and after working abroad.",
 
+    mission_4:
+      "Building strategic partnerships with companies using labor abroad.",
     srv_tag: "OUR EXPERTISE",
     srv_title: "Comprehensive Professional Services",
 
@@ -341,18 +346,21 @@ const translations = {
     vision_title: "我們的願景",
 
     vision_desc:
-      "成為值得信賴的國際人力資源品牌，以專業服務與良好信譽，協助更多印尼人才走向全球舞台。",
+      "成為一家值得信賴、專業且以福利為導向的印尼移工勞工派遣公司。",
 
     mission_title: "我們的使命",
 
     mission_1:
-      "為印尼專業人才提供世界級培訓與國際認證。",
+      "提供安全、透明且符合適用法規的移工安置服務。",
 
     mission_2:
-      "與值得信賴的國際企業建立長期合作關係。",
+      "透過出國前高品質培訓提升員工能力。",
 
     mission_3:
-      "確保所有招募與派遣流程公平、透明且合法。",
+      "為移徙工人出國前、出國期間和出國後提供保護和援助。",
+
+    mission_4:
+      "與使用海外勞動力的公司建立策略夥伴關係。",
 
     srv_tag: "我們的專業",
 
