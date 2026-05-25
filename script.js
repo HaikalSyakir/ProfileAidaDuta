@@ -4,10 +4,10 @@
 const translations = {
   id: {
     nav_home: "Home",
-    nav_about: "About",
-    nav_services: "Services",
-    nav_network: "Global Network",
-    nav_lpk: "LPK",
+    nav_about: "Tentang Kami",
+    nav_services: "Layanan Kami",
+    nav_network: "Sektor Penempatan",
+    nav_lpk: "Negara Penempatan",
     nav_gallery: "Gallery",
 
     btn_contact: "Hubungi Kami",

@@ -19,7 +19,7 @@
     body { font-family: 'Montserrat', sans-serif; }
     .font-display { font-family: 'Playfair Display', serif; }
     .text-gold-gradient {
-      background: linear-gradient(to right, #ffe596, #d4af37, #aa7c11);
+      background: linear-gradient(to right, #fff0ca, #e5b842, #a67c1e);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -28,42 +28,44 @@
 </head>
 <body class="bg-[#161309] text-[#e9e2d0] overflow-x-hidden antialiased">
 
-  <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-6 md:px-24 py-5 bg-[#310202]/95 backdrop-blur-xl border-b border-[#d4af37]/20 transition-all duration-300 shadow-xl shadow-black/30">
-    <div class="text-2xl md:text-3xl text-[#d4af37] tracking-tighter font-bold font-display italic">Aida Duta</div>
+  <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-6 md:px-12 lg:px-20 py-5 bg-[#310202]/95 backdrop-blur-xl border-b border-[#e5b842]/20 transition-all duration-300 shadow-xl shadow-black/40">
     
-    <div class="hidden md:flex gap-8">
-      <a data-lang-key="nav_home" class="text-xs uppercase tracking-widest text-[#d4af37] border-b-2 border-[#d4af37] pb-1 font-semibold transition-all" href="#home">Home</a>
-      <a data-lang-key="nav_about" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#d4af37] hover:tracking-widest transition-all duration-300 font-semibold" href="#about">About</a>
-      <a data-lang-key="nav_services" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#d4af37] hover:tracking-widest transition-all duration-300 font-semibold" href="#services">Services</a>
-      <a data-lang-key="nav_network" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#d4af37] hover:tracking-widest transition-all duration-300 font-semibold" href="#network">Global Network</a>
-      <a data-lang-key="nav_lpk" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#d4af37] hover:tracking-widest transition-all duration-300 font-semibold" href="#lpk">LPK</a>
-      <a data-lang-key="nav_gallery" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#d4af37] hover:tracking-widest transition-all duration-300 font-semibold" href="#gallery">Gallery</a>
+    <div class="flex items-center gap-3 md:gap-4 flex-shrink-0">
+      <img src="logo.png" alt="Logo Aida Duta" class="hidden h-9 w-auto object-contain drop-shadow-[0_2px_8px_rgba(229,184,66,0.2)]">
+      <div class="text-xl md:text-2xl text-[#e5b842] tracking-tighter font-bold font-display italic leading-none">PT Aida Duta</div>
+    </div>
+    
+    <div class="hidden lg:flex gap-8 mx-auto">
+      <a data-lang-key="nav_home" class="text-xs uppercase tracking-widest text-[#e5b842] border-b-2 border-[#e5b842] pb-1 font-semibold transition-all" href="#home">Home</a>
+      <a data-lang-key="nav_about" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#e5b842] hover:tracking-widest transition-all duration-300 font-semibold" href="#about">About</a>
+      <a data-lang-key="nav_services" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#e5b842] hover:tracking-widest transition-all duration-300 font-semibold" href="#services">Services</a>
+      <a data-lang-key="nav_network" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#e5b842] hover:tracking-widest transition-all duration-300 font-semibold" href="#network">Global Network</a>
+      <a data-lang-key="nav_lpk" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#e5b842] hover:tracking-widest transition-all duration-300 font-semibold" href="#lpk">LPK</a>
+      <a data-lang-key="nav_gallery" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#e5b842] hover:tracking-widest transition-all duration-300 font-semibold" href="#gallery">Gallery</a>
     </div>
 
-    <div class="flex items-center gap-4">
+    <div class="flex items-center flex-shrink-0">
       <div class="relative inline-block text-left">
-        <select id="lang-selector" class="bg-[#4a0404] text-[#d4af37] border border-[#d4af37]/30 text-xs uppercase tracking-wider px-3 py-2 rounded shadow-md focus:outline-none cursor-pointer font-semibold">
+        <select id="lang-selector" class="bg-[#4a0404] text-[#e5b842] border border-[#e5b842]/30 text-xs uppercase tracking-wider px-3 py-2 rounded shadow-md focus:outline-none focus:border-[#e5b842] cursor-pointer font-semibold transition-colors">
           <option value="id">ID</option>
           <option value="en">EN</option>
           <option value="zh">繁中</option>
         </select>
       </div>
-      
-      <button data-lang-key="btn_contact" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" class="bg-[#d4af37] text-[#4a0404] text-xs uppercase tracking-widest px-6 py-3 hover:bg-white hover:text-[#4a0404] transition-all duration-300 font-bold rounded-sm shadow-md shadow-[#d4af37]/10">Contact Us</button>
     </div>
   </nav>
 
   <section class="relative min-h-screen flex flex-col items-center justify-center pt-24 overflow-hidden" id="home">
     <div class="absolute inset-0 z-0">
-      <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/banner/76e5ff41-33fc-478b-94b0-03c1dea3b926.png" alt="Batik Background" class="w-full h-full object-cover opacity-15 scale-105 animate-pulse-slow">
-      <div class="absolute inset-0 bg-gradient-to-b from-[#161309]/40 via-[#161309]/80 to-[#161309]"></div>
+      <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/banner/76e5ff41-33fc-478b-94b0-03c1dea3b926.png" alt="Batik Background" class="w-full h-full object-cover opacity-90 scale-105 animate-pulse-slow">
+      <div class="absolute inset-0 bg-gradient-to-b from-[#161309]/40 via-[#161309]/70 to-[#161309]"></div>
     </div>
     <div class="absolute inset-0 opacity-20 z-0 flex items-center justify-center pointer-events-none">
-      <div class="w-[650px] h-[650px] rounded-full border border-[#d4af37]/20 animate-spin-slow"></div>
+      <div class="w-[650px] h-[650px] rounded-full border border-[#e5b842]/20 animate-spin-slow"></div>
     </div>
 
     <div class="relative z-10 text-center px-6 md:px-0">
-      <span data-lang-key="hero_tag" class="text-xs uppercase text-[#d4af37] tracking-[0.5em] mb-6 block font-bold" data-aos="fade-down" data-aos-duration="1200">ESTABLISHED INTEGRITY</span>
+      <span class="text-xs uppercase text-[#e5b842] tracking-[0.5em] mb-6 block font-bold" data-aos="fade-down" data-aos-duration="1200">ESTABLISHED INTEGRITY</span>
       <h1 class="text-4xl md:text-7xl text-[#e9e2d0] mb-8 max-w-5xl mx-auto leading-tight font-display font-bold tracking-tight" data-aos="zoom-in-up" data-aos-duration="1400" data-aos-delay="200">
         PT <span class="text-gold-gradient">Aida Duta</span> Indonesia Sejahtera
       </h1>
@@ -71,8 +73,8 @@
         Membangun Masa Depan dengan Integritas dan Jangkauan Global. Menghubungkan Tenaga Kerja Indonesia dengan Peluang Internasional Terbaik.
       </p>
       <div class="flex flex-col sm:flex-row gap-6 justify-center items-center" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="600">
-        <button data-lang-key="btn_explore" onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' })" class="bg-[#d4af37] text-[#161309] text-xs uppercase tracking-widest px-10 py-4 hover:bg-white hover:scale-105 transition-all duration-300 font-bold shadow-lg shadow-[#d4af37]/20">EXPLORE SOLUTIONS</button>
-        <button data-lang-key="btn_legacy" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })" class="border border-[#d4af37] text-[#d4af37] text-xs uppercase tracking-widest px-10 py-4 hover:bg-[#d4af37] hover:text-[#161309] hover:scale-105 transition-all duration-300 font-bold">OUR LEGACY</button>
+        <button data-lang-key="btn_explore" onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' })" class="bg-[#e5b842] text-[#161309] text-xs uppercase tracking-widest px-10 py-4 hover:bg-white hover:scale-105 transition-all duration-300 font-bold shadow-lg shadow-[#e5b842]/20">EXPLORE SOLUTIONS</button>
+        <button data-lang-key="btn_legacy" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })" class="border border-[#e5b842] text-[#e5b842] text-xs uppercase tracking-widest px-10 py-4 hover:bg-[#e5b842] hover:text-[#161309] hover:scale-105 transition-all duration-300 font-bold">OUR LEGACY</button>
       </div>
     </div>
   </section>
@@ -80,7 +82,7 @@
   <section class="py-24 px-6 md:px-24 bg-[#161309]" id="about">
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
       <div data-aos="fade-right" data-aos-duration="1200">
-        <span data-lang-key="about_tag" class="text-xs uppercase text-[#d4af37] tracking-widest mb-4 block font-bold">WHO WE ARE</span>
+        <span data-lang-key="about_tag" class="text-xs uppercase text-[#e5b842] tracking-widest mb-4 block font-bold">WHO WE ARE</span>
         <h2 data-lang-key="about_title" class="text-3xl md:text-5xl text-[#e9e2d0] mb-8 leading-tight font-display font-bold">Elevating Global Standards in Professional Placement</h2>
         <p data-lang-key="about_p1" class="text-base md:text-lg text-[#e9e2d0]/70 mb-6 leading-relaxed font-light">
           PT Aida Duta Indonesia Sejahtera adalah agen perekrutan dan penempatan tenaga kerja internasional terkemuka yang didedikasikan untuk menjembatani talenta terbaik Indonesia dengan peluang global.
@@ -90,40 +92,40 @@
         </p>
       </div>
       
-      <div class="relative h-[450px] glass-card p-0 overflow-hidden rounded-lg border border-[#d4af37]/20 group" data-aos="fade-left" data-aos-duration="1200">
+      <div class="relative h-[450px] glass-card p-0 overflow-hidden rounded-lg border border-[#e5b842]/20 group" data-aos="fade-left" data-aos-duration="1200">
         <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbesjk83sycbpoIHwzfDnXIgkEKt_LeJAE8_1Kml-ujyJ5fIC9-hT8brBrXAobNL6XXCendeb82vU2I7x_8w7usX0ns4lxZFypejUUwmBVwQSZxXZA2B8tMzjd2sPBOij71jRiGudTS7tuvPvSdYyvDOs23yXrmt-Ejk0LTrphS3oUO1n7xlfpVSHMBtOeWMYED2lvDiXhi092GBtzKC0xDXZ6XIP505sFnp48uQB1erEFbqVp47pMeCemfrTzYyP7rsXjdyWK_ks" alt="Corporate Skyscraper" class="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
         <div class="absolute inset-0 bg-gradient-to-t from-[#161309] via-transparent to-transparent opacity-90 flex flex-col justify-end p-8 text-left">
-          <span class="material-icons-outlined text-[#d4af37] text-4xl mb-2">corporate_fare</span>
-          <h4 data-lang-key="about_hub_title" class="text-2xl text-[#d4af37] mb-1 font-display font-bold">Global Operations Hub</h4>
+          <span class="material-icons-outlined text-[#e5b842] text-4xl mb-2">corporate_fare</span>
+          <h4 data-lang-key="about_hub_title" class="text-2xl text-[#e5b842] mb-1 font-display font-bold">Global Operations Hub</h4>
           <p data-lang-key="about_hub_desc" class="text-[#e9e2d0]/70 text-sm">PT Aida Duta Indonesia Sejahtera - Pelayanan Berstandar Internasional.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="py-24 px-6 md:px-24 bg-[#1c180b] border-t border-b border-[#d4af37]/10">
+  <section class="py-24 px-6 md:px-24 bg-[#1c180b] border-t border-b border-[#e5b842]/10">
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
-      <div class="glass-card p-12 gold-glow transition-all duration-500 rounded-lg" data-aos="fade-up" data-aos-duration="1000">
-        <span class="material-icons-outlined text-[#d4af37] text-5xl mb-8">visibility</span>
+      <div class="glass-card p-12 gold-glow transition-all duration-500 rounded-lg border border-[#e5b842]/10" data-aos="fade-up" data-aos-duration="1000">
+        <span class="material-icons-outlined text-[#e5b842] text-5xl mb-8">visibility</span>
         <h3 data-lang-key="vision_title" class="text-3xl text-[#e9e2d0] mb-6 font-display font-bold">Our Vision</h3>
         <p data-lang-key="vision_desc" class="text-base md:text-lg text-[#e9e2d0]/70 leading-relaxed font-light">
           Menjadi pemimpin global dalam solusi sumber daya manusia profesional, diakui karena standar etika kami yang teguh dan kemampuan kami untuk memberdayakan generasi profesional Indonesia berikutnya di panggung dunia.
         </p>
       </div>
-      <div class="glass-card p-12 gold-glow transition-all duration-500 rounded-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-        <span class="material-icons-outlined text-[#d4af37] text-5xl mb-8">rocket_launch</span>
+      <div class="glass-card p-12 gold-glow transition-all duration-500 rounded-lg border border-[#e5b842]/10" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <span class="material-icons-outlined text-[#e5b842] text-5xl mb-8">rocket_launch</span>
         <h3 data-lang-key="mission_title" class="text-3xl text-[#e9e2d0] mb-6 font-display font-bold">Our Mission</h3>
         <ul class="space-y-6">
           <li class="flex gap-4 items-start" data-aos="fade-left" data-aos-delay="300">
-            <span class="text-[#d4af37] font-bold text-lg">01</span>
+            <span class="text-[#e5b842] font-bold text-lg">01</span>
             <p data-lang-key="mission_1" class="text-[#e9e2d0]/70 leading-relaxed font-light">Menyediakan pelatihan dan sertifikasi berstandar dunia untuk tenaga kerja Indonesia.</p>
           </li>
           <li class="flex gap-4 items-start" data-aos="fade-left" data-aos-delay="400">
-            <span class="text-[#d4af37] font-bold text-lg">02</span>
+            <span class="text-[#e5b842] font-bold text-lg">02</span>
             <p data-lang-key="mission_2" class="text-[#e9e2d0]/70 leading-relaxed font-light">Membangun kemitraan yang berkelanjutan dengan industry internasional terpercaya.</p>
           </li>
           <li class="flex gap-4 items-start" data-aos="fade-left" data-aos-delay="500">
-            <span class="text-[#d4af37] font-bold text-lg">03</span>
+            <span class="text-[#e5b842] font-bold text-lg">03</span>
             <p data-lang-key="mission_3" class="text-[#e9e2d0]/70 leading-relaxed font-light">Menjamin proses rekrutmen yang adil, transparan, dan legal bagi semua pihak.</p>
           </li>
         </ul>
@@ -133,23 +135,23 @@
 
   <section class="py-24 px-6 md:px-24 bg-[#161309]" id="services">
     <div class="text-center mb-24" data-aos="fade-up" data-aos-duration="1000">
-      <span data-lang-key="srv_tag" class="text-xs uppercase text-[#d4af37] tracking-widest mb-4 block font-bold">OUR EXPERTISE</span>
+      <span data-lang-key="srv_tag" class="text-xs uppercase text-[#e5b842] tracking-widest mb-4 block font-bold">OUR EXPERTISE</span>
       <h2 data-lang-key="srv_title" class="text-3xl md:text-5xl text-[#e9e2d0] font-display font-bold">Comprehensive Professional Services</h2>
     </div>
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="p-8 border border-[#d4af37]/10 hover:border-[#d4af37]/40 hover:bg-[#1c180b]/40 transition-all duration-500 group rounded-md" data-aos="zoom-in-up" data-aos-delay="100">
-        <span class="material-icons-outlined text-[#d4af37] text-4xl mb-6 group-hover:scale-110 group-hover:rotate-6 transition-transform block">groups</span>
-        <h4 data-lang-key="srv1_title" class="text-2xl text-[#e9e2d0] mb-4 font-display font-bold group-hover:text-[#d4af37] transition-colors">Global Recruitment</h4>
+      <div class="p-8 border border-[#e5b842]/10 hover:border-[#e5b842]/40 hover:bg-[#1c180b]/40 transition-all duration-500 group rounded-md" data-aos="zoom-in-up" data-aos-delay="100">
+        <span class="material-icons-outlined text-[#e5b842] text-4xl mb-6 group-hover:scale-110 group-hover:rotate-6 transition-transform block">groups</span>
+        <h4 data-lang-key="srv1_title" class="text-2xl text-[#e9e2d0] mb-4 font-display font-bold group-hover:text-[#e5b842] transition-colors">Global Recruitment</h4>
         <p data-lang-key="srv1_desc" class="text-[#e9e2d0]/60 text-sm leading-relaxed font-light">Penyaringan strategis talenta Indonesia berkualitas tinggi untuk kebutuhan pasar internasional.</p>
       </div>
-      <div class="p-8 border border-[#d4af37]/10 hover:border-[#d4af37]/40 hover:bg-[#1c180b]/40 transition-all duration-500 group rounded-md" data-aos="zoom-in-up" data-aos-delay="200">
-        <span class="material-icons-outlined text-[#d4af37] text-4xl mb-6 group-hover:scale-110 group-hover:rotate-6 transition-transform block">work_history</span>
-        <h4 data-lang-key="srv2_title" class="text-2xl text-[#e9e2d0] mb-4 font-display font-bold group-hover:text-[#d4af37] transition-colors">Job Placement</h4>
+      <div class="p-8 border border-[#e5b842]/10 hover:border-[#e5b842]/40 hover:bg-[#1c180b]/40 transition-all duration-500 group rounded-md" data-aos="zoom-in-up" data-aos-delay="200">
+        <span class="material-icons-outlined text-[#e5b842] text-4xl mb-6 group-hover:scale-110 group-hover:rotate-6 transition-transform block">work_history</span>
+        <h4 data-lang-key="srv2_title" class="text-2xl text-[#e9e2d0] mb-4 font-display font-bold group-hover:text-[#e5b842] transition-colors">Job Placement</h4>
         <p data-lang-key="srv2_desc" class="text-[#e9e2d0]/60 text-sm leading-relaxed font-light">Menghubungkan keahlian pekerja dengan permintaan industry global seperti perhotelan, kesehatan, dan teknik.</p>
       </div>
-      <div class="p-8 border border-[#d4af37]/10 hover:border-[#d4af37]/40 hover:bg-[#1c180b]/40 transition-all duration-500 group rounded-md" data-aos="zoom-in-up" data-aos-delay="300">
-        <span class="material-icons-outlined text-[#d4af37] text-4xl mb-6 group-hover:scale-110 group-hover:rotate-6 transition-transform block">school</span>
-        <h4 data-lang-key="srv3_title" class="text-2xl text-[#e9e2d0] mb-4 font-display font-bold group-hover:text-[#d4af37] transition-colors">Competency Training</h4>
+      <div class="p-8 border border-[#e5b842]/10 hover:border-[#e5b842]/40 hover:bg-[#1c180b]/40 transition-all duration-500 group rounded-md" data-aos="zoom-in-up" data-aos-delay="300">
+        <span class="material-icons-outlined text-[#e5b842] text-4xl mb-6 group-hover:scale-110 group-hover:rotate-6 transition-transform block">school</span>
+        <h4 data-lang-key="srv3_title" class="text-2xl text-[#e9e2d0] mb-4 font-display font-bold group-hover:text-[#e5b842] transition-colors">Competency Training</h4>
         <p data-lang-key="srv3_desc" class="text-[#e9e2d0]/60 text-sm leading-relaxed font-light">Program pelatihan terstandarisasi melalui fasilitas LPK internal untuk mencapai standar kompetensi dunia.</p>
       </div>
     </div>
@@ -157,15 +159,15 @@
 
   <section class="py-24 px-6 md:px-24 bg-[#1c180b] overflow-hidden" id="network">
     <div class="max-w-7xl mx-auto mb-20 text-center" data-aos="fade-up" data-aos-duration="1000">
-      <span data-lang-key="net_tag" class="text-xs uppercase text-[#d4af37] tracking-widest mb-4 block font-bold">EXPANSIVE REACH</span>
+      <span data-lang-key="net_tag" class="text-xs uppercase text-[#e5b842] tracking-widest mb-4 block font-bold">EXPANSIVE REACH</span>
       <h2 data-lang-key="net_title" class="text-3xl md:text-5xl text-[#e9e2d0] mb-8 font-display font-bold">Bridging Continents</h2>
       <div class="flex flex-wrap justify-center gap-16 mb-12">
         <div class="text-center" data-aos="scale-in" data-aos-delay="100">
-          <div class="text-[#d4af37] text-5xl mb-2 font-bold font-display">25+</div>
+          <div class="text-[#e5b842] text-5xl mb-2 font-bold font-display">25+</div>
           <div data-lang-key="net_stat1" class="text-xs uppercase tracking-widest text-[#e9e2d0]/50 font-semibold">PARTNER COUNTRIES</div>
         </div>
         <div class="text-center" data-aos="scale-in" data-aos-delay="200">
-          <div class="text-[#d4af37] text-5xl mb-2 font-bold font-display">500+</div>
+          <div class="text-[#e5b842] text-5xl mb-2 font-bold font-display">500+</div>
           <div data-lang-key="net_stat2" class="text-xs uppercase tracking-widest text-[#e9e2d0]/50 font-semibold">GLOBAL CORPORATIONS</div>
         </div>
       </div>
@@ -177,21 +179,21 @@
     <div class="max-w-5xl mx-auto space-y-24">
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div class="order-2 md:order-1" data-aos="fade-right" data-aos-duration="1000">
-          <h3 data-lang-key="net_sub1_title" class="text-2xl text-[#d4af37] mb-4 font-display font-bold">Digital Connectivity & Reach</h3>
+          <h3 data-lang-key="net_sub1_title" class="text-2xl text-[#e5b842] mb-4 font-display font-bold">Digital Connectivity & Reach</h3>
           <p data-lang-key="net_sub1_desc" class="text-[#e9e2d0]/70 leading-relaxed font-light">Memanfaatkan teknologi digital canggih untuk menghubungkan talenta secara aman dan cepat dengan peluang korporat internasional.</p>
         </div>
-        <div class="order-1 md:order-2 glass-card p-0 rounded-lg overflow-hidden h-64 border border-[#d4af37]/20 group">
+        <div class="order-1 md:order-2 glass-card p-0 rounded-lg overflow-hidden h-64 border border-[#e5b842]/20 group">
           <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbUu8KQqDn-LVkP_HEZhtkLW_0BOB3loKRxi2HZD7LanBVUOi0HaZiEVnSMkMaFjC0samFFhpR-LWgsMBWeHRKxQzd-JbxB_DIR5YJ2rShbBpHNvl2T5uNtsEqG1OSvrwHfAjn88gDMztoiwy_XWVZafCqfjyi3nvBRku-YuTschtMb2MURRHUnwmzqTjlBx6amM9gut-YKy35AJ81gd1BWUqgflk80OPRhpM4R47G6PZaB93bIhKTw1HDlpXauQO1tnxMS4IhcIk" alt="Global Connectivity Network" class="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
         </div>
       </div>
 
       <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="glass-card p-4 rounded-lg flex items-center justify-center bg-gradient-to-l from-[#161309]/40 to-black/30 h-64" data-aos="fade-right" data-aos-duration="1000">
-          <span class="material-icons-outlined text-[#d4af37] text-7xl animate-pulse">explore</span>
+        <div class="glass-card p-4 rounded-lg flex items-center justify-center bg-gradient-to-l from-[#161309]/40 to-black/30 h-64 border border-[#e5b842]/10" data-aos="fade-right" data-aos-duration="1000">
+          <span class="material-icons-outlined text-[#e5b842] text-7xl animate-pulse">explore</span>
         </div>
         <div data-aos="fade-left" data-aos-duration="1000">
-          <span data-lang-key="net_sub2_tag" class="text-xs uppercase text-[#d4af37] tracking-widest mb-2 block font-semibold">STRATEGIC DIRECTION</span>
-          <h3 data-lang-key="net_sub2_title" class="text-2xl text-[#d4af37] mb-4 font-display font-bold">Empowering Global Talents</h3>
+          <span data-lang-key="net_sub2_tag" class="text-xs uppercase text-[#e5b842] tracking-widest mb-2 block font-semibold">STRATEGIC DIRECTION</span>
+          <h3 data-lang-key="net_sub2_title" class="text-2xl text-[#e5b842] mb-4 font-display font-bold">Empowering Global Talents</h3>
           <p data-lang-key="net_sub2_desc" class="text-[#e9e2d0]/70 leading-relaxed font-light">Memberikan panduan ahli, orientasi yang jelas, dan dukungan navigasi bagi individu untuk memasuki lanskap karir global dengan aman.</p>
         </div>
       </div>
@@ -199,28 +201,28 @@
   </section>
 
   <section class="py-24 px-6 md:px-24 bg-[#161309]" id="lpk">
-    <div class="max-w-7xl mx-auto glass-card p-0 flex flex-col md:flex-row overflow-hidden border border-[#d4af37]/20 rounded-lg" data-aos="zoom-in" data-aos-duration="1200">
+    <div class="max-w-7xl mx-auto glass-card p-0 flex flex-col md:flex-row overflow-hidden border border-[#e5b842]/20 rounded-lg" data-aos="zoom-in" data-aos-duration="1200">
       <div class="md:w-1/2 relative min-h-[350px] group">
         <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwJ9h3y-d2tRN6MfeqFusT3QpQZOQvIWaU2mNVem348AFWNuf9lWWV9W1UKPVZ8Ud7rQvd0P6rEhiJDbk0zAUuQSxNYS70o7CWl7O0IQ6-4XbK2EFLBhBtmj2KMLA2zwIJn1VaVjbtOfkqBvdr1h5-veVd2zj2jHjnT-lva7jN-aTNo3u0LeyDIXSNsqKaLmD9KOk2NdGqHYmOzdHBhcmCWDDS_Ei8BuQpunuRrywg7yprvqnaeL7_Bo8gBQtvfKTW_OojiBCdXic" alt="LPK Training Center" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
         <div class="absolute inset-0 bg-gradient-to-r from-[#161309]/80 to-[#161309]/95 flex flex-col justify-center items-center p-12 text-center relative z-10">
-          <span class="material-icons-outlined text-[#d4af37] text-6xl mb-4">workspace_premium</span>
+          <span class="material-icons-outlined text-[#e5b842] text-6xl mb-4">workspace_premium</span>
           <h3 data-lang-key="lpk_hub_title" class="text-2xl text-[#e9e2d0] font-display font-bold">Standar Internasional</h3>
           <p data-lang-key="lpk_hub_desc" class="text-[#e9e2d0]/70 text-sm mt-2 max-w-sm font-light">Pusat pelatihan kompetensi dengan kurikulum adaptif industri global.</p>
         </div>
       </div>
       <div class="md:w-1/2 p-12 flex flex-col justify-center bg-[#1c180b]/40">
-        <span data-lang-key="lpk_tag" class="text-xs uppercase text-[#d4af37] tracking-widest mb-4 block font-bold" data-aos="fade-left" data-aos-delay="200">PROFESSIONAL TRAINING CENTER</span>
+        <span data-lang-key="lpk_tag" class="text-xs uppercase text-[#e5b842] tracking-widest mb-4 block font-bold" data-aos="fade-left" data-aos-delay="200">PROFESSIONAL TRAINING CENTER</span>
         <h2 data-lang-key="lpk_title" class="text-3xl text-[#e9e2d0] mb-6 font-display font-bold" data-aos="fade-left" data-aos-delay="300">LPK: Advanced Learning for Professional Excellence</h2>
         <p data-lang-key="lpk_desc" class="text-[#e9e2d0]/70 mb-8 leading-relaxed text-sm font-light" data-aos="fade-left" data-aos-delay="400">
           Pusat pelatihan khusus kami dilengkapi dengan fasilitas modern yang dirancang untuk mensimulen lanskap lingkungan kerja internasional yang nyata. Kami fokus pada kefasihan bahasa, adaptasi budaya, dan penguasaan teknis.
         </p>
         <div class="space-y-4" data-aos="fade-left" data-aos-delay="500">
           <div class="flex items-center gap-4 text-[#e9e2d0]">
-            <span class="material-icons-outlined text-[#d4af37] text-xl">check_circle</span>
+            <span class="material-icons-outlined text-[#e5b842] text-xl">check_circle</span>
             <span data-lang-key="lpk_f1" class="text-sm font-medium">Sertifikasi Standar Internasional</span>
           </div>
           <div class="flex items-center gap-4 text-[#e9e2d0]">
-            <span class="material-icons-outlined text-[#d4af37] text-xl">check_circle</span>
+            <span class="material-icons-outlined text-[#e5b842] text-xl">check_circle</span>
             <span data-lang-key="lpk_f2" class="text-sm font-medium">Instruktur Bahasa Profesional</span>
           </div>
         </div>
@@ -230,47 +232,47 @@
 
   <section class="py-24 px-6 md:px-24 bg-[#161309]" id="gallery">
     <div class="mb-16" data-aos="fade-up" data-aos-duration="1000">
-      <span data-lang-key="gal_tag" class="text-xs uppercase text-[#d4af37] tracking-widest mb-2 block font-bold">DOCUMENTATION</span>
+      <span data-lang-key="gal_tag" class="text-xs uppercase text-[#e5b842] tracking-widest mb-2 block font-bold">DOCUMENTATION</span>
       <h2 data-lang-key="gal_title" class="text-3xl md:text-5xl text-[#e9e2d0] font-display font-bold">Moments of Excellence</h2>
     </div>
     
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-      <div class="glass-card p-0 rounded-lg min-h-[260px] flex flex-col justify-between overflow-hidden hover:border-[#d4af37]/60 border border-[#d4af37]/10 transition-all duration-500 group relative" data-aos="fade-up" data-aos-delay="100">
+      <div class="glass-card p-0 rounded-lg min-h-[260px] flex flex-col justify-between overflow-hidden hover:border-[#e5b842]/60 border border-[#e5b842]/10 transition-all duration-500 group relative" data-aos="fade-up" data-aos-delay="100">
         <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuArq-dpzJLVA2n6-qjhNl1E3QOMhW8VhQR0gaRjgkbBu97PZEODTzOrTabO5cCheSbKU9Dfvp9ZTYuhzX1c0q1xtVhXaYrzxviXXTvkL9rJCMBvtLgtkahPmze5oenhDWznvGOz61mf0rOk8hmxJ76yg-EA-12zT5FexuZN4xvvV5KzDuQNXUr1t2BkIgQKbVFjEKGx6x5qP89V9YIyqw54ECwoBc4fQngrHZu2ZLdr4oNND1IBh04-BPd5n7AVXE6eKpTjCzdDCf8" alt="Kelas Diklat LPK" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 group-hover:scale-105 transition-all duration-700 z-0">
         <div class="p-8 relative z-10 flex flex-col justify-between h-full bg-gradient-to-t from-[#161309] via-[#161309]/40 to-transparent">
-          <span class="material-icons-outlined text-[#d4af37] text-4xl group-hover:rotate-12 transition-transform bg-[#161309]/80 w-fit p-2 rounded">model_training</span>
+          <span class="material-icons-outlined text-[#e5b842] text-4xl group-hover:rotate-12 transition-transform bg-[#161309]/80 w-fit p-2 rounded">model_training</span>
           <div class="mt-12">
-            <h4 data-lang-key="gal1_title" class="text-[#d4af37] font-bold mb-1 font-display text-lg">Kelas Diklat LPK</h4>
+            <h4 data-lang-key="gal1_title" class="text-[#e5b842] font-bold mb-1 font-display text-lg">Kelas Diklat LPK</h4>
             <p data-lang-key="gal1_desc" class="text-xs text-[#e9e2d0]/80 font-light">Proses bimbingan intensif bahasa, fisik, dan kedisiplinan kerja asing.</p>
           </div>
         </div>
       </div>
-      <div class="glass-card p-0 rounded-lg min-h-[260px] flex flex-col justify-between overflow-hidden hover:border-[#d4af37]/60 border border-[#d4af37]/10 transition-all duration-500 group relative" data-aos="fade-up" data-aos-delay="200">
+      <div class="glass-card p-0 rounded-lg min-h-[260px] flex flex-col justify-between overflow-hidden hover:border-[#e5b842]/60 border border-[#e5b842]/10 transition-all duration-500 group relative" data-aos="fade-up" data-aos-delay="200">
         <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFbHLvD9_eeM-rl47Nzp7YIeozHeTlJfEqSZPYbRJchj1DAqw5jckysvGDV2Jdwd028Yt8kQvYudXsMU3BanyKomKEM1SFuI0VcfTr1GZdQmedRq4Rhv3Hg-OtGnb5nheoKIB2wF9GPRkP_6n_42LF2RI9hhZZWsM5XHihS4by4RpmgmCZvQUv8nCevBxGEITnTXcCDSP7aFFW5S5J-3rENsEiX2W3KVPx5P1ZLGR3ao-ybWeOPomYX8MG2lLsW8b--jyuW75vzbY" alt="Pelepasan Pekerja" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 group-hover:scale-105 transition-all duration-700 z-0">
         <div class="p-8 relative z-10 flex flex-col justify-between h-full bg-gradient-to-t from-[#161309] via-[#161309]/40 to-transparent">
-          <span class="material-icons-outlined text-[#d4af37] text-4xl group-hover:rotate-12 transition-transform bg-[#161309]/80 w-fit p-2 rounded">badge</span>
+          <span class="material-icons-outlined text-[#e5b842] text-4xl group-hover:rotate-12 transition-transform bg-[#161309]/80 w-fit p-2 rounded">badge</span>
           <div class="mt-12">
-            <h4 data-lang-key="gal2_title" class="text-[#d4af37] font-bold mb-1 font-display text-lg">Pelepasan Pekerja</h4>
+            <h4 data-lang-key="gal2_title" class="text-[#e5b842] font-bold mb-1 font-display text-lg">Pelepasan Pekerja</h4>
             <p data-lang-key="gal2_desc" class="text-xs text-[#e9e2d0]/80 font-light">Seremoni pelepasan keberangkatan resmi pekerja migran menuju negara penempatan.</p>
           </div>
         </div>
       </div>
-      <div class="glass-card p-0 rounded-lg min-h-[260px] flex flex-col justify-between overflow-hidden hover:border-[#d4af37]/60 border border-[#d4af37]/10 transition-all duration-500 group relative" data-aos="fade-up" data-aos-delay="300">
+      <div class="glass-card p-0 rounded-lg min-h-[260px] flex flex-col justify-between overflow-hidden hover:border-[#e5b842]/60 border border-[#e5b842]/10 transition-all duration-500 group relative" data-aos="fade-up" data-aos-delay="300">
         <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXV8UjfR2qcLesWLi_CyFahmgj4LoROaESSJwJjMnpZsAcOKos66lObfENbWpwN-VGs7wulPIZP57gs9ZzkecXl874OMdoL-xrSNkStxr_KXcHP1_xitYJXlLLqpgZiy_6svF7zgA0Mw3s_-mcUYnf9e4b4bnAwTyx0MguOfFB72W9D4qwDmqWHb5cf4mkWvg9gLPhBkUbfFs1glu_KMaImg3YByTdUih9bsbIj8GIMIRU5n27HxgXY4bOyurqLbv8v_M-qYBc96k" alt="MoU Internasional" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 group-hover:scale-105 transition-all duration-700 z-0">
         <div class="p-8 relative z-10 flex flex-col justify-between h-full bg-gradient-to-t from-[#161309] via-[#161309]/40 to-transparent">
-          <span class="material-icons-outlined text-[#d4af37] text-4xl group-hover:rotate-12 transition-transform bg-[#161309]/80 w-fit p-2 rounded">handshake</span>
+          <span class="material-icons-outlined text-[#e5b842] text-4xl group-hover:rotate-12 transition-transform bg-[#161309]/80 w-fit p-2 rounded">handshake</span>
           <div class="mt-12">
-            <h4 data-lang-key="gal3_title" class="text-[#d4af37] font-bold mb-1 font-display text-lg">MoU Internasional</h4>
+            <h4 data-lang-key="gal3_title" class="text-[#e5b842] font-bold mb-1 font-display text-lg">MoU Internasional</h4>
             <p data-lang-key="gal3_desc" class="text-xs text-[#e9e2d0]/80 font-light">Penandatanganan ekspansi aliansi strategis bersama dengan korporasi dunia.</p>
           </div>
         </div>
       </div>
-      <div class="glass-card p-0 rounded-lg min-h-[260px] flex flex-col justify-between overflow-hidden hover:border-[#d4af37]/60 border border-[#d4af37]/10 transition-all duration-500 group relative" data-aos="fade-up" data-aos-delay="400">
+      <div class="glass-card p-0 rounded-lg min-h-[260px] flex flex-col justify-between overflow-hidden hover:border-[#e5b842]/60 border border-[#e5b842]/10 transition-all duration-500 group relative" data-aos="fade-up" data-aos-delay="400">
         <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnyjTiXbC_Da2aO9ivmhgULDxWlTrzse1p3U0Z2YstgKF2M_5HUuPR0A-7-3JZanNi0QEKO15BIUKWgkE4YkHts8cmHLFgmmx-qXpUhYouj-U-EV_8PlbznS_XzDWBjYRq7Nb8z6jdyOshr0ZFEbM0Z7cjWNl1HebPA-JvRYr_Hva5Kf2gY_rVfDtu-ziCTrkoGvDFC6sXExMPft1Vkvdh6rvgLaqQ3hLjYzTrnS4Ztfba5FmCEmqLkjIGy_w32rg8wiG2wM6wL3E" alt="Uji Kompetensi" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 group-hover:scale-105 transition-all duration-700 z-0">
         <div class="p-8 relative z-10 flex flex-col justify-between h-full bg-gradient-to-t from-[#161309] via-[#161309]/40 to-transparent">
-          <span class="material-icons-outlined text-[#d4af37] text-4xl group-hover:rotate-12 transition-transform bg-[#161309]/80 w-fit p-2 rounded">assignment_turned_in</span>
+          <span class="material-icons-outlined text-[#e5b842] text-4xl group-hover:rotate-12 transition-transform bg-[#161309]/80 w-fit p-2 rounded">assignment_turned_in</span>
           <div class="mt-12">
-            <h4 data-lang-key="gal4_title" class="text-[#d4af37] font-bold mb-1 font-display text-lg">Uji Kompetensi</h4>
+            <h4 data-lang-key="gal4_title" class="text-[#e5b842] font-bold mb-1 font-display text-lg">Uji Kompetensi</h4>
             <p data-lang-key="gal4_desc" class="text-xs text-[#e9e2d0]/80 font-light">Sertifikasi resmi dan validasi keahlian teknis calon pekerja migran.</p>
           </div>
         </div>
@@ -278,7 +280,7 @@
     </div>
   </section>
 
-  <section class="py-24 px-6 md:px-24 bg-[#1c180b] border-t border-[#d4af37]/10" id="contact">
+  <section class="py-24 px-6 md:px-24 bg-[#1c180b] border-t border-[#e5b842]/10" id="contact">
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
       <div data-aos="fade-right" data-aos-duration="1000">
         <h2 data-lang-key="cont_title" class="text-3xl md:text-5xl text-[#e9e2d0] mb-6 font-display font-bold">Start Your Global Journey</h2>
@@ -287,11 +289,11 @@
         </p>
         <div class="space-y-6 mb-10">
           <div class="flex items-center gap-6">
-            <span class="material-icons-outlined text-[#d4af37]">location_on</span>
+            <span class="material-icons-outlined text-[#e5b842]">location_on</span>
             <span data-lang-key="cont_add" class="text-[#e9e2d0] font-light">Jl. Raya Global No. 88, Jakarta Selatan, Indonesia</span>
           </div>
           <div class="flex items-center gap-6">
-            <span class="material-icons-outlined text-[#d4af37]">mail</span>
+            <span class="material-icons-outlined text-[#e5b842]">mail</span>
             <span class="text-[#e9e2d0] font-light">contact@aidaduta.co.id</span>
           </div>
         </div>
@@ -301,34 +303,34 @@
         </a>
       </div>
       
-      <div class="glass-card p-10 rounded-lg border border-[#d4af37]/10" id="form-container" data-aos="fade-left" data-aos-duration="1000">
+      <div class="glass-card p-10 rounded-lg border border-[#e5b842]/10" id="form-container" data-aos="fade-left" data-aos-duration="1000">
         <form class="space-y-6" onsubmit="handleFormSubmit(event)">
           <div>
             <label data-lang-key="lbl_name" class="text-xs text-[#e9e2d0]/50 mb-2 block tracking-widest font-bold">FULL NAME</label>
-            <input required id="form-name" class="w-full bg-transparent border-b border-[#d4af37]/30 focus:border-[#d4af37] outline-none py-2 text-[#e9e2d0] transition-colors" type="text"/>
+            <input required id="form-name" class="w-full bg-transparent border-b border-[#e5b842]/30 focus:border-[#e5b842] outline-none py-2 text-[#e9e2d0] transition-colors" type="text"/>
           </div>
           <div>
             <label data-lang-key="lbl_email" class="text-xs text-[#e9e2d0]/50 mb-2 block tracking-widest font-bold">EMAIL ADDRESS</label>
-            <input required id="form-email" class="w-full bg-transparent border-b border-[#d4af37]/30 focus:border-[#d4af37] outline-none py-2 text-[#e9e2d0] transition-colors" type="email"/>
+            <input required id="form-email" class="w-full bg-transparent border-b border-[#e5b842]/30 focus:border-[#e5b842] outline-none py-2 text-[#e9e2d0] transition-colors" type="email"/>
           </div>
           <div>
             <label data-lang-key="lbl_msg" class="text-xs text-[#e9e2d0]/50 mb-2 block tracking-widest font-bold">MESSAGE</label>
-            <textarea required id="form-message" class="w-full bg-transparent border-b border-[#d4af37]/30 focus:border-[#d4af37] outline-none py-2 text-[#e9e2d0] transition-colors resize-none" rows="4"></textarea>
+            <textarea required id="form-message" class="w-full bg-transparent border-b border-[#e5b842]/30 focus:border-[#e5b842] outline-none py-2 text-[#e9e2d0] transition-colors resize-none" rows="4"></textarea>
           </div>
-          <button data-lang-key="btn_send" class="w-full bg-[#d4af37] text-[#161309] text-xs font-bold py-4 hover:bg-white hover:text-[#161309] transition-colors tracking-widest uppercase">SEND INQUIRY</button>
+          <button data-lang-key="btn_send" class="w-full bg-[#e5b842] text-[#161309] text-xs font-bold py-4 hover:bg-white hover:text-[#161309] transition-colors tracking-widest uppercase">SEND INQUIRY</button>
         </form>
       </div>
     </div>
   </section>
 
-  <footer class="w-full px-6 md:px-24 py-12 flex flex-col md:flex-row justify-between items-center gap-6 bg-[#0f0d06] border-t border-[#d4af37]/10">
+  <footer class="w-full px-6 md:px-24 py-12 flex flex-col md:flex-row justify-between items-center gap-6 bg-[#0f0d06] border-t border-[#e5b842]/10">
     <div class="text-center md:text-left">
-      <div class="text-2xl text-[#d4af37] mb-2 font-bold font-display italic">Aida Duta</div>
+      <div class="text-2xl text-[#e5b842] mb-2 font-bold font-display italic">Aida Duta</div>
       <p data-lang-key="foot_copy" class="text-xs text-[#e9e2d0]/50">© 2026 PT Aida Duta Indonesia Sejahtera. All Rights Reserved.</p>
     </div>
     <div class="flex gap-6 text-xs">
-      <a data-lang-key="foot_priv" class="text-[#e9e2d0]/50 hover:text-[#d4af37] transition-colors" href="#">Privacy Policy</a>
-      <a data-lang-key="foot_terms" class="text-[#e9e2d0]/50 hover:text-[#d4af37] transition-colors" href="#">Terms of Service</a>
+      <a data-lang-key="foot_priv" class="text-[#e9e2d0]/50 hover:text-[#e5b842] transition-colors" href="#">Privacy Policy</a>
+      <a data-lang-key="foot_terms" class="text-[#e9e2d0]/50 hover:text-[#e5b842] transition-colors" href="#">Terms of Service</a>
     </div>
   </footer>
 
