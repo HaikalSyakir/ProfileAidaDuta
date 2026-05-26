@@ -19,7 +19,7 @@
     body { font-family: 'Montserrat', sans-serif; }
     .font-display { font-family: 'Playfair Display', serif; }
     .text-gold-gradient {
-      background: linear-gradient(to right, #fff0ca, #e5b842, #a67c1e);
+      background: linear-gradient(to right, #fff0ca, #e5b842, #b88e2f);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -28,25 +28,21 @@
 </head>
 <body class="bg-[#161309] text-[#e9e2d0] overflow-x-hidden antialiased">
 
-  <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-6 md:px-12 lg:px-20 py-5 bg-[#310202]/95 backdrop-blur-xl border-b border-[#e5b842]/20 transition-all duration-300 shadow-xl shadow-black/40">
+  <nav class="fixed top-0 w-full z-50 flex justify-between items-center gap-6 px-6 md:px-16 xl:px-24 py-4 bg-[#310202]/95 backdrop-blur-xl border-b border-[#e5b842]/20 transition-all duration-300 shadow-xl shadow-black/30">
+    <div class="text-2xl md:text-3xl text-[#e5b842] tracking-tighter font-bold font-display italic shrink-0">Aida Duta</div>
     
-    <div class="flex items-center gap-3 md:gap-4 flex-shrink-0">
-      <img src="logo.png" alt="Logo Aida Duta" class="hidden h-9 w-auto object-contain drop-shadow-[0_2px_8px_rgba(229,184,66,0.2)]">
-      <div class="text-xl md:text-2xl text-[#e5b842] tracking-tighter font-bold font-display italic leading-none">PT Aida Duta</div>
-    </div>
-    
-    <div class="hidden lg:flex gap-8 mx-auto">
+    <div class="hidden md:flex flex-1 justify-center gap-5 lg:gap-7 xl:gap-8">
       <a data-lang-key="nav_home" class="text-xs uppercase tracking-widest text-[#e5b842] border-b-2 border-[#e5b842] pb-1 font-semibold transition-all" href="#home">Home</a>
-      <a data-lang-key="nav_about" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#e5b842] hover:tracking-widest transition-all duration-300 font-semibold" href="#about">About</a>
-      <a data-lang-key="nav_services" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#e5b842] hover:tracking-widest transition-all duration-300 font-semibold" href="#services">Services</a>
-      <a data-lang-key="nav_network" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#e5b842] hover:tracking-widest transition-all duration-300 font-semibold" href="#network">Global Network</a>
-      <a data-lang-key="nav_lpk" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#e5b842] hover:tracking-widest transition-all duration-300 font-semibold" href="#lpk">LPK</a>
+      <a data-lang-key="nav_about" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#e5b842] hover:tracking-widest transition-all duration-300 font-semibold" href="#about">Tentang Kami</a>
+      <a data-lang-key="nav_services" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#e5b842] hover:tracking-widest transition-all duration-300 font-semibold" href="#services">Layanan Kami</a>
+      <a data-lang-key="nav_network" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#e5b842] hover:tracking-widest transition-all duration-300 font-semibold" href="#network">Sektor Penempatan</a>
+      <a data-lang-key="nav_lpk" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#e5b842] hover:tracking-widest transition-all duration-300 font-semibold" href="#lpk">Negara Penempatan</a>
       <a data-lang-key="nav_gallery" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#e5b842] hover:tracking-widest transition-all duration-300 font-semibold" href="#gallery">Gallery</a>
     </div>
 
-    <div class="flex items-center flex-shrink-0">
+    <div class="flex items-center gap-4 shrink-0">
       <div class="relative inline-block text-left">
-        <select id="lang-selector" class="bg-[#4a0404] text-[#e5b842] border border-[#e5b842]/30 text-xs uppercase tracking-wider px-3 py-2 rounded shadow-md focus:outline-none focus:border-[#e5b842] cursor-pointer font-semibold transition-colors">
+        <select id="lang-selector" class="bg-[#4a0404] text-[#e5b842] border border-[#e5b842]/30 text-xs uppercase tracking-wider px-3 py-2 rounded shadow-md focus:outline-none cursor-pointer font-semibold">
           <option value="id">ID</option>
           <option value="en">EN</option>
           <option value="zh">繁中</option>
@@ -57,15 +53,15 @@
 
   <section class="relative min-h-screen flex flex-col items-center justify-center pt-24 overflow-hidden" id="home">
     <div class="absolute inset-0 z-0">
-      <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/banner/76e5ff41-33fc-478b-94b0-03c1dea3b926.png" alt="Batik Background" class="w-full h-full object-cover opacity-90 scale-105 animate-pulse-slow">
-      <div class="absolute inset-0 bg-gradient-to-b from-[#161309]/40 via-[#161309]/70 to-[#161309]"></div>
+      <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/banner/76e5ff41-33fc-478b-94b0-03c1dea3b926.png" alt="Batik Background" class="w-full h-full object-cover opacity-15 scale-105 animate-pulse-slow">
+      <div class="absolute inset-0 bg-gradient-to-b from-[#161309]/40 via-[#161309]/80 to-[#161309]"></div>
     </div>
     <div class="absolute inset-0 opacity-20 z-0 flex items-center justify-center pointer-events-none">
       <div class="w-[650px] h-[650px] rounded-full border border-[#e5b842]/20 animate-spin-slow"></div>
     </div>
 
     <div class="relative z-10 text-center px-6 md:px-0">
-      <span class="text-xs uppercase text-[#e5b842] tracking-[0.5em] mb-6 block font-bold" data-aos="fade-down" data-aos-duration="1200">ESTABLISHED INTEGRITY</span>
+      <span data-lang-key="hero_tag" class="text-xs uppercase text-[#e5b842] tracking-[0.5em] mb-6 block font-bold" data-aos="fade-down" data-aos-duration="1200">INTEGRITAS TERPERCAYA</span>
       <h1 class="text-4xl md:text-7xl text-[#e9e2d0] mb-8 max-w-5xl mx-auto leading-tight font-display font-bold tracking-tight" data-aos="zoom-in-up" data-aos-duration="1400" data-aos-delay="200">
         PT <span class="text-gold-gradient">Aida Duta</span> Indonesia Sejahtera
       </h1>
@@ -73,8 +69,8 @@
         Membangun Masa Depan dengan Integritas dan Jangkauan Global. Menghubungkan Tenaga Kerja Indonesia dengan Peluang Internasional Terbaik.
       </p>
       <div class="flex flex-col sm:flex-row gap-6 justify-center items-center" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="600">
-        <button data-lang-key="btn_explore" onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' })" class="bg-[#e5b842] text-[#161309] text-xs uppercase tracking-widest px-10 py-4 hover:bg-white hover:scale-105 transition-all duration-300 font-bold shadow-lg shadow-[#e5b842]/20">EXPLORE SOLUTIONS</button>
-        <button data-lang-key="btn_legacy" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })" class="border border-[#e5b842] text-[#e5b842] text-xs uppercase tracking-widest px-10 py-4 hover:bg-[#e5b842] hover:text-[#161309] hover:scale-105 transition-all duration-300 font-bold">OUR LEGACY</button>
+        <button data-lang-key="btn_explore" onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' })" class="bg-[#e5b842] text-[#161309] text-xs uppercase tracking-widest px-10 py-4 hover:bg-white hover:scale-105 transition-all duration-300 font-bold shadow-lg shadow-[#e5b842]/20">JELAJAHI SOLUSI</button>
+        <button data-lang-key="btn_legacy" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })" class="border border-[#e5b842] text-[#e5b842] text-xs uppercase tracking-widest px-10 py-4 hover:bg-[#e5b842] hover:text-[#161309] hover:scale-105 transition-all duration-300 font-bold">WARISAN KAMI</button>
       </div>
     </div>
   </section>
@@ -82,8 +78,8 @@
   <section class="py-24 px-6 md:px-24 bg-[#161309]" id="about">
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
       <div data-aos="fade-right" data-aos-duration="1200">
-        <span data-lang-key="about_tag" class="text-xs uppercase text-[#e5b842] tracking-widest mb-4 block font-bold">WHO WE ARE</span>
-        <h2 data-lang-key="about_title" class="text-3xl md:text-5xl text-[#e9e2d0] mb-8 leading-tight font-display font-bold">Elevating Global Standards in Professional Placement</h2>
+        <span data-lang-key="about_tag" class="text-xs uppercase text-[#e5b842] tracking-widest mb-4 block font-bold">SIAPA KAMI</span>
+        <h2 data-lang-key="about_title" class="text-3xl md:text-5xl text-[#e9e2d0] mb-8 leading-tight font-display font-bold">Meningkatkan Standar Global dalam Penempatan Profesional</h2>
         <p data-lang-key="about_p1" class="text-base md:text-lg text-[#e9e2d0]/70 mb-6 leading-relaxed font-light">
           PT Aida Duta Indonesia Sejahtera adalah agen perekrutan dan penempatan tenaga kerja internasional terkemuka yang didedikasikan untuk menjembatani talenta terbaik Indonesia dengan peluang global.
         </p>
@@ -105,32 +101,31 @@
 
   <section class="py-24 px-6 md:px-24 bg-[#1c180b] border-t border-b border-[#e5b842]/10">
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
-      <div class="glass-card p-12 gold-glow transition-all duration-500 rounded-lg border border-[#e5b842]/10" data-aos="fade-up" data-aos-duration="1000">
+      <div class="glass-card p-12 gold-glow transition-all duration-500 rounded-lg" data-aos="fade-up" data-aos-duration="1000">
         <span class="material-icons-outlined text-[#e5b842] text-5xl mb-8">visibility</span>
-        <h3 data-lang-key="vision_title" class="text-3xl text-[#e9e2d0] mb-6 font-display font-bold">Our Vision</h3>
+        <h3 data-lang-key="vision_title" class="text-3xl text-[#e9e2d0] mb-6 font-display font-bold">Visi Kami</h3>
         <p data-lang-key="vision_desc" class="text-base md:text-lg text-[#e9e2d0]/70 leading-relaxed font-light">
           Menjadi pemimpin global dalam solusi sumber daya manusia profesional, diakui karena standar etika kami yang teguh dan kemampuan kami untuk memberdayakan generasi profesional Indonesia berikutnya di panggung dunia.
         </p>
       </div>
-      <div class="glass-card p-12 gold-glow transition-all duration-500 rounded-lg border border-[#e5b842]/10" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+      <div class="glass-card p-12 gold-glow transition-all duration-500 rounded-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
         <span class="material-icons-outlined text-[#e5b842] text-5xl mb-8">rocket_launch</span>
-        <h3 data-lang-key="mission_title" class="text-3xl text-[#e9e2d0] mb-6 font-display font-bold">Our Mission</h3>
+        <h3 data-lang-key="mission_title" class="text-3xl text-[#e9e2d0] mb-6 font-display font-bold">Misi Kami</h3>
         <ul class="space-y-6">
           <li class="flex gap-4 items-start" data-aos="fade-left" data-aos-delay="300">
-<<<<<<< HEAD
-            <span class="text-[#d4af37] font-bold text-lg">01</span>
+            <span class="text-[#e5b842] font-bold text-lg">01</span>
             <p data-lang-key="mission_1" class="text-[#e9e2d0]/70 leading-relaxed font-light">Menyediakan layanan penempatan pekerja migran yang aman, transparan, dan sesuai dengan peraturan yang berlaku.</p>
           </li>
           <li class="flex gap-4 items-start" data-aos="fade-left" data-aos-delay="400">
-            <span class="text-[#d4af37] font-bold text-lg">02</span>
+            <span class="text-[#e5b842] font-bold text-lg">02</span>
             <p data-lang-key="mission_2" class="text-[#e9e2d0]/70 leading-relaxed font-light">Meningkatkan kompetensi tenaga kerja melalui pelatihan yang berkualitas sebelum diberangkatkan.</p>
           </li>
           <li class="flex gap-4 items-start" data-aos="fade-left" data-aos-delay="500">
-            <span class="text-[#d4af37] font-bold text-lg">03</span>
+            <span class="text-[#e5b842] font-bold text-lg">03</span>
             <p data-lang-key="mission_3" class="text-[#e9e2d0]/70 leading-relaxed font-light">Memberikan perlindungan dan pendampingan kepada pekerja migran sebelum, selama, dan setelah bekerja di luar negeri.</p>
           </li>
           <li class="flex gap-4 items-start" data-aos="fade-left" data-aos-delay="500">
-            <span class="text-[#d4af37] font-bold text-lg">04</span>
+            <span class="text-[#e5b842] font-bold text-lg">04</span>
             <p data-lang-key="mission_4" class="text-[#e9e2d0]/70 leading-relaxed font-light">Membangun kemitraan strategis dengan perusahaan pengguna tenaga kerja di luar negeri.</p>
           </li>
         </ul>
@@ -140,68 +135,114 @@
 
   <section class="py-24 px-6 md:px-24 bg-[#161309]" id="services">
     <div class="text-center mb-24" data-aos="fade-up" data-aos-duration="1000">
-      <span data-lang-key="srv_tag" class="text-xs uppercase text-[#e5b842] tracking-widest mb-4 block font-bold">OUR EXPERTISE</span>
-      <h2 data-lang-key="srv_title" class="text-3xl md:text-5xl text-[#e9e2d0] font-display font-bold">Comprehensive Professional Services</h2>
+      <span data-lang-key="srv_tag" class="text-xs uppercase text-[#e5b842] tracking-widest mb-4 block font-bold">KEAHLIAN KAMI</span>
+      <h2 data-lang-key="srv_title" class="text-3xl md:text-5xl text-[#e9e2d0] font-display font-bold">Layanan Kami</h2>
     </div>
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
       <div class="p-8 border border-[#e5b842]/10 hover:border-[#e5b842]/40 hover:bg-[#1c180b]/40 transition-all duration-500 group rounded-md" data-aos="zoom-in-up" data-aos-delay="100">
         <span class="material-icons-outlined text-[#e5b842] text-4xl mb-6 group-hover:scale-110 group-hover:rotate-6 transition-transform block">groups</span>
-        <h4 data-lang-key="srv1_title" class="text-2xl text-[#e9e2d0] mb-4 font-display font-bold group-hover:text-[#e5b842] transition-colors">Global Recruitment</h4>
+        <h4 data-lang-key="srv1_title" class="text-2xl text-[#e9e2d0] mb-4 font-display font-bold group-hover:text-[#e5b842] transition-colors">Perekrutan Global</h4>
         <p data-lang-key="srv1_desc" class="text-[#e9e2d0]/60 text-sm leading-relaxed font-light">Penyaringan strategis talenta Indonesia berkualitas tinggi untuk kebutuhan pasar internasional.</p>
       </div>
       <div class="p-8 border border-[#e5b842]/10 hover:border-[#e5b842]/40 hover:bg-[#1c180b]/40 transition-all duration-500 group rounded-md" data-aos="zoom-in-up" data-aos-delay="200">
         <span class="material-icons-outlined text-[#e5b842] text-4xl mb-6 group-hover:scale-110 group-hover:rotate-6 transition-transform block">work_history</span>
-        <h4 data-lang-key="srv2_title" class="text-2xl text-[#e9e2d0] mb-4 font-display font-bold group-hover:text-[#e5b842] transition-colors">Job Placement</h4>
+        <h4 data-lang-key="srv2_title" class="text-2xl text-[#e9e2d0] mb-4 font-display font-bold group-hover:text-[#e5b842] transition-colors">Penempatan Kerja</h4>
         <p data-lang-key="srv2_desc" class="text-[#e9e2d0]/60 text-sm leading-relaxed font-light">Menghubungkan keahlian pekerja dengan permintaan industry global seperti perhotelan, kesehatan, dan teknik.</p>
       </div>
       <div class="p-8 border border-[#e5b842]/10 hover:border-[#e5b842]/40 hover:bg-[#1c180b]/40 transition-all duration-500 group rounded-md" data-aos="zoom-in-up" data-aos-delay="300">
         <span class="material-icons-outlined text-[#e5b842] text-4xl mb-6 group-hover:scale-110 group-hover:rotate-6 transition-transform block">school</span>
-        <h4 data-lang-key="srv3_title" class="text-2xl text-[#e9e2d0] mb-4 font-display font-bold group-hover:text-[#e5b842] transition-colors">Competency Training</h4>
+        <h4 data-lang-key="srv3_title" class="text-2xl text-[#e9e2d0] mb-4 font-display font-bold group-hover:text-[#e5b842] transition-colors">Pelatihan Kompetency</h4>
         <p data-lang-key="srv3_desc" class="text-[#e9e2d0]/60 text-sm leading-relaxed font-light">Program pelatihan terstandarisasi melalui fasilitas LPK internal untuk mencapai standar kompetensi dunia.</p>
       </div>
     </div>
   </section>
 
-  <section class="py-24 px-6 md:px-24 bg-[#1c180b] overflow-hidden" id="network">
-    <div class="max-w-7xl mx-auto mb-20 text-center" data-aos="fade-up" data-aos-duration="1000">
-      <span data-lang-key="net_tag" class="text-xs uppercase text-[#e5b842] tracking-widest mb-4 block font-bold">EXPANSIVE REACH</span>
-      <h2 data-lang-key="net_title" class="text-3xl md:text-5xl text-[#e9e2d0] mb-8 font-display font-bold">Bridging Continents</h2>
-      <div class="flex flex-wrap justify-center gap-16 mb-12">
-        <div class="text-center" data-aos="scale-in" data-aos-delay="100">
-          <div class="text-[#e5b842] text-5xl mb-2 font-bold font-display">25+</div>
-          <div data-lang-key="net_stat1" class="text-xs uppercase tracking-widest text-[#e9e2d0]/50 font-semibold">PARTNER COUNTRIES</div>
-        </div>
-        <div class="text-center" data-aos="scale-in" data-aos-delay="200">
-          <div class="text-[#e5b842] text-5xl mb-2 font-bold font-display">500+</div>
-          <div data-lang-key="net_stat2" class="text-xs uppercase tracking-widest text-[#e9e2d0]/50 font-semibold">GLOBAL CORPORATIONS</div>
-        </div>
-      </div>
-      <p data-lang-key="net_desc" class="text-base md:text-lg text-[#e9e2d0]/70 max-w-3xl mx-auto leading-relaxed font-light">
-        Dengan jaringan kemitraan yang mencakup Eropa, Asia, dan Timur Tengah, jangkauan kami benar-benar global. Kami menjaga hubungan kuat dengan korporasi papan atas.
-      </p>
+  <section class="py-24 px-6 md:px-24 bg-[#1c180b] border-t border-b border-[#e5b842]/10" id="network">
+    <div class="max-w-7xl mx-auto mb-16 text-center" data-aos="fade-up" data-aos-duration="1000">
+      <span data-lang-key="net_tag" class="text-xs uppercase text-[#e5b842] tracking-widest mb-4 block font-bold">SEKTOR PILIHAN</span>
+      <h2 data-lang-key="net_title" class="text-3xl md:text-5xl text-[#e9e2d0] font-display font-bold">Sektor Penempatan Kerja</h2>
     </div>
 
-    <div class="max-w-5xl mx-auto space-y-24">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="order-2 md:order-1" data-aos="fade-right" data-aos-duration="1000">
-          <h3 data-lang-key="net_sub1_title" class="text-2xl text-[#e5b842] mb-4 font-display font-bold">Digital Connectivity & Reach</h3>
-          <p data-lang-key="net_sub1_desc" class="text-[#e9e2d0]/70 leading-relaxed font-light">Memanfaatkan teknologi digital canggih untuk menghubungkan talenta secara aman dan cepat dengan peluang korporat internasional.</p>
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <div class="glass-card overflow-hidden border border-[#e5b842]/10 hover:border-[#e5b842]/50 transition-all duration-500 rounded-lg group gold-glow" data-aos="fade-up" data-aos-delay="100">
+        <div class="h-64 overflow-hidden relative">
+          <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/sector/90f47f3b-beae-4669-b928-45dfbd7eb84e.jpeg" alt="Hospitality Sector" class="w-full h-full object-cover object-top grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#161309] to-transparent opacity-60"></div>
         </div>
-        <div class="order-1 md:order-2 glass-card p-0 rounded-lg overflow-hidden h-64 border border-[#e5b842]/20 group">
-          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbUu8KQqDn-LVkP_HEZhtkLW_0BOB3loKRxi2HZD7LanBVUOi0HaZiEVnSMkMaFjC0samFFhpR-LWgsMBWeHRKxQzd-JbxB_DIR5YJ2rShbBpHNvl2T5uNtsEqG1OSvrwHfAjn88gDMztoiwy_XWVZafCqfjyi3nvBRku-YuTschtMb2MURRHUnwmzqTjlBx6amM9gut-YKy35AJ81gd1BWUqgflk80OPRhpM4R47G6PZaB93bIhKTw1HDlpXauQO1tnxMS4IhcIk" alt="Global Connectivity Network" class="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+        <div class="p-8">
+          <h3 data-lang-key="sector1_title" class="text-2xl text-[#e5b842] font-display font-bold mb-3">Perkebunan</h3>
+          <p data-lang-key="sector1_desc" class="text-[#e9e2d0]/70 text-sm leading-relaxed font-light">
+            Bekerja di bidang perawatan tanaman, pemupukan, hingga proses panen dengan sistem kerja yang teratur dan didukung lingkungan kerja profesional.
+          </p>
         </div>
       </div>
 
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="glass-card p-4 rounded-lg flex items-center justify-center bg-gradient-to-l from-[#161309]/40 to-black/30 h-64 border border-[#e5b842]/10" data-aos="fade-right" data-aos-duration="1000">
-          <span class="material-icons-outlined text-[#e5b842] text-7xl animate-pulse">explore</span>
+      <div class="glass-card overflow-hidden border border-[#e5b842]/10 hover:border-[#e5b842]/50 transition-all duration-500 rounded-lg group gold-glow" data-aos="fade-up" data-aos-delay="200">
+        <div class="h-64 overflow-hidden relative">
+          <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/sector/a55fce1e-eb32-4135-84a8-b69f5ab0eedb.jpeg" alt="Healthcare Sector" class="w-full h-full object-cover object-center grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#161309] to-transparent opacity-60"></div>
         </div>
-        <div data-aos="fade-left" data-aos-duration="1000">
-          <span data-lang-key="net_sub2_tag" class="text-xs uppercase text-[#e5b842] tracking-widest mb-2 block font-semibold">STRATEGIC DIRECTION</span>
-          <h3 data-lang-key="net_sub2_title" class="text-2xl text-[#e5b842] mb-4 font-display font-bold">Empowering Global Talents</h3>
-          <p data-lang-key="net_sub2_desc" class="text-[#e9e2d0]/70 leading-relaxed font-light">Memberikan panduan ahli, orientasi yang jelas, dan dukungan navigasi bagi individu untuk memasuki lanskap karir global dengan aman.</p>
+        <div class="p-8">
+          <h3 data-lang-key="sector2_title" class="text-2xl text-[#e5b842] font-display font-bold mb-3">Pabrik</h3>
+          <p data-lang-key="sector2_desc" class="text-[#e9e2d0]/70 text-sm leading-relaxed font-light">
+            Pekerjaan meliputi operator produksi, packing, sortir barang, dan quality control dengan sistem kerja yang disiplin dan terstruktur.
+          </p>
         </div>
       </div>
+
+      <div class="glass-card overflow-hidden border border-[#e5b842]/10 hover:border-[#e5b842]/50 transition-all duration-500 rounded-lg group gold-glow" data-aos="fade-up" data-aos-delay="300">
+        <div class="h-64 overflow-hidden relative">
+          <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/sector/16d7cefa-f7bc-4cb4-b346-b23c7eed3526.jpeg" alt="Manufacturing Sector" class="w-full h-full object-cover object-bottom grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#161309] to-transparent opacity-60"></div>
+        </div>
+        <div class="p-8">
+          <h3 data-lang-key="sector3_title" class="text-2xl text-[#e5b842] font-display font-bold mb-3">Kontruksi</h3>
+          <p data-lang-key="sector3_desc" class="text-[#e9e2d0]/70 text-sm leading-relaxed font-light">
+            Terlibat dalam pekerjaan pembangunan dan proyek konstruksi seperti pembangunan gedung, infrastruktur, dan pekerjaan teknis lapangan dengan standar kerja profesional.
+          </p>
+        </div>
+      </div>
+
+            <div class="glass-card overflow-hidden border border-[#e5b842]/10 hover:border-[#e5b842]/50 transition-all duration-500 rounded-lg group gold-glow" data-aos="fade-up" data-aos-delay="100">
+        <div class="h-64 overflow-hidden relative">
+          <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/sector/6852e4f6-beb3-41f7-8c3f-e29eb5fabc00.jpeg" alt="Hospitality Sector" class="w-full h-full object-cover object-top grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#161309] to-transparent opacity-60"></div>
+        </div>
+        <div class="p-8">
+          <h3 data-lang-key="sector4_title" class="text-2xl text-[#e5b842] font-display font-bold mb-3">Perikanan</h3>
+          <p data-lang-key="sector4_desc" class="text-[#e9e2d0]/70 text-sm leading-relaxed font-light">
+            Peluang kerja di bidang pengolahan hasil laut, budidaya ikan, dan industri perikanan modern dengan kebutuhan tenaga kerja yang tinggi.
+          </p>
+        </div>
+      </div>
+
+      <div class="glass-card overflow-hidden border border-[#e5b842]/10 hover:border-[#e5b842]/50 transition-all duration-500 rounded-lg group gold-glow" data-aos="fade-up" data-aos-delay="100">
+        <div class="h-64 overflow-hidden relative">
+          <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/sector/e678cc24-e4be-4d6a-814f-9d76578e67a9.jpeg" alt="Hospitality Sector" class="w-full h-full object-cover object-top grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#161309] to-transparent opacity-60"></div>
+        </div>
+        <div class="p-8">
+          <h3 data-lang-key="sector5_title" class="text-2xl text-[#e5b842] font-display font-bold mb-3">Panti Jompo</h3>
+          <p data-lang-key="sector5_desc" class="text-[#e9e2d0]/70 text-sm leading-relaxed font-light">
+            Memberikan pendampingan dan perawatan lansia dalam aktivitas sehari-hari dengan penuh kesabaran, perhatian, dan kepedulian.
+          </p>
+        </div>
+      </div>
+
+      <div class="glass-card overflow-hidden border border-[#e5b842]/10 hover:border-[#e5b842]/50 transition-all duration-500 rounded-lg group gold-glow" data-aos="fade-up" data-aos-delay="100">
+        <div class="h-64 overflow-hidden relative">
+          <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/sector/f0957365-1384-450a-90c0-dc33acda941c.jpeg" alt="Hospitality Sector" class="w-full h-full object-cover object-top grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#161309] to-transparent opacity-60"></div>
+        </div>
+        <div class="p-8">
+          <h3 data-lang-key="sector6_title" class="text-2xl text-[#e5b842] font-display font-bold mb-3">Pekerja Domestik (ART)</h3>
+          <p data-lang-key="sector6_desc" class="text-[#e9e2d0]/70 text-sm leading-relaxed font-light">
+            Membantu kebutuhan rumah tangga seperti membersihkan rumah, memasak, mencuci, dan menjaga anak secara profesional dan bertanggung jawab.
+          </p>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -288,7 +329,7 @@
   <section class="py-24 px-6 md:px-24 bg-[#1c180b] border-t border-[#e5b842]/10" id="contact">
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
       <div data-aos="fade-right" data-aos-duration="1000">
-        <h2 data-lang-key="cont_title" class="text-3xl md:text-5xl text-[#e9e2d0] mb-6 font-display font-bold">Start Your Global Journey</h2>
+        <h2 data-lang-key="cont_title" class="text-3xl md:text-5xl text-[#e9e2d0] mb-6 font-display font-bold">Mulai Perjalanan Global Anda</h2>
         <p data-lang-key="cont_desc" class="text-base md:text-lg text-[#e9e2d0]/70 mb-10 leading-relaxed font-light">
           Hubungi tim kami untuk mengeksplorasi peluang karir internasional terpercaya atau bermitra untuk kebutuhan rekrutmen perusahaan Anda.
         </p>
@@ -304,7 +345,7 @@
         </div>
         <a href="https://wa.me/62215551234" target="_blank" class="inline-flex items-center gap-4 bg-[#25D366] text-white px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform shadow-lg shadow-green-950/20">
           <span class="material-icons-outlined">chat</span>
-          WHATSAPP SUPPORT
+          <span data-lang-key="btn_whatsapp">DUKUNGAN WHATSAPP</span>
         </a>
       </div>
       

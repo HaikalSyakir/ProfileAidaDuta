@@ -68,8 +68,27 @@ const translations = {
     srv3_desc:
       "Program pelatihan terstandarisasi melalui fasilitas LPK internal untuk mencapai standar kompetensi dunia.",
 
-    net_tag: "JANGKAUAN LUAS",
-    net_title: "Menjembatani Benua",
+    net_tag: "Sektor Penempatan",
+    net_title: "SEKTOR PENEMPATAN",
+
+    sector1_title: "Perkebunan",
+    sector1_desc:
+      "Bekerja di bidang perawatan tanaman, pemupukan, hingga proses panen dengan sistem kerja yang teratur dan didukung lingkungan kerja profesional.",
+    sector2_title: "Pabrik",
+    sector2_desc:
+      "Pekerjaan meliputi operator produksi, packing, sortir barang, dan quality control dengan sistem kerja yang disiplin dan terstruktur.",
+    sector3_title: "Konstruksi",
+    sector3_desc:
+      "Terlibat dalam pekerjaan pembangunan dan proyek konstruksi seperti pembangunan gedung, infrastruktur, dan pekerjaan teknis lapangan dengan standar kerja profesional.",
+    sector4_title: "Perikanan",
+    sector4_desc:
+      "Peluang kerja di bidang pengolahan hasil laut, budidaya ikan, dan industri perikanan modern dengan kebutuhan tenaga kerja yang tinggi.",
+    sector5_title: "Panti Jompo",
+    sector5_desc:
+      "Memberikan pendampingan dan perawatan lansia dalam aktivitas sehari-hari dengan penuh kesabaran, perhatian, dan kepedulian.",
+    sector6_title: "Pekerja Domestik (ART)",
+    sector6_desc:
+      "Membantu kebutuhan rumah tangga seperti membersihkan rumah, memasak, mencuci, dan menjaga anak secara profesional dan bertanggung jawab.",
 
     net_stat1: "NEGARA MITRA",
     net_stat2: "KORPORASI GLOBAL",
@@ -136,6 +155,8 @@ const translations = {
     cont_add:
       "Jl. Raya Global No. 88, Jakarta Selatan, Indonesia",
 
+    btn_whatsapp: "DUKUNGAN WHATSAPP",
+
     lbl_name: "NAMA LENGKAP",
     lbl_email: "ALAMAT EMAIL",
     lbl_msg: "PESAN",
@@ -158,8 +179,8 @@ const translations = {
     nav_home: "Home",
     nav_about: "About",
     nav_services: "Services",
-    nav_network: "Network",
-    nav_lpk: "LPK",
+    nav_network: "Placement Sector",
+    nav_lpk: "Country of Placement",
     nav_gallery: "Gallery",
 
     btn_contact: "Contact Us",
@@ -224,8 +245,27 @@ const translations = {
     srv3_desc:
       "Standardized training programs through internal LPK facilities to achieve world-class competency standards.",
 
-    net_tag: "EXPANSIVE REACH",
-    net_title: "Bridging Continents",
+    net_tag: "Placement Sector",
+    net_title: "Placement Sector",
+
+    sector1_title: "Plantation",
+    sector1_desc:
+      "Work in crop care, fertilization, and harvesting with organized systems supported by a professional working environment.",
+    sector2_title: "Factory",
+    sector2_desc:
+      "Roles include production operator, packing, product sorting, and quality control within a disciplined and structured work system.",
+    sector3_title: "Construction",
+    sector3_desc:
+      "Participate in building and construction projects such as buildings, infrastructure, and technical field work with professional standards.",
+    sector4_title: "Fisheries",
+    sector4_desc:
+      "Career opportunities in seafood processing, fish farming, and modern fisheries industries with high workforce demand.",
+    sector5_title: "Elderly Care",
+    sector5_desc:
+      "Provide assistance and care for seniors in daily activities with patience, attention, and compassion.",
+    sector6_title: "Domestic Worker",
+    sector6_desc:
+      "Support household needs such as cleaning, cooking, laundry, and childcare in a professional and responsible manner.",
 
     net_stat1: "PARTNER COUNTRIES",
     net_stat2: "GLOBAL CORPORATIONS",
@@ -292,6 +332,8 @@ const translations = {
     cont_add:
       "Jl. Raya Global No. 88, South Jakarta, Indonesia",
 
+    btn_whatsapp: "WHATSAPP SUPPORT",
+
     lbl_name: "FULL NAME",
     lbl_email: "EMAIL ADDRESS",
     lbl_msg: "MESSAGE",
@@ -314,8 +356,8 @@ const translations = {
     nav_home: "首頁",
     nav_about: "關於我們",
     nav_services: "專業服務",
-    nav_network: "全球網絡",
-    nav_lpk: "培訓中心",
+    nav_network: "安置業",
+    nav_lpk: "工作地點",
     nav_gallery: "活動紀錄",
 
     btn_contact: "聯絡我們",
@@ -381,9 +423,28 @@ const translations = {
     srv3_desc:
       "透過內部 LPK 培訓中心提供標準化課程，提升人才國際競爭力。",
 
-    net_tag: "全球布局",
+    net_tag: "安置產業",
 
-    net_title: "連結全球工作機會",
+    net_title: "工作安置產業",
+
+    sector1_title: "種植園",
+    sector1_desc:
+      "從事作物照護、施肥到採收等工作，採用有秩序的工作制度，並由專業工作環境支持。",
+    sector2_title: "工廠",
+    sector2_desc:
+      "工作內容包括生產操作、包裝、貨品分類與品質控管，具備紀律且結構化的工作制度。",
+    sector3_title: "建築工程",
+    sector3_desc:
+      "參與建築與工程專案，例如大樓、基礎設施及現場技術工作，並遵循專業工作標準。",
+    sector4_title: "漁業",
+    sector4_desc:
+      "提供水產品加工、養殖與現代漁業相關工作機會，產業具備高度人力需求。",
+    sector5_title: "養老照護",
+    sector5_desc:
+      "以耐心、關懷與責任感，協助長者日常生活並提供照護服務。",
+    sector6_title: "家庭幫傭",
+    sector6_desc:
+      "以專業且負責的態度協助清潔、烹飪、洗衣與照顧孩童等家庭需求。",
 
     net_stat1: "合作國家",
     net_stat2: "國際合作企業",
@@ -450,6 +511,8 @@ const translations = {
 
     cont_add:
       "Jl. Raya Global No. 88, Jakarta Selatan, Indonesia",
+
+    btn_whatsapp: "WHATSAPP 支援",
 
     lbl_name: "姓名",
     lbl_email: "電子郵件",
