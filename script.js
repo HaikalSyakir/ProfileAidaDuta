@@ -650,6 +650,58 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 300);
     });
   }
+
+  const navLinks = Array.from(
+    document.querySelectorAll('nav a[data-lang-key][href^="#"]')
+  );
+
+  function setActiveNavLink(activeLink) {
+    navLinks.forEach(link => {
+      link.classList.remove(
+        "text-[#f39a12]",
+        "border-b-2",
+        "border-[#f39a12]",
+        "pb-1"
+      );
+      link.classList.add("text-[#e9e2d0]/70");
+    });
+
+    if (activeLink) {
+      activeLink.classList.remove("text-[#e9e2d0]/70");
+      activeLink.classList.add(
+        "text-[#f39a12]",
+        "border-b-2",
+        "border-[#f39a12]",
+        "pb-1"
+      );
+    }
+  }
+
+  function updateActiveNav() {
+    const scrollPosition = window.scrollY + 160;
+    let activeLink = navLinks[0];
+
+    navLinks.forEach(link => {
+      const targetId = link.getAttribute("href");
+      const targetSection = document.querySelector(targetId);
+
+      if (targetSection && targetSection.offsetTop <= scrollPosition) {
+        activeLink = link;
+      }
+    });
+
+    setActiveNavLink(activeLink);
+  }
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", function () {
+      setActiveNavLink(link);
+    });
+  });
+
+  window.addEventListener("scroll", updateActiveNav, { passive: true });
+  window.addEventListener("resize", updateActiveNav);
+  updateActiveNav();
 });
 
 // 4. Refresh AOS saat navigasi
