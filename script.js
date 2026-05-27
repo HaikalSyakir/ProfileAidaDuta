@@ -19,7 +19,7 @@ const translations = {
     btn_explore: "JELAJAHI SOLUSI",
     btn_legacy: "WARISAN KAMI",
 
-    about_tag: "SIAPA KAMI",
+    about_tag: "TENTANG KAMI",
 
     about_title:
       "Meningkatkan Standar Global dalam Penempatan Profesional",
@@ -53,20 +53,38 @@ const translations = {
     mission_4:
       "Membangun kemitraan strategis dengan perusahaan pengguna tenaga kerja di luar negeri.",
 
-    srv_tag: "KEAHLIAN KAMI",
+    org_tag: "TENTANG KAMI",
+    org_title: "Struktur Organisasi",
+    org_director: "Direktur Utama",
+    org_director_desc:
+      "Memimpin arah strategis perusahaan dan memastikan seluruh operasional berjalan sesuai visi, misi, serta standar profesional.",
+    org_ops: "Direktur Operasional",
+    org_ops_desc:
+      "Mengkoordinasikan proses rekrutmen, pelatihan, penempatan, dan administrasi agar layanan berjalan terintegrasi.",
+    org_recruitment: "Manajer Rekrutmen",
+    org_recruitment_desc:
+      "Menangani seleksi, verifikasi, dan kesiapan calon pekerja migran.",
+    org_training: "Manajer Pelatihan",
+    org_training_desc:
+      "Mengelola program peningkatan kompetensi, bahasa, dan adaptasi budaya kerja.",
+    org_admin: "Manajer Administrasi",
+    org_admin_desc:
+      "Mengatur dokumen, perizinan, dan kebutuhan administrasi keberangkatan tenaga kerja.",
+
+    srv_tag: "LAYANAN KAMI",
     srv_title: "Layanan Profesional Komprehensif",
 
-    srv1_title: "Perekrutan Global",
+    srv1_title: "Rekrutmen dan seleksi calon pekerja Migran",
     srv1_desc:
-      "Penyaringan strategis talenta Indonesia berkualitas tinggi untuk kebutuhan pasar internasional.",
+      "Proses screening dan penempatan tenaga kerja yang terstandarisasi guna memastikan kecocokan kompetensi antara calon karyawan dan perusahaan.",
 
-    srv2_title: "Penempatan Kerja",
+    srv2_title: "Pelatihan dan Peningkatan Keterampilan",
     srv2_desc:
-      "Menghubungkan keahlian pekerja dengan permintaan industri global seperti perhotelan, kesehatan, dan teknik.",
+      "Program pelatihan yang dirancang untuk meningkatkan kompetensi dan kemampuan teknis, soft skill, serta adaptasi budaya kerja.",
 
-    srv3_title: "Pelatihan Kompetensi",
+    srv3_title: "Pengurusan Dokumen dan Perizinan Keberangkatan Tenaga Kerja",
     srv3_desc:
-      "Program pelatihan terstandarisasi melalui fasilitas LPK internal untuk mencapai standar kompetensi dunia.",
+      "Bimbingan lengkap mulai dari persiapan dokumen, legalisasi, hingga proses pengurusan visa dan izin kerja sesuai peraturan imigrasi yang berlaku.",
 
     net_tag: "Sektor Penempatan",
     net_title: "SEKTOR PENEMPATAN",
@@ -227,6 +245,25 @@ const translations = {
 
     mission_4:
       "Building strategic partnerships with companies using labor abroad.",
+
+    org_tag: "ABOUT US",
+    org_title: "Organizational Structure",
+    org_director: "President Director",
+    org_director_desc:
+      "Leads the company's strategic direction and ensures all operations align with the vision, mission, and professional standards.",
+    org_ops: "Operations Director",
+    org_ops_desc:
+      "Coordinates recruitment, training, placement, and administration so services run in an integrated way.",
+    org_recruitment: "Recruitment Manager",
+    org_recruitment_desc:
+      "Handles selection, verification, and readiness of prospective migrant workers.",
+    org_training: "Training Manager",
+    org_training_desc:
+      "Manages competency, language, and workplace culture adaptation programs.",
+    org_admin: "Administration Manager",
+    org_admin_desc:
+      "Manages documents, permits, and administrative needs for worker departure.",
+
     srv_tag: "OUR EXPERTISE",
     srv_title: "Comprehensive Professional Services",
 
@@ -403,6 +440,24 @@ const translations = {
 
     mission_4:
       "與使用海外勞動力的公司建立策略夥伴關係。",
+
+    org_tag: "About Us",
+    org_title: "Organizational Structure",
+    org_director: "President Director",
+    org_director_desc:
+      "Leads the company's strategic direction and ensures all operations align with the vision, mission, and professional standards.",
+    org_ops: "Operations Director",
+    org_ops_desc:
+      "Coordinates recruitment, training, placement, and administration so services run in an integrated way.",
+    org_recruitment: "Recruitment Manager",
+    org_recruitment_desc:
+      "Handles selection, verification, and readiness of prospective migrant workers.",
+    org_training: "Training Manager",
+    org_training_desc:
+      "Manages competency, language, and workplace culture adaptation programs.",
+    org_admin: "Administration Manager",
+    org_admin_desc:
+      "Manages documents, permits, and administrative needs for worker departure.",
 
     srv_tag: "我們的專業",
 

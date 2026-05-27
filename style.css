@@ -18,13 +18,13 @@ h1, h2, h3, h4, .font-display {
   background: rgba(74, 4, 4, 0.25);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  border-top: 1px solid rgba(243, 154, 18, 0.2);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 /* Efek Berpendar Emas Mewah saat kursor diarahkan */
 .gold-glow:hover {
-  box-shadow: 0 0 35px rgba(212, 175, 55, 0.25);
+  box-shadow: 0 0 35px rgba(243, 154, 18, 0.25);
 }
 
 /* Aturan Animasi Berputar dan Berpendar */
