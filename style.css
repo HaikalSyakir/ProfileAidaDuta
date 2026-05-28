@@ -27,6 +27,131 @@ h1, h2, h3, h4, .font-display {
   box-shadow: 0 0 35px rgba(243, 154, 18, 0.25);
 }
 
+#network .gold-glow:focus,
+#network .gold-glow:focus-within {
+  outline: 1px solid rgba(243, 154, 18, 0.6);
+  outline-offset: 4px;
+}
+
+.placement-sector-card {
+  position: relative;
+  min-height: 390px;
+  background: #1c180b;
+  isolation: isolate;
+}
+
+.placement-sector-card::after {
+  content: "";
+  position: absolute;
+  inset: auto 1.5rem 1.5rem 1.5rem;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(243, 154, 18, 0), rgba(243, 154, 18, 0.65), rgba(243, 154, 18, 0));
+  opacity: 0;
+  transform: scaleX(0.4);
+  transition: opacity 350ms ease, transform 350ms ease;
+  z-index: 3;
+}
+
+.placement-sector-card:hover::after,
+.placement-sector-card:focus::after,
+.placement-sector-card:focus-within::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.placement-sector-card .sector-media {
+  position: absolute !important;
+  inset: 0;
+  height: 100%;
+}
+
+.sector-media img {
+  min-height: 100%;
+  filter: saturate(0.72) brightness(0.78);
+}
+
+.placement-sector-card:hover .sector-media img,
+.placement-sector-card:focus .sector-media img,
+.placement-sector-card:focus-within .sector-media img {
+  filter: saturate(1.05) brightness(0.9);
+}
+
+.sector-image-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(22, 19, 9, 0.16), rgba(22, 19, 9, 0.92)),
+    linear-gradient(120deg, rgba(49, 2, 2, 0.82), rgba(28, 24, 11, 0.18) 58%, rgba(243, 154, 18, 0.12));
+  transition: background 350ms ease;
+}
+
+.placement-sector-card:hover .sector-image-overlay,
+.placement-sector-card:focus .sector-image-overlay,
+.placement-sector-card:focus-within .sector-image-overlay {
+  background:
+    linear-gradient(180deg, rgba(22, 19, 9, 0.12), rgba(22, 19, 9, 0.96)),
+    linear-gradient(120deg, rgba(49, 2, 2, 0.9), rgba(28, 24, 11, 0.26) 48%, rgba(243, 154, 18, 0.2));
+}
+
+.sector-number {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid rgba(243, 154, 18, 0.36);
+  border-radius: 999px;
+  background: rgba(22, 19, 9, 0.68);
+  color: #f39a12;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.sector-content {
+  position: relative;
+  z-index: 2;
+  min-height: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(180deg, rgba(22, 19, 9, 0), rgba(22, 19, 9, 0.26));
+}
+
+.sector-title {
+  color: #ffffff;
+  line-height: 1.08;
+  margin-bottom: 0.65rem;
+  text-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+  transition: color 300ms ease, transform 300ms ease;
+}
+
+.placement-sector-card:hover .sector-title,
+.placement-sector-card:focus .sector-title,
+.placement-sector-card:focus-within .sector-title {
+  color: #f39a12;
+  transform: translateY(-0.2rem);
+}
+
+.sector-hover-desc {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(0.65rem);
+  overflow: hidden;
+  transition: max-height 420ms ease, opacity 300ms ease, transform 300ms ease, margin-top 300ms ease;
+}
+
+#network .group:hover .sector-hover-desc,
+#network .group:focus .sector-hover-desc,
+#network .group:focus-within .sector-hover-desc {
+  max-height: 10rem;
+  opacity: 1;
+  margin-top: 0.3rem;
+  transform: translateY(0);
+}
+
 /* Aturan Animasi Berputar dan Berpendar */
 @keyframes spin-slow {
   from { transform: rotate(0deg); }
@@ -58,4 +183,130 @@ h1, h2, h3, h4, .font-display {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+.country-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.country-card {
+  position: relative;
+  min-height: 320px;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(243, 154, 18, 0.16);
+  background: #1c180b;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+}
+
+.country-card-east {
+  grid-column: span 4;
+}
+
+.country-card-southeast {
+  grid-column: span 6;
+}
+
+.country-card-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.02);
+  filter: saturate(0.78) brightness(0.82);
+  transition: transform 700ms ease, filter 700ms ease;
+}
+
+.country-card:hover .country-card-image {
+  transform: scale(1.1);
+  filter: saturate(1.05) brightness(0.95);
+}
+
+.country-card-shade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(22, 19, 9, 0.12), rgba(22, 19, 9, 0.86)),
+    linear-gradient(90deg, rgba(49, 2, 2, 0.76), rgba(22, 19, 9, 0.22));
+}
+
+.country-card-content {
+  position: relative;
+  z-index: 1;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.75rem;
+}
+
+.country-pill {
+  width: fit-content;
+  border: 1px solid rgba(243, 154, 18, 0.36);
+  background: rgba(22, 19, 9, 0.72);
+  color: #f39a12;
+  border-radius: 999px;
+  padding: 0.45rem 0.8rem;
+  font-size: 0.68rem;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-weight: 700;
+}
+
+.country-watermark {
+  position: absolute;
+  right: 1rem;
+  top: 4.4rem;
+  max-width: calc(100% - 2rem);
+  color: rgba(233, 226, 208, 0.14);
+  font-size: clamp(2rem, 4.4vw, 4.35rem);
+  font-weight: 800;
+  line-height: 0.9;
+  text-transform: uppercase;
+  pointer-events: none;
+  overflow-wrap: anywhere;
+}
+
+.country-title {
+  color: #ffffff;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.9rem, 3vw, 3rem);
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+@media (max-width: 1024px) {
+  .country-card,
+  .country-card-east,
+  .country-card-southeast {
+    grid-column: span 6;
+  }
+}
+
+@media (max-width: 640px) {
+  .country-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .country-card,
+  .country-card-east,
+  .country-card-southeast {
+    grid-column: 1;
+    min-height: 300px;
+  }
+
+  .country-card-content {
+    min-height: 300px;
+    padding: 1.35rem;
+  }
+
+  .country-watermark {
+    top: 4rem;
+    right: 1rem;
+    font-size: 2.1rem;
+  }
 }

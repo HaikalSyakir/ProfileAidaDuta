@@ -126,21 +126,48 @@ const translations = {
     net_sub2_desc:
       "Memberikan panduan ahli, orientasi yang jelas, dan dukungan navigasi bagi individu untuk memasuki lanskap karir global dengan aman.",
 
-    lpk_hub_title: "Standar Internasional",
+    lpk_hub_title: "Negara Penempatan",
 
     lpk_hub_desc:
-      "Pusat pelatihan kompetensi dengan kurikulum adaptif industri global.",
+      "Jalur penempatan tenaga kerja ke negara mitra utama di Asia.",
 
-    lpk_tag: "PUSAT PELATIHAN PROFESIONAL",
+    lpk_tag: "NEGARA PENEMPATAN",
 
     lpk_title:
-      "LPK: Pembelajaran Lanjutan untuk Keunggulan Profesional",
+      "Tujuan Kerja Internasional",
 
     lpk_desc:
-      "Pusat pelatihan khusus kami dilengkapi dengan fasilitas modern yang dirancang untuk mensimulasikan lanskap lingkungan kerja internasional yang nyata. Kami fokus pada kefasihan bahasa, adaptasi budaya, dan penguasaan teknis.",
+      "Kami menyiapkan jalur penempatan ke negara mitra utama di Asia dengan proses yang terarah, transparan, dan sesuai kebutuhan sektor kerja.",
 
-    lpk_f1: "Sertifikasi Standar Internasional",
-    lpk_f2: "Instruktur Bahasa Profesional",
+    lpk_f1: "Pendampingan Dokumen",
+    lpk_f2: "Orientasi Negara Tujuan",
+    lpk_stat1: "Negara Tujuan",
+    lpk_stat2: "Asia Pasifik",
+    country1_region: "Asia Timur",
+    country1_watermark: "Hong Kong",
+    country1_title: "Hong Kong",
+    country1_desc:
+      "Peluang penempatan untuk sektor domestik, layanan, perawatan, dan kebutuhan rumah tangga profesional.",
+    country2_region: "Asia Timur",
+    country2_watermark: "Taiwan",
+    country2_title: "Taiwan",
+    country2_desc:
+      "Tujuan penempatan untuk manufaktur, pabrik, perawatan lansia, dan sektor pendukung industri.",
+    country3_region: "Asia Tenggara",
+    country3_watermark: "Singapore",
+    country3_title: "Singapore",
+    country3_desc:
+      "Penempatan tenaga kerja untuk domestik, hospitality, layanan umum, dan kebutuhan operasional perkotaan.",
+    country4_region: "Asia Tenggara",
+    country4_watermark: "Malaysia",
+    country4_title: "Malaysia",
+    country4_desc:
+      "Pilihan kerja untuk perkebunan, pabrik, konstruksi, perikanan, dan sektor layanan.",
+    country5_region: "Asia Timur",
+    country5_watermark: "Japan",
+    country5_title: "Japan",
+    country5_desc:
+      "Program penempatan untuk manufaktur, perawatan, pertanian, pengolahan makanan, dan industri teknis.",
 
     gal_tag: "DOKUMENTASI",
     gal_title: "Momen Keunggulan",
@@ -171,7 +198,7 @@ const translations = {
       "Hubungi tim kami untuk mengeksplorasi peluang karir internasional terpercaya atau bermitra untuk kebutuhan rekrutmen perusahaan Anda.",
 
     cont_add:
-      "Jl. Raya Global No. 88, Jakarta Selatan, Indonesia",
+      "Jl. Lkr. Bar. Kepanjen, Ngadilangkung, Kec. Kepanjen, Kabupaten Malang, Jawa Timur",
 
     btn_whatsapp: "DUKUNGAN WHATSAPP",
 
@@ -322,21 +349,48 @@ const translations = {
     net_sub2_desc:
       "Providing expert guidance, clear orientation, and navigational support for individuals to safely enter the global career landscape.",
 
-    lpk_hub_title: "International Standards",
+    lpk_hub_title: "Countries of Placement",
 
     lpk_hub_desc:
-      "Competency training center with adaptive global industry curriculum.",
+      "Worker placement pathways to key partner countries in Asia.",
 
-    lpk_tag: "PROFESSIONAL TRAINING CENTER",
+    lpk_tag: "COUNTRIES OF PLACEMENT",
 
     lpk_title:
-      "LPK: Advanced Learning for Professional Excellence",
+      "International Work Destinations",
 
     lpk_desc:
-      "Our specialized training center is equipped with modern facilities designed to simulate real international working environments. We focus on language fluency, cultural adaptation, and technical mastery.",
+      "We prepare placement pathways to key partner countries in Asia through a guided, transparent process aligned with sector needs.",
 
-    lpk_f1: "International Standard Certification",
-    lpk_f2: "Professional Language Instructors",
+    lpk_f1: "Document Assistance",
+    lpk_f2: "Destination Orientation",
+    lpk_stat1: "Destination Countries",
+    lpk_stat2: "Asia Pacific",
+    country1_region: "East Asia",
+    country1_watermark: "Hong Kong",
+    country1_title: "Hong Kong",
+    country1_desc:
+      "Placement opportunities for domestic work, services, care support, and professional household needs.",
+    country2_region: "East Asia",
+    country2_watermark: "Taiwan",
+    country2_title: "Taiwan",
+    country2_desc:
+      "Placement destination for manufacturing, factories, elderly care, and supporting industrial sectors.",
+    country3_region: "Southeast Asia",
+    country3_watermark: "Singapore",
+    country3_title: "Singapore",
+    country3_desc:
+      "Worker placement for domestic work, hospitality, public services, and urban operational needs.",
+    country4_region: "Southeast Asia",
+    country4_watermark: "Malaysia",
+    country4_title: "Malaysia",
+    country4_desc:
+      "Work options for plantations, factories, construction, fisheries, and service sectors.",
+    country5_region: "East Asia",
+    country5_watermark: "Japan",
+    country5_title: "Japan",
+    country5_desc:
+      "Placement programs for manufacturing, care work, agriculture, food processing, and technical industries.",
 
     gal_tag: "DOCUMENTATION",
     gal_title: "Moments of Excellence",
@@ -367,7 +421,7 @@ const translations = {
       "Contact our team to explore trusted international career opportunities or partner with us for your corporate recruitment needs.",
 
     cont_add:
-      "Jl. Raya Global No. 88, South Jakarta, Indonesia",
+      "Jl. Lkr. Bar. Kepanjen, Ngadilangkung, Kepanjen District, Malang Regency, East Java",
 
     btn_whatsapp: "WHATSAPP SUPPORT",
 
@@ -519,21 +573,48 @@ const translations = {
     net_sub2_desc:
       "提供完整培訓、文化適應與工作指導，協助人才安心進入海外職場。",
 
-    lpk_hub_title: "國際標準",
+    lpk_hub_title: "安置國家",
 
     lpk_hub_desc:
-      "符合國際產業需求的專業技能培訓中心。",
+      "通往亞洲主要合作國家的勞工安置管道。",
 
-    lpk_tag: "專業人才培訓中心",
+    lpk_tag: "安置國家",
 
     lpk_title:
-      "LPK：培育國際專業人才的培訓中心",
+      "國際工作目的地",
 
     lpk_desc:
-      "我們的培訓中心配備現代化設施，模擬真實海外工作環境，並著重於語言能力、文化適應與專業技能培養。",
+      "我們為亞洲主要合作國家準備安置管道，流程明確、透明，並符合各產業需求。",
 
-    lpk_f1: "國際標準專業認證",
-    lpk_f2: "專業語言培訓講師",
+    lpk_f1: "文件協助",
+    lpk_f2: "目的地說明",
+    lpk_stat1: "目的地國家",
+    lpk_stat2: "亞太地區",
+    country1_region: "東亞",
+    country1_watermark: "香港",
+    country1_title: "香港",
+    country1_desc:
+      "提供家庭工作、服務、照護支援與專業家務需求等安置機會。",
+    country2_region: "東亞",
+    country2_watermark: "台灣",
+    country2_title: "台灣",
+    country2_desc:
+      "適合製造業、工廠、長者照護與產業支援部門的工作安置。",
+    country3_region: "東南亞",
+    country3_watermark: "新加坡",
+    country3_title: "新加坡",
+    country3_desc:
+      "提供家庭工作、餐旅服務、公共服務與城市營運需求相關職位。",
+    country4_region: "東南亞",
+    country4_watermark: "馬來西亞",
+    country4_title: "馬來西亞",
+    country4_desc:
+      "涵蓋種植園、工廠、建築、漁業與服務業等工作選擇。",
+    country5_region: "東亞",
+    country5_watermark: "日本",
+    country5_title: "日本",
+    country5_desc:
+      "提供製造、照護、農業、食品加工與技術產業的安置計畫。",
 
     gal_tag: "精彩紀錄",
 
@@ -565,7 +646,7 @@ const translations = {
       "歡迎聯絡我們的專業團隊，了解更多可靠的海外工作機會與人才招募服務。",
 
     cont_add:
-      "Jl. Raya Global No. 88, Jakarta Selatan, Indonesia",
+      "Jl. Lkr. Bar. Kepanjen, Ngadilangkung, Kepanjen, Malang Regency, East Java",
 
     btn_whatsapp: "WHATSAPP 支援",
 
@@ -651,6 +732,44 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  const mobileMenuButton =
+    document.getElementById("mobile-menu-button");
+
+  const mobileMenu =
+    document.getElementById("mobile-menu");
+
+  function closeMobileMenu() {
+    if (!mobileMenu || !mobileMenuButton) return;
+
+    mobileMenu.classList.add("hidden");
+    mobileMenuButton.setAttribute("aria-expanded", "false");
+
+    const icon = mobileMenuButton.querySelector(".material-icons-outlined");
+    if (icon) {
+      icon.textContent = "menu";
+    }
+  }
+
+  if (mobileMenuButton && mobileMenu) {
+    mobileMenuButton.addEventListener("click", function () {
+      const isOpen = !mobileMenu.classList.contains("hidden");
+
+      mobileMenu.classList.toggle("hidden", isOpen);
+      mobileMenuButton.setAttribute("aria-expanded", String(!isOpen));
+
+      const icon = mobileMenuButton.querySelector(".material-icons-outlined");
+      if (icon) {
+        icon.textContent = isOpen ? "menu" : "close";
+      }
+    });
+
+    window.addEventListener("resize", function () {
+      if (window.innerWidth >= 768) {
+        closeMobileMenu();
+      }
+    });
+  }
+
   const navLinks = Array.from(
     document.querySelectorAll('nav a[data-lang-key][href^="#"]')
   );
@@ -696,6 +815,7 @@ document.addEventListener("DOMContentLoaded", function () {
   navLinks.forEach(link => {
     link.addEventListener("click", function () {
       setActiveNavLink(link);
+      closeMobileMenu();
     });
   });
 
