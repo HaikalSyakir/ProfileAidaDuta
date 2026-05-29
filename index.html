@@ -51,19 +51,19 @@
           <option value="zh">繁中</option>
         </select>
       </div>
-      <button id="mobile-menu-button" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded border border-[#f39a12]/30 text-[#f39a12] hover:bg-[#f39a12] hover:text-[#161309] transition-colors" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+      <button id="mobile-menu-button" class="mobile-menu-toggle md:hidden inline-flex items-center justify-center" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
         <span class="material-icons-outlined text-2xl">menu</span>
       </button>
     </div>
 
-    <div id="mobile-menu" class="hidden md:hidden absolute left-0 right-0 top-full bg-[#310202]/98 border-b border-[#f39a12]/20 shadow-2xl shadow-black/40 px-6 py-5">
-      <div class="flex flex-col gap-4">
-        <a data-lang-key="nav_home" class="text-xs uppercase tracking-widest text-[#f39a12] font-semibold transition-all" href="#home">Home</a>
-        <a data-lang-key="nav_about" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#f39a12] transition-all duration-300 font-semibold" href="#about">Tentang Kami</a>
-        <a data-lang-key="nav_services" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#f39a12] transition-all duration-300 font-semibold" href="#services">Layanan Kami</a>
-        <a data-lang-key="nav_network" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#f39a12] transition-all duration-300 font-semibold" href="#network">Sektor Penempatan</a>
-        <a data-lang-key="nav_lpk" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#f39a12] transition-all duration-300 font-semibold" href="#lpk">Negara Penempatan</a>
-        <a data-lang-key="nav_gallery" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#f39a12] transition-all duration-300 font-semibold" href="#gallery">Gallery</a>
+    <div id="mobile-menu" class="hidden md:hidden absolute left-0 right-0 top-full mobile-menu-panel px-6 py-5">
+      <div class="flex flex-col gap-3">
+        <a data-lang-key="nav_home" class="mobile-menu-link mobile-menu-link-active" href="#home">Home</a>
+        <a data-lang-key="nav_about" class="mobile-menu-link" href="#about">Tentang Kami</a>
+        <a data-lang-key="nav_services" class="mobile-menu-link" href="#services">Layanan Kami</a>
+        <a data-lang-key="nav_network" class="mobile-menu-link" href="#network">Sektor Penempatan</a>
+        <a data-lang-key="nav_lpk" class="mobile-menu-link" href="#lpk">Negara Penempatan</a>
+        <a data-lang-key="nav_gallery" class="mobile-menu-link" href="#gallery">Gallery</a>
       </div>
     </div>
   </nav>
@@ -174,7 +174,7 @@
         <div class="hidden md:block h-12 w-px bg-[#f39a12]/30"></div>
         <div class="hidden md:block w-full max-w-3xl h-px bg-[#f39a12]/30"></div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full mt-12">
+        <div class="org-grid grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 w-full mt-12">
           <div class="glass-card p-8 text-center rounded-lg border border-[#f39a12]/10 gold-glow" data-aos="fade-up" data-aos-delay="100">
             <span class="material-icons-outlined text-[#f39a12] text-4xl mb-4">groups</span>
             <h4 data-lang-key="org_recruitment" class="text-xl text-[#f39a12] font-display font-bold mb-3">Manajer Rekrutmen</h4>
@@ -200,7 +200,7 @@
       <span data-lang-key="srv_tag" class="text-xs uppercase text-[#f39a12] tracking-widest mb-4 block font-bold">LAYANAN KAMI</span>
       <h2 data-lang-key="srv_title" class="text-3xl md:text-5xl text-[#e9e2d0] font-display font-bold">Layanan Kami</h2>
     </div>
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="service-grid max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
       <div class="glass-card overflow-hidden border border-[#f39a12]/10 hover:border-[#f39a12]/50 transition-all duration-500 rounded-lg group gold-glow" data-aos="zoom-in-up" data-aos-delay="100">
         <div class="h-64 overflow-hidden relative">
           <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/service/fae5837b-9c97-4053-91b1-62c98c662512.png" alt="Rekrutmen dan seleksi calon pekerja migran." class="w-full h-full object-cover object-center grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
@@ -240,7 +240,7 @@
       <h2 data-lang-key="net_title" class="text-3xl md:text-5xl text-[#e9e2d0] font-display font-bold">Sektor Penempatan Kerja</h2>
     </div>
 
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="sector-grid max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
       
       <div class="glass-card placement-sector-card overflow-hidden border border-[#f39a12]/10 hover:border-[#f39a12]/50 transition-all duration-500 rounded-lg group gold-glow" data-aos="fade-up" data-aos-delay="100" tabindex="0">
         <div class="sector-media overflow-hidden relative">
@@ -408,7 +408,7 @@
       <h2 data-lang-key="gal_title" class="text-3xl md:text-5xl text-[#e9e2d0] font-display font-bold">Moments of Excellence</h2>
     </div>
     
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+    <div class="gallery-grid grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
       <div class="glass-card p-0 rounded-lg min-h-[260px] flex flex-col justify-between overflow-hidden hover:border-[#f39a12]/60 border border-[#f39a12]/10 transition-all duration-500 group relative" data-aos="fade-up" data-aos-delay="100">
         <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuArq-dpzJLVA2n6-qjhNl1E3QOMhW8VhQR0gaRjgkbBu97PZEODTzOrTabO5cCheSbKU9Dfvp9ZTYuhzX1c0q1xtVhXaYrzxviXXTvkL9rJCMBvtLgtkahPmze5oenhDWznvGOz61mf0rOk8hmxJ76yg-EA-12zT5FexuZN4xvvV5KzDuQNXUr1t2BkIgQKbVFjEKGx6x5qP89V9YIyqw54ECwoBc4fQngrHZu2ZLdr4oNND1IBh04-BPd5n7AVXE6eKpTjCzdDCf8" alt="Kelas Diklat LPK" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 group-hover:scale-105 transition-all duration-700 z-0">
         <div class="p-8 relative z-10 flex flex-col justify-between h-full bg-gradient-to-t from-[#161309] via-[#161309]/40 to-transparent">
@@ -489,7 +489,7 @@
 
   <footer class="w-full px-6 md:px-24 py-12 flex flex-col md:flex-row justify-between items-center gap-6 bg-[#310202]/95 border-t border-[#f39a12]/10">
     <div class="text-center md:text-left">
-      <div class="text-2xl text-[#f39a12] mb-2 font-bold font-display italic">Aida Duta</div>
+      <div class="text-2xl text-[#f39a12] mb-2 font-bold font-display italic"> PT Aida Duta Indonesia Sejahtera</div>
       <p data-lang-key="foot_copy" class="text-xs text-[#e9e2d0]/50">© 2026 PT Aida Duta Indonesia Sejahtera. All Rights Reserved.</p>
     </div>
     <div class="flex gap-6 text-xs">

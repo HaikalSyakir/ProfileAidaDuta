@@ -775,25 +775,39 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   function setActiveNavLink(activeLink) {
+    const activeHref = activeLink ? activeLink.getAttribute("href") : null;
+
     navLinks.forEach(link => {
+      const isMobileLink = link.classList.contains("mobile-menu-link");
+      const isActiveLink = activeHref && link.getAttribute("href") === activeHref;
+
       link.classList.remove(
         "text-[#f39a12]",
         "border-b-2",
         "border-[#f39a12]",
-        "pb-1"
+        "pb-1",
+        "mobile-menu-link-active"
       );
-      link.classList.add("text-[#e9e2d0]/70");
-    });
 
-    if (activeLink) {
-      activeLink.classList.remove("text-[#e9e2d0]/70");
-      activeLink.classList.add(
-        "text-[#f39a12]",
-        "border-b-2",
-        "border-[#f39a12]",
-        "pb-1"
-      );
-    }
+      if (isMobileLink) {
+        if (isActiveLink) {
+          link.classList.add("mobile-menu-link-active");
+        }
+        return;
+      }
+
+      link.classList.toggle("text-[#e9e2d0]/70", !isActiveLink);
+
+      if (isActiveLink) {
+        link.classList.remove("text-[#e9e2d0]/70");
+        link.classList.add(
+          "text-[#f39a12]",
+          "border-b-2",
+          "border-[#f39a12]",
+          "pb-1"
+        );
+      }
+    });
   }
 
   function updateActiveNav() {

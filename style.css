@@ -27,6 +27,108 @@ h1, h2, h3, h4, .font-display {
   box-shadow: 0 0 35px rgba(243, 154, 18, 0.25);
 }
 
+.mobile-menu-toggle {
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid rgba(243, 154, 18, 0.48);
+  border-radius: 0.45rem;
+  background:
+    linear-gradient(145deg, rgba(74, 4, 4, 0.98), rgba(35, 2, 1, 0.98));
+  color: #f39a12;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 232, 176, 0.14),
+    0 10px 24px rgba(0, 0, 0, 0.32);
+  transition: background 220ms ease, border-color 220ms ease, color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
+}
+
+.mobile-menu-toggle:hover,
+.mobile-menu-toggle:focus {
+  border-color: rgba(255, 204, 124, 0.78);
+  background:
+    linear-gradient(145deg, rgba(243, 154, 18, 0.18), rgba(74, 4, 4, 0.98));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 232, 176, 0.2),
+    0 0 0 3px rgba(243, 154, 18, 0.1),
+    0 14px 28px rgba(0, 0, 0, 0.4);
+  outline: none;
+  transform: translateY(-1px);
+}
+
+.mobile-menu-panel {
+  background:
+    linear-gradient(180deg, #350303 0%, #230201 56%, #171006 100%);
+  border-top: 1px solid rgba(243, 154, 18, 0.28);
+  border-bottom: 1px solid rgba(243, 154, 18, 0.55);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.72);
+}
+
+.mobile-menu-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 3.1rem;
+  padding: 0.9rem 0.25rem 0.9rem 1.35rem;
+  border-bottom: 1px solid rgba(243, 154, 18, 0.14);
+  color: #efe5cf;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  transition: color 220ms ease, letter-spacing 220ms ease, transform 220ms ease;
+}
+
+.mobile-menu-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 999px;
+  background: rgba(243, 154, 18, 0.38);
+  transform: translateY(-50%);
+  transition: background-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
+}
+
+.mobile-menu-link::after {
+  content: "";
+  position: absolute;
+  left: 1.35rem;
+  right: 0;
+  bottom: -1px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(243, 154, 18, 0.55), rgba(243, 154, 18, 0));
+  opacity: 0;
+  transform: scaleX(0.35);
+  transform-origin: left;
+  transition: opacity 220ms ease, transform 220ms ease;
+}
+
+.mobile-menu-link:hover,
+.mobile-menu-link:focus,
+.mobile-menu-link-active {
+  color: #f39a12;
+  outline: none;
+  letter-spacing: 0.18em;
+  transform: translateX(0.25rem);
+}
+
+.mobile-menu-link:hover::before,
+.mobile-menu-link:focus::before,
+.mobile-menu-link-active::before {
+  background: #f39a12;
+  box-shadow: 0 0 16px rgba(243, 154, 18, 0.55);
+  transform: translateY(-50%) scale(1.18);
+}
+
+.mobile-menu-link:hover::after,
+.mobile-menu-link:focus::after,
+.mobile-menu-link-active::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
 #network .gold-glow:focus,
 #network .gold-glow:focus-within {
   outline: 1px solid rgba(243, 154, 18, 0.6);
@@ -150,6 +252,140 @@ h1, h2, h3, h4, .font-display {
   opacity: 1;
   margin-top: 0.3rem;
   transform: translateY(0);
+}
+
+@media (max-width: 640px) {
+  #services,
+  #network,
+  #lpk,
+  #gallery {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #network {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #services .text-center,
+  #network .text-center,
+  #lpk .text-center,
+  #gallery .mb-16 {
+    margin-bottom: 2.5rem;
+  }
+
+  .org-grid {
+    gap: 1rem;
+  }
+
+  .org-grid .glass-card {
+    padding: 1rem !important;
+    min-height: 180px;
+  }
+
+  .org-grid .material-icons-outlined {
+    margin-bottom: 0.75rem !important;
+    font-size: 2rem !important;
+  }
+
+  .org-grid h4 {
+    font-size: clamp(0.95rem, 3.4vw, 1.15rem) !important;
+    line-height: 1.15;
+  }
+
+  .org-grid p {
+    font-size: 0.72rem !important;
+    line-height: 1.45;
+  }
+
+  #services .service-grid {
+    gap: 1rem;
+  }
+
+  #services .service-grid .glass-card {
+    border-radius: 0.75rem;
+  }
+
+  #services .service-grid .h-64 {
+    height: 8.75rem;
+  }
+
+  #services .service-grid .p-8 {
+    padding: 1rem !important;
+  }
+
+  #services .service-grid h4 {
+    margin-bottom: 0;
+    font-size: clamp(0.85rem, 3.2vw, 1rem) !important;
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+  }
+
+  #services .service-grid p {
+    display: none;
+  }
+
+  #network .sector-grid {
+    gap: 1rem;
+  }
+
+  .placement-sector-card {
+    min-height: 220px;
+    border-radius: 0.75rem;
+  }
+
+  .placement-sector-card::after {
+    inset: auto 0.9rem 0.9rem 0.9rem;
+  }
+
+  .sector-number {
+    display: none;
+  }
+
+  .sector-content {
+    min-height: 220px;
+    padding: 1rem !important;
+    background: linear-gradient(180deg, rgba(22, 19, 9, 0.02), rgba(0, 0, 0, 0.9));
+  }
+
+  .sector-title {
+    max-width: 100%;
+    margin-bottom: 0;
+    font-size: clamp(0.8rem, 3.15vw, 1rem) !important;
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+  }
+
+  .sector-hover-desc {
+    display: none;
+  }
+
+  #gallery .gallery-grid {
+    gap: 1rem;
+  }
+
+  #gallery .gallery-grid .glass-card {
+    min-height: 220px;
+    border-radius: 0.75rem;
+  }
+
+  #gallery .gallery-grid .p-8 {
+    padding: 1rem !important;
+  }
+
+  #gallery .gallery-grid .material-icons-outlined {
+    font-size: 1.75rem !important;
+  }
+
+  #gallery .gallery-grid h4 {
+    font-size: clamp(0.85rem, 3.2vw, 1rem) !important;
+    line-height: 1.15;
+  }
+
+  #gallery .gallery-grid p {
+    display: none;
+  }
 }
 
 /* Aturan Animasi Berputar dan Berpendar */
@@ -289,24 +525,35 @@ h1, h2, h3, h4, .font-display {
 
 @media (max-width: 640px) {
   .country-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
   }
 
   .country-card,
   .country-card-east,
   .country-card-southeast {
-    grid-column: 1;
-    min-height: 300px;
+    grid-column: span 1;
+    min-height: 220px;
+    border-radius: 0.75rem;
   }
 
   .country-card-content {
-    min-height: 300px;
-    padding: 1.35rem;
+    min-height: 220px;
+    padding: 1rem;
+  }
+
+  .country-pill {
+    padding: 0.38rem 0.55rem;
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
   }
 
   .country-watermark {
-    top: 4rem;
-    right: 1rem;
-    font-size: 2.1rem;
+    display: none;
+  }
+
+  .country-title {
+    font-size: clamp(1.1rem, 5vw, 1.45rem);
+    line-height: 1.1;
   }
 }
