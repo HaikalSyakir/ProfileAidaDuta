@@ -16,7 +16,7 @@ const translations = {
     hero_desc:
       "Membangun Masa Depan dengan Integritas dan Jangkauan Global. Menghubungkan Tenaga Kerja Indonesia dengan Peluang Internasional Terbaik.",
 
-    btn_explore: "JELAJAHI SOLUSI",
+    btn_explore: "HUBUNGI KAMI",
     btn_legacy: "WARISAN KAMI",
 
     about_tag: "TENTANG KAMI",
@@ -235,7 +235,7 @@ const translations = {
     hero_desc:
       "Building the Future with Integrity and Global Reach. Connecting Indonesian Talents with Top International Opportunities.",
 
-    btn_explore: "EXPLORE SOLUTIONS",
+    btn_explore: "CONTACT US",
     btn_legacy: "OUR LEGACY",
 
     about_tag: "WHO WE ARE",
@@ -458,7 +458,7 @@ const translations = {
     hero_desc:
       "以誠信與全球視野開創未來，致力於連結印尼優秀人才與國際工作發展機會。",
 
-    btn_explore: "探索服務",
+    btn_explore: "聯絡我們",
     btn_legacy: "品牌歷程",
 
     about_tag: "關於我們",
