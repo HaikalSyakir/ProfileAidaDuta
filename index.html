@@ -1,504 +1,251 @@
 <!DOCTYPE html>
-<html class="dark" lang="id">
+<html lang="id">
 <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>PT Aida Duta Indonesia Sejahtera - Company Profile</title>
-  
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PT Aida Duta Indonesia Sejahtera - International Manpower Placement Agency.">
+  <title>PT Aida Duta Indonesia Sejahtera</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght=0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
-  
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
-  
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <style>
-    body { font-family: 'Montserrat', sans-serif; }
-    .font-display { font-family: 'Playfair Display', serif; }
-    .text-gold-gradient {
-      background: linear-gradient(to right, #ffe8b0, #f39a12, #c97905);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  </style>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-[#161309] text-[#e9e2d0] overflow-x-hidden antialiased">
-
-  <nav class="fixed top-0 w-full z-50 flex justify-between items-center gap-6 px-6 md:px-16 xl:px-24 py-4 bg-[#310202]/95 backdrop-blur-xl border-b border-[#f39a12]/20 transition-all duration-300 shadow-xl shadow-black/30">
-    <a href="#home" class="flex items-center gap-3 shrink-0" aria-label="PT Aida Duta">
-      <img src="logo.png.png" alt="PT Aida Duta" class="h-12 md:h-14 w-auto object-contain">
-      <span class="text-2xl md:text-3xl text-[#f39a12] tracking-tighter font-bold font-display italic">PT Aida Duta</span>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#home" aria-label="PT Aida Duta Indonesia Sejahtera">
+      <img src="assets/images/logo.png.png" alt="PT Aida Duta Indonesia Sejahtera logo">
+      <span>PT Aida Duta</span>
     </a>
-    
-    <div class="hidden md:flex flex-1 justify-center gap-5 lg:gap-7 xl:gap-8">
-      <a data-lang-key="nav_home" class="text-xs uppercase tracking-widest text-[#f39a12] border-b-2 border-[#f39a12] pb-1 font-semibold transition-all" href="#home">Home</a>
-      <a data-lang-key="nav_about" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#f39a12] hover:tracking-widest transition-all duration-300 font-semibold" href="#about">Tentang Kami</a>
-      <a data-lang-key="nav_services" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#f39a12] hover:tracking-widest transition-all duration-300 font-semibold" href="#services">Layanan Kami</a>
-      <a data-lang-key="nav_network" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#f39a12] hover:tracking-widest transition-all duration-300 font-semibold" href="#network">Sektor Penempatan</a>
-      <a data-lang-key="nav_lpk" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#f39a12] hover:tracking-widest transition-all duration-300 font-semibold" href="#lpk">Negara Penempatan</a>
-      <a data-lang-key="nav_gallery" class="text-xs uppercase tracking-widest text-[#e9e2d0]/70 hover:text-[#f39a12] hover:tracking-widest transition-all duration-300 font-semibold" href="#gallery">Gallery</a>
-    </div>
 
-    <div class="flex items-center gap-4 shrink-0">
-      <div class="relative inline-block text-left">
-        <select id="lang-selector" class="bg-[#4a0404] text-[#f39a12] border border-[#f39a12]/30 text-xs uppercase tracking-wider px-3 py-2 rounded shadow-md focus:outline-none cursor-pointer font-semibold">
-          <option value="id">ID</option>
-          <option value="en">EN</option>
-          <option value="zh">繁中</option>
-        </select>
-      </div>
-      <button id="mobile-menu-button" class="mobile-menu-toggle md:hidden inline-flex items-center justify-center" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
-        <span class="material-icons-outlined text-2xl">menu</span>
+    <nav class="nav-links" id="nav-links" aria-label="Primary navigation">
+      <a href="#home" data-i18n="nav_home">Home</a>
+      <a href="#about" data-i18n="nav_about">Tentang Kami</a>
+      <a href="#services" data-i18n="nav_services">Layanan Kami</a>
+      <a href="#sectors" data-i18n="nav_sectors">Sektor Penempatan</a>
+      <a href="#countries" data-i18n="nav_countries">Negara Penempatan</a>
+      <a href="#gallery" data-i18n="nav_gallery">Gallery</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <label class="sr-only" for="language-select">Language</label>
+      <select id="language-select" class="language-select" aria-label="Language">
+        <option value="id">Bahasa Indonesia</option>
+        <option value="en">English</option>
+        <option value="zh-tw">繁體中文</option>
+      </select>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
       </button>
     </div>
+  </header>
 
-    <div id="mobile-menu" class="hidden md:hidden absolute left-0 right-0 top-full mobile-menu-panel px-6 py-5">
-      <div class="flex flex-col gap-3">
-        <a data-lang-key="nav_home" class="mobile-menu-link mobile-menu-link-active" href="#home">Home</a>
-        <a data-lang-key="nav_about" class="mobile-menu-link" href="#about">Tentang Kami</a>
-        <a data-lang-key="nav_services" class="mobile-menu-link" href="#services">Layanan Kami</a>
-        <a data-lang-key="nav_network" class="mobile-menu-link" href="#network">Sektor Penempatan</a>
-        <a data-lang-key="nav_lpk" class="mobile-menu-link" href="#lpk">Negara Penempatan</a>
-        <a data-lang-key="nav_gallery" class="mobile-menu-link" href="#gallery">Gallery</a>
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-media" aria-hidden="true">
+        <img src="assets/images/background.png" alt="">
+        <div class="hero-orbit"></div>
       </div>
-    </div>
-  </nav>
-
-  <section class="relative min-h-screen flex flex-col items-center justify-center pt-24 overflow-hidden" id="home">
-    <div class="absolute inset-0 z-0">
-      <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/banner/76e5ff41-33fc-478b-94b0-03c1dea3b926.png" alt="Batik Background" class="w-full h-full object-cover opacity-15 scale-105 animate-pulse-slow">
-      <div class="absolute inset-0 bg-gradient-to-b from-[#161309]/10 via-[#161309]/10 to-[#161309]"></div>
-    </div>
-    <div class="absolute inset-0 opacity-20 z-0 flex items-center justify-center pointer-events-none">
-      <div class="w-[650px] h-[650px] rounded-full border border-[#f39a12]/20 animate-spin-slow"></div>
-    </div>
-
-    <div class="relative z-10 text-center px-6 md:px-0">
-      <span data-lang-key="hero_tag" class="text-xs uppercase text-[#f39a12] tracking-[0.5em] mb-6 block font-bold" data-aos="fade-down" data-aos-duration="1200">INTEGRITAS TERPERCAYA</span>
-      <h1 class="text-4xl md:text-7xl text-[#e9e2d0] mb-8 max-w-5xl mx-auto leading-tight font-display font-bold tracking-tight" data-aos="zoom-in-up" data-aos-duration="1400" data-aos-delay="200">
-        PT <span class="text-gold-gradient">Aida Duta</span> Indonesia Sejahtera
-      </h1>
-      <p data-lang-key="hero_desc" class="text-base md:text-xl text-[#e9e2d0]/80 max-w-3xl mx-auto mb-12 leading-relaxed font-light" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="400">
-        Membangun Masa Depan dengan Integritas dan Jangkauan Global. Menghubungkan Tenaga Kerja Indonesia dengan Peluang Internasional Terbaik.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-6 justify-center items-center" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="600">
-        <button data-lang-key="btn_explore" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" class="bg-[#f39a12] text-[#161309] text-xs uppercase tracking-widest px-10 py-4 hover:bg-white hover:scale-105 transition-all duration-300 font-bold shadow-lg shadow-[#f39a12]/20">HUBUNGI KAMI</button>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-24 px-6 md:px-24 bg-[#161309]" id="about">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-      <div data-aos="fade-right" data-aos-duration="1200">
-        <span data-lang-key="about_tag" class="text-xs uppercase text-[#f39a12] tracking-widest mb-4 block font-bold">TENTANG KAMI</span>
-        <h2 data-lang-key="about_title" class="text-3xl md:text-5xl text-[#e9e2d0] mb-8 leading-tight font-display font-bold">Meningkatkan Standar Global dalam Penempatan Profesional</h2>
-        <p data-lang-key="about_p1" class="text-base md:text-lg text-[#e9e2d0]/70 mb-6 leading-relaxed font-light">
-          PT Aida Duta Indonesia Sejahtera adalah agen perekrutan dan penempatan tenaga kerja internasional terkemuka yang didedikasikan untuk menjembatani talenta terbaik Indonesia dengan peluang global.
-        </p>
-        <p data-lang-key="about_p2" class="text-base md:text-lg text-[#e9e2d0]/70 leading-relaxed font-light">
-          Fondasi kami dibangun di atas integritas mutlak, memastikan bahwa setiap profesional yang kami tempatkan dan setiap mitra yang kami layani mendapatkan standar keunggulan terbaik yang melampaui batas negara.
-        </p>
-      </div>
-      
-      <div class="relative h-[450px] glass-card p-0 overflow-hidden rounded-lg border border-[#f39a12]/20 group" data-aos="fade-left" data-aos-duration="1200">
-        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbesjk83sycbpoIHwzfDnXIgkEKt_LeJAE8_1Kml-ujyJ5fIC9-hT8brBrXAobNL6XXCendeb82vU2I7x_8w7usX0ns4lxZFypejUUwmBVwQSZxXZA2B8tMzjd2sPBOij71jRiGudTS7tuvPvSdYyvDOs23yXrmt-Ejk0LTrphS3oUO1n7xlfpVSHMBtOeWMYED2lvDiXhi092GBtzKC0xDXZ6XIP505sFnp48uQB1erEFbqVp47pMeCemfrTzYyP7rsXjdyWK_ks" alt="Corporate Skyscraper" class="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
-        <div class="absolute inset-0 bg-gradient-to-t from-[#161309] via-transparent to-transparent opacity-90 flex flex-col justify-end p-8 text-left">
-          <span class="material-icons-outlined text-[#f39a12] text-4xl mb-2">corporate_fare</span>
-          <h4 data-lang-key="about_hub_title" class="text-2xl text-[#f39a12] mb-1 font-display font-bold">Global Operations Hub</h4>
-          <p data-lang-key="about_hub_desc" class="text-[#e9e2d0]/70 text-sm">PT Aida Duta Indonesia Sejahtera - Pelayanan Berstandar Internasional.</p>
+      <div class="hero-content">
+        <p class="eyebrow reveal" data-i18n="hero_tag">Integritas Terpercaya</p>
+        <h1 class="hero-title reveal">
+          <span data-i18n="hero_title_a">Menghubungkan Talenta Indonesia</span>
+          <span class="gold" data-i18n="hero_title_b">dengan Peluang Global</span>
+        </h1>
+        <p class="hero-copy reveal" data-i18n="hero_desc">Membangun masa depan dengan integritas dan jangkauan global melalui penempatan tenaga kerja Indonesia ke peluang internasional terbaik.</p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="#contact" data-i18n="btn_contact">Hubungi Kami</a>
+          <a class="btn btn-ghost" href="#services" data-i18n="btn_services">Lihat Layanan</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="py-24 px-6 md:px-24 bg-[#1c180b] border-t border-b border-[#f39a12]/10">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
-      <div class="glass-card p-12 gold-glow transition-all duration-500 rounded-lg" data-aos="fade-up" data-aos-duration="1000">
-        <span class="material-icons-outlined text-[#f39a12] text-5xl mb-8">visibility</span>
-        <h3 data-lang-key="vision_title" class="text-3xl text-[#e9e2d0] mb-6 font-display font-bold">Visi Kami</h3>
-        <p data-lang-key="vision_desc" class="text-base md:text-lg text-[#e9e2d0]/70 leading-relaxed font-light">
-          Menjadi pemimpin global dalam solusi sumber daya manusia profesional, diakui karena standar etika kami yang teguh dan kemampuan kami untuk memberdayakan generasi profesional Indonesia berikutnya di panggung dunia.
-        </p>
+      <div class="hero-stats reveal" aria-label="Company highlights">
+        <div><strong class="counter" data-count="5">0</strong><span data-i18n="stat_countries">Negara Tujuan</span></div>
+        <div><strong class="counter" data-count="6">0</strong><span data-i18n="stat_sectors">Sektor Kerja</span></div>
+        <div><strong class="counter" data-count="24">0</strong><span data-i18n="stat_support">Pendampingan</span></div>
       </div>
-      <div class="glass-card p-12 gold-glow transition-all duration-500 rounded-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-        <span class="material-icons-outlined text-[#f39a12] text-5xl mb-8">rocket_launch</span>
-        <h3 data-lang-key="mission_title" class="text-3xl text-[#e9e2d0] mb-6 font-display font-bold">Misi Kami</h3>
-        <ul class="space-y-6">
-          <li class="flex gap-4 items-start" data-aos="fade-left" data-aos-delay="300">
-            <span class="text-[#f39a12] font-bold text-lg">01</span>
-            <p data-lang-key="mission_1" class="text-[#e9e2d0]/70 leading-relaxed font-light">Menyediakan layanan penempatan pekerja migran yang aman, transparan, dan sesuai dengan peraturan yang berlaku.</p>
-          </li>
-          <li class="flex gap-4 items-start" data-aos="fade-left" data-aos-delay="400">
-            <span class="text-[#f39a12] font-bold text-lg">02</span>
-            <p data-lang-key="mission_2" class="text-[#e9e2d0]/70 leading-relaxed font-light">Meningkatkan kompetensi tenaga kerja melalui pelatihan yang berkualitas sebelum diberangkatkan.</p>
-          </li>
-          <li class="flex gap-4 items-start" data-aos="fade-left" data-aos-delay="500">
-            <span class="text-[#f39a12] font-bold text-lg">03</span>
-            <p data-lang-key="mission_3" class="text-[#e9e2d0]/70 leading-relaxed font-light">Memberikan perlindungan dan pendampingan kepada pekerja migran sebelum, selama, dan setelah bekerja di luar negeri.</p>
-          </li>
-          <li class="flex gap-4 items-start" data-aos="fade-left" data-aos-delay="500">
-            <span class="text-[#f39a12] font-bold text-lg">04</span>
-            <p data-lang-key="mission_4" class="text-[#e9e2d0]/70 leading-relaxed font-light">Membangun kemitraan strategis dengan perusahaan pengguna tenaga kerja di luar negeri.</p>
-          </li>
-        </ul>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="about_tag">Tentang Kami</p>
+        <h2 data-i18n="about_title">Meningkatkan Standar Global dalam Penempatan Profesional</h2>
       </div>
-    </div>
-  </section>
-
-  <section class="py-24 px-6 md:px-24 bg-[#161309] border-b border-[#f39a12]/10">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-16" data-aos="fade-up" data-aos-duration="1000">
-        <span data-lang-key="org_tag" class="text-xs uppercase text-[#f39a12] tracking-widest mb-4 block font-bold">TENTANG KAMI</span>
-        <h2 data-lang-key="org_title" class="text-3xl md:text-5xl text-[#e9e2d0] font-display font-bold">Struktur Organisasi</h2>
-      </div>
-
-      <div class="max-w-4xl mx-auto flex flex-col items-center">
-        <div class="glass-card w-full max-w-md p-8 text-center rounded-lg border border-[#f39a12]/20 gold-glow" data-aos="zoom-in" data-aos-duration="900">
-          <span class="material-icons-outlined text-[#f39a12] text-5xl mb-4">workspace_premium</span>
-          <h3 data-lang-key="org_director" class="text-2xl text-[#f39a12] font-display font-bold mb-2">Direktur Utama</h3>
-          <p data-lang-key="org_director_desc" class="text-sm text-[#e9e2d0]/70 leading-relaxed font-light">Memimpin arah strategis perusahaan dan memastikan seluruh operasional berjalan sesuai visi, misi, serta standar profesional.</p>
-        </div>
-
-        <div class="h-12 w-px bg-[#f39a12]/30"></div>
-
-        <div class="glass-card w-full max-w-md p-8 text-center rounded-lg border border-[#f39a12]/20 gold-glow" data-aos="zoom-in" data-aos-duration="900" data-aos-delay="150">
-          <span class="material-icons-outlined text-[#f39a12] text-5xl mb-4">account_tree</span>
-          <h3 data-lang-key="org_ops" class="text-2xl text-[#f39a12] font-display font-bold mb-2">Direktur Operasional</h3>
-          <p data-lang-key="org_ops_desc" class="text-sm text-[#e9e2d0]/70 leading-relaxed font-light">Mengkoordinasikan proses rekrutmen, pelatihan, penempatan, dan administrasi agar layanan berjalan terintegrasi.</p>
-        </div>
-
-        <div class="hidden md:block h-12 w-px bg-[#f39a12]/30"></div>
-        <div class="hidden md:block w-full max-w-3xl h-px bg-[#f39a12]/30"></div>
-
-        <div class="org-grid grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 w-full mt-12">
-          <div class="glass-card p-8 text-center rounded-lg border border-[#f39a12]/10 gold-glow" data-aos="fade-up" data-aos-delay="100">
-            <span class="material-icons-outlined text-[#f39a12] text-4xl mb-4">groups</span>
-            <h4 data-lang-key="org_recruitment" class="text-xl text-[#f39a12] font-display font-bold mb-3">Manajer Rekrutmen</h4>
-            <p data-lang-key="org_recruitment_desc" class="text-sm text-[#e9e2d0]/70 leading-relaxed font-light">Menangani seleksi, verifikasi, dan kesiapan calon pekerja migran.</p>
-          </div>
-          <div class="glass-card p-8 text-center rounded-lg border border-[#f39a12]/10 gold-glow" data-aos="fade-up" data-aos-delay="200">
-            <span class="material-icons-outlined text-[#f39a12] text-4xl mb-4">school</span>
-            <h4 data-lang-key="org_training" class="text-xl text-[#f39a12] font-display font-bold mb-3">Manajer Pelatihan</h4>
-            <p data-lang-key="org_training_desc" class="text-sm text-[#e9e2d0]/70 leading-relaxed font-light">Mengelola program peningkatan kompetensi, bahasa, dan adaptasi budaya kerja.</p>
-          </div>
-          <div class="glass-card p-8 text-center rounded-lg border border-[#f39a12]/10 gold-glow" data-aos="fade-up" data-aos-delay="300">
-            <span class="material-icons-outlined text-[#f39a12] text-4xl mb-4">assignment</span>
-            <h4 data-lang-key="org_admin" class="text-xl text-[#f39a12] font-display font-bold mb-3">Manajer Administrasi</h4>
-            <p data-lang-key="org_admin_desc" class="text-sm text-[#e9e2d0]/70 leading-relaxed font-light">Mengatur dokumen, perizinan, dan kebutuhan administrasi keberangkatan tenaga kerja.</p>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p data-i18n="about_p1">PT Aida Duta Indonesia Sejahtera adalah agen perekrutan dan penempatan tenaga kerja internasional yang didedikasikan untuk menjembatani talenta terbaik Indonesia dengan peluang global.</p>
+          <p data-i18n="about_p2">Fondasi kami dibangun di atas integritas, transparansi, dan pelayanan profesional sehingga setiap kandidat dan mitra memperoleh standar layanan yang terpercaya.</p>
+          <div class="glass quote-card">
+            <span data-i18n="about_hub_title">Pusat Operasional Global</span>
+            <p data-i18n="about_hub_desc">Pelayanan berstandar internasional untuk proses rekrutmen, pelatihan, dokumen, dan penempatan.</p>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-24 px-6 md:px-24 bg-[#161309]" id="services">
-    <div class="text-center mb-24" data-aos="fade-up" data-aos-duration="1000">
-      <span data-lang-key="srv_tag" class="text-xs uppercase text-[#f39a12] tracking-widest mb-4 block font-bold">LAYANAN KAMI</span>
-      <h2 data-lang-key="srv_title" class="text-3xl md:text-5xl text-[#e9e2d0] font-display font-bold">Layanan Kami</h2>
-    </div>
-    <div class="service-grid max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
-      <div class="glass-card overflow-hidden border border-[#f39a12]/10 hover:border-[#f39a12]/50 transition-all duration-500 rounded-lg group gold-glow" data-aos="zoom-in-up" data-aos-delay="100">
-        <div class="h-64 overflow-hidden relative">
-          <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/service/fae5837b-9c97-4053-91b1-62c98c662512.png" alt="Rekrutmen dan seleksi calon pekerja migran." class="w-full h-full object-cover object-center grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
-          <div class="absolute inset-0 bg-gradient-to-t from-[#161309] to-transparent opacity-60"></div>
-        </div>
-        <div class="p-8">
-          <h4 data-lang-key="srv1_title" class="text-2xl text-[#f39a12] font-display font-bold mb-3">Rekrutmen dan seleksi calon pekerja Migran</h4>
-          <p data-lang-key="srv1_desc" class="text-[#e9e2d0]/70 text-sm leading-relaxed font-light">Proses screening dan penempatan tenaga kerja yang terstandarisasi guna memastikan kecocokan kompetensi antara calon karyawan dan perusahaan.</p>
-        </div>
-      </div>
-      <div class="glass-card overflow-hidden border border-[#f39a12]/10 hover:border-[#f39a12]/50 transition-all duration-500 rounded-lg group gold-glow" data-aos="zoom-in-up" data-aos-delay="200">
-        <div class="h-64 overflow-hidden relative">
-          <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/service/9167a8b1-e852-45f3-9d29-d9019fb705e3.png" alt="Pelatihan dan peningkatan keterampilan" class="w-full h-full object-cover object-center grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
-          <div class="absolute inset-0 bg-gradient-to-t from-[#161309] to-transparent opacity-60"></div>
-        </div>
-        <div class="p-8">
-          <h4 data-lang-key="srv2_title" class="text-2xl text-[#f39a12] font-display font-bold mb-3">Pelatihan dan Peningkatan Keterampilan</h4>
-          <p data-lang-key="srv2_desc" class="text-[#e9e2d0]/70 text-sm leading-relaxed font-light">Program pelatihan yang dirancang untuk meningkatkan kompetensi dan kemampuan teknis, soft skill, serta adaptasi budaya kerja.</p>
-        </div>
-      </div>
-      <div class="glass-card overflow-hidden border border-[#f39a12]/10 hover:border-[#f39a12]/50 transition-all duration-500 rounded-lg group gold-glow" data-aos="zoom-in-up" data-aos-delay="300">
-        <div class="h-64 overflow-hidden relative">
-          <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/service/81879995-6de4-4f19-a4b9-e35b05ec5c9f.png" alt="Pengurusan dokumen dan perizinan keberangkatan tenaga kerja." class="w-full h-full object-cover object-center grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
-          <div class="absolute inset-0 bg-gradient-to-t from-[#161309] to-transparent opacity-60"></div>
-        </div>
-        <div class="p-8">
-          <h4 data-lang-key="srv3_title" class="text-2xl text-[#f39a12] font-display font-bold mb-3">Pengurusan Dokumen dan Perizinan Keberangkatan Tenaga Kerja</h4>
-          <p data-lang-key="srv3_desc" class="text-[#e9e2d0]/70 text-sm leading-relaxed font-light">Bimbingan lengkap mulai dari persiapan dokumen, legalisasi, hingga proses pengurusan visa dan izin kerja sesuai peraturan imigrasi yang berlaku</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-24 px-6 md:px-24 bg-[#1c180b] border-t border-b border-[#f39a12]/10" id="network">
-    <div class="max-w-7xl mx-auto mb-16 text-center" data-aos="fade-up" data-aos-duration="1000">
-      <span data-lang-key="net_tag" class="text-xs uppercase text-[#f39a12] tracking-widest mb-4 block font-bold">SEKTOR PILIHAN</span>
-      <h2 data-lang-key="net_title" class="text-3xl md:text-5xl text-[#e9e2d0] font-display font-bold">Sektor Penempatan Kerja</h2>
-    </div>
-
-    <div class="sector-grid max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
-      
-      <div class="glass-card placement-sector-card overflow-hidden border border-[#f39a12]/10 hover:border-[#f39a12]/50 transition-all duration-500 rounded-lg group gold-glow" data-aos="fade-up" data-aos-delay="100" tabindex="0">
-        <div class="sector-media overflow-hidden relative">
-          <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/sector/90f47f3b-beae-4669-b928-45dfbd7eb84e.jpeg" alt="Hospitality Sector" class="w-full h-full object-cover object-top grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
-          <div class="sector-image-overlay"></div>
-          <span class="sector-number">01</span>
-        </div>
-        <div class="sector-content p-8">
-          <h3 data-lang-key="sector1_title" class="sector-title text-2xl text-[#f39a12] font-display font-bold">Perkebunan</h3>
-          <p data-lang-key="sector1_desc" class="sector-hover-desc text-[#e9e2d0]/70 text-sm leading-relaxed font-light">
-            Bekerja di bidang perawatan tanaman, pemupukan, hingga proses panen dengan sistem kerja yang teratur dan didukung lingkungan kerja profesional.
-          </p>
+        <div class="vision-mission">
+          <article class="glass reveal">
+            <span class="card-mark">01</span>
+            <h3 data-i18n="vision_title">Visi Kami</h3>
+            <p data-i18n="vision_desc">Menjadi perusahaan penempatan tenaga kerja yang terpercaya, profesional, dan berorientasi pada kesejahteraan pekerja migran Indonesia.</p>
+          </article>
+          <article class="glass reveal">
+            <span class="card-mark">02</span>
+            <h3 data-i18n="mission_title">Misi Kami</h3>
+            <ul>
+              <li data-i18n="mission_1">Menyediakan layanan penempatan pekerja migran yang aman, transparan, dan sesuai peraturan.</li>
+              <li data-i18n="mission_2">Meningkatkan kompetensi tenaga kerja melalui pelatihan berkualitas.</li>
+              <li data-i18n="mission_3">Memberikan perlindungan dan pendampingan sebelum, selama, dan setelah bekerja di luar negeri.</li>
+              <li data-i18n="mission_4">Membangun kemitraan strategis dengan perusahaan pengguna tenaga kerja di luar negeri.</li>
+            </ul>
+          </article>
         </div>
       </div>
 
-      <div class="glass-card placement-sector-card overflow-hidden border border-[#f39a12]/10 hover:border-[#f39a12]/50 transition-all duration-500 rounded-lg group gold-glow" data-aos="fade-up" data-aos-delay="200" tabindex="0">
-        <div class="sector-media overflow-hidden relative">
-          <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/sector/a55fce1e-eb32-4135-84a8-b69f5ab0eedb.jpeg" alt="Healthcare Sector" class="w-full h-full object-cover object-center grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
-          <div class="sector-image-overlay"></div>
-          <span class="sector-number">02</span>
+      <div class="org-section reveal">
+        <div class="section-head compact">
+          <p class="eyebrow" data-i18n="org_tag">Struktur</p>
+          <h2 data-i18n="org_title">Struktur Organisasi</h2>
         </div>
-        <div class="sector-content p-8">
-          <h3 data-lang-key="sector2_title" class="sector-title text-2xl text-[#f39a12] font-display font-bold">Pabrik</h3>
-          <p data-lang-key="sector2_desc" class="sector-hover-desc text-[#e9e2d0]/70 text-sm leading-relaxed font-light">
-            Pekerjaan meliputi operator produksi, packing, sortir barang, dan quality control dengan sistem kerja yang disiplin dan terstruktur.
-          </p>
-        </div>
-      </div>
-
-      <div class="glass-card placement-sector-card overflow-hidden border border-[#f39a12]/10 hover:border-[#f39a12]/50 transition-all duration-500 rounded-lg group gold-glow" data-aos="fade-up" data-aos-delay="300" tabindex="0">
-        <div class="sector-media overflow-hidden relative">
-          <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/sector/16d7cefa-f7bc-4cb4-b346-b23c7eed3526.jpeg" alt="Manufacturing Sector" class="w-full h-full object-cover object-bottom grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
-          <div class="sector-image-overlay"></div>
-          <span class="sector-number">03</span>
-        </div>
-        <div class="sector-content p-8">
-          <h3 data-lang-key="sector3_title" class="sector-title text-2xl text-[#f39a12] font-display font-bold">Kontruksi</h3>
-          <p data-lang-key="sector3_desc" class="sector-hover-desc text-[#e9e2d0]/70 text-sm leading-relaxed font-light">
-            Terlibat dalam pekerjaan pembangunan dan proyek konstruksi seperti pembangunan gedung, infrastruktur, dan pekerjaan teknis lapangan dengan standar kerja profesional.
-          </p>
-        </div>
-      </div>
-
-      <div class="glass-card placement-sector-card overflow-hidden border border-[#f39a12]/10 hover:border-[#f39a12]/50 transition-all duration-500 rounded-lg group gold-glow" data-aos="fade-up" data-aos-delay="100" tabindex="0">
-        <div class="sector-media overflow-hidden relative">
-          <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/sector/6852e4f6-beb3-41f7-8c3f-e29eb5fabc00.jpeg" alt="Hospitality Sector" class="w-full h-full object-cover object-top grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
-          <div class="sector-image-overlay"></div>
-          <span class="sector-number">04</span>
-        </div>
-        <div class="sector-content p-8">
-          <h3 data-lang-key="sector4_title" class="sector-title text-2xl text-[#f39a12] font-display font-bold">Perikanan</h3>
-          <p data-lang-key="sector4_desc" class="sector-hover-desc text-[#e9e2d0]/70 text-sm leading-relaxed font-light">
-            Peluang kerja di bidang pengolahan hasil laut, budidaya ikan, dan industri perikanan modern dengan kebutuhan tenaga kerja yang tinggi.
-          </p>
+        <div class="org-chart">
+          <article class="org-card featured">
+            <span data-i18n="org_director">Direktur Utama</span>
+            <p data-i18n="org_director_desc">Memimpin arah strategis perusahaan dan memastikan operasional berjalan sesuai visi, misi, dan standar profesional.</p>
+          </article>
+          <article class="org-card">
+            <span data-i18n="org_ops">Direktur Operasional</span>
+            <p data-i18n="org_ops_desc">Mengkoordinasikan proses rekrutmen, pelatihan, penempatan, dan administrasi agar layanan berjalan terintegrasi.</p>
+          </article>
+          <article class="org-card">
+            <span data-i18n="org_recruitment">Manajer Rekrutmen</span>
+            <p data-i18n="org_recruitment_desc">Menangani seleksi, verifikasi, dan kesiapan calon pekerja migran.</p>
+          </article>
+          <article class="org-card">
+            <span data-i18n="org_training">Manajer Pelatihan</span>
+            <p data-i18n="org_training_desc">Mengelola program kompetensi, bahasa, dan adaptasi budaya kerja.</p>
+          </article>
+          <article class="org-card">
+            <span data-i18n="org_admin">Manajer Administrasi</span>
+            <p data-i18n="org_admin_desc">Mengatur dokumen, perizinan, dan administrasi keberangkatan tenaga kerja.</p>
+          </article>
         </div>
       </div>
+    </section>
 
-      <div class="glass-card placement-sector-card overflow-hidden border border-[#f39a12]/10 hover:border-[#f39a12]/50 transition-all duration-500 rounded-lg group gold-glow" data-aos="fade-up" data-aos-delay="100" tabindex="0">
-        <div class="sector-media overflow-hidden relative">
-          <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/sector/e678cc24-e4be-4d6a-814f-9d76578e67a9.jpeg" alt="Hospitality Sector" class="w-full h-full object-cover object-top grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
-          <div class="sector-image-overlay"></div>
-          <span class="sector-number">05</span>
-        </div>
-        <div class="sector-content p-8">
-          <h3 data-lang-key="sector5_title" class="sector-title text-2xl text-[#f39a12] font-display font-bold">Panti Jompo</h3>
-          <p data-lang-key="sector5_desc" class="sector-hover-desc text-[#e9e2d0]/70 text-sm leading-relaxed font-light">
-            Memberikan pendampingan dan perawatan lansia dalam aktivitas sehari-hari dengan penuh kesabaran, perhatian, dan kepedulian.
-          </p>
-        </div>
+    <section class="section services" id="services">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="srv_tag">Layanan Kami</p>
+        <h2 data-i18n="srv_title">Layanan Profesional Komprehensif</h2>
       </div>
-
-      <div class="glass-card placement-sector-card overflow-hidden border border-[#f39a12]/10 hover:border-[#f39a12]/50 transition-all duration-500 rounded-lg group gold-glow" data-aos="fade-up" data-aos-delay="100" tabindex="0">
-        <div class="sector-media overflow-hidden relative">
-          <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/sector/f0957365-1384-450a-90c0-dc33acda941c.jpeg" alt="Hospitality Sector" class="w-full h-full object-cover object-top grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
-          <div class="sector-image-overlay"></div>
-          <span class="sector-number">06</span>
-        </div>
-        <div class="sector-content p-8">
-          <h3 data-lang-key="sector6_title" class="sector-title text-2xl text-[#f39a12] font-display font-bold">Pekerja Domestik (ART)</h3>
-          <p data-lang-key="sector6_desc" class="sector-hover-desc text-[#e9e2d0]/70 text-sm leading-relaxed font-light">
-            Membantu kebutuhan rumah tangga seperti membersihkan rumah, memasak, mencuci, dan menjaga anak secara profesional dan bertanggung jawab.
-          </p>
-        </div>
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <img src="assets/images/rekrutmen.png" alt="Recruitment and selection">
+          <div>
+            <span>01</span>
+            <h3 data-i18n="srv1_title">Rekrutmen dan Seleksi Calon Pekerja Migran</h3>
+            <p data-i18n="srv1_desc">Proses screening dan penempatan tenaga kerja terstandarisasi untuk memastikan kecocokan kompetensi antara kandidat dan perusahaan.</p>
+          </div>
+        </article>
+        <article class="service-card reveal">
+          <img src="assets/images/pelatihan.png" alt="Training and skills development">
+          <div>
+            <span>02</span>
+            <h3 data-i18n="srv2_title">Pelatihan dan Peningkatan Keterampilan</h3>
+            <p data-i18n="srv2_desc">Program pelatihan untuk meningkatkan kemampuan teknis, soft skill, bahasa, dan adaptasi budaya kerja.</p>
+          </div>
+        </article>
+        <article class="service-card reveal">
+          <img src="assets/images/pengurusan.png" alt="Document and permit management">
+          <div>
+            <span>03</span>
+            <h3 data-i18n="srv3_title">Pengurusan Dokumen dan Perizinan</h3>
+            <p data-i18n="srv3_desc">Pendampingan persiapan dokumen, legalisasi, visa, dan izin kerja sesuai peraturan imigrasi yang berlaku.</p>
+          </div>
+        </article>
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <section class="py-24 px-6 md:px-24 bg-[#161309]" id="lpk">
-    <div class="max-w-7xl mx-auto">
-      <div class="mb-14 text-center" data-aos="fade-up" data-aos-duration="1000">
-        <div class="max-w-3xl mx-auto">
-          <span data-lang-key="lpk_tag" class="text-xs uppercase text-[#f39a12] tracking-widest mb-4 block font-bold">NEGARA PENEMPATAN</span>
-          <h2 data-lang-key="lpk_title" class="text-3xl md:text-5xl text-[#e9e2d0] font-display font-bold">Tujuan Kerja Internasional</h2>
-        </div>
+    <section class="section sectors" id="sectors">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="net_tag">Sektor Penempatan</p>
+        <h2 data-i18n="net_title">Sektor Penempatan</h2>
       </div>
+      <div class="sector-grid">
+        <article class="sector-card reveal"><img src="assets/images/perkebunan.jpeg" alt="Plantation"><div><span>01</span><h3 data-i18n="sector1_title">Perkebunan</h3><p data-i18n="sector1_desc">Bekerja di bidang perawatan tanaman, pemupukan, hingga proses panen dengan sistem kerja teratur.</p></div></article>
+        <article class="sector-card reveal"><img src="assets/images/pabrik.jpeg" alt="Factory"><div><span>02</span><h3 data-i18n="sector2_title">Pabrik</h3><p data-i18n="sector2_desc">Operator produksi, packing, sortir barang, dan quality control dengan sistem kerja disiplin.</p></div></article>
+        <article class="sector-card reveal"><img src="assets/images/kontruksi.jpeg" alt="Construction"><div><span>03</span><h3 data-i18n="sector3_title">Konstruksi</h3><p data-i18n="sector3_desc">Pekerjaan pembangunan gedung, infrastruktur, dan pekerjaan teknis lapangan.</p></div></article>
+        <article class="sector-card reveal"><img src="assets/images/perikanan.jpeg" alt="Fisheries"><div><span>04</span><h3 data-i18n="sector4_title">Perikanan</h3><p data-i18n="sector4_desc">Pengolahan hasil laut, budidaya ikan, dan industri perikanan modern.</p></div></article>
+        <article class="sector-card reveal"><img src="assets/images/pantijompo.jpeg" alt="Elderly Care"><div><span>05</span><h3 data-i18n="sector5_title">Elderly Care</h3><p data-i18n="sector5_desc">Pendampingan dan perawatan lansia dalam aktivitas sehari-hari dengan penuh kepedulian.</p></div></article>
+        <article class="sector-card reveal"><img src="assets/images/art.jpeg" alt="Domestic Worker"><div><span>06</span><h3 data-i18n="sector6_title">Domestic Worker</h3><p data-i18n="sector6_desc">Membantu kebutuhan rumah tangga secara profesional dan bertanggung jawab.</p></div></article>
+      </div>
+    </section>
 
+    <section class="section countries" id="countries">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="lpk_tag">Negara Penempatan</p>
+        <h2 data-i18n="lpk_title">Tujuan Kerja Internasional</h2>
+        <p data-i18n="lpk_desc">Kami menyiapkan jalur penempatan ke negara mitra utama di Asia dengan proses yang terarah, transparan, dan sesuai kebutuhan sektor kerja.</p>
+      </div>
       <div class="country-grid">
-        <article class="country-card country-card-east" data-aos="fade-up" data-aos-delay="100">
-          <img src="https://images.unsplash.com/photo-1536599424071-0b215a388ba7?auto=format&fit=crop&w=1200&q=80" alt="Hong Kong skyline" class="country-card-image">
-          <div class="country-card-shade"></div>
-          <div class="country-card-content">
-            <span data-lang-key="country1_region" class="country-pill">Asia Timur</span>
-            <p data-lang-key="country1_watermark" class="country-watermark">Hong Kong</p>
-            <div>
-              <h3 data-lang-key="country1_title" class="country-title">Hong Kong</h3>
-            </div>
-          </div>
-        </article>
-
-        <article class="country-card country-card-east" data-aos="fade-up" data-aos-delay="180">
-          <img src="https://images.unsplash.com/photo-1470004914212-05527e49370b?auto=format&fit=crop&w=1200&q=80" alt="Taiwan city skyline" class="country-card-image">
-          <div class="country-card-shade"></div>
-          <div class="country-card-content">
-            <span data-lang-key="country2_region" class="country-pill">Asia Timur</span>
-            <p data-lang-key="country2_watermark" class="country-watermark">Taiwan</p>
-            <div>
-              <h3 data-lang-key="country2_title" class="country-title">Taiwan</h3>
-            </div>
-          </div>
-        </article>
-
-        <article class="country-card country-card-east" data-aos="fade-up" data-aos-delay="260">
-          <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1200&q=80" alt="Japan Tokyo skyline" class="country-card-image">
-          <div class="country-card-shade"></div>
-          <div class="country-card-content">
-            <span data-lang-key="country5_region" class="country-pill">Asia Timur</span>
-            <p data-lang-key="country5_watermark" class="country-watermark">Japan</p>
-            <div>
-              <h3 data-lang-key="country5_title" class="country-title">Japan</h3>
-            </div>
-          </div>
-        </article>
-
-        <article class="country-card country-card-southeast" data-aos="fade-up" data-aos-delay="340">
-          <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=80" alt="Singapore Marina Bay" class="country-card-image">
-          <div class="country-card-shade"></div>
-          <div class="country-card-content">
-            <span data-lang-key="country3_region" class="country-pill">Asia Tenggara</span>
-            <p data-lang-key="country3_watermark" class="country-watermark">Singapore</p>
-            <div>
-              <h3 data-lang-key="country3_title" class="country-title">Singapore</h3>
-            </div>
-          </div>
-        </article>
-
-        <article class="country-card country-card-southeast" data-aos="fade-up" data-aos-delay="420">
-          <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80" alt="Malaysia Kuala Lumpur" class="country-card-image">
-          <div class="country-card-shade"></div>
-          <div class="country-card-content">
-            <span data-lang-key="country4_region" class="country-pill">Asia Tenggara</span>
-            <p data-lang-key="country4_watermark" class="country-watermark">Malaysia</p>
-            <div>
-              <h3 data-lang-key="country4_title" class="country-title">Malaysia</h3>
-            </div>
-          </div>
-        </article>
+        <article class="country-card reveal"><span data-i18n="country1_region">Asia Timur</span><h3 data-i18n="country1_title">Hong Kong</h3><p data-i18n="country1_desc">Peluang penempatan untuk sektor domestik, layanan, perawatan, dan rumah tangga profesional.</p></article>
+        <article class="country-card reveal"><span data-i18n="country2_region">Asia Timur</span><h3 data-i18n="country2_title">Taiwan</h3><p data-i18n="country2_desc">Tujuan penempatan untuk manufaktur, pabrik, perawatan lansia, dan industri pendukung.</p></article>
+        <article class="country-card reveal"><span data-i18n="country3_region">Asia Tenggara</span><h3 data-i18n="country3_title">Singapore</h3><p data-i18n="country3_desc">Penempatan tenaga kerja untuk domestik, hospitality, layanan umum, dan operasional perkotaan.</p></article>
+        <article class="country-card reveal"><span data-i18n="country4_region">Asia Tenggara</span><h3 data-i18n="country4_title">Malaysia</h3><p data-i18n="country4_desc">Pilihan kerja untuk perkebunan, pabrik, konstruksi, perikanan, dan sektor layanan.</p></article>
+        <article class="country-card reveal"><span data-i18n="country5_region">Asia Timur</span><h3 data-i18n="country5_title">Japan</h3><p data-i18n="country5_desc">Program penempatan untuk manufaktur, perawatan, pertanian, pengolahan makanan, dan industri teknis.</p></article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="py-24 px-6 md:px-24 bg-[#161309]" id="gallery">
-    <div class="mb-16" data-aos="fade-up" data-aos-duration="1000">
-      <span data-lang-key="gal_tag" class="text-xs uppercase text-[#f39a12] tracking-widest mb-2 block font-bold">DOCUMENTATION</span>
-      <h2 data-lang-key="gal_title" class="text-3xl md:text-5xl text-[#e9e2d0] font-display font-bold">Moments of Excellence</h2>
-    </div>
-    
-    <div class="gallery-grid grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-      <div class="glass-card p-0 rounded-lg min-h-[260px] flex flex-col justify-between overflow-hidden hover:border-[#f39a12]/60 border border-[#f39a12]/10 transition-all duration-500 group relative" data-aos="fade-up" data-aos-delay="100">
-        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuArq-dpzJLVA2n6-qjhNl1E3QOMhW8VhQR0gaRjgkbBu97PZEODTzOrTabO5cCheSbKU9Dfvp9ZTYuhzX1c0q1xtVhXaYrzxviXXTvkL9rJCMBvtLgtkahPmze5oenhDWznvGOz61mf0rOk8hmxJ76yg-EA-12zT5FexuZN4xvvV5KzDuQNXUr1t2BkIgQKbVFjEKGx6x5qP89V9YIyqw54ECwoBc4fQngrHZu2ZLdr4oNND1IBh04-BPd5n7AVXE6eKpTjCzdDCf8" alt="Kelas Diklat LPK" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 group-hover:scale-105 transition-all duration-700 z-0">
-        <div class="p-8 relative z-10 flex flex-col justify-between h-full bg-gradient-to-t from-[#161309] via-[#161309]/40 to-transparent">
-          <span class="material-icons-outlined text-[#f39a12] text-4xl group-hover:rotate-12 transition-transform bg-[#161309]/80 w-fit p-2 rounded">model_training</span>
-          <div class="mt-12">
-            <h4 data-lang-key="gal1_title" class="text-[#f39a12] font-bold mb-1 font-display text-lg">Kelas Diklat LPK</h4>
-            <p data-lang-key="gal1_desc" class="text-xs text-[#e9e2d0]/80 font-light">Proses bimbingan intensif bahasa, fisik, dan kedisiplinan kerja asing.</p>
+    <section class="section gallery" id="gallery">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="gal_tag">Dokumentasi</p>
+        <h2 data-i18n="gal_title">Momen Keunggulan</h2>
+      </div>
+      <div class="masonry-gallery">
+        <button class="gallery-item tall reveal" type="button" data-lightbox="assets/images/pelatihan.png" data-title-key="gal1_title"><img src="assets/images/pelatihan.png" alt="Training class"><span data-i18n="gal1_title">Kelas Diklat LPK</span></button>
+        <button class="gallery-item reveal" type="button" data-lightbox="assets/images/rekrutmen.png" data-title-key="gal2_title"><img src="assets/images/rekrutmen.png" alt="Worker preparation"><span data-i18n="gal2_title">Pelepasan Pekerja</span></button>
+        <button class="gallery-item reveal" type="button" data-lightbox="assets/images/pengurusan.png" data-title-key="gal3_title"><img src="assets/images/pengurusan.png" alt="Documentation process"><span data-i18n="gal3_title">MoU Internasional</span></button>
+        <button class="gallery-item wide reveal" type="button" data-lightbox="assets/images/pabrik.jpeg" data-title-key="gal4_title"><img src="assets/images/pabrik.jpeg" alt="Competency test"><span data-i18n="gal4_title">Uji Kompetensi</span></button>
+        <button class="gallery-item reveal" type="button" data-lightbox="assets/images/perkebunan.jpeg" data-title-key="sector1_title"><img src="assets/images/perkebunan.jpeg" alt="Plantation sector"><span data-i18n="sector1_title">Perkebunan</span></button>
+        <button class="gallery-item tall reveal" type="button" data-lightbox="assets/images/perikanan.jpeg" data-title-key="sector4_title"><img src="assets/images/perikanan.jpeg" alt="Fisheries sector"><span data-i18n="sector4_title">Perikanan</span></button>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-grid">
+        <div class="reveal">
+          <p class="eyebrow" data-i18n="cont_tag">Contact</p>
+          <h2 data-i18n="cont_title">Mulai Perjalanan Global Anda</h2>
+          <p data-i18n="cont_desc">Hubungi tim kami untuk mengeksplorasi peluang karir internasional terpercaya atau bermitra untuk kebutuhan rekrutmen perusahaan Anda.</p>
+          <div class="contact-list">
+            <p><span>Address</span><strong data-i18n="cont_add">Jl. Lkr. Bar. Kepanjen, Ngadilangkung, Kec. Kepanjen, Kabupaten Malang, Jawa Timur</strong></p>
+            <p><span>Email</span><strong>pppmi.aida@gmail.com</strong></p>
           </div>
+          <a class="whatsapp" href="https://wa.me/62215551234" target="_blank" rel="noopener" data-i18n="btn_whatsapp">Dukungan WhatsApp</a>
+        </div>
+        <div class="contact-panel reveal">
+          <form id="contact-form">
+            <label><span data-i18n="lbl_name">Nama Lengkap</span><input type="text" name="name" required></label>
+            <label><span data-i18n="lbl_email">Alamat Email</span><input type="email" name="email" required></label>
+            <label><span data-i18n="lbl_msg">Pesan</span><textarea name="message" rows="5" required></textarea></label>
+            <button class="btn btn-primary" type="submit" data-i18n="btn_send">Kirim Pertanyaan</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+          <iframe title="PT Aida Duta location map" src="https://www.google.com/maps?q=Jl.%20Lkr.%20Bar.%20Kepanjen%2C%20Ngadilangkung%2C%20Kec.%20Kepanjen%2C%20Kabupaten%20Malang%2C%20Jawa%20Timur&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
-      <div class="glass-card p-0 rounded-lg min-h-[260px] flex flex-col justify-between overflow-hidden hover:border-[#f39a12]/60 border border-[#f39a12]/10 transition-all duration-500 group relative" data-aos="fade-up" data-aos-delay="200">
-        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFbHLvD9_eeM-rl47Nzp7YIeozHeTlJfEqSZPYbRJchj1DAqw5jckysvGDV2Jdwd028Yt8kQvYudXsMU3BanyKomKEM1SFuI0VcfTr1GZdQmedRq4Rhv3Hg-OtGnb5nheoKIB2wF9GPRkP_6n_42LF2RI9hhZZWsM5XHihS4by4RpmgmCZvQUv8nCevBxGEITnTXcCDSP7aFFW5S5J-3rENsEiX2W3KVPx5P1ZLGR3ao-ybWeOPomYX8MG2lLsW8b--jyuW75vzbY" alt="Pelepasan Pekerja" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 group-hover:scale-105 transition-all duration-700 z-0">
-        <div class="p-8 relative z-10 flex flex-col justify-between h-full bg-gradient-to-t from-[#161309] via-[#161309]/40 to-transparent">
-          <span class="material-icons-outlined text-[#f39a12] text-4xl group-hover:rotate-12 transition-transform bg-[#161309]/80 w-fit p-2 rounded">badge</span>
-          <div class="mt-12">
-            <h4 data-lang-key="gal2_title" class="text-[#f39a12] font-bold mb-1 font-display text-lg">Pelepasan Pekerja</h4>
-            <p data-lang-key="gal2_desc" class="text-xs text-[#e9e2d0]/80 font-light">Seremoni pelepasan keberangkatan resmi pekerja migran menuju negara penempatan.</p>
-          </div>
-        </div>
-      </div>
-      <div class="glass-card p-0 rounded-lg min-h-[260px] flex flex-col justify-between overflow-hidden hover:border-[#f39a12]/60 border border-[#f39a12]/10 transition-all duration-500 group relative" data-aos="fade-up" data-aos-delay="300">
-        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXV8UjfR2qcLesWLi_CyFahmgj4LoROaESSJwJjMnpZsAcOKos66lObfENbWpwN-VGs7wulPIZP57gs9ZzkecXl874OMdoL-xrSNkStxr_KXcHP1_xitYJXlLLqpgZiy_6svF7zgA0Mw3s_-mcUYnf9e4b4bnAwTyx0MguOfFB72W9D4qwDmqWHb5cf4mkWvg9gLPhBkUbfFs1glu_KMaImg3YByTdUih9bsbIj8GIMIRU5n27HxgXY4bOyurqLbv8v_M-qYBc96k" alt="MoU Internasional" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 group-hover:scale-105 transition-all duration-700 z-0">
-        <div class="p-8 relative z-10 flex flex-col justify-between h-full bg-gradient-to-t from-[#161309] via-[#161309]/40 to-transparent">
-          <span class="material-icons-outlined text-[#f39a12] text-4xl group-hover:rotate-12 transition-transform bg-[#161309]/80 w-fit p-2 rounded">handshake</span>
-          <div class="mt-12">
-            <h4 data-lang-key="gal3_title" class="text-[#f39a12] font-bold mb-1 font-display text-lg">MoU Internasional</h4>
-            <p data-lang-key="gal3_desc" class="text-xs text-[#e9e2d0]/80 font-light">Penandatanganan ekspansi aliansi strategis bersama dengan korporasi dunia.</p>
-          </div>
-        </div>
-      </div>
-      <div class="glass-card p-0 rounded-lg min-h-[260px] flex flex-col justify-between overflow-hidden hover:border-[#f39a12]/60 border border-[#f39a12]/10 transition-all duration-500 group relative" data-aos="fade-up" data-aos-delay="400">
-        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnyjTiXbC_Da2aO9ivmhgULDxWlTrzse1p3U0Z2YstgKF2M_5HUuPR0A-7-3JZanNi0QEKO15BIUKWgkE4YkHts8cmHLFgmmx-qXpUhYouj-U-EV_8PlbznS_XzDWBjYRq7Nb8z6jdyOshr0ZFEbM0Z7cjWNl1HebPA-JvRYr_Hva5Kf2gY_rVfDtu-ziCTrkoGvDFC6sXExMPft1Vkvdh6rvgLaqQ3hLjYzTrnS4Ztfba5FmCEmqLkjIGy_w32rg8wiG2wM6wL3E" alt="Uji Kompetensi" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 group-hover:scale-105 transition-all duration-700 z-0">
-        <div class="p-8 relative z-10 flex flex-col justify-between h-full bg-gradient-to-t from-[#161309] via-[#161309]/40 to-transparent">
-          <span class="material-icons-outlined text-[#f39a12] text-4xl group-hover:rotate-12 transition-transform bg-[#161309]/80 w-fit p-2 rounded">assignment_turned_in</span>
-          <div class="mt-12">
-            <h4 data-lang-key="gal4_title" class="text-[#f39a12] font-bold mb-1 font-display text-lg">Uji Kompetensi</h4>
-            <p data-lang-key="gal4_desc" class="text-xs text-[#e9e2d0]/80 font-light">Sertifikasi resmi dan validasi keahlian teknis calon pekerja migran.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <section class="py-24 px-6 md:px-24 bg-[#1c180b] border-t border-[#f39a12]/10" id="contact">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
-      <div data-aos="fade-right" data-aos-duration="1000">
-        <h2 data-lang-key="cont_title" class="text-3xl md:text-5xl text-[#e9e2d0] mb-6 font-display font-bold">Mulai Perjalanan Global Anda</h2>
-        <p data-lang-key="cont_desc" class="text-base md:text-lg text-[#e9e2d0]/70 mb-10 leading-relaxed font-light">
-          Hubungi tim kami untuk mengeksplorasi peluang karir internasional terpercaya atau bermitra untuk kebutuhan rekrutmen perusahaan Anda.
-        </p>
-        <div class="space-y-6 mb-10">
-          <div class="flex items-center gap-6">
-            <span class="material-icons-outlined text-[#f39a12]">location_on</span>
-            <span data-lang-key="cont_add" class="text-[#e9e2d0] font-light">Jl. Lkr. Bar. Kepanjen, Ngadilangkung, Kec. Kepanjen, Kabupaten Malang, Jawa Timur</span>
-          </div>
-          <div class="flex items-center gap-6">
-            <span class="material-icons-outlined text-[#f39a12]">mail</span>
-            <span class="text-[#e9e2d0] font-light">pppmi.aida@gmail.com</span>
-          </div>
-        </div>
-        <a href="https://wa.me/62215551234" target="_blank" class="inline-flex items-center gap-4 bg-[#25D366] text-white px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform shadow-lg shadow-green-950/20">
-          <span class="material-icons-outlined">chat</span>
-          <span data-lang-key="btn_whatsapp">DUKUNGAN WHATSAPP</span>
-        </a>
-      </div>
-      
-      <div class="glass-card p-0 rounded-lg border border-[#f39a12]/10 overflow-hidden min-h-[420px]" data-aos="fade-left" data-aos-duration="1000">
-        <iframe
-          title="PT Aida Duta location map"
-          src="https://www.google.com/maps?q=Jl.%20Lkr.%20Bar.%20Kepanjen%2C%20Ngadilangkung%2C%20Kec.%20Kepanjen%2C%20Kabupaten%20Malang%2C%20Jawa%20Timur&output=embed"
-          class="w-full h-[420px] md:h-full min-h-[420px] border-0"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-    </div>
-  </section>
-
-  <footer class="w-full px-6 md:px-24 py-12 flex flex-col md:flex-row justify-between items-center gap-6 bg-[#310202]/95 border-t border-[#f39a12]/10">
-    <div class="text-center md:text-left">
-      <div class="text-2xl text-[#f39a12] mb-2 font-bold font-display italic"> PT Aida Duta Indonesia Sejahtera</div>
-      <p data-lang-key="foot_copy" class="text-xs text-[#e9e2d0]/50">© 2026 PT Aida Duta Indonesia Sejahtera. All Rights Reserved.</p>
-    </div>
-    <div class="flex gap-6 text-xs">
-      <a data-lang-key="foot_priv" class="text-[#e9e2d0]/50 hover:text-[#f39a12] transition-colors" href="#">Privacy Policy</a>
-      <a data-lang-key="foot_terms" class="text-[#e9e2d0]/50 hover:text-[#f39a12] transition-colors" href="#">Terms of Service</a>
-    </div>
+  <footer class="site-footer">
+    <p>PT Aida Duta Indonesia Sejahtera</p>
+    <span data-i18n="foot_copy">© 2026 PT Aida Duta Indonesia Sejahtera. Hak Cipta Dilindungi Undang-Undang.</span>
   </footer>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="script.js"></script>
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button type="button" id="lightbox-close" aria-label="Close lightbox">Close</button>
+    <img src="" alt="">
+    <p></p>
+  </div>
+
+  <script src="js/language.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

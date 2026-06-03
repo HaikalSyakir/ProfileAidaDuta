@@ -1,12 +1,18 @@
 /* style.css - Custom Styling PT Aida Duta Indonesia Sejahtera */
 
 /* Terapkan font utama (Montserrat) ke seluruh tubuh halaman */
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #161309;
   color: #e9e2d0;
   scroll-behavior: smooth;
 }
+
+
 
 /* Terapkan font judul premium (Playfair Display) secara eksplisit */
 h1, h2, h3, h4, .font-display {
@@ -387,6 +393,178 @@ h1, h2, h3, h4, .font-display {
     display: none;
   }
 }
+
+/* ==========================
+   Navbar cross-browser fixes
+   - Minimal, targeted tweaks to stabilize layout in Chrome
+   - Avoids changing HTML or JS
+   ========================== */
+
+/* Make box-sizing consistent across browsers to avoid width/padding surprises */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Ensure the fixed navbar stays visible and doesn't get clipped or reordered
+   due to stacking/transform quirks in some Chrome setups */
+nav {
+  overflow: visible;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  -webkit-font-smoothing: antialiased;
+  z-index: 9999; /* explicit high z-index to avoid stacking conflicts */
+  align-items: center;
+  min-height: 4rem;
+}
+
+/* Prevent image baseline alignment issues that can cause small vertical
+   shifts between browsers. Keep sizing controlled by Tailwind classes. */
+nav img {
+  display: block;
+  vertical-align: middle;
+  max-height: 100%;
+}
+
+/* Keep the central navbar menu group from overflowing and wrapping in Chrome */
+nav > .flex-1 {
+  min-width: 0;
+}
+
+/* Add extra spacing between logo/brand and navbar menu links on desktop */
+@media (min-width: 768px) {
+  nav > a {
+    margin-right: 1.75rem;
+    margin-left: -0.75rem;
+  }
+}
+
+/* Normalize select / button rendering in the navbar on Chrome
+   so their paddings/line-heights match other browsers */
+nav select#lang-selector,
+nav button#mobile-menu-button {
+  -webkit-appearance: none;
+  appearance: none;
+  line-height: 1;
+  align-items: center;
+}
+
+/* Ensure nav links stay aligned and avoid Chrome wrapping issues */
+nav a[data-lang-key] {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  line-height: 1.1;
+}
+
+/* Make the language selector container shrink correctly inside the flex nav */
+nav .relative.inline-block.text-left {
+  min-width: 0;
+}
+
+@media (max-width: 767px) {
+  nav {
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  nav > div.flex.items-center.gap-4.shrink-0 {
+    margin-left: auto;
+  }
+
+  nav button#mobile-menu-button {
+    margin-left: 0.5rem;
+  }
+
+  .mobile-menu-panel {
+    position: fixed;
+    top: 4.75rem;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    max-width: 100vw;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    background: rgba(49, 2, 2, 0.98);
+    border-top: 1px solid rgba(243, 154, 18, 0.28);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.75);
+    z-index: 10000;
+  }
+}
+
+@media (min-width: 768px) {
+  nav .relative.inline-block.text-left {
+    margin-left: 2rem;
+  }
+}
+
+/* Ensure mobile menu panel is edge-to-edge and not clipped; keep it visually
+   detached from nav so it behaves consistently across browsers */
+.mobile-menu-panel {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 4.75rem;
+  width: 100vw;
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow: visible;
+  -webkit-overflow-scrolling: touch;
+  z-index: 10000;
+  display: none;
+}
+
+.mobile-menu-panel:not(.hidden),
+.mobile-menu-panel.open {
+  display: block !important;
+}
+
+.mobile-menu-panel.open {
+  position: fixed !important;
+  top: 4.75rem !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100vw !important;
+  max-width: 100vw !important;
+  min-height: auto !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: none !important;
+  background: rgba(49, 2, 2, 0.98) !important;
+  border-top: 1px solid rgba(243, 154, 18, 0.28) !important;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.75) !important;
+  z-index: 10000 !important;
+}
+
+#mobile-menu.hidden {
+  display: none !important;
+}
+
+#mobile-menu.open {
+  display: block !important;
+}
+
+/* Small tweak for menu links to avoid Chrome subpixel rendering issues */
+.mobile-menu-link,
+.mobile-menu-link:focus,
+.mobile-menu-link:hover {
+  transform: translateZ(0); /* promote to its own layer for smoother transforms */
+}
+
+/* Keep nav children aligned on a single row and avoid potential flex-gap
+   rounding differences on narrow widths */
+nav > .flex-1 {
+  min-width: 0; /* prevents flex items from overflowing in some Chrome versions */
+}
+
 
 /* Aturan Animasi Berputar dan Berpendar */
 @keyframes spin-slow {

@@ -741,7 +741,9 @@ document.addEventListener("DOMContentLoaded", function () {
   function closeMobileMenu() {
     if (!mobileMenu || !mobileMenuButton) return;
 
+    mobileMenu.classList.remove("open");
     mobileMenu.classList.add("hidden");
+    mobileMenu.style.display = "none";
     mobileMenuButton.setAttribute("aria-expanded", "false");
 
     const icon = mobileMenuButton.querySelector(".material-icons-outlined");
@@ -750,11 +752,25 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  if (mobileMenuButton && mobileMenu) {
-    mobileMenuButton.addEventListener("click", function () {
-      const isOpen = !mobileMenu.classList.contains("hidden");
+  function updateMobileMenuDisplay() {
+    if (!mobileMenu) return;
 
+    if (mobileMenu.classList.contains("open")) {
+      mobileMenu.style.display = "block";
+    } else {
+      mobileMenu.style.display = "none";
+    }
+  }
+
+  if (mobileMenuButton && mobileMenu) {
+    closeMobileMenu();
+
+    mobileMenuButton.addEventListener("click", function () {
+      const isOpen = mobileMenu.classList.contains("open");
+
+      mobileMenu.classList.toggle("open", !isOpen);
       mobileMenu.classList.toggle("hidden", isOpen);
+      updateMobileMenuDisplay();
       mobileMenuButton.setAttribute("aria-expanded", String(!isOpen));
 
       const icon = mobileMenuButton.querySelector(".material-icons-outlined");
