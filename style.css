@@ -3003,6 +3003,414 @@ section:nth-of-type(3) li p {
   }
 }
 
+/* Placement Showcase Redesign: Gradient Card Showcase */
+#network.placement-showcase-section {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(4.5rem, 8vw, 7rem) clamp(1rem, 5vw, 5.5rem) !important;
+  border-top: 1px solid rgba(139, 30, 45, 0.28) !important;
+  border-bottom: 1px solid rgba(139, 30, 45, 0.28) !important;
+  background:
+    radial-gradient(circle at 12% 12%, rgba(139, 30, 45, 0.28), transparent 22rem),
+    radial-gradient(circle at 86% 78%, rgba(90, 10, 18, 0.42), transparent 24rem),
+    linear-gradient(135deg, #120102 0%, #250305 47%, #080001 100%) !important;
+}
+
+/* Subtle background texture for a polished corporate surface */
+#network.placement-showcase-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.026) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.65), transparent 78%);
+  opacity: 0.38;
+}
+
+#network .placement-showcase-shell {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 1320px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(280px, 0.78fr) minmax(0, 1.22fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+}
+
+/* Left column: compact editorial copy with balanced hierarchy */
+#network .placement-showcase-copy {
+  position: sticky;
+  top: 7rem;
+  align-self: start;
+}
+
+#network .placement-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.78) !important;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+#network .placement-eyebrow::before {
+  content: "";
+  width: 2rem;
+  height: 1px;
+  background: linear-gradient(90deg, #8b1e2d, rgba(255, 255, 255, 0.2));
+}
+
+#network .placement-showcase-title {
+  max-width: 12.5em;
+  margin: 0 !important;
+  color: #ffffff !important;
+  font-size: clamp(2rem, 3.2vw, 3.45rem) !important;
+  font-weight: 900 !important;
+  line-height: 1.05 !important;
+  letter-spacing: -0.02em !important;
+
+  /* Penekanan visual agar lebih terlihat */
+  background: linear-gradient(90deg, #ffe8b0 0%, #f39a12 35%, #c97905 70%, #ffe8b0 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+
+  text-shadow:
+    0 0 22px rgba(243, 154, 18, 0.22),
+    0 12px 30px rgba(0, 0, 0, 0.48);
+  position: relative;
+}
+
+#network .placement-showcase-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.35rem;
+  width: min(14rem, 85%);
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(243, 154, 18, 0.0), rgba(243, 154, 18, 0.75), rgba(243, 154, 18, 0.0));
+  filter: blur(0.2px);
+  opacity: 0.95;
+} 
+
+
+#network .placement-showcase-desc {
+  max-width: 34rem;
+  margin: 1.25rem 0 0 !important;
+  color: rgba(255, 255, 255, 0.72) !important;
+  font-size: clamp(0.95rem, 1.15vw, 1.04rem) !important;
+  font-weight: 400 !important;
+  line-height: 1.7 !important;
+}
+
+/* Statistics: glass panels that stay readable on mobile */
+#network .placement-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: clamp(1.4rem, 3vw, 2.1rem);
+}
+
+#network .placement-stat {
+  min-height: 6rem;
+  padding: 1rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.35rem;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.024)),
+    rgba(37, 3, 5, 0.54);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.07), 0 18px 46px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(12px);
+}
+
+#network .placement-stat strong {
+  color: #ffffff;
+  font-size: clamp(1.55rem, 2.7vw, 2.55rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0 !important;
+}
+
+#network .placement-stat span {
+  color: rgba(255, 255, 255, 0.64) !important;
+  font-size: 0.64rem;
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+#network .placement-showcase-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.15rem;
+  margin-top: 1.7rem;
+  padding: 0.9rem 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #5a0a12, #8b1e2d 58%, #250305);
+  box-shadow: 0 18px 42px rgba(90, 10, 18, 0.34);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: transform 280ms ease, box-shadow 280ms ease, border-color 280ms ease;
+}
+
+#network .placement-showcase-cta:hover,
+#network .placement-showcase-cta:focus {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.28);
+  box-shadow: 0 24px 54px rgba(139, 30, 45, 0.42);
+}
+
+/* Right column: 3x2 gradient card showcase */
+#network .placement-showcase-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: clamp(0.9rem, 1.6vw, 1.25rem) !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
+
+#network .placement-sector-card {
+  isolation: isolate;
+  position: relative;
+  min-height: clamp(330px, 31vw, 430px) !important;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: clamp(1.5rem, 2vw, 2rem) !important;
+  background: #120102 !important;
+  box-shadow: 0 28px 76px rgba(0, 0, 0, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+  transform: translateZ(0);
+  transition: transform 420ms ease, border-color 420ms ease, box-shadow 420ms ease;
+}
+
+#network .placement-sector-card:hover,
+#network .placement-sector-card:focus,
+#network .placement-sector-card:focus-within {
+  transform: translateY(-0.45rem) scale(1.018);
+  border-color: rgba(139, 30, 45, 0.72) !important;
+  box-shadow: 0 36px 92px rgba(0, 0, 0, 0.54), 0 0 46px rgba(139, 30, 45, 0.28) !important;
+  outline: none;
+}
+
+#network .placement-sector-card::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  z-index: 3;
+  border-radius: inherit;
+  background: radial-gradient(circle at var(--spotlight-x, 50%) var(--spotlight-y, 30%), rgba(255, 255, 255, 0.2), transparent 14rem);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 420ms ease;
+}
+
+#network .placement-sector-card:hover::before,
+#network .placement-sector-card:focus::before,
+#network .placement-sector-card:focus-within::before {
+  opacity: 1;
+}
+
+#network .sector-card-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.04);
+  filter: saturate(0.82) brightness(0.54) contrast(1.08) !important;
+  transition: transform 700ms ease, filter 700ms ease;
+}
+
+#network .placement-sector-card:hover .sector-card-image,
+#network .placement-sector-card:focus .sector-card-image,
+#network .placement-sector-card:focus-within .sector-card-image {
+  transform: scale(1.12);
+  filter: saturate(1.02) brightness(0.72) contrast(1.1) !important;
+}
+
+#network .sector-image-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(180deg, rgba(18, 1, 2, 0.04) 0%, rgba(18, 1, 2, 0.38) 42%, rgba(18, 1, 2, 0.96) 100%),
+    linear-gradient(135deg, rgba(90, 10, 18, 0.72), rgba(139, 30, 45, 0.18) 44%, rgba(0, 0, 0, 0.35) 100%) !important;
+}
+
+#network .sector-gradient-motion {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background:
+    linear-gradient(115deg, transparent 12%, rgba(139, 30, 45, 0.32) 34%, transparent 58%),
+    radial-gradient(circle at 16% 18%, rgba(255, 255, 255, 0.16), transparent 12rem);
+  background-size: 220% 220%, 100% 100%;
+  background-position: 0% 50%, center;
+  opacity: 0.78;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  transition: background-position 800ms ease, opacity 420ms ease;
+}
+
+#network .placement-sector-card:hover .sector-gradient-motion,
+#network .placement-sector-card:focus .sector-gradient-motion,
+#network .placement-sector-card:focus-within .sector-gradient-motion {
+  background-position: 100% 50%, center;
+  opacity: 1;
+}
+
+#network .sector-number {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 4;
+  width: 3.05rem;
+  height: 3.05rem;
+  display: grid !important;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  border-radius: 999px;
+  color: #ffffff !important;
+  background: rgba(18, 1, 2, 0.54) !important;
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.09) !important;
+  backdrop-filter: blur(10px);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+#network .sector-content {
+  position: absolute !important;
+  inset: auto 0 0 0;
+  z-index: 4;
+  min-height: auto !important;
+  padding: clamp(1.15rem, 1.9vw, 1.55rem) !important;
+  background: linear-gradient(180deg, transparent, rgba(18, 1, 2, 0.66) 22%, rgba(18, 1, 2, 0.94)) !important;
+}
+
+#network .sector-title {
+  max-width: calc(100% - 3.2rem);
+  margin: 0 0 0.7rem !important;
+  color: #ffffff !important;
+  font-size: clamp(1.15rem, 1.65vw, 1.55rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.12 !important;
+  letter-spacing: 0 !important;
+}
+
+#network .sector-hover-desc {
+  margin: 0 !important;
+  max-height: none !important;
+  color: rgba(255, 255, 255, 0.72) !important;
+  font-size: 0.82rem !important;
+  font-weight: 400 !important;
+  line-height: 1.55 !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+#network .sector-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 1rem;
+  color: #ffffff !important;
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.76;
+  transition: opacity 280ms ease, transform 280ms ease;
+}
+
+#network .sector-card-link::after {
+  content: "";
+  width: 1.5rem;
+  height: 1px;
+  background: #8b1e2d;
+  transition: width 280ms ease, background 280ms ease;
+}
+
+#network .placement-sector-card:hover .sector-card-link,
+#network .placement-sector-card:focus .sector-card-link,
+#network .placement-sector-card:focus-within .sector-card-link {
+  opacity: 1;
+  transform: translateX(0.2rem);
+}
+
+#network .placement-sector-card:hover .sector-card-link::after,
+#network .placement-sector-card:focus .sector-card-link::after,
+#network .placement-sector-card:focus-within .sector-card-link::after {
+  width: 2.25rem;
+  background: #ffffff;
+}
+
+@media (max-width: 1180px) {
+  #network .placement-showcase-shell {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  #network .placement-showcase-copy {
+    position: relative;
+    top: auto;
+  }
+
+  #network .placement-showcase-title,
+  #network .placement-showcase-desc {
+    max-width: 46rem;
+  }
+
+  #network .placement-showcase-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 720px) {
+  #network.placement-showcase-section {
+    padding: 4.25rem 1rem !important;
+  }
+
+  #network .placement-showcase-shell {
+    gap: 1.6rem;
+  }
+
+  #network .placement-showcase-title {
+    font-size: clamp(1.75rem, 8vw, 2.4rem) !important;
+  }
+
+  #network .placement-stats {
+    grid-template-columns: 1fr;
+  }
+
+  #network .placement-stat {
+    min-height: 4.7rem;
+  }
+
+  #network .placement-showcase-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  #network .placement-sector-card {
+    min-height: 360px !important;
+  }
+}
+
 /* Navbar final alignment polish */
 body > nav.fixed,
 body > nav {

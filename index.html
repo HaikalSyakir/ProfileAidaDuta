@@ -315,120 +315,112 @@
     </div>
   </section>
 
-  <section class="py-24 px-6 md:px-24 bg-[#1c180b] border-t border-b border-[#f39a12]/10" id="network">
-    <div class="sector-shell max-w-7xl mx-auto">
-      <div class="sector-heading" data-aos="fade-up" data-aos-duration="1000">
-        <div>
-          <span data-lang-key="net_tag" class="text-xs uppercase text-[#f39a12] tracking-widest mb-4 block font-bold">SEKTOR PILIHAN</span>
-          <h2 data-lang-key="net_title" class="text-3xl md:text-5xl text-[#e9e2d0] font-display font-bold">Sektor Penempatan Kerja</h2>
-        </div>
-        <p data-lang-key="net_desc" class="sector-intro text-[#e9e2d0]/70 leading-relaxed font-light">
-          Dengan jaringan kemitraan yang mencakup Eropa, Asia, dan Timur Tengah, jangkauan kami benar-benar global. Kami menjaga hubungan kuat dengan korporasi papan atas.
+  <!-- Redesign Section: Sektor Penempatan / Gradient Card Showcase -->
+  <section class="placement-showcase-section" id="network" aria-labelledby="placement-showcase-title">
+    <div class="placement-showcase-shell">
+      <!-- Bagian kiri: label, judul, deskripsi, statistik, dan tombol CTA -->
+      <div class="placement-showcase-copy" data-aos="fade-right" data-aos-duration="900">
+        <span data-lang-key="net_tag" class="placement-eyebrow">SEKTOR PENEMPATAN</span>
+        <h2 data-lang-key="net_title" id="placement-showcase-title" class="placement-showcase-title">
+          Berbagai Sektor Penempatan<br>Untuk Karier Global yang Lebih Baik
+        </h2>
+        <p data-lang-key="net_desc" class="placement-showcase-desc">
+          Kami menyediakan berbagai peluang kerja internasional melalui sektor-sektor unggulan yang telah bekerja sama dengan negara-negara mitra kami.
         </p>
+
+        <!-- Statistik utama section -->
+        <div class="placement-stats" aria-label="Statistik sektor penempatan">
+          <div class="placement-stat">
+            <strong>06</strong>
+            <span data-lang-key="net_stat_sectors">SEKTOR PENEMPATAN</span>
+          </div>
+          <div class="placement-stat">
+            <strong>05+</strong>
+            <span data-lang-key="net_stat1">NEGARA MITRA</span>
+          </div>
+          <div class="placement-stat">
+            <strong>360+</strong>
+            <span data-lang-key="net_stat3">PENEMPATAN KERJA</span>
+          </div>
+        </div>
+
+        <a data-lang-key="net_cta" href="#services" class="placement-showcase-cta">Lihat Semua Program</a>
       </div>
 
-      <div class="sector-strip" data-aos="fade-up" data-aos-delay="120">
-        <div>
-          <strong>06</strong>
-          <span data-lang-key="net_tag">Sektor Penempatan</span>
-        </div>
-        <div>
-          <strong>05+</strong>
-          <span data-lang-key="net_stat1">Negara Mitra</span>
-        </div>
-        <div>
-          <strong>360</strong>
-          <span data-lang-key="net_view">Tampilan Penempatan</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="sector-grid max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
-      
-      <div class="glass-card placement-sector-card overflow-hidden border border-[#f39a12]/10 hover:border-[#f39a12]/50 transition-all duration-500 rounded-lg group gold-glow" data-aos="fade-up" data-aos-delay="100" tabindex="0">
-        <div class="sector-media overflow-hidden relative">
-          <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/sector/90f47f3b-beae-4669-b928-45dfbd7eb84e.jpeg" alt="Hospitality Sector" class="w-full h-full object-cover object-top grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+      <!-- Bagian kanan: grid card showcase sektor penempatan -->
+      <div class="sector-grid placement-showcase-grid" aria-label="Daftar sektor penempatan">
+        <article class="placement-sector-card" data-aos="fade-up" data-aos-delay="80" tabindex="0">
+          <img src="assets/images/perikanan.jpeg" alt="Sektor perikanan" class="sector-card-image">
           <div class="sector-image-overlay"></div>
+          <div class="sector-gradient-motion"></div>
           <span class="sector-number">01</span>
-        </div>
-        <div class="sector-content p-8">
-          <h3 data-lang-key="sector1_title" class="sector-title text-2xl text-[#f39a12] font-display font-bold">Perkebunan</h3>
-          <p data-lang-key="sector1_desc" class="sector-hover-desc text-[#e9e2d0]/70 text-sm leading-relaxed font-light">
-            Bekerja di bidang perawatan tanaman, pemupukan, hingga proses panen dengan sistem kerja yang teratur dan didukung lingkungan kerja profesional.
-          </p>
-        </div>
-      </div>
+          <div class="sector-content">
+            <h3 data-lang-key="sector1_title" class="sector-title">Perikanan</h3>
+            <p data-lang-key="sector1_desc" class="sector-hover-desc">Program penempatan tenaga kerja pada sektor perikanan dan industri pengolahan hasil laut.</p>
+            <a data-lang-key="sector_button" href="#services" class="sector-card-link"></a>
+          </div>
+        </article>
 
-      <div class="glass-card placement-sector-card overflow-hidden border border-[#f39a12]/10 hover:border-[#f39a12]/50 transition-all duration-500 rounded-lg group gold-glow" data-aos="fade-up" data-aos-delay="200" tabindex="0">
-        <div class="sector-media overflow-hidden relative">
-          <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/sector/a55fce1e-eb32-4135-84a8-b69f5ab0eedb.jpeg" alt="Healthcare Sector" class="w-full h-full object-cover object-center grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+        <article class="placement-sector-card" data-aos="fade-up" data-aos-delay="140" tabindex="0">
+          <img src="assets/images/pabrik.jpeg" alt="Sektor pabrik" class="sector-card-image">
           <div class="sector-image-overlay"></div>
+          <div class="sector-gradient-motion"></div>
           <span class="sector-number">02</span>
-        </div>
-        <div class="sector-content p-8">
-          <h3 data-lang-key="sector2_title" class="sector-title text-2xl text-[#f39a12] font-display font-bold">Pabrik</h3>
-          <p data-lang-key="sector2_desc" class="sector-hover-desc text-[#e9e2d0]/70 text-sm leading-relaxed font-light">
-            Pekerjaan meliputi operator produksi, packing, sortir barang, dan quality control dengan sistem kerja yang disiplin dan terstruktur.
-          </p>
-        </div>
-      </div>
+          <div class="sector-content">
+            <h3 data-lang-key="sector2_title" class="sector-title">Pabrik</h3>
+            <p data-lang-key="sector2_desc" class="sector-hover-desc">Program penempatan tenaga kerja pada sektor manufaktur dan produksi industri.</p>
+            <a data-lang-key="sector_button" href="#services" class="sector-card-link"></a>
+          </div>
+        </article>
 
-      <div class="glass-card placement-sector-card overflow-hidden border border-[#f39a12]/10 hover:border-[#f39a12]/50 transition-all duration-500 rounded-lg group gold-glow" data-aos="fade-up" data-aos-delay="300" tabindex="0">
-        <div class="sector-media overflow-hidden relative">
-          <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/sector/16d7cefa-f7bc-4cb4-b346-b23c7eed3526.jpeg" alt="Manufacturing Sector" class="w-full h-full object-cover object-bottom grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+        <article class="placement-sector-card" data-aos="fade-up" data-aos-delay="200" tabindex="0">
+          <img src="assets/images/perkebunan.jpeg" alt="Sektor perkebunan" class="sector-card-image">
           <div class="sector-image-overlay"></div>
+          <div class="sector-gradient-motion"></div>
           <span class="sector-number">03</span>
-        </div>
-        <div class="sector-content p-8">
-          <h3 data-lang-key="sector3_title" class="sector-title text-2xl text-[#f39a12] font-display font-bold">Kontruksi</h3>
-          <p data-lang-key="sector3_desc" class="sector-hover-desc text-[#e9e2d0]/70 text-sm leading-relaxed font-light">
-            Terlibat dalam pekerjaan pembangunan dan proyek konstruksi seperti pembangunan gedung, infrastruktur, dan pekerjaan teknis lapangan dengan standar kerja profesional.
-          </p>
-        </div>
-      </div>
+          <div class="sector-content">
+            <h3 data-lang-key="sector3_title" class="sector-title">Perkebunan</h3>
+            <p data-lang-key="sector3_desc" class="sector-hover-desc">Program penempatan tenaga kerja pada sektor perkebunan dan agrikultur modern.</p>
+            <a data-lang-key="sector_button" href="#services" class="sector-card-link"></a>
+          </div>
+        </article>
 
-      <div class="glass-card placement-sector-card overflow-hidden border border-[#f39a12]/10 hover:border-[#f39a12]/50 transition-all duration-500 rounded-lg group gold-glow" data-aos="fade-up" data-aos-delay="100" tabindex="0">
-        <div class="sector-media overflow-hidden relative">
-          <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/sector/6852e4f6-beb3-41f7-8c3f-e29eb5fabc00.jpeg" alt="Hospitality Sector" class="w-full h-full object-cover object-top grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+        <article class="placement-sector-card" data-aos="fade-up" data-aos-delay="260" tabindex="0">
+          <img src="assets/images/pantijompo.jpeg" alt="Sektor panti jompo" class="sector-card-image">
           <div class="sector-image-overlay"></div>
+          <div class="sector-gradient-motion"></div>
           <span class="sector-number">04</span>
-        </div>
-        <div class="sector-content p-8">
-          <h3 data-lang-key="sector4_title" class="sector-title text-2xl text-[#f39a12] font-display font-bold">Perikanan</h3>
-          <p data-lang-key="sector4_desc" class="sector-hover-desc text-[#e9e2d0]/70 text-sm leading-relaxed font-light">
-            Peluang kerja di bidang pengolahan hasil laut, budidaya ikan, dan industri perikanan modern dengan kebutuhan tenaga kerja yang tinggi.
-          </p>
-        </div>
-      </div>
+          <div class="sector-content">
+            <h3 data-lang-key="sector4_title" class="sector-title">Panti Jompo</h3>
+            <p data-lang-key="sector4_desc" class="sector-hover-desc">Program penempatan tenaga kerja untuk pelayanan dan perawatan lansia profesional.</p>
+            <a data-lang-key="sector_button" href="#services" class="sector-card-link"></a>
+          </div>
+        </article>
 
-      <div class="glass-card placement-sector-card overflow-hidden border border-[#f39a12]/10 hover:border-[#f39a12]/50 transition-all duration-500 rounded-lg group gold-glow" data-aos="fade-up" data-aos-delay="100" tabindex="0">
-        <div class="sector-media overflow-hidden relative">
-          <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/sector/e678cc24-e4be-4d6a-814f-9d76578e67a9.jpeg" alt="Hospitality Sector" class="w-full h-full object-cover object-top grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+        <article class="placement-sector-card" data-aos="fade-up" data-aos-delay="320" tabindex="0">
+          <img src="assets/images/kontruksi.jpeg" alt="Sektor konstruksi" class="sector-card-image">
           <div class="sector-image-overlay"></div>
+          <div class="sector-gradient-motion"></div>
           <span class="sector-number">05</span>
-        </div>
-        <div class="sector-content p-8">
-          <h3 data-lang-key="sector5_title" class="sector-title text-2xl text-[#f39a12] font-display font-bold">Panti Jompo</h3>
-          <p data-lang-key="sector5_desc" class="sector-hover-desc text-[#e9e2d0]/70 text-sm leading-relaxed font-light">
-            Memberikan pendampingan dan perawatan lansia dalam aktivitas sehari-hari dengan penuh kesabaran, perhatian, dan kepedulian.
-          </p>
-        </div>
-      </div>
+          <div class="sector-content">
+            <h3 data-lang-key="sector5_title" class="sector-title">Konstruksi</h3>
+            <p data-lang-key="sector5_desc" class="sector-hover-desc">Program penempatan tenaga kerja pada proyek konstruksi dan pembangunan infrastruktur.</p>
+            <a data-lang-key="sector_button" href="#services" class="sector-card-link"></a>
+          </div>
+        </article>
 
-      <div class="glass-card placement-sector-card overflow-hidden border border-[#f39a12]/10 hover:border-[#f39a12]/50 transition-all duration-500 rounded-lg group gold-glow" data-aos="fade-up" data-aos-delay="100" tabindex="0">
-        <div class="sector-media overflow-hidden relative">
-          <img src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/sector/f0957365-1384-450a-90c0-dc33acda941c.jpeg" alt="Hospitality Sector" class="w-full h-full object-cover object-top grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+        <article class="placement-sector-card" data-aos="fade-up" data-aos-delay="380" tabindex="0">
+          <img src="assets/images/art.jpeg" alt="Sektor pekerja domestik" class="sector-card-image">
           <div class="sector-image-overlay"></div>
+          <div class="sector-gradient-motion"></div>
           <span class="sector-number">06</span>
-        </div>
-        <div class="sector-content p-8">
-          <h3 data-lang-key="sector6_title" class="sector-title text-2xl text-[#f39a12] font-display font-bold">Pekerja Domestik (ART)</h3>
-          <p data-lang-key="sector6_desc" class="sector-hover-desc text-[#e9e2d0]/70 text-sm leading-relaxed font-light">
-            Membantu kebutuhan rumah tangga seperti membersihkan rumah, memasak, mencuci, dan menjaga anak secara profesional dan bertanggung jawab.
-          </p>
-        </div>
+          <div class="sector-content">
+            <h3 data-lang-key="sector6_title" class="sector-title">Pekerja Domestik (ART)</h3>
+            <p data-lang-key="sector6_desc" class="sector-hover-desc">Program penempatan tenaga kerja untuk layanan rumah tangga profesional.</p>
+            <a data-lang-key="sector_button" href="#services" class="sector-card-link"></a>
+          </div>
+        </article>
       </div>
-
     </div>
   </section>
 
