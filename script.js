@@ -173,7 +173,7 @@ const translations = {
       "Tujuan penempatan untuk manufaktur, pabrik, perawatan lansia, dan sektor pendukung industri.",
     country3_region: "Asia Tenggara",
     country3_watermark: "Singapore",
-    country3_title: "Singapore",
+    country3_title: "Singapura",
     country3_desc:
       "Penempatan tenaga kerja untuk domestik, hospitality, layanan umum, dan kebutuhan operasional perkotaan.",
     country4_region: "Asia Tenggara",
@@ -183,7 +183,7 @@ const translations = {
       "Pilihan kerja untuk perkebunan, pabrik, konstruksi, perikanan, dan sektor layanan.",
     country5_region: "Asia Timur",
     country5_watermark: "Japan",
-    country5_title: "Japan",
+    country5_title: "Jepang",
     country5_desc:
       "Program penempatan untuk manufaktur, perawatan, pertanian, pengolahan makanan, dan industri teknis.",
 
@@ -747,7 +747,107 @@ Object.assign(translations.zh, {
   sector6_desc: "專業家庭服務領域的人力安置方案。"
 });
 
-// 2. Fungsi Menerapkan Terjemahan Halaman
+// 2. Data Negara Penempatan
+const countriesData = [
+  null, // index 0 kosong, karena negara dimulai dari index 1
+  {
+    id: 1,
+    image: "assets/images/hongkong.webp",
+    titleKey: "country1_title",
+    regionKey: "country1_region"
+  },
+  {
+    id: 2,
+    image: "assets/images/taiwan.webp",
+    titleKey: "country2_title",
+    regionKey: "country2_region"
+  },
+  {
+    id: 3,
+    image: "assets/images/singapore.webp",
+    titleKey: "country3_title",
+    regionKey: "country3_region"
+  },
+  {
+    id: 4,
+    image: "assets/images/malaysia.webp",
+    titleKey: "country4_title",
+    regionKey: "country4_region"
+  },
+  {
+    id: 5,
+    image: "assets/images/jepang.webp",
+    titleKey: "country5_title",
+    regionKey: "country5_region"
+  }
+];
+
+// Preload gambar negara untuk transisi yang mulus
+function preloadHeroImages() {
+  countriesData.forEach(function(country) {
+    if (!country) return;
+    const img = new Image();
+    img.src = country.image;
+  });
+}
+
+// Fungsi selectCountry — dipanggil saat kartu negara diklik
+function selectCountry(index, clickedCard) {
+  const country = countriesData[index];
+  if (!country) return;
+
+  const heroImg = document.getElementById("active-country-img");
+  const heroName = document.getElementById("active-country-name");
+  const heroRegion = document.getElementById("active-country-region");
+  const heroText = document.querySelector(".active-country-text");
+
+  // Ambil bahasa aktif saat ini
+  const lang = localStorage.getItem("preferredLanguage") || "id";
+  const t = translations[lang];
+
+  // 1. Hapus kelas active dari semua kartu
+  document.querySelectorAll(".country-list-card").forEach(function(card) {
+    card.classList.remove("active");
+  });
+
+  // 2. Berikan active pada kartu yang diklik
+  if (clickedCard) {
+    clickedCard.classList.add("active");
+  }
+
+  // 3. Mulai transisi fade-out
+  if (heroImg) heroImg.classList.add("transitioning");
+  if (heroText) heroText.classList.add("transitioning");
+
+  // 4. Setelah animasi fade-out selesai, ganti konten
+  setTimeout(function() {
+    // Ganti gambar
+    if (heroImg) {
+      heroImg.src = country.image;
+      heroImg.alt = t ? (t[country.titleKey] || country.titleKey) : country.titleKey;
+    }
+
+    // Ganti teks nama negara
+    if (heroName) {
+      heroName.setAttribute("data-lang-key", country.titleKey);
+      heroName.textContent = t ? (t[country.titleKey] || "") : "";
+    }
+
+    // Ganti teks wilayah
+    if (heroRegion) {
+      heroRegion.setAttribute("data-lang-key", country.regionKey);
+      heroRegion.textContent = t ? (t[country.regionKey] || "") : "";
+    }
+
+    // 5. Fade-in kembali
+    if (heroImg) heroImg.classList.remove("transitioning");
+    if (heroText) heroText.classList.remove("transitioning");
+
+  }, 350);
+}
+
+// 3. Fungsi Menerapkan Terjemahan Halaman
+
 function applyLanguage(lang) {
   const elements = document.querySelectorAll("[data-lang-key]");
 
@@ -764,7 +864,7 @@ function applyLanguage(lang) {
     lang === "zh" ? "zh-TW" : lang;
 }
 
-// 3. Inisialisasi Utama
+// 4. Inisialisasi Utama
 document.addEventListener("DOMContentLoaded", function () {
 
   // Init AOS
@@ -775,6 +875,15 @@ document.addEventListener("DOMContentLoaded", function () {
       easing: "ease-out-cubic",
       mirror: true
     });
+  }
+
+  // Preload semua gambar negara
+  preloadHeroImages();
+
+  // Pastikan kartu pertama (Hong Kong) aktif saat halaman dimuat
+  const firstCard = document.querySelector(".country-list-card[data-country-index='1']");
+  if (firstCard && !document.querySelector(".country-list-card.active")) {
+    firstCard.classList.add("active");
   }
 
   // Ambil bahasa tersimpan
@@ -1050,8 +1159,8 @@ function handleFormSubmit(event) {
       currentLang === "id"
         ? `Terima Kasih, ${userName}!`
         : currentLang === "en"
-        ? `Thank You, ${userName}!`
-        : `感謝您的來訊，${userName}！`;
+          ? `Thank You, ${userName}!`
+          : `感謝您的來訊，${userName}！`;
 
     const descText =
       translations[currentLang]["form_success_desc"];
