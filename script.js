@@ -101,34 +101,36 @@ const translations = {
     srv3_desc:
       "Bimbingan lengkap mulai dari persiapan dokumen, legalisasi, hingga proses pengurusan visa dan izin kerja sesuai peraturan imigrasi yang berlaku.",
 
-    net_tag: "Sektor Penempatan",
-    net_title: "SEKTOR PENEMPATAN",
+    // Section Sektor Penempatan / Gradient Card Showcase
+    net_tag: "SEKTOR PENEMPATAN",
+    net_title:
+      "Berbagai Sektor Penempatan<br>Untuk Karier Global yang Lebih Baik",
+    net_desc:
+      "Kami menyediakan berbagai peluang kerja internasional melalui sektor-sektor unggulan yang telah bekerja sama dengan negara-negara mitra kami.",
+    net_stat_sectors: "SEKTOR PENEMPATAN",
+    net_stat1: "NEGARA MITRA",
+    net_stat3: "PENEMPATAN KERJA",
+    net_cta: "Lihat Semua Program",
+    sector_button: "Pelajari Lebih Lanjut",
 
-    sector1_title: "Perkebunan",
+    sector1_title: "Perikanan",
     sector1_desc:
-      "Bekerja di bidang perawatan tanaman, pemupukan, hingga proses panen dengan sistem kerja yang teratur dan didukung lingkungan kerja profesional.",
+      "Program penempatan tenaga kerja pada sektor perikanan dan industri pengolahan hasil laut.",
     sector2_title: "Pabrik",
     sector2_desc:
-      "Pekerjaan meliputi operator produksi, packing, sortir barang, dan quality control dengan sistem kerja yang disiplin dan terstruktur.",
-    sector3_title: "Konstruksi",
+      "Program penempatan tenaga kerja pada sektor manufaktur dan produksi industri.",
+    sector3_title: "Perkebunan",
     sector3_desc:
-      "Terlibat dalam pekerjaan pembangunan dan proyek konstruksi seperti pembangunan gedung, infrastruktur, dan pekerjaan teknis lapangan dengan standar kerja profesional.",
-    sector4_title: "Perikanan",
+      "Program penempatan tenaga kerja pada sektor perkebunan dan agrikultur modern.",
+    sector4_title: "Panti Jompo",
     sector4_desc:
-      "Peluang kerja di bidang pengolahan hasil laut, budidaya ikan, dan industri perikanan modern dengan kebutuhan tenaga kerja yang tinggi.",
-    sector5_title: "Panti Jompo",
+      "Program penempatan tenaga kerja untuk pelayanan dan perawatan lansia profesional.",
+    sector5_title: "Konstruksi",
     sector5_desc:
-      "Memberikan pendampingan dan perawatan lansia dalam aktivitas sehari-hari dengan penuh kesabaran, perhatian, dan kepedulian.",
+      "Program penempatan tenaga kerja pada proyek konstruksi dan pembangunan infrastruktur.",
     sector6_title: "Pekerja Domestik (ART)",
     sector6_desc:
-      "Membantu kebutuhan rumah tangga seperti membersihkan rumah, memasak, mencuci, dan menjaga anak secara profesional dan bertanggung jawab.",
-
-    net_stat1: "NEGARA MITRA",
-    net_stat2: "KORPORASI GLOBAL",
-    net_view: "TAMPILAN PENEMPATAN",
-
-    net_desc:
-      "Dengan jaringan kemitraan yang mencakup Eropa, Asia, dan Timur Tengah, jangkauan kami benar-benar global. Kami menjaga hubungan kuat dengan korporasi papan atas.",
+      "Program penempatan tenaga kerja untuk layanan rumah tangga profesional.",
 
     net_sub1_title: "Konektivitas & Jangkauan Digital",
 
@@ -171,7 +173,7 @@ const translations = {
       "Tujuan penempatan untuk manufaktur, pabrik, perawatan lansia, dan sektor pendukung industri.",
     country3_region: "Asia Tenggara",
     country3_watermark: "Singapore",
-    country3_title: "Singapore",
+    country3_title: "Singapura",
     country3_desc:
       "Penempatan tenaga kerja untuk domestik, hospitality, layanan umum, dan kebutuhan operasional perkotaan.",
     country4_region: "Asia Tenggara",
@@ -181,7 +183,7 @@ const translations = {
       "Pilihan kerja untuk perkebunan, pabrik, konstruksi, perikanan, dan sektor layanan.",
     country5_region: "Asia Timur",
     country5_watermark: "Japan",
-    country5_title: "Japan",
+    country5_title: "Jepang",
     country5_desc:
       "Program penempatan untuk manufaktur, perawatan, pertanian, pengolahan makanan, dan industri teknis.",
 
@@ -340,34 +342,36 @@ const translations = {
     srv3_desc:
       "Standardized training programs through internal LPK facilities to achieve world-class competency standards.",
 
-    net_tag: "Placement Sector",
-    net_title: "Placement Sector",
+    // Placement Sector / Gradient Card Showcase
+    net_tag: "PLACEMENT SECTORS",
+    net_title:
+      "Various Placement Sectors<br>For a Better Global Career",
+    net_desc:
+      "We provide international work opportunities through leading sectors that have partnered with our destination countries.",
+    net_stat_sectors: "PLACEMENT SECTORS",
+    net_stat1: "PARTNER COUNTRIES",
+    net_stat3: "WORK PLACEMENTS",
+    net_cta: "View All Programs",
+    sector_button: "Learn More",
 
-    sector1_title: "Plantation",
+    sector1_title: "Fisheries",
     sector1_desc:
-      "Work in crop care, fertilization, and harvesting with organized systems supported by a professional working environment.",
-    sector2_title: "Factory",
+      "Workforce placement program for the fisheries sector and seafood processing industry.",
+    sector2_title: "Factory Worker",
     sector2_desc:
-      "Roles include production operator, packing, product sorting, and quality control within a disciplined and structured work system.",
-    sector3_title: "Construction",
+      "Workforce placement program for manufacturing and industrial production sectors.",
+    sector3_title: "Plantation",
     sector3_desc:
-      "Participate in building and construction projects such as buildings, infrastructure, and technical field work with professional standards.",
-    sector4_title: "Fisheries",
+      "Workforce placement program for plantation and modern agriculture sectors.",
+    sector4_title: "Elderly Care",
     sector4_desc:
-      "Career opportunities in seafood processing, fish farming, and modern fisheries industries with high workforce demand.",
-    sector5_title: "Elderly Care",
+      "Workforce placement program for professional elderly care services.",
+    sector5_title: "Construction",
     sector5_desc:
-      "Provide assistance and care for seniors in daily activities with patience, attention, and compassion.",
+      "Workforce placement program for construction projects and infrastructure development.",
     sector6_title: "Domestic Worker",
     sector6_desc:
-      "Support household needs such as cleaning, cooking, laundry, and childcare in a professional and responsible manner.",
-
-    net_stat1: "PARTNER COUNTRIES",
-    net_stat2: "GLOBAL CORPORATIONS",
-    net_view: "PLACEMENT VIEW",
-
-    net_desc:
-      "With a partnership network spanning Europe, Asia, and the Middle East, our reach is truly global. We maintain strong relationships with top-tier corporations.",
+      "Workforce placement program for professional household services.",
 
     net_sub1_title: "Digital Connectivity & Reach",
 
@@ -718,7 +722,132 @@ const translations = {
   }
 };
 
-// 2. Fungsi Menerapkan Terjemahan Halaman
+// Override Traditional Chinese copy for the redesigned placement showcase.
+Object.assign(translations.zh, {
+  net_tag: "安置產業",
+  net_title: "多元安置產業<br>成就更好的全球職涯",
+  net_desc:
+    "我們透過與合作國家建立連結的優勢產業，提供多元的國際工作機會。",
+  net_stat_sectors: "安置產業",
+  net_stat1: "合作國家",
+  net_stat3: "工作安置",
+  net_cta: "查看所有方案",
+  sector_button: "了解更多",
+  sector1_title: "漁業",
+  sector1_desc: "漁業及海產加工產業的人力安置方案。",
+  sector2_title: "工廠作業員",
+  sector2_desc: "製造業與工業生產領域的人力安置方案。",
+  sector3_title: "種植園",
+  sector3_desc: "種植園與現代農業領域的人力安置方案。",
+  sector4_title: "養老院照護",
+  sector4_desc: "專業長者服務與照護領域的人力安置方案。",
+  sector5_title: "建築工程",
+  sector5_desc: "建築工程與基礎建設專案的人力安置方案。",
+  sector6_title: "家庭幫傭",
+  sector6_desc: "專業家庭服務領域的人力安置方案。"
+});
+
+// 2. Data Negara Penempatan
+const countriesData = [
+  null, // index 0 kosong, karena negara dimulai dari index 1
+  {
+    id: 1,
+    image: "assets/images/hongkong.webp",
+    titleKey: "country1_title",
+    regionKey: "country1_region"
+  },
+  {
+    id: 2,
+    image: "assets/images/taiwan.webp",
+    titleKey: "country2_title",
+    regionKey: "country2_region"
+  },
+  {
+    id: 3,
+    image: "assets/images/singapore.webp",
+    titleKey: "country3_title",
+    regionKey: "country3_region"
+  },
+  {
+    id: 4,
+    image: "assets/images/malaysia.webp",
+    titleKey: "country4_title",
+    regionKey: "country4_region"
+  },
+  {
+    id: 5,
+    image: "assets/images/jepang.webp",
+    titleKey: "country5_title",
+    regionKey: "country5_region"
+  }
+];
+
+// Preload gambar negara untuk transisi yang mulus
+function preloadHeroImages() {
+  countriesData.forEach(function(country) {
+    if (!country) return;
+    const img = new Image();
+    img.src = country.image;
+  });
+}
+
+// Fungsi selectCountry — dipanggil saat kartu negara diklik
+function selectCountry(index, clickedCard) {
+  const country = countriesData[index];
+  if (!country) return;
+
+  const heroImg = document.getElementById("active-country-img");
+  const heroName = document.getElementById("active-country-name");
+  const heroRegion = document.getElementById("active-country-region");
+  const heroText = document.querySelector(".active-country-text");
+
+  // Ambil bahasa aktif saat ini
+  const lang = localStorage.getItem("preferredLanguage") || "id";
+  const t = translations[lang];
+
+  // 1. Hapus kelas active dari semua kartu
+  document.querySelectorAll(".country-list-card").forEach(function(card) {
+    card.classList.remove("active");
+  });
+
+  // 2. Berikan active pada kartu yang diklik
+  if (clickedCard) {
+    clickedCard.classList.add("active");
+  }
+
+  // 3. Mulai transisi fade-out
+  if (heroImg) heroImg.classList.add("transitioning");
+  if (heroText) heroText.classList.add("transitioning");
+
+  // 4. Setelah animasi fade-out selesai, ganti konten
+  setTimeout(function() {
+    // Ganti gambar
+    if (heroImg) {
+      heroImg.src = country.image;
+      heroImg.alt = t ? (t[country.titleKey] || country.titleKey) : country.titleKey;
+    }
+
+    // Ganti teks nama negara
+    if (heroName) {
+      heroName.setAttribute("data-lang-key", country.titleKey);
+      heroName.textContent = t ? (t[country.titleKey] || "") : "";
+    }
+
+    // Ganti teks wilayah
+    if (heroRegion) {
+      heroRegion.setAttribute("data-lang-key", country.regionKey);
+      heroRegion.textContent = t ? (t[country.regionKey] || "") : "";
+    }
+
+    // 5. Fade-in kembali
+    if (heroImg) heroImg.classList.remove("transitioning");
+    if (heroText) heroText.classList.remove("transitioning");
+
+  }, 350);
+}
+
+// 3. Fungsi Menerapkan Terjemahan Halaman
+
 function applyLanguage(lang) {
   const elements = document.querySelectorAll("[data-lang-key]");
 
@@ -735,7 +864,7 @@ function applyLanguage(lang) {
     lang === "zh" ? "zh-TW" : lang;
 }
 
-// 3. Inisialisasi Utama
+// 4. Inisialisasi Utama
 document.addEventListener("DOMContentLoaded", function () {
 
   // Init AOS
@@ -746,6 +875,15 @@ document.addEventListener("DOMContentLoaded", function () {
       easing: "ease-out-cubic",
       mirror: true
     });
+  }
+
+  // Preload semua gambar negara
+  preloadHeroImages();
+
+  // Pastikan kartu pertama (Hong Kong) aktif saat halaman dimuat
+  const firstCard = document.querySelector(".country-list-card[data-country-index='1']");
+  if (firstCard && !document.querySelector(".country-list-card.active")) {
+    firstCard.classList.add("active");
   }
 
   // Ambil bahasa tersimpan
@@ -1021,8 +1159,8 @@ function handleFormSubmit(event) {
       currentLang === "id"
         ? `Terima Kasih, ${userName}!`
         : currentLang === "en"
-        ? `Thank You, ${userName}!`
-        : `感謝您的來訊，${userName}！`;
+          ? `Thank You, ${userName}!`
+          : `感謝您的來訊，${userName}！`;
 
     const descText =
       translations[currentLang]["form_success_desc"];
