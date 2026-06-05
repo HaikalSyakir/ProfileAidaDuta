@@ -101,34 +101,36 @@ const translations = {
     srv3_desc:
       "Bimbingan lengkap mulai dari persiapan dokumen, legalisasi, hingga proses pengurusan visa dan izin kerja sesuai peraturan imigrasi yang berlaku.",
 
-    net_tag: "Sektor Penempatan",
-    net_title: "SEKTOR PENEMPATAN",
+    // Section Sektor Penempatan / Gradient Card Showcase
+    net_tag: "SEKTOR PENEMPATAN",
+    net_title:
+      "Berbagai Sektor Penempatan<br>Untuk Karier Global yang Lebih Baik",
+    net_desc:
+      "Kami menyediakan berbagai peluang kerja internasional melalui sektor-sektor unggulan yang telah bekerja sama dengan negara-negara mitra kami.",
+    net_stat_sectors: "SEKTOR PENEMPATAN",
+    net_stat1: "NEGARA MITRA",
+    net_stat3: "PENEMPATAN KERJA",
+    net_cta: "Lihat Semua Program",
+    sector_button: "Pelajari Lebih Lanjut",
 
-    sector1_title: "Perkebunan",
+    sector1_title: "Perikanan",
     sector1_desc:
-      "Bekerja di bidang perawatan tanaman, pemupukan, hingga proses panen dengan sistem kerja yang teratur dan didukung lingkungan kerja profesional.",
+      "Program penempatan tenaga kerja pada sektor perikanan dan industri pengolahan hasil laut.",
     sector2_title: "Pabrik",
     sector2_desc:
-      "Pekerjaan meliputi operator produksi, packing, sortir barang, dan quality control dengan sistem kerja yang disiplin dan terstruktur.",
-    sector3_title: "Konstruksi",
+      "Program penempatan tenaga kerja pada sektor manufaktur dan produksi industri.",
+    sector3_title: "Perkebunan",
     sector3_desc:
-      "Terlibat dalam pekerjaan pembangunan dan proyek konstruksi seperti pembangunan gedung, infrastruktur, dan pekerjaan teknis lapangan dengan standar kerja profesional.",
-    sector4_title: "Perikanan",
+      "Program penempatan tenaga kerja pada sektor perkebunan dan agrikultur modern.",
+    sector4_title: "Panti Jompo",
     sector4_desc:
-      "Peluang kerja di bidang pengolahan hasil laut, budidaya ikan, dan industri perikanan modern dengan kebutuhan tenaga kerja yang tinggi.",
-    sector5_title: "Panti Jompo",
+      "Program penempatan tenaga kerja untuk pelayanan dan perawatan lansia profesional.",
+    sector5_title: "Konstruksi",
     sector5_desc:
-      "Memberikan pendampingan dan perawatan lansia dalam aktivitas sehari-hari dengan penuh kesabaran, perhatian, dan kepedulian.",
+      "Program penempatan tenaga kerja pada proyek konstruksi dan pembangunan infrastruktur.",
     sector6_title: "Pekerja Domestik (ART)",
     sector6_desc:
-      "Membantu kebutuhan rumah tangga seperti membersihkan rumah, memasak, mencuci, dan menjaga anak secara profesional dan bertanggung jawab.",
-
-    net_stat1: "NEGARA MITRA",
-    net_stat2: "KORPORASI GLOBAL",
-    net_view: "TAMPILAN PENEMPATAN",
-
-    net_desc:
-      "Dengan jaringan kemitraan yang mencakup Eropa, Asia, dan Timur Tengah, jangkauan kami benar-benar global. Kami menjaga hubungan kuat dengan korporasi papan atas.",
+      "Program penempatan tenaga kerja untuk layanan rumah tangga profesional.",
 
     net_sub1_title: "Konektivitas & Jangkauan Digital",
 
@@ -340,34 +342,36 @@ const translations = {
     srv3_desc:
       "Standardized training programs through internal LPK facilities to achieve world-class competency standards.",
 
-    net_tag: "Placement Sector",
-    net_title: "Placement Sector",
+    // Placement Sector / Gradient Card Showcase
+    net_tag: "PLACEMENT SECTORS",
+    net_title:
+      "Various Placement Sectors<br>For a Better Global Career",
+    net_desc:
+      "We provide international work opportunities through leading sectors that have partnered with our destination countries.",
+    net_stat_sectors: "PLACEMENT SECTORS",
+    net_stat1: "PARTNER COUNTRIES",
+    net_stat3: "WORK PLACEMENTS",
+    net_cta: "View All Programs",
+    sector_button: "Learn More",
 
-    sector1_title: "Plantation",
+    sector1_title: "Fisheries",
     sector1_desc:
-      "Work in crop care, fertilization, and harvesting with organized systems supported by a professional working environment.",
-    sector2_title: "Factory",
+      "Workforce placement program for the fisheries sector and seafood processing industry.",
+    sector2_title: "Factory Worker",
     sector2_desc:
-      "Roles include production operator, packing, product sorting, and quality control within a disciplined and structured work system.",
-    sector3_title: "Construction",
+      "Workforce placement program for manufacturing and industrial production sectors.",
+    sector3_title: "Plantation",
     sector3_desc:
-      "Participate in building and construction projects such as buildings, infrastructure, and technical field work with professional standards.",
-    sector4_title: "Fisheries",
+      "Workforce placement program for plantation and modern agriculture sectors.",
+    sector4_title: "Elderly Care",
     sector4_desc:
-      "Career opportunities in seafood processing, fish farming, and modern fisheries industries with high workforce demand.",
-    sector5_title: "Elderly Care",
+      "Workforce placement program for professional elderly care services.",
+    sector5_title: "Construction",
     sector5_desc:
-      "Provide assistance and care for seniors in daily activities with patience, attention, and compassion.",
+      "Workforce placement program for construction projects and infrastructure development.",
     sector6_title: "Domestic Worker",
     sector6_desc:
-      "Support household needs such as cleaning, cooking, laundry, and childcare in a professional and responsible manner.",
-
-    net_stat1: "PARTNER COUNTRIES",
-    net_stat2: "GLOBAL CORPORATIONS",
-    net_view: "PLACEMENT VIEW",
-
-    net_desc:
-      "With a partnership network spanning Europe, Asia, and the Middle East, our reach is truly global. We maintain strong relationships with top-tier corporations.",
+      "Workforce placement program for professional household services.",
 
     net_sub1_title: "Digital Connectivity & Reach",
 
@@ -717,6 +721,31 @@ const translations = {
       "您的訊息已成功送出，我們的專業團隊將儘快與您聯繫。"
   }
 };
+
+// Override Traditional Chinese copy for the redesigned placement showcase.
+Object.assign(translations.zh, {
+  net_tag: "安置產業",
+  net_title: "多元安置產業<br>成就更好的全球職涯",
+  net_desc:
+    "我們透過與合作國家建立連結的優勢產業，提供多元的國際工作機會。",
+  net_stat_sectors: "安置產業",
+  net_stat1: "合作國家",
+  net_stat3: "工作安置",
+  net_cta: "查看所有方案",
+  sector_button: "了解更多",
+  sector1_title: "漁業",
+  sector1_desc: "漁業及海產加工產業的人力安置方案。",
+  sector2_title: "工廠作業員",
+  sector2_desc: "製造業與工業生產領域的人力安置方案。",
+  sector3_title: "種植園",
+  sector3_desc: "種植園與現代農業領域的人力安置方案。",
+  sector4_title: "養老院照護",
+  sector4_desc: "專業長者服務與照護領域的人力安置方案。",
+  sector5_title: "建築工程",
+  sector5_desc: "建築工程與基礎建設專案的人力安置方案。",
+  sector6_title: "家庭幫傭",
+  sector6_desc: "專業家庭服務領域的人力安置方案。"
+});
 
 // 2. Fungsi Menerapkan Terjemahan Halaman
 function applyLanguage(lang) {
