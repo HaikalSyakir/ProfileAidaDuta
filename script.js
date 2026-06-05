@@ -33,6 +33,21 @@ const translations = {
     about_hub_title: "Pusat Operasional Global",
     about_hub_desc:
       "PT Aida Duta Indonesia Sejahtera - Pelayanan Berstandar Internasional.",
+    about_status: "Mitra Penempatan Terverifikasi",
+    about_metric_1_value: "01",
+    about_metric_1_label: "Proses Terarah",
+    about_metric_2_value: "24/7",
+    about_metric_2_label: "Pendampingan",
+    about_metric_3_value: "Global",
+    about_metric_3_label: "Jaringan Mitra",
+    about_assurance_tag: "STANDAR LAYANAN",
+    about_assurance_title: "Satu Jalur, Terkawal dari Awal",
+    about_assurance_1:
+      "Verifikasi kandidat dan kebutuhan mitra secara terarah.",
+    about_assurance_2:
+      "Pelatihan kesiapan kerja, bahasa, dan adaptasi budaya.",
+    about_assurance_3:
+      "Pendampingan dokumen hingga proses penempatan selesai.",
 
     vision_title: "Visi Kami",
 
@@ -110,6 +125,7 @@ const translations = {
 
     net_stat1: "NEGARA MITRA",
     net_stat2: "KORPORASI GLOBAL",
+    net_view: "TAMPILAN PENEMPATAN",
 
     net_desc:
       "Dengan jaringan kemitraan yang mencakup Eropa, Asia, dan Timur Tengah, jangkauan kami benar-benar global. Kami menjaga hubungan kuat dengan korporasi papan atas.",
@@ -253,6 +269,21 @@ const translations = {
 
     about_hub_desc:
       "PT Aida Duta Indonesia Sejahtera - International Standard Service.",
+    about_status: "Verified Placement Partner",
+    about_metric_1_value: "01",
+    about_metric_1_label: "Guided Process",
+    about_metric_2_value: "24/7",
+    about_metric_2_label: "Assistance",
+    about_metric_3_value: "Global",
+    about_metric_3_label: "Partner Network",
+    about_assurance_tag: "SERVICE STANDARD",
+    about_assurance_title: "One Path, Guided from the Start",
+    about_assurance_1:
+      "Directed verification of candidate readiness and partner needs.",
+    about_assurance_2:
+      "Work readiness, language, and cultural adaptation training.",
+    about_assurance_3:
+      "Document assistance until the placement process is complete.",
 
     vision_title: "Our Vision",
 
@@ -333,6 +364,7 @@ const translations = {
 
     net_stat1: "PARTNER COUNTRIES",
     net_stat2: "GLOBAL CORPORATIONS",
+    net_view: "PLACEMENT VIEW",
 
     net_desc:
       "With a partnership network spanning Europe, Asia, and the Middle East, our reach is truly global. We maintain strong relationships with top-tier corporations.",
@@ -476,6 +508,22 @@ const translations = {
     about_hub_desc:
       "PT Aida Duta Indonesia Sejahtera－提供值得信賴的國際專業服務。",
 
+    about_status: "Verified Placement Partner",
+    about_metric_1_value: "01",
+    about_metric_1_label: "Guided Process",
+    about_metric_2_value: "24/7",
+    about_metric_2_label: "Assistance",
+    about_metric_3_value: "Global",
+    about_metric_3_label: "Partner Network",
+    about_assurance_tag: "服務標準",
+    about_assurance_title: "一條流程，從開始全程陪伴",
+    about_assurance_1:
+      "定向核實候選人準備度與合作夥伴需求。",
+    about_assurance_2:
+      "提供工作準備、語言與文化適應訓練。",
+    about_assurance_3:
+      "協助文件流程直到安置完成。",
+
     vision_title: "我們的願景",
 
     vision_desc:
@@ -557,6 +605,7 @@ const translations = {
 
     net_stat1: "合作國家",
     net_stat2: "國際合作企業",
+    net_view: "PLACEMENT VIEW",
 
     net_desc:
       "我們的合作網絡遍及歐洲、亞洲與中東地區，並與多家國際企業建立穩定合作關係。",
@@ -705,9 +754,67 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const langSelector =
     document.getElementById("lang-selector");
+  const languageMenuButton =
+    document.getElementById("language-menu-button");
+  const languageMenu =
+    document.getElementById("language-menu");
+  const languageCurrent =
+    document.querySelector(".language-current");
+  const languageOptions =
+    document.querySelectorAll(".language-option");
+
+  const languageLabels = {
+    id: "ID",
+    en: "EN",
+    zh: "繁中"
+  };
+
+  function refreshAos() {
+    setTimeout(() => {
+      if (typeof AOS !== "undefined") {
+        AOS.refresh();
+      }
+    }, 300);
+  }
+
+  function closeLanguageMenu() {
+    if (!languageMenu || !languageMenuButton) return;
+
+    languageMenu.classList.remove("open");
+    languageMenuButton.setAttribute("aria-expanded", "false");
+  }
+
+  function setActiveLanguage(lang) {
+    if (langSelector) {
+      langSelector.value = lang;
+    }
+
+    if (languageCurrent) {
+      languageCurrent.textContent = languageLabels[lang] || lang.toUpperCase();
+    }
+
+    languageOptions.forEach(option => {
+      const isActive = option.dataset.langValue === lang;
+      option.classList.toggle("active", isActive);
+      option.setAttribute("aria-selected", isActive ? "true" : "false");
+    });
+  }
+
+  function changeLanguage(lang) {
+    localStorage.setItem(
+      "preferredLanguage",
+      lang
+    );
+
+    setActiveLanguage(lang);
+    applyLanguage(lang);
+    closeLanguageMenu();
+    refreshAos();
+  }
 
   if (langSelector) {
     langSelector.value = savedLang;
+    setActiveLanguage(savedLang);
 
     applyLanguage(savedLang);
 
@@ -715,20 +822,32 @@ document.addEventListener("DOMContentLoaded", function () {
     langSelector.addEventListener("change", function (e) {
 
       const selectedLang = e.target.value;
+      changeLanguage(selectedLang);
+    });
+  }
 
-      localStorage.setItem(
-        "preferredLanguage",
-        selectedLang
-      );
+  if (languageMenuButton && languageMenu) {
+    languageMenuButton.addEventListener("click", function () {
+      const isOpen = languageMenu.classList.toggle("open");
+      languageMenuButton.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
 
-      applyLanguage(selectedLang);
+    languageOptions.forEach(option => {
+      option.addEventListener("click", function () {
+        changeLanguage(option.dataset.langValue);
+      });
+    });
 
-      // Refresh AOS
-      setTimeout(() => {
-        if (typeof AOS !== "undefined") {
-          AOS.refresh();
-        }
-      }, 300);
+    document.addEventListener("click", function (e) {
+      if (!languageMenu.contains(e.target) && !languageMenuButton.contains(e.target)) {
+        closeLanguageMenu();
+      }
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        closeLanguageMenu();
+      }
     });
   }
 
