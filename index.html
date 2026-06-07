@@ -30,6 +30,7 @@
     .text-gold-gradient {
       background: linear-gradient(to right, #ffe8b0, #f39a12, #c97905);
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
   </style>
@@ -40,11 +41,13 @@
 
   <nav
     class="fixed top-0 w-full z-50 flex justify-between items-center gap-6 px-6 md:px-16 xl:px-24 py-4 bg-[#310202]/95 backdrop-blur-xl border-b border-[#f39a12]/20 transition-all duration-300 shadow-xl shadow-black/30">
-    <a href="#home" class="flex items-center gap-3 shrink-0" aria-label="PT Aida Duta">
+    <a href="#home" class="flex items-center gap-3 shrink-0" aria-label="PT Aida Duta Indonesia Sejahtera">
       <img src="assets/images/logo.svg" alt="Logo PT Aida Duta Indonesia Sejahtera"
         class="h-12 md:h-14 w-auto object-contain">
-      <span class="text-2xl md:text-3xl text-[#f39a12] tracking-tighter font-bold font-display italic">PT Aida
-        Duta</span>
+      <span class="navbar-brand-text">
+        <span class="navbar-brand-main">PT Aida Duta</span>
+        <small class="navbar-brand-sub">Indonesia Sejahtera</small>
+      </span>
     </a>
 
     <div class="hidden md:flex flex-1 justify-center gap-5 lg:gap-7 xl:gap-8">
@@ -130,7 +133,7 @@
       <h1
         class="text-4xl md:text-7xl text-[#e9e2d0] mb-8 max-w-5xl mx-auto leading-tight font-display font-bold tracking-tight"
         data-aos="zoom-in-up" data-aos-duration="1400" data-aos-delay="200">
-        PT <span class="text-gold-gradient">Aida Duta</span> Indonesia Sejahtera
+        PT <span class="text-gold-premium">Aida Duta</span> Indonesia Sejahtera
       </h1>
       <p data-lang-key="hero_desc"
         class="text-base md:text-xl text-[#e9e2d0]/80 max-w-3xl mx-auto mb-12 leading-relaxed font-light"
@@ -706,8 +709,8 @@
       <!-- Header -->
       <div class="text-center mb-14" data-aos="fade-up" data-aos-duration="1000">
         <span class="text-xs uppercase text-[#f39a12] tracking-widest mb-4 block font-bold">HUBUNGI KAMI</span>
-        <h2 data-lang-key="cont_title"
-          class="text-3xl md:text-5xl text-[#e9e2d0] font-display font-bold mb-4">Mulai Perjalanan Global Anda</h2>
+        <h2 data-lang-key="cont_title" class="text-3xl md:text-5xl text-[#e9e2d0] font-display font-bold mb-4">Mulai
+          Perjalanan Global Anda</h2>
         <p data-lang-key="cont_desc"
           class="text-base md:text-lg text-[#e9e2d0]/60 max-w-2xl mx-auto leading-relaxed font-light">
           Hubungi tim kami untuk mengeksplorasi peluang karir internasional terpercaya.
@@ -719,14 +722,12 @@
 
         <!-- Map (60%) -->
         <div class="lg:col-span-3 contact-map-wrap" data-aos="fade-right" data-aos-duration="1000">
-          <div class="relative w-full h-full min-h-[420px] rounded-2xl overflow-hidden border border-[#f39a12]/15 shadow-2xl">
-            <iframe
-              title="Lokasi PT Aida Duta Indonesia Sejahtera"
+          <div
+            class="relative w-full h-full min-h-[420px] rounded-2xl overflow-hidden border border-[#f39a12]/15 shadow-2xl">
+            <iframe title="Lokasi PT Aida Duta Indonesia Sejahtera"
               src="https://www.google.com/maps?q=Jl.+Lkr.+Bar.+Kepanjen,+Ngadilangkung,+Kec.+Kepanjen,+Kabupaten+Malang,+Jawa+Timur&output=embed"
-              class="w-full h-full min-h-[420px] border-0 block"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              allowfullscreen>
+              class="w-full h-full min-h-[420px] border-0 block" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
             </iframe>
             <!-- Gradient overlay bottom -->
             <div class="absolute bottom-0 left-0 right-0 h-20 pointer-events-none"
@@ -738,9 +739,11 @@
         <div class="lg:col-span-2 flex flex-col gap-5" data-aos="fade-left" data-aos-duration="1000">
 
           <!-- Info Card -->
-          <div class="contact-info-card flex-1 rounded-2xl p-8 flex flex-col justify-between border border-[#f39a12]/15">
+          <div
+            class="contact-info-card flex-1 rounded-2xl p-8 flex flex-col justify-between border border-[#f39a12]/15">
             <div>
-              <span class="text-xs uppercase text-[#f39a12]/80 tracking-[0.2em] font-bold mb-6 block">INFORMASI KONTAK</span>
+              <span class="text-xs uppercase text-[#f39a12]/80 tracking-[0.2em] font-bold mb-6 block">INFORMASI
+                KONTAK</span>
               <div class="space-y-5">
                 <div class="flex gap-4 items-start">
                   <div class="contact-icon-wrap">
@@ -748,8 +751,7 @@
                   </div>
                   <div>
                     <p class="text-xs text-[#f39a12]/70 font-bold uppercase tracking-widest mb-1">Alamat</p>
-                    <span data-lang-key="cont_add"
-                      class="text-sm text-[#e9e2d0]/80 font-light leading-relaxed block">
+                    <span data-lang-key="cont_add" class="text-sm text-[#e9e2d0]/80 font-light leading-relaxed block">
                       Jl. Lkr. Bar. Kepanjen, Ngadilangkung, Kec. Kepanjen, Kabupaten Malang, Jawa Timur
                     </span>
                   </div>
@@ -778,15 +780,15 @@
 
           <!-- WhatsApp Button Card -->
           <a href="https://wa.me/6281234567890?text=Halo%20PT%20Aida%20Duta%2C%20saya%20ingin%20mengetahui%20informasi%20penempatan%20kerja."
-            target="_blank" rel="noopener noreferrer"
-            class="whatsapp-cta-btn group"
-            data-aos="zoom-in-up" data-aos-delay="200">
+            target="_blank" rel="noopener noreferrer" class="whatsapp-cta-btn group" data-aos="zoom-in-up"
+            data-aos-delay="200">
             <div class="whatsapp-cta-inner">
               <div class="whatsapp-icon-ring">
                 <span class="material-icons-outlined">chat</span>
               </div>
               <div class="flex-1 text-left">
-                <span data-lang-key="btn_whatsapp" class="block text-sm font-black uppercase tracking-widest text-white">HUBUNGI VIA WHATSAPP</span>
+                <span data-lang-key="btn_whatsapp"
+                  class="block text-sm font-black uppercase tracking-widest text-white">HUBUNGI VIA WHATSAPP</span>
                 <span class="text-xs text-white/70 font-light mt-0.5 block">Respon cepat • Online sekarang</span>
               </div>
               <span class="material-icons-outlined whatsapp-arrow">arrow_forward</span>
