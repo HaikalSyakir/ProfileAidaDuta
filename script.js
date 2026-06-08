@@ -747,6 +747,144 @@ Object.assign(translations.zh, {
   sector6_desc: "專業家庭服務領域的人力安置方案。"
 });
 
+Object.assign(translations.id, {
+  sector_modal_kicker: "Detail Sektor",
+  sector_modal_positions: "Posisi pekerjaan",
+  sector_modal_requirements: "Persyaratan umum",
+  sector_modal_countries: "Negara tujuan",
+  sector_modal_benefits: "Benefit",
+  sector_modal_register: "Hubungi Kami",
+  sector_modal_close: "Tutup detail sektor",
+  sector1_detail_desc:
+    "Sektor perikanan membuka peluang kerja pada pengolahan hasil laut, budidaya ikan, pemrosesan produk, hingga operasional industri perikanan modern dengan standar kerja internasional.",
+  sector1_positions: ["Pekerja Pengolahan Ikan", "Operator Produksi Seafood", "Packing", "Budidaya Perikanan"],
+  sector1_requirements: ["Sehat jasmani dan rohani", "Disiplin mengikuti standar kerja", "Siap bekerja dalam sistem shift", "Bersedia mengikuti pelatihan"],
+  sector1_countries: ["Jepang", "Taiwan", "Korea Selatan", "Malaysia"],
+  sector1_benefits: ["Gaji kompetitif", "Asuransi kerja", "Pelatihan pra keberangkatan", "Pendampingan dokumen"],
+  sector2_detail_desc:
+    "Sektor pabrik dan manufaktur cocok untuk kandidat yang siap bekerja dalam proses produksi, perakitan, quality control, sortir, dan pengemasan di lingkungan industri yang terstruktur.",
+  sector2_positions: ["Operator Produksi", "Quality Control", "Packing", "Sortir Barang"],
+  sector2_requirements: ["Teliti dan bertanggung jawab", "Mampu mengikuti target produksi", "Sehat jasmani dan rohani", "Bersedia mengikuti aturan perusahaan"],
+  sector2_countries: ["Jepang", "Korea Selatan", "Taiwan", "Malaysia"],
+  sector2_benefits: ["Gaji kompetitif", "Asuransi", "Pelatihan kerja", "Kontrak kerja resmi"],
+  sector3_detail_desc:
+    "Sektor perkebunan menyediakan peluang pada perawatan tanaman, pemupukan, panen, pengolahan hasil, dan dukungan agrikultur modern dengan sistem kerja yang jelas.",
+  sector3_positions: ["Pekerja Perkebunan", "Perawatan Tanaman", "Panen", "Pengolahan Hasil"],
+  sector3_requirements: ["Siap bekerja di lapangan", "Memiliki fisik yang baik", "Disiplin dan kooperatif", "Bersedia tinggal di area kerja"],
+  sector3_countries: ["Malaysia", "Taiwan", "Jepang"],
+  sector3_benefits: ["Akomodasi sesuai program", "Gaji stabil", "Pelatihan keselamatan kerja", "Pendampingan keberangkatan"],
+  sector4_detail_desc:
+    "Sektor panti jompo berfokus pada layanan pendampingan dan perawatan lansia, termasuk bantuan aktivitas harian, kebersihan, mobilitas, serta dukungan emosional secara profesional.",
+  sector4_positions: ["Caregiver", "Asisten Perawat Lansia", "Pendamping Harian", "Staf Panti Jompo"],
+  sector4_requirements: ["Sabar dan peduli", "Mampu berkomunikasi baik", "Siap mengikuti pelatihan caregiver", "Sehat jasmani dan rohani"],
+  sector4_countries: ["Taiwan", "Jepang", "Hong Kong", "Singapura"],
+  sector4_benefits: ["Pelatihan caregiver", "Asuransi", "Lingkungan kerja profesional", "Pendampingan penempatan"],
+  sector5_detail_desc:
+    "Sektor konstruksi menawarkan kesempatan kerja pada proyek bangunan, infrastruktur, perawatan fasilitas, dan pekerjaan teknis lapangan dengan standar keselamatan yang terarah.",
+  sector5_positions: ["Pekerja Konstruksi", "Helper Proyek", "Finishing", "Pekerja Infrastruktur"],
+  sector5_requirements: ["Fisik kuat dan sehat", "Mengutamakan keselamatan kerja", "Siap bekerja dalam tim", "Bersedia mengikuti pelatihan teknis"],
+  sector5_countries: ["Malaysia", "Jepang", "Korea Selatan", "Taiwan"],
+  sector5_benefits: ["Gaji kompetitif", "Perlengkapan kerja sesuai program", "Pelatihan keselamatan", "Kontrak kerja resmi"],
+  sector6_detail_desc:
+    "Sektor pekerja domestik mencakup layanan rumah tangga profesional seperti kebersihan, memasak, mencuci, merawat anak, dan membantu kebutuhan harian keluarga pengguna.",
+  sector6_positions: ["Asisten Rumah Tangga", "Housekeeper", "Pengasuh Anak", "Cook Helper"],
+  sector6_requirements: ["Bertanggung jawab dan jujur", "Mampu mengelola pekerjaan rumah", "Sopan dalam berkomunikasi", "Bersedia mengikuti orientasi budaya"],
+  sector6_countries: ["Hong Kong", "Singapura", "Taiwan", "Malaysia"],
+  sector6_benefits: ["Akomodasi sesuai ketentuan", "Gaji kompetitif", "Perlindungan kontrak", "Pendampingan sebelum keberangkatan"]
+});
+
+Object.assign(translations.en, {
+  sector_modal_kicker: "Sector Details",
+  sector_modal_positions: "Job positions",
+  sector_modal_requirements: "General requirements",
+  sector_modal_countries: "Destination countries",
+  sector_modal_benefits: "Benefits",
+  sector_modal_register: "Contact Us",
+  sector_modal_close: "Close sector details",
+  sector1_detail_desc:
+    "The fisheries sector offers opportunities in seafood processing, fish farming, product handling, and modern fisheries operations with international work standards.",
+  sector1_positions: ["Fish Processing Worker", "Seafood Production Operator", "Packing", "Aquaculture Worker"],
+  sector1_requirements: ["Physically and mentally healthy", "Disciplined with work standards", "Ready for shift work", "Willing to join training"],
+  sector1_countries: ["Japan", "Taiwan", "South Korea", "Malaysia"],
+  sector1_benefits: ["Competitive salary", "Work insurance", "Pre-departure training", "Document assistance"],
+  sector2_detail_desc:
+    "The factory and manufacturing sector suits candidates ready to work in production, assembly, quality control, sorting, and packaging inside structured industrial environments.",
+  sector2_positions: ["Production Operator", "Quality Control", "Packing", "Sorting Staff"],
+  sector2_requirements: ["Careful and responsible", "Able to follow production targets", "Physically and mentally healthy", "Willing to follow company rules"],
+  sector2_countries: ["Japan", "South Korea", "Taiwan", "Malaysia"],
+  sector2_benefits: ["Competitive salary", "Insurance", "Work training", "Official employment contract"],
+  sector3_detail_desc:
+    "The plantation sector provides opportunities in crop care, fertilizing, harvesting, product handling, and modern agricultural support with a clear work system.",
+  sector3_positions: ["Plantation Worker", "Crop Care Staff", "Harvest Worker", "Product Processing Staff"],
+  sector3_requirements: ["Ready for field work", "Good physical condition", "Disciplined and cooperative", "Willing to stay near the work area"],
+  sector3_countries: ["Malaysia", "Taiwan", "Japan"],
+  sector3_benefits: ["Accommodation based on program", "Stable salary", "Work safety training", "Departure assistance"],
+  sector4_detail_desc:
+    "The elderly care sector focuses on professional support for seniors, including daily activity assistance, hygiene, mobility, and emotional care.",
+  sector4_positions: ["Caregiver", "Elderly Nursing Assistant", "Daily Care Assistant", "Care Home Staff"],
+  sector4_requirements: ["Patient and caring", "Able to communicate well", "Ready for caregiver training", "Physically and mentally healthy"],
+  sector4_countries: ["Taiwan", "Japan", "Hong Kong", "Singapore"],
+  sector4_benefits: ["Caregiver training", "Insurance", "Professional workplace", "Placement assistance"],
+  sector5_detail_desc:
+    "The construction sector offers work opportunities in building projects, infrastructure, facility maintenance, and technical field work with guided safety standards.",
+  sector5_positions: ["Construction Worker", "Project Helper", "Finishing Worker", "Infrastructure Worker"],
+  sector5_requirements: ["Strong and healthy physical condition", "Prioritizes workplace safety", "Ready to work in a team", "Willing to join technical training"],
+  sector5_countries: ["Malaysia", "Japan", "South Korea", "Taiwan"],
+  sector5_benefits: ["Competitive salary", "Work equipment based on program", "Safety training", "Official employment contract"],
+  sector6_detail_desc:
+    "The domestic worker sector covers professional household services such as cleaning, cooking, laundry, childcare, and support for daily family needs.",
+  sector6_positions: ["Domestic Worker", "Housekeeper", "Childcare Assistant", "Cook Helper"],
+  sector6_requirements: ["Responsible and honest", "Able to manage household tasks", "Polite communication", "Willing to join cultural orientation"],
+  sector6_countries: ["Hong Kong", "Singapore", "Taiwan", "Malaysia"],
+  sector6_benefits: ["Accommodation according to terms", "Competitive salary", "Contract protection", "Pre-departure assistance"]
+});
+
+Object.assign(translations.zh, {
+  sector_modal_kicker: "產業詳情",
+  sector_modal_positions: "工作職位",
+  sector_modal_requirements: "一般條件",
+  sector_modal_countries: "目的國家",
+  sector_modal_benefits: "福利",
+  sector_modal_register: "聯絡我們",
+  sector_modal_close: "關閉產業詳情",
+  sector1_detail_desc:
+    "漁業產業提供海產加工、養殖、產品處理以及現代漁業營運等工作機會，並依循國際工作標準。",
+  sector1_positions: ["魚類加工人員", "海產生產作業員", "包裝人員", "水產養殖人員"],
+  sector1_requirements: ["身心健康", "遵守工作標準", "可配合輪班", "願意參加培訓"],
+  sector1_countries: ["日本", "台灣", "韓國", "馬來西亞"],
+  sector1_benefits: ["具競爭力薪資", "工作保險", "出發前培訓", "文件協助"],
+  sector2_detail_desc:
+    "工廠與製造產業適合準備從事生產、組裝、品質管制、分類與包裝工作的候選人，工作環境制度明確。",
+  sector2_positions: ["生產作業員", "品質管制", "包裝人員", "分類人員"],
+  sector2_requirements: ["細心且負責", "能配合生產目標", "身心健康", "願意遵守公司規定"],
+  sector2_countries: ["日本", "韓國", "台灣", "馬來西亞"],
+  sector2_benefits: ["具競爭力薪資", "保險", "工作培訓", "正式工作合約"],
+  sector3_detail_desc:
+    "種植園產業提供作物照護、施肥、採收、產品處理與現代農業支援等機會，並具備清楚的工作制度。",
+  sector3_positions: ["種植園工人", "作物照護人員", "採收人員", "產品處理人員"],
+  sector3_requirements: ["可適應戶外工作", "具良好體能", "守紀律並能合作", "願意住在工作區域附近"],
+  sector3_countries: ["馬來西亞", "台灣", "日本"],
+  sector3_benefits: ["依方案提供住宿", "穩定薪資", "職安培訓", "出發協助"],
+  sector4_detail_desc:
+    "養老照護產業專注於長者專業照護，包括日常活動協助、清潔、行動輔助與情緒陪伴。",
+  sector4_positions: ["照護員", "長者護理助理", "日常照護助理", "養老院工作人員"],
+  sector4_requirements: ["有耐心與關懷心", "具良好溝通能力", "願意接受照護培訓", "身心健康"],
+  sector4_countries: ["台灣", "日本", "香港", "新加坡"],
+  sector4_benefits: ["照護培訓", "保險", "專業工作環境", "安置協助"],
+  sector5_detail_desc:
+    "建築工程產業提供建築專案、基礎建設、設施維護與現場技術工作機會，並重視安全標準。",
+  sector5_positions: ["建築工人", "工程助理", "裝修收尾人員", "基礎建設工人"],
+  sector5_requirements: ["體能強健", "重視職場安全", "可團隊合作", "願意參加技術培訓"],
+  sector5_countries: ["馬來西亞", "日本", "韓國", "台灣"],
+  sector5_benefits: ["具競爭力薪資", "依方案提供工作裝備", "安全培訓", "正式工作合約"],
+  sector6_detail_desc:
+    "家庭幫傭產業涵蓋專業家務服務，例如清潔、烹飪、洗衣、照顧兒童，以及協助家庭日常需求。",
+  sector6_positions: ["家庭幫傭", "家務管理員", "兒童照護助理", "廚務助理"],
+  sector6_requirements: ["負責且誠實", "能管理家務工作", "溝通有禮", "願意參加文化適應課程"],
+  sector6_countries: ["香港", "新加坡", "台灣", "馬來西亞"],
+  sector6_benefits: ["依規定提供住宿", "具競爭力薪資", "合約保障", "出發前協助"]
+});
+
 // 2. Data Negara Penempatan
 const countriesData = [
   null, // index 0 kosong, karena negara dimulai dari index 1
@@ -864,6 +1002,313 @@ function applyLanguage(lang) {
     lang === "zh" ? "zh-TW" : lang;
 }
 
+const sectorPlacementData = [
+  null,
+  {
+    index: 1,
+    image: "assets/images/perikanan.webp",
+    titleKey: "sector1_title",
+    descKey: "sector1_detail_desc",
+    positionsKey: "sector1_positions",
+    requirementsKey: "sector1_requirements",
+    countriesKey: "sector1_countries",
+    benefitsKey: "sector1_benefits"
+  },
+  {
+    index: 2,
+    image: "assets/images/pabrik.webp",
+    titleKey: "sector2_title",
+    descKey: "sector2_detail_desc",
+    positionsKey: "sector2_positions",
+    requirementsKey: "sector2_requirements",
+    countriesKey: "sector2_countries",
+    benefitsKey: "sector2_benefits"
+  },
+  {
+    index: 3,
+    image: "assets/images/perkebunan.webp",
+    titleKey: "sector3_title",
+    descKey: "sector3_detail_desc",
+    positionsKey: "sector3_positions",
+    requirementsKey: "sector3_requirements",
+    countriesKey: "sector3_countries",
+    benefitsKey: "sector3_benefits"
+  },
+  {
+    index: 4,
+    image: "assets/images/pantijompo.webp",
+    titleKey: "sector4_title",
+    descKey: "sector4_detail_desc",
+    positionsKey: "sector4_positions",
+    requirementsKey: "sector4_requirements",
+    countriesKey: "sector4_countries",
+    benefitsKey: "sector4_benefits"
+  },
+  {
+    index: 5,
+    image: "assets/images/kontruksi.webp",
+    titleKey: "sector5_title",
+    descKey: "sector5_detail_desc",
+    positionsKey: "sector5_positions",
+    requirementsKey: "sector5_requirements",
+    countriesKey: "sector5_countries",
+    benefitsKey: "sector5_benefits"
+  },
+  {
+    index: 6,
+    image: "assets/images/art.webp",
+    titleKey: "sector6_title",
+    descKey: "sector6_detail_desc",
+    positionsKey: "sector6_positions",
+    requirementsKey: "sector6_requirements",
+    countriesKey: "sector6_countries",
+    benefitsKey: "sector6_benefits"
+  }
+];
+
+function initExpandableSectorCards() {
+  const rootElement = document.getElementById("sector-expandable-root");
+  const triggers = document.querySelectorAll("[data-sector-trigger]");
+  if (!rootElement || !triggers.length) return;
+
+  const ReactRef = window.React;
+  const ReactDOMRef = window.ReactDOM;
+  const motionBundle =
+    window.Motion ||
+    window.FramerMotion ||
+    window.framerMotion ||
+    window["framer-motion"];
+
+  let activeSectorIndex = null;
+  let reactRoot = null;
+
+  function getLang() {
+    return localStorage.getItem("preferredLanguage") || "id";
+  }
+
+  function translate(key, lang) {
+    const dictionary = translations[lang] || translations.id;
+    return dictionary[key] || translations.id[key] || "";
+  }
+
+  function translateList(key, lang) {
+    const dictionary = translations[lang] || translations.id;
+    const value = dictionary[key] || translations.id[key] || [];
+    return Array.isArray(value) ? value : [];
+  }
+
+  function getSector(index, lang) {
+    const sector = sectorPlacementData[index];
+    if (!sector) return null;
+
+    return {
+      image: sector.image,
+      title: translate(sector.titleKey, lang),
+      description: translate(sector.descKey, lang),
+      positions: translateList(sector.positionsKey, lang),
+      requirements: translateList(sector.requirementsKey, lang),
+      countries: translateList(sector.countriesKey, lang),
+      benefits: translateList(sector.benefitsKey, lang)
+    };
+  }
+
+  function closeSector() {
+    activeSectorIndex = null;
+    document.body.classList.remove("sector-modal-lock");
+    render();
+  }
+
+  function scrollToContactSection() {
+    closeSector();
+
+    window.setTimeout(() => {
+      const contactSection = document.querySelector("#hubungi-kami");
+      if (!contactSection) return;
+
+      contactSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+
+      contactSection.focus({ preventScroll: true });
+      contactSection.classList.add("contact-focus-pulse");
+
+      window.setTimeout(() => {
+        contactSection.classList.remove("contact-focus-pulse");
+      }, 1600);
+    }, 120);
+  }
+
+  function openSector(index) {
+    activeSectorIndex = index;
+    document.body.classList.add("sector-modal-lock");
+    render();
+  }
+
+  function renderList(items) {
+    return items.map(item => `<li>${item}</li>`).join("");
+  }
+
+  function renderFallback() {
+    const lang = getLang();
+    const sector = activeSectorIndex ? getSector(activeSectorIndex, lang) : null;
+
+    if (!sector) {
+      rootElement.innerHTML = "";
+      return;
+    }
+
+    rootElement.innerHTML = `
+      <div class="sector-expandable-layer sector-fallback-enter" role="dialog" aria-modal="true" aria-labelledby="sector-expanded-title">
+        <div class="sector-expandable-backdrop" data-sector-close></div>
+        <div class="sector-expandable-card">
+          <button class="sector-expandable-close" type="button" data-sector-close aria-label="${translate("sector_modal_close", lang)}">
+            <span class="material-icons-outlined" aria-hidden="true">close</span>
+          </button>
+          <div class="sector-expandable-scroll">
+            <div class="sector-expandable-layout">
+              <div class="sector-expandable-media">
+                <img src="${sector.image}" alt="${sector.title}">
+              </div>
+              <div class="sector-expandable-body">
+                <span class="sector-expandable-kicker">${translate("sector_modal_kicker", lang)}</span>
+                <h3 id="sector-expanded-title" class="sector-expandable-title">${sector.title}</h3>
+                <p class="sector-expandable-desc">${sector.description}</p>
+                <div class="sector-detail-grid">
+                  <div class="sector-detail-panel"><h4>${translate("sector_modal_positions", lang)}</h4><ul>${renderList(sector.positions)}</ul></div>
+                  <div class="sector-detail-panel"><h4>${translate("sector_modal_requirements", lang)}</h4><ul>${renderList(sector.requirements)}</ul></div>
+                  <div class="sector-detail-panel"><h4>${translate("sector_modal_countries", lang)}</h4><ul>${renderList(sector.countries)}</ul></div>
+                  <div class="sector-detail-panel"><h4>${translate("sector_modal_benefits", lang)}</h4><ul>${renderList(sector.benefits)}</ul></div>
+                </div>
+                <button class="sector-register-button" type="button" data-sector-contact>${translate("sector_modal_register", lang)}</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>`;
+
+    rootElement.querySelectorAll("[data-sector-close]").forEach(button => {
+      button.addEventListener("click", closeSector);
+    });
+
+    rootElement.querySelectorAll("[data-sector-contact]").forEach(button => {
+      button.addEventListener("click", scrollToContactSection);
+    });
+  }
+
+  function renderReact() {
+    if (!ReactRef || !ReactDOMRef || !motionBundle || !motionBundle.motion || !motionBundle.AnimatePresence) {
+      renderFallback();
+      return;
+    }
+
+    const h = ReactRef.createElement;
+    const motion = motionBundle.motion;
+    const AnimatePresence = motionBundle.AnimatePresence;
+    const lang = getLang();
+    const sector = activeSectorIndex ? getSector(activeSectorIndex, lang) : null;
+
+    function DetailPanel(props) {
+      return h("div", { className: "sector-detail-panel" },
+        h("h4", null, props.title),
+        h("ul", null, props.items.map(item => h("li", { key: item }, item)))
+      );
+    }
+
+    const modal = sector && h(motion.div, {
+      className: "sector-expandable-layer",
+      role: "dialog",
+      "aria-modal": "true",
+      "aria-labelledby": "sector-expanded-title",
+      initial: { opacity: 0 },
+      animate: { opacity: 1 },
+      exit: { opacity: 0 },
+      transition: { duration: 0.22, ease: "easeOut" }
+    },
+      h(motion.div, {
+        className: "sector-expandable-backdrop",
+        onClick: closeSector,
+        initial: { opacity: 0 },
+        animate: { opacity: 1 },
+        exit: { opacity: 0 },
+        transition: { duration: 0.24 }
+      }),
+      h(motion.div, {
+        className: "sector-expandable-card",
+        layoutId: `sector-card-${activeSectorIndex}`,
+        initial: { opacity: 0, y: 34, scale: 0.94 },
+        animate: { opacity: 1, y: 0, scale: 1 },
+        exit: { opacity: 0, y: 26, scale: 0.96 },
+        transition: { type: "spring", stiffness: 210, damping: 24, mass: 0.9 },
+        onClick: event => event.stopPropagation()
+      },
+        h("button", {
+          className: "sector-expandable-close",
+          type: "button",
+          "aria-label": translate("sector_modal_close", lang),
+          onClick: closeSector
+        }, h("span", { className: "material-icons-outlined", "aria-hidden": "true" }, "close")),
+        h("div", { className: "sector-expandable-scroll" },
+          h("div", { className: "sector-expandable-layout" },
+            h("div", { className: "sector-expandable-media" },
+              h("img", { src: sector.image, alt: sector.title })
+            ),
+            h(motion.div, {
+              className: "sector-expandable-body",
+              initial: { opacity: 0, x: 24 },
+              animate: { opacity: 1, x: 0 },
+              transition: { delay: 0.08, duration: 0.32, ease: "easeOut" }
+            },
+              h("span", { className: "sector-expandable-kicker" }, translate("sector_modal_kicker", lang)),
+              h("h3", { id: "sector-expanded-title", className: "sector-expandable-title" }, sector.title),
+              h("p", { className: "sector-expandable-desc" }, sector.description),
+              h("div", { className: "sector-detail-grid" },
+                h(DetailPanel, { title: translate("sector_modal_positions", lang), items: sector.positions }),
+                h(DetailPanel, { title: translate("sector_modal_requirements", lang), items: sector.requirements }),
+                h(DetailPanel, { title: translate("sector_modal_countries", lang), items: sector.countries }),
+                h(DetailPanel, { title: translate("sector_modal_benefits", lang), items: sector.benefits })
+              ),
+              h("button", { className: "sector-register-button", type: "button", onClick: scrollToContactSection }, translate("sector_modal_register", lang))
+            )
+          )
+        )
+      )
+    );
+
+    const app = h(AnimatePresence, { mode: "wait" }, modal);
+
+    if (ReactDOMRef.createRoot) {
+      if (!reactRoot) {
+        reactRoot = ReactDOMRef.createRoot(rootElement);
+      }
+      reactRoot.render(app);
+    } else {
+      ReactDOMRef.render(app, rootElement);
+    }
+  }
+
+  function render() {
+    renderReact();
+  }
+
+  triggers.forEach(trigger => {
+    trigger.addEventListener("click", event => {
+      event.preventDefault();
+      event.stopPropagation();
+      openSector(Number(trigger.dataset.sectorIndex));
+    });
+  });
+
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape" && activeSectorIndex) {
+      closeSector();
+    }
+  });
+
+  window.addEventListener("sector-language-change", render);
+  render();
+}
+
 // 4. Inisialisasi Utama
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -946,6 +1391,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setActiveLanguage(lang);
     applyLanguage(lang);
+    window.dispatchEvent(new CustomEvent("sector-language-change"));
     closeLanguageMenu();
     refreshAos();
   }
@@ -963,6 +1409,8 @@ document.addEventListener("DOMContentLoaded", function () {
       changeLanguage(selectedLang);
     });
   }
+
+  initExpandableSectorCards();
 
   if (languageMenuButton && languageMenu) {
     languageMenuButton.addEventListener("click", function () {

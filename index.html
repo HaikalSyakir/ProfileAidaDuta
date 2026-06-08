@@ -141,7 +141,7 @@
       <div class="flex flex-col sm:flex-row gap-6 justify-center items-center" data-aos="fade-up"
         data-aos-duration="1400" data-aos-delay="600">
         <button data-lang-key="btn_explore"
-          onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
+          onclick="document.getElementById('hubungi-kami').scrollIntoView({ behavior: 'smooth' })"
           class="bg-[#f39a12] text-[#161309] text-xs uppercase tracking-widest px-10 py-4 hover:bg-white hover:scale-105 transition-all duration-300 font-bold shadow-lg shadow-[#f39a12]/20">HUBUNGI
           KAMI</button>
       </div>
@@ -440,7 +440,7 @@
 
       <!-- Bagian kanan: grid card showcase sektor penempatan -->
       <div class="sector-grid placement-showcase-grid" aria-label="Daftar sektor penempatan">
-        <article class="placement-sector-card" data-aos="fade-up" data-aos-delay="80" tabindex="0">
+        <article class="placement-sector-card" data-sector-index="1" data-aos="fade-up" data-aos-delay="80" tabindex="0">
           <img loading="lazy" src="assets/images/perikanan.webp" alt="Sektor perikanan" class="sector-card-image">
           <div class="sector-image-overlay"></div>
           <div class="sector-gradient-motion"></div>
@@ -449,11 +449,11 @@
             <h3 data-lang-key="sector1_title" class="sector-title">Perikanan</h3>
             <p data-lang-key="sector1_desc" class="sector-hover-desc">Program penempatan tenaga kerja pada sektor
               perikanan dan industri pengolahan hasil laut.</p>
-            <a data-lang-key="sector_button" href="#services" class="sector-card-link"></a>
+            <button data-lang-key="sector_button" type="button" class="sector-card-link" data-sector-trigger data-sector-index="1"></button>
           </div>
         </article>
 
-        <article class="placement-sector-card" data-aos="fade-up" data-aos-delay="140" tabindex="0">
+        <article class="placement-sector-card" data-sector-index="2" data-aos="fade-up" data-aos-delay="140" tabindex="0">
           <img loading="lazy" src="assets/images/pabrik.webp" alt="Sektor pabrik" class="sector-card-image">
           <div class="sector-image-overlay"></div>
           <div class="sector-gradient-motion"></div>
@@ -462,11 +462,11 @@
             <h3 data-lang-key="sector2_title" class="sector-title">Pabrik</h3>
             <p data-lang-key="sector2_desc" class="sector-hover-desc">Program penempatan tenaga kerja pada sektor
               manufaktur dan produksi industri.</p>
-            <a data-lang-key="sector_button" href="#services" class="sector-card-link"></a>
+            <button data-lang-key="sector_button" type="button" class="sector-card-link" data-sector-trigger data-sector-index="2"></button>
           </div>
         </article>
 
-        <article class="placement-sector-card" data-aos="fade-up" data-aos-delay="200" tabindex="0">
+        <article class="placement-sector-card" data-sector-index="3" data-aos="fade-up" data-aos-delay="200" tabindex="0">
           <img loading="lazy" src="assets/images/perkebunan.webp" alt="Sektor perkebunan" class="sector-card-image">
           <div class="sector-image-overlay"></div>
           <div class="sector-gradient-motion"></div>
@@ -475,11 +475,11 @@
             <h3 data-lang-key="sector3_title" class="sector-title">Perkebunan</h3>
             <p data-lang-key="sector3_desc" class="sector-hover-desc">Program penempatan tenaga kerja pada sektor
               perkebunan dan agrikultur modern.</p>
-            <a data-lang-key="sector_button" href="#services" class="sector-card-link"></a>
+            <button data-lang-key="sector_button" type="button" class="sector-card-link" data-sector-trigger data-sector-index="3"></button>
           </div>
         </article>
 
-        <article class="placement-sector-card" data-aos="fade-up" data-aos-delay="260" tabindex="0">
+        <article class="placement-sector-card" data-sector-index="4" data-aos="fade-up" data-aos-delay="260" tabindex="0">
           <img loading="lazy" src="assets/images/pantijompo.webp" alt="Sektor panti jompo" class="sector-card-image">
           <div class="sector-image-overlay"></div>
           <div class="sector-gradient-motion"></div>
@@ -488,11 +488,11 @@
             <h3 data-lang-key="sector4_title" class="sector-title">Panti Jompo</h3>
             <p data-lang-key="sector4_desc" class="sector-hover-desc">Program penempatan tenaga kerja untuk pelayanan
               dan perawatan lansia profesional.</p>
-            <a data-lang-key="sector_button" href="#services" class="sector-card-link"></a>
+            <button data-lang-key="sector_button" type="button" class="sector-card-link" data-sector-trigger data-sector-index="4"></button>
           </div>
         </article>
 
-        <article class="placement-sector-card" data-aos="fade-up" data-aos-delay="320" tabindex="0">
+        <article class="placement-sector-card" data-sector-index="5" data-aos="fade-up" data-aos-delay="320" tabindex="0">
           <img loading="lazy" src="assets/images/kontruksi.webp" alt="Sektor konstruksi" class="sector-card-image">
           <div class="sector-image-overlay"></div>
           <div class="sector-gradient-motion"></div>
@@ -501,11 +501,11 @@
             <h3 data-lang-key="sector5_title" class="sector-title">Konstruksi</h3>
             <p data-lang-key="sector5_desc" class="sector-hover-desc">Program penempatan tenaga kerja pada proyek
               konstruksi dan pembangunan infrastruktur.</p>
-            <a data-lang-key="sector_button" href="#services" class="sector-card-link"></a>
+            <button data-lang-key="sector_button" type="button" class="sector-card-link" data-sector-trigger data-sector-index="5"></button>
           </div>
         </article>
 
-        <article class="placement-sector-card" data-aos="fade-up" data-aos-delay="380" tabindex="0">
+        <article class="placement-sector-card" data-sector-index="6" data-aos="fade-up" data-aos-delay="380" tabindex="0">
           <img loading="lazy" src="assets/images/art.webp" alt="Sektor pekerja domestik" class="sector-card-image">
           <div class="sector-image-overlay"></div>
           <div class="sector-gradient-motion"></div>
@@ -514,12 +514,14 @@
             <h3 data-lang-key="sector6_title" class="sector-title">Pekerja Domestik (ART)</h3>
             <p data-lang-key="sector6_desc" class="sector-hover-desc">Program penempatan tenaga kerja untuk layanan
               rumah tangga profesional.</p>
-            <a data-lang-key="sector_button" href="#services" class="sector-card-link"></a>
+            <button data-lang-key="sector_button" type="button" class="sector-card-link" data-sector-trigger data-sector-index="6"></button>
           </div>
         </article>
       </div>
     </div>
   </section>
+
+  <div id="sector-expandable-root"></div>
 
   <section class="py-24 px-6 md:px-24 bg-[#161309]" id="lpk">
     <div class="max-w-7xl mx-auto">
@@ -700,7 +702,7 @@
     </div>
   </section>
 
-  <section class="py-24 px-6 md:px-24" id="contact">
+  <section class="py-24 px-6 md:px-24" id="hubungi-kami" tabindex="-1">
     <div class="max-w-7xl mx-auto">
 
       <!-- Header -->
@@ -816,6 +818,9 @@
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/framer-motion@11.14.4/dist/framer-motion.js"></script>
   <script src="script.js"></script>
 </body>
 
