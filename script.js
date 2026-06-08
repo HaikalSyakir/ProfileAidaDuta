@@ -14,7 +14,7 @@ const translations = {
 
     hero_tag: "INTEGRITAS TERPERCAYA",
     hero_desc:
-      "Membangun Masa Depan dengan Integritas dan Jangkauan Global. Menghubungkan Tenaga Kerja Indonesia dengan Peluang Internasional Terbaik.",
+      "Mulai berkembang lebih dan lebih lagi dengan memprioritaskan manfaat dasar dan nilai-nilai profesional. Untuk mendukung penempatan dan perlindungan bagi pekerja yang ditempatkan di luar negeri. Sehingga dapat memberikan manfaat besar bagi PMI, P3MI, Negara Penempatan, dan Kementerian Dalam Negeri.",
 
     btn_explore: "HUBUNGI KAMI",
     btn_legacy: "WARISAN KAMI",
@@ -30,9 +30,9 @@ const translations = {
     about_p2:
       "Fondasi kami dibangun di atas integritas mutlak, memastikan bahwa setiap profesional yang kami tempatkan dan setiap mitra yang kami layani mendapatkan standar keunggulan terbaik yang melampaui batas negara.",
 
-    about_hub_title: "Pusat Operasional Global",
+    about_hub_title: "Motto",
     about_hub_desc:
-      "PT Aida Duta Indonesia Sejahtera - Pelayanan Berstandar Internasional.",
+      "Manfaat: Profesional, andal, dan berkualitas.",
     about_status: "Mitra Penempatan Terverifikasi",
     about_metric_1_value: "01",
     about_metric_1_label: "Proses Terarah",
@@ -52,21 +52,18 @@ const translations = {
     vision_title: "Visi Kami",
 
     vision_desc:
-      "Menjadi perusahaan penempatan tenaga kerja yang terpercaya, profesional, dan berorientasi pada kesejahteraan pekerja migran Indonesia.",
+      "Mengembangkan perusahaan penempatan tenaga kerja migran Indonesia menuju perusahaan penempatan tenaga kerja yang profesional dan dapat diandalkan.",
 
     mission_title: "Misi Kami",
 
     mission_1:
-      "Menyediakan layanan penempatan pekerja migran yang aman, transparan, dan sesuai dengan peraturan yang berlaku.",
+      "Lowongan pekerjaan terbuka bagi pencari kerja yang berminat bekerja di luar negeri.",
 
     mission_2:
-      "Meningkatkan kompetensi tenaga kerja melalui pelatihan yang berkualitas sebelum diberangkatkan.",
+      "Menghasilkan pekerja migran yang memiliki keterampilan, pengetahuan & sikap.",
 
     mission_3:
-      "Memberikan perlindungan dan pendampingan kepada pekerja migran sebelum, selama, dan setelah bekerja di luar negeri.",
-
-    mission_4:
-      "Membangun kemitraan strategis dengan perusahaan pengguna tenaga kerja di luar negeri.",
+      "Membantu pemerintah dalam mengatasi pengangguran dan memperluas peluang kerja di luar negeri.",
 
     org_tag: "TENTANG KAMI",
     org_title: "Struktur Organisasi",
@@ -85,6 +82,20 @@ const translations = {
     org_admin: "Manajer Administrasi",
     org_admin_desc:
       "Mengatur dokumen, perizinan, dan kebutuhan administrasi keberangkatan tenaga kerja.",
+    cert_tag: "LEGALITAS KAMI",
+    cert_title: "Sertifikat Perusahaan",
+    cert_1_label: "Sertifikat Izin Penempatan",
+    cert_1_title: "SIP3MI",
+    cert_1_desc:
+      "Dokumen legalitas operasional penempatan pekerja migran Indonesia.",
+    cert_2_label: "Sertifikat Kompetensi",
+    cert_2_title: "Akreditasi Pelatihan",
+    cert_2_desc:
+      "Bukti standar pelatihan, pembekalan, dan peningkatan keterampilan calon pekerja.",
+    cert_3_label: "Sertifikat Kepatuhan",
+    cert_3_title: "Legalitas Perusahaan",
+    cert_3_desc:
+      "Dokumen pendukung kepatuhan perusahaan terhadap regulasi yang berlaku.",
 
     srv_tag: "LAYANAN KAMI",
     srv_title: "Layanan Profesional Komprehensif",
@@ -119,7 +130,7 @@ const translations = {
     sector2_title: "Pabrik",
     sector2_desc:
       "Program penempatan tenaga kerja pada sektor manufaktur dan produksi industri.",
-    sector3_title: "Perkebunan",
+    sector3_title: "Perkebunan dan Pertanian",
     sector3_desc:
       "Program penempatan tenaga kerja pada sektor perkebunan dan agrikultur modern.",
     sector4_title: "Panti Jompo",
@@ -251,7 +262,7 @@ const translations = {
     hero_tag: "ESTABLISHED INTEGRITY",
 
     hero_desc:
-      "Building the Future with Integrity and Global Reach. Connecting Indonesian Talents with Top International Opportunities.",
+      "Starting to develop more and more by prioritizing basic benefits and professional values. To support deployment and protection to workers who are placed abroad. So it can provide great benefits to PMI, P3MI, Placement Country and home Affairs.",
 
     btn_explore: "CONTACT US",
     btn_legacy: "OUR LEGACY",
@@ -270,7 +281,7 @@ const translations = {
     about_hub_title: "Global Operations Hub",
 
     about_hub_desc:
-      "PT Aida Duta Indonesia Sejahtera - International Standard Service.",
+      "Benefits, Proffesional reliable and quality.",
     about_status: "Verified Placement Partner",
     about_metric_1_value: "01",
     about_metric_1_label: "Guided Process",
@@ -290,21 +301,18 @@ const translations = {
     vision_title: "Our Vision",
 
     vision_desc:
-      "To become a trusted, professional, and welfare-oriented labor placement company for Indonesian migrant workers.",
+      "Developing a placement company for indonesian migrant workers towards a profess/onal and rellable worker placement company.",
 
     mission_title: "Our Mission",
 
     mission_1:
-      "Providing migrant worker placement services that are safe, transparent, and in accordance with applicable regulations.",
+      "Job vacancies are open to job seekers interested in working abroad.",
 
     mission_2:
-      "Improving workforce competency through quality training before departure.",
+      "Developing migrant workers with skills, knowledge, and professional attitude.",
 
     mission_3:
-      "Providing protection and assistance to migrant workers before, during and after working abroad.",
-
-    mission_4:
-      "Building strategic partnerships with companies using labor abroad.",
+      "Supporting the government in reducing unemployment and expanding overseas job opportunities.",
 
     org_tag: "ABOUT US",
     org_title: "Organizational Structure",
@@ -323,6 +331,20 @@ const translations = {
     org_admin: "Administration Manager",
     org_admin_desc:
       "Manages documents, permits, and administrative needs for worker departure.",
+    cert_tag: "OUR LEGALITY",
+    cert_title: "Company Certificates",
+    cert_1_label: "Placement Permit Certificate",
+    cert_1_title: "SIP3MI",
+    cert_1_desc:
+      "Operational legality document for Indonesian migrant worker placement.",
+    cert_2_label: "Competency Certificate",
+    cert_2_title: "Training Accreditation",
+    cert_2_desc:
+      "Proof of training, preparation, and skill improvement standards for prospective workers.",
+    cert_3_label: "Compliance Certificate",
+    cert_3_title: "Company Legality",
+    cert_3_desc:
+      "Supporting documents for company compliance with applicable regulations.",
 
     srv_tag: "OUR EXPERTISE",
     srv_title: "Comprehensive Professional Services",
@@ -492,7 +514,7 @@ const translations = {
     hero_tag: "誠信服務・連結國際",
 
     hero_desc:
-      "以誠信與全球視野開創未來，致力於連結印尼優秀人才與國際工作發展機會。",
+      "透過優先考慮基本福利和職業價值，開始不斷發展壯大。旨在支持和保護被派駐海外的員工。因此，它可以為PMI、P3MI、派遣國和內政部帶來巨大的益處。",
 
     btn_explore: "聯絡我們",
     btn_legacy: "品牌歷程",
@@ -510,7 +532,7 @@ const translations = {
     about_hub_title: "全球營運中心",
 
     about_hub_desc:
-      "PT Aida Duta Indonesia Sejahtera－提供值得信賴的國際專業服務。",
+      "福利優厚，專業可靠，品質優良",
 
     about_status: "Verified Placement Partner",
     about_metric_1_value: "01",
@@ -531,7 +553,7 @@ const translations = {
     vision_title: "我們的願景",
 
     vision_desc:
-      "成為一家值得信賴、專業且以福利為導向的印尼移工勞工派遣公司。",
+      "將一家印尼移民工人安置公司發展成為專業可靠的 工人安置公司。",
 
     mission_title: "我們的使命",
 
@@ -546,6 +568,13 @@ const translations = {
 
     mission_4:
       "與使用海外勞動力的公司建立策略夥伴關係。",
+
+    mission_1:
+      "Job vacancies are open to job seekers interested in working abroad.",
+    mission_2:
+      "Developing migrant workers with skills, knowledge, and professional attitude.",
+    mission_3:
+      "Supporting the government in reducing unemployment and expanding overseas job opportunities.",
 
     org_tag: "About Us",
     org_title: "Organizational Structure",
