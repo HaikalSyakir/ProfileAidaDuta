@@ -98,7 +98,7 @@ const translations = {
       "Dokumen pendukung kepatuhan perusahaan terhadap regulasi yang berlaku.",
 
     srv_tag: "LAYANAN KAMI",
-    srv_title: "Layanan Profesional Komprehensif",
+    srv_title: "Layanan Profesional ",
 
     srv1_title: "Rekrutmen dan seleksi calon pekerja Migran",
     srv1_desc:

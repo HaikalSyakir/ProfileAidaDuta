@@ -15,6 +15,7 @@
     rel="stylesheet" />
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -409,7 +410,7 @@
       <div
         class="glass-card overflow-hidden border border-[#f39a12]/10 hover:border-[#f39a12]/50 transition-all duration-500 rounded-lg group gold-glow"
         data-aos="zoom-in-up" data-aos-delay="100">
-        <div class="h-64 overflow-hidden relative">
+        <div class="h-40 md:h-48 overflow-hidden relative">
           <img loading="lazy"
             src="https://hongyan-web.sgp1.cdn.digitaloceanspaces.com/companies/service/fae5837b-9c97-4053-91b1-62c98c662512.png"
             alt="Rekrutmen dan seleksi calon pekerja migran."
@@ -782,7 +783,7 @@
           <div class="relative w-full h-full min-h-[420px] rounded-2xl overflow-hidden border border-[#f39a12]/15 shadow-2xl">
             <iframe
               title="Lokasi PT Aida Duta Indonesia Sejahtera"
-              src="https://www.google.com/maps?q=Jl.+Lkr.+Bar.+Kepanjen,+Ngadilangkung,+Kec.+Kepanjen,+Kabupaten+Malang,+Jawa+Timur&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.9213158839443!2d112.55568487901164!3d-8.10949446027737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e789fc891d7be17%3A0xeea6cda84f97083e!2sPT.%20AIDA%20DUTA%20INDONESIA%20SEJAHTERA!5e0!3m2!1sid!2sid!4v1781024717418!5m2!1sid!2sid"
               class="w-full h-full min-h-[420px] border-0 block"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
@@ -836,23 +837,44 @@
             </div>
           </div>
 
-          <!-- WhatsApp Button Card -->
-          <a href="https://wa.me/6281234567890?text=Halo%20PT%20Aida%20Duta%2C%20saya%20ingin%20mengetahui%20informasi%20penempatan%20kerja."
-            target="_blank" rel="noopener noreferrer"
-            class="whatsapp-cta-btn group"
-            data-aos="zoom-in-up" data-aos-delay="200">
+          <!-- WhatsApp Admin Cards -->
+          <div class="whatsapp-admin-grid" data-aos="zoom-in-up" data-aos-delay="200">
+            <a href="https://wa.me/628125322013?text=Halo%20Admin%201%20PT%20Aida%20Duta%2C%20saya%20ingin%20mengetahui%20informasi%20penempatan%20kerja."
+              target="_blank" rel="noopener noreferrer"
+              class="whatsapp-cta-btn group"
+              aria-label="Hubungi Admin 1 melalui WhatsApp">
             <div class="whatsapp-cta-inner">
               <div class="whatsapp-icon-ring">
                 <span class="material-icons-outlined">chat</span>
               </div>
               <div class="flex-1 text-left">
-                <span data-lang-key="btn_whatsapp" class="block text-sm font-black uppercase tracking-widest text-white">HUBUNGI VIA WHATSAPP</span>
-                <span class="text-xs text-white/70 font-light mt-0.5 block">Respon cepat • Online sekarang</span>
+                <span class="block text-sm font-black uppercase tracking-widest text-white">Admin 1</span>
+                <span class="text-xs text-white/70 font-light mt-0.5 block">+62 812-5322-013</span>
+                <span data-lang-key="btn_whatsapp" class="text-xs text-white/80 font-bold mt-1 block">DUKUNGAN WHATSAPP</span>
               </div>
               <span class="material-icons-outlined whatsapp-arrow">arrow_forward</span>
             </div>
             <div class="whatsapp-cta-glow"></div>
-          </a>
+            </a>
+
+            <a href="https://wa.me/6281350908388?text=Halo%20Admin%202%20PT%20Aida%20Duta%2C%20saya%20ingin%20mengetahui%20informasi%20penempatan%20kerja."
+              target="_blank" rel="noopener noreferrer"
+              class="whatsapp-cta-btn group"
+              aria-label="Hubungi Admin 2 melalui WhatsApp">
+            <div class="whatsapp-cta-inner">
+              <div class="whatsapp-icon-ring">
+                <span class="material-icons-outlined">chat</span>
+              </div>
+              <div class="flex-1 text-left">
+                <span class="block text-sm font-black uppercase tracking-widest text-white">Admin 2</span>
+                <span class="text-xs text-white/70 font-light mt-0.5 block">+62 813-5090-8388</span>
+                <span data-lang-key="btn_whatsapp" class="text-xs text-white/80 font-bold mt-1 block">DUKUNGAN WHATSAPP</span>
+              </div>
+              <span class="material-icons-outlined whatsapp-arrow">arrow_forward</span>
+            </div>
+            <div class="whatsapp-cta-glow"></div>
+            </a>
+          </div>
 
         </div>
       </div>
@@ -860,18 +882,29 @@
   </section>
 
 
-  <footer
-    class="w-full px-6 md:px-24 py-12 flex flex-col md:flex-row justify-between items-center gap-6 bg-[#310202]/95 border-t border-[#f39a12]/10">
+  <footer class="site-footer w-full px-6 md:px-24 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
     <div class="text-center md:text-left">
-      <div class="text-2xl text-[#f39a12] mb-2 font-bold font-display italic"> PT Aida Duta Indonesia Sejahtera</div>
+      <div class="footer-company-name text-2xl mb-2 font-bold font-display italic"> PT Aida Duta Indonesia Sejahtera</div>
       <p data-lang-key="foot_copy" class="text-xs text-[#e9e2d0]/50">© 2026 PT Aida Duta Indonesia Sejahtera. All Rights
         Reserved.</p>
     </div>
-    <div class="flex gap-6 text-xs">
-      <a data-lang-key="foot_priv" class="text-[#e9e2d0]/50 hover:text-[#f39a12] transition-colors" href="#">Privacy
-        Policy</a>
-      <a data-lang-key="foot_terms" class="text-[#e9e2d0]/50 hover:text-[#f39a12] transition-colors" href="#">Terms of
-        Service</a>
+    <div class="footer-actions">
+      <div class="footer-social-links" aria-label="Media sosial resmi PT Aida Duta">
+        <a href="https://www.facebook.com/share/1BCNxvaiCp/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"
+          aria-label="Facebook PT Aida Duta"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/aidagroupofficial?igsh=MWRmb3hmeDBmbjR3bg==" target="_blank" rel="noopener noreferrer"
+          aria-label="Instagram PT Aida Duta"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.tiktok.com/@aidagroup.official?_r=1&_t=ZS-96zcTBsRO1F" target="_blank" rel="noopener noreferrer"
+          aria-label="TikTok PT Aida Duta"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+        <a href="https://youtube.com/@aidagroup.official?si=0Pciq3yD6JP-8Str" target="_blank" rel="noopener noreferrer"
+          aria-label="YouTube PT Aida Duta"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+      </div>
+      <div class="flex gap-6 text-xs justify-center md:justify-end">
+        <a data-lang-key="foot_priv" class="text-[#e9e2d0]/50 hover:text-[#d4af37] transition-colors" href="#">Privacy
+          Policy</a>
+        <a data-lang-key="foot_terms" class="text-[#e9e2d0]/50 hover:text-[#d4af37] transition-colors" href="#">Terms of
+          Service</a>
+      </div>
     </div>
   </footer>
 
