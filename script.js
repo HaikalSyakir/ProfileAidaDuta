@@ -194,12 +194,7 @@ const translations = {
     country4_title: "Malaysia",
     country4_desc:
       "Negara mitra dengan peluang kerja lintas sektor dan proses penempatan yang terarah.",
-    country5_region: "Asia Timur",
-    country5_watermark: "Japan",
-    country5_title: "Jepang",
-    country5_desc:
-      "Destinasi kerja internasional dengan standar profesional dan kebutuhan tenaga kerja yang konsisten.",
-
+  
     gal_tag: "DOKUMENTASI",
     gal_title: "Momen Keunggulan",
 
@@ -448,12 +443,7 @@ const translations = {
     country4_title: "Malaysia",
     country4_desc:
       "A partner country with cross-sector work opportunities and a guided placement process.",
-    country5_region: "East Asia",
-    country5_watermark: "Japan",
-    country5_title: "Japan",
-    country5_desc:
-      "An international work destination with professional standards and consistent workforce demand.",
-
+   
     gal_tag: "DOCUMENTATION",
     gal_title: "Moments of Excellence",
 
@@ -696,11 +686,6 @@ const translations = {
     country4_title: "馬來西亞",
     country4_desc:
       "涵蓋種植園、工廠、建築、漁業與服務業等工作選擇。",
-    country5_region: "東亞",
-    country5_watermark: "日本",
-    country5_title: "日本",
-    country5_desc:
-      "提供製造、照護、農業、食品加工與技術產業的安置計畫。",
 
     gal_tag: "精彩紀錄",
 
@@ -925,7 +910,6 @@ Object.assign(translations.zh, {
   country2_desc: "\u6839\u64da\u73fe\u6709\u5de5\u4f5c\u7522\u696d\uff0c\u63d0\u4f9b\u591a\u6a23\u5316\u52de\u529b\u9700\u6c42\u7684\u5b89\u7f6e\u76ee\u7684\u5730\u3002",
   country3_desc: "\u5340\u57df\u6027\u76ee\u7684\u5730\uff0c\u5b89\u7f6e\u6a5f\u6703\u4f9d\u64da\u516c\u53f8\u5217\u51fa\u7684\u6b63\u5f0f\u7522\u696d\u9700\u6c42\u3002",
   country4_desc: "\u5408\u4f5c\u570b\u5bb6\u63d0\u4f9b\u8de8\u7522\u696d\u7684\u5de5\u4f5c\u6a5f\u6703\uff0c\u4e26\u914d\u5408\u660e\u78ba\u7684\u5b89\u7f6e\u6d41\u7a0b\u3002",
-  country5_desc: "\u5177\u5099\u5c08\u696d\u6a19\u6e96\u4e14\u52de\u529b\u9700\u6c42\u7a69\u5b9a\u7684\u570b\u969b\u5de5\u4f5c\u76ee\u7684\u5730\u3002",
   gal1_title: "\u57f9\u8a13\u8ab2\u7a0b",
   gal1_desc: "\u57f9\u8a13\u8ab2\u7a0b\u3001\u884c\u524d\u8aaa\u660e\u8207\u5b78\u54e1\u6e96\u5099\u60c5\u6cc1\u7d00\u9304\u3002",
   gal2_title: "\u6d77\u5916\u52de\u5de5\u6b61\u9001\u5100\u5f0f",
@@ -970,14 +954,6 @@ const countriesData = [
     titleKey: "country4_title",
     regionKey: "country4_region",
     descKey: "country4_desc"
-  },
-  {
-    id: 5,
-    image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1800&q=90",
-    focalPoint: "58% center",
-    titleKey: "country5_title",
-    regionKey: "country5_region",
-    descKey: "country5_desc"
   }
 ];
 
