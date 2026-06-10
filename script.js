@@ -203,25 +203,25 @@ const translations = {
     gal_tag: "DOKUMENTASI",
     gal_title: "Momen Keunggulan",
 
-    gal1_title: "Kelas Diklat LPK",
+    gal1_title: "Proses Pelatihan",
 
     gal1_desc:
-      "Proses bimbingan intensif bahasa, fisik, dan kedisiplinan kerja asing.",
+      "Dokumentasi kelas pelatihan, pembekalan, dan kesiapan peserta.",
 
     gal2_title: "Pelepasan Pekerja",
 
     gal2_desc:
-      "Seremoni pelepasan keberangkatan resmi pekerja migran menuju negara penempatan.",
+      "Momen pelepasan keberangkatan pekerja secara resmi.",
 
-    gal3_title: "MoU Internasional",
+    gal3_title: "Uji Kompetensi",
 
     gal3_desc:
-      "Penandatanganan ekspansi aliansi strategis bersama dengan korporasi dunia.",
+      "Dokumentasi proses ujian dan validasi kompetensi peserta.",
 
-    gal4_title: "Uji Kompetensi",
+    gal4_title: "Kegiatan",
 
     gal4_desc:
-      "Sertifikasi resmi dan validasi keahlian teknis calon pekerja migran.",
+      "Aktivitas perusahaan, peserta, kantor, dan kegiatan resmi.",
 
     cont_title: "Mulai Perjalanan Global Anda",
 
@@ -457,25 +457,25 @@ const translations = {
     gal_tag: "DOCUMENTATION",
     gal_title: "Moments of Excellence",
 
-    gal1_title: "LPK Training Class",
+    gal1_title: "Training Process",
 
     gal1_desc:
-      "Intensive guidance process for language, physical conditioning, and foreign work discipline.",
+      "Documentation of training classes, briefings, and participant readiness.",
 
     gal2_title: "Worker Deployment",
 
     gal2_desc:
-      "Official send-off ceremony for migrant workers departing to their destination countries.",
+      "Official moments from worker departure and deployment ceremonies.",
 
-    gal3_title: "International MoU",
+    gal3_title: "Competence Testing",
 
     gal3_desc:
-      "Signing of strategic alliance expansions together with global corporations.",
+      "Documentation of exams and participant competency validation.",
 
-    gal4_title: "Competency Test",
+    gal4_title: "Activities",
 
     gal4_desc:
-      "Official certification and validation of technical skills for prospective migrant workers.",
+      "Company, participant, office, and official activity documentation.",
 
     cont_title: "Start Your Global Journey",
 
@@ -706,7 +706,7 @@ const translations = {
 
     gal_title: "企業精彩紀實",
 
-    gal1_title: "LPK 培訓課程",
+    gal1_title: "培訓過程",
 
     gal1_desc:
       "針對語言、體能與海外工作紀律進行專業培訓。",
@@ -716,7 +716,7 @@ const translations = {
     gal2_desc:
       "為即將前往海外工作的勞工舉辦正式出發儀式。",
 
-    gal3_title: "國際合作備忘錄",
+    gal3_title: "能力測試",
 
     gal3_desc:
       "與國際企業簽署合作協議，拓展全球合作機會。",
@@ -925,7 +925,15 @@ Object.assign(translations.zh, {
   country2_desc: "\u6839\u64da\u73fe\u6709\u5de5\u4f5c\u7522\u696d\uff0c\u63d0\u4f9b\u591a\u6a23\u5316\u52de\u529b\u9700\u6c42\u7684\u5b89\u7f6e\u76ee\u7684\u5730\u3002",
   country3_desc: "\u5340\u57df\u6027\u76ee\u7684\u5730\uff0c\u5b89\u7f6e\u6a5f\u6703\u4f9d\u64da\u516c\u53f8\u5217\u51fa\u7684\u6b63\u5f0f\u7522\u696d\u9700\u6c42\u3002",
   country4_desc: "\u5408\u4f5c\u570b\u5bb6\u63d0\u4f9b\u8de8\u7522\u696d\u7684\u5de5\u4f5c\u6a5f\u6703\uff0c\u4e26\u914d\u5408\u660e\u78ba\u7684\u5b89\u7f6e\u6d41\u7a0b\u3002",
-  country5_desc: "\u5177\u5099\u5c08\u696d\u6a19\u6e96\u4e14\u52de\u529b\u9700\u6c42\u7a69\u5b9a\u7684\u570b\u969b\u5de5\u4f5c\u76ee\u7684\u5730\u3002"
+  country5_desc: "\u5177\u5099\u5c08\u696d\u6a19\u6e96\u4e14\u52de\u529b\u9700\u6c42\u7a69\u5b9a\u7684\u570b\u969b\u5de5\u4f5c\u76ee\u7684\u5730\u3002",
+  gal1_title: "\u57f9\u8a13\u8ab2\u7a0b",
+  gal1_desc: "\u57f9\u8a13\u8ab2\u7a0b\u3001\u884c\u524d\u8aaa\u660e\u8207\u5b78\u54e1\u6e96\u5099\u60c5\u6cc1\u7d00\u9304\u3002",
+  gal2_title: "\u6d77\u5916\u52de\u5de5\u6b61\u9001\u5100\u5f0f",
+  gal2_desc: "\u6b63\u5f0f\u8a18\u9304\u52de\u5de5\u51fa\u767c\u8207\u6d3e\u9063\u5100\u5f0f\u7684\u91cd\u8981\u6642\u523b\u3002",
+  gal3_title: "\u8003\u8a66\u7167\u7247",
+  gal3_desc: "\u8a18\u9304\u8003\u8a66\u6d41\u7a0b\u8207\u5b78\u54e1\u80fd\u529b\u9a57\u8b49\u6d3b\u52d5\u3002",
+  gal4_title: "\u6d3b\u52d5\u7d00\u9304",
+  gal4_desc: "\u516c\u53f8\u3001\u5b78\u54e1\u3001\u8fa6\u516c\u5ba4\u8207\u6b63\u5f0f\u6d3b\u52d5\u7d00\u9304\u3002"
 });
 
 // 2. Data Negara Penempatan
@@ -933,35 +941,40 @@ const countriesData = [
   null, // index 0 kosong, karena negara dimulai dari index 1
   {
     id: 1,
-    image: "assets/images/hongkong.webp",
+    image: "https://images.unsplash.com/photo-1591847337409-6c765958e586?auto=format&fit=crop&w=1800&q=90",
+    focalPoint: "58% center",
     titleKey: "country1_title",
     regionKey: "country1_region",
     descKey: "country1_desc"
   },
   {
     id: 2,
-    image: "assets/images/taiwan.webp",
+    image: "https://images.unsplash.com/photo-1741004419862-5f3600cc7a97?auto=format&fit=crop&w=1800&q=90",
+    focalPoint: "60% center",
     titleKey: "country2_title",
     regionKey: "country2_region",
     descKey: "country2_desc"
   },
   {
     id: 3,
-    image: "assets/images/singapore.webp",
+    image: "https://images.unsplash.com/photo-1706809475944-1fa6bdacfa3b?auto=format&fit=crop&w=1800&q=90",
+    focalPoint: "62% center",
     titleKey: "country3_title",
     regionKey: "country3_region",
     descKey: "country3_desc"
   },
   {
     id: 4,
-    image: "assets/images/malaysia.webp",
+    image: "https://images.unsplash.com/photo-1611924779080-d20389c1f56c?auto=format&fit=crop&w=1800&q=90",
+    focalPoint: "55% center",
     titleKey: "country4_title",
     regionKey: "country4_region",
     descKey: "country4_desc"
   },
   {
     id: 5,
-    image: "assets/images/jepang.webp",
+    image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1800&q=90",
+    focalPoint: "58% center",
     titleKey: "country5_title",
     regionKey: "country5_region",
     descKey: "country5_desc"
@@ -975,6 +988,158 @@ function preloadHeroImages() {
     const img = new Image();
     img.src = country.image;
   });
+}
+
+const activityGalleryData = {
+  diklat: {
+    label: "Kelas Diklat",
+    folder: "assets/images/DIKLAT/",
+    images: [
+      "assets/images/DIKLAT/diklat1.jpeg",
+      "assets/images/DIKLAT/diklat2.jpeg",
+      "assets/images/DIKLAT/diklat3.jpeg",
+      "assets/images/DIKLAT/diklat4.jpeg",
+      "assets/images/DIKLAT/diklat5.jpeg",
+      "assets/images/DIKLAT/diklat6.jpeg",
+      "assets/images/DIKLAT/diklat7.jpeg",
+      "assets/images/DIKLAT/diklat8.jpeg",
+      "assets/images/DIKLAT/diklat9.jpeg",
+      "assets/images/DIKLAT/diklat10.jpeg",
+      "assets/images/DIKLAT/diklat11.jpeg",
+      "assets/images/DIKLAT/diklat12.jpeg",
+      "assets/images/DIKLAT/diklat13.jpeg"
+    ]
+  },
+  pelepasan: {
+    label: "Pelepasan Pekerja",
+    folder: "assets/images/PELEPASAN/",
+    images: [
+      "assets/images/PELEPASAN/pelepasan1.jpeg",
+      "assets/images/PELEPASAN/pelepasan2.jpeg",
+      "assets/images/PELEPASAN/pelepasan3.jpeg",
+      "assets/images/PELEPASAN/pelepasan4.jpeg",
+      "assets/images/PELEPASAN/pelepasan5.jpeg",
+      "assets/images/PELEPASAN/pelepasan6.jpeg",
+      "assets/images/PELEPASAN/pelepasan7.jpeg",
+      "assets/images/PELEPASAN/pelepasan8.jpeg",
+      "assets/images/PELEPASAN/pelepasan9.jpeg"
+    ]
+  },
+  fotoUjian: {
+    label: "Foto Ujian",
+    folder: "assets/images/FOTO-UJIAN/",
+    images: [
+      "assets/images/FOTO-UJIAN/ujian1.jpeg"
+    ]
+  },
+  kegiatan: {
+    label: "Kegiatan",
+    folder: "assets/images/KEGIATAN/",
+    images: [
+      "assets/images/KEGIATAN/kegiatan1.webp",
+      "assets/images/KEGIATAN/kegiatan2.webp",
+      "assets/images/KEGIATAN/kegiatan3.webp",
+      "assets/images/KEGIATAN/kegiatan4.webp",
+      "assets/images/KEGIATAN/kegiatan5.webp"
+    ]
+  }
+};
+
+const activityGalleryImagePattern = /\.(avif|webp|jpe?g|png)$/i;
+const activityGalleryImageCache = {};
+
+function sortGalleryImages(images) {
+  return images.slice().sort((a, b) => a.localeCompare(b, undefined, {
+    numeric: true,
+    sensitivity: "base"
+  }));
+}
+
+async function loadActivityGalleryImages(category) {
+  if (!category || !category.folder) return sortGalleryImages(category.images || []);
+  if (activityGalleryImageCache[category.folder]) return activityGalleryImageCache[category.folder];
+
+  const fallbackImages = sortGalleryImages(category.images || []);
+
+  try {
+    const response = await fetch(category.folder, { cache: "no-store" });
+    if (!response.ok) throw new Error("Directory listing unavailable");
+
+    const html = await response.text();
+    const doc = new DOMParser().parseFromString(html, "text/html");
+    const dynamicImages = Array.from(doc.querySelectorAll("a[href]"))
+      .map(link => link.getAttribute("href"))
+      .filter(Boolean)
+      .map(href => decodeURIComponent(href.split("?")[0].split("#")[0]))
+      .filter(href => activityGalleryImagePattern.test(href))
+      .map(href => {
+        const filename = href.split("/").filter(Boolean).pop();
+        return filename ? category.folder + filename : "";
+      })
+      .filter(Boolean);
+
+    activityGalleryImageCache[category.folder] = dynamicImages.length
+      ? sortGalleryImages(Array.from(new Set(dynamicImages)))
+      : fallbackImages;
+  } catch (error) {
+    activityGalleryImageCache[category.folder] = fallbackImages;
+  }
+
+  return activityGalleryImageCache[category.folder];
+}
+
+function initActivityGallery() {
+  const galleryGrid = document.querySelector("[data-gallery-grid]");
+  const categoryCards = document.querySelectorAll("[data-gallery-category]");
+  if (!galleryGrid || !categoryCards.length) return;
+
+  let activeCategory = "diklat";
+  let transitionTimer = null;
+  let renderToken = 0;
+
+  async function renderGallery(categoryKey) {
+    const currentToken = ++renderToken;
+    const category = activityGalleryData[categoryKey] || activityGalleryData.diklat;
+    const images = await loadActivityGalleryImages(category);
+    if (currentToken !== renderToken) return;
+
+    galleryGrid.innerHTML = images.map((src, index) => `
+      <figure class="activity-gallery-photo" style="--photo-delay: ${Math.min(index * 35, 280)}ms">
+        <img src="${src}" alt="${category.label} ${index + 1}" loading="lazy">
+      </figure>
+    `).join("");
+
+    if (typeof AOS !== "undefined") {
+      window.setTimeout(() => AOS.refresh(), 120);
+    }
+  }
+
+  function setActiveCategory(categoryKey) {
+    if (!activityGalleryData[categoryKey] || categoryKey === activeCategory) return;
+    activeCategory = categoryKey;
+
+    categoryCards.forEach(card => {
+      const isActive = card.dataset.galleryCategory === categoryKey;
+      card.classList.toggle("is-active", isActive);
+      card.setAttribute("aria-selected", isActive ? "true" : "false");
+    });
+
+    window.clearTimeout(transitionTimer);
+    galleryGrid.classList.add("is-switching");
+    transitionTimer = window.setTimeout(() => {
+      renderGallery(categoryKey).then(() => requestAnimationFrame(() => {
+        galleryGrid.classList.remove("is-switching");
+      }));
+    }, 180);
+  }
+
+  categoryCards.forEach(card => {
+    card.addEventListener("click", () => {
+      setActiveCategory(card.dataset.galleryCategory);
+    });
+  });
+
+  renderGallery(activeCategory);
 }
 
 // Fungsi selectCountry — dipanggil saat kartu negara diklik
@@ -1036,6 +1201,8 @@ function renderCountryPlacementInfo(index, lang) {
   }
 }
 
+let countryTransitionToken = 0;
+
 function selectCountry(index, clickedCard) {
   const country = countriesData[index];
   if (!country) return;
@@ -1044,6 +1211,7 @@ function selectCountry(index, clickedCard) {
   const heroName = document.getElementById("active-country-name");
   const heroRegion = document.getElementById("active-country-region");
   const heroText = document.querySelector(".active-country-text");
+  const transitionToken = ++countryTransitionToken;
   document.body.dataset.activeCountryIndex = String(index);
 
   // Ambil bahasa aktif saat ini
@@ -1064,21 +1232,20 @@ function selectCountry(index, clickedCard) {
   if (heroImg) heroImg.classList.add("transitioning");
   if (heroText) heroText.classList.add("transitioning");
 
-  // 4. Setelah animasi fade-out selesai, ganti konten
-  setTimeout(function() {
-    // Ganti gambar
+  function updateCountryContent() {
+    if (transitionToken !== countryTransitionToken) return;
+
     if (heroImg) {
       heroImg.src = country.image;
       heroImg.alt = t ? (t[country.titleKey] || country.titleKey) : country.titleKey;
+      heroImg.style.objectPosition = country.focalPoint || "center center";
     }
 
-    // Ganti teks nama negara
     if (heroName) {
       heroName.setAttribute("data-lang-key", country.titleKey);
       heroName.textContent = t ? (t[country.titleKey] || "") : "";
     }
 
-    // Ganti teks wilayah
     if (heroRegion) {
       heroRegion.setAttribute("data-lang-key", country.regionKey);
       heroRegion.textContent = t ? (t[country.regionKey] || "") : "";
@@ -1089,8 +1256,19 @@ function selectCountry(index, clickedCard) {
     // 5. Fade-in kembali
     if (heroImg) heroImg.classList.remove("transitioning");
     if (heroText) heroText.classList.remove("transitioning");
+  }
 
-  }, 350);
+  // 4. Muat gambar baru lebih dulu agar pergantian terasa halus dan tidak flicker.
+  if (heroImg) {
+    const nextImage = new Image();
+    nextImage.onload = function() {
+      setTimeout(updateCountryContent, 180);
+    };
+    nextImage.onerror = updateCountryContent;
+    nextImage.src = country.image;
+  } else {
+    setTimeout(updateCountryContent, 180);
+  }
 }
 
 // 3. Fungsi Menerapkan Terjemahan Halaman
@@ -1436,6 +1614,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Preload semua gambar negara
   preloadHeroImages();
+  initActivityGallery();
 
   // Pastikan kartu pertama (Hong Kong) aktif saat halaman dimuat
   const firstCard = document.querySelector(".country-list-card[data-country-index='1']");
