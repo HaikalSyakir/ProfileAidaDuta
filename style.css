@@ -699,6 +699,56 @@ nav>.flex-1 {
   transform: translateY(15px);
 }
 
+.country-sector-panel {
+  max-width: 44rem;
+  margin-top: 1.5rem;
+}
+
+.country-sector-label {
+  margin: 0 0 0.75rem;
+  color: #ffffff !important;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1.35 !important;
+  text-transform: uppercase;
+}
+
+.country-sector-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-bottom: 1rem;
+}
+
+.country-sector-badge,
+.country-sector-empty {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.15rem;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 999px;
+  background: rgba(212, 175, 55, 0.12);
+  color: #D4AF37;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.country-sector-empty {
+  border-style: dashed;
+  color: rgba(233, 226, 208, 0.74);
+}
+
+.country-sector-desc {
+  max-width: 38rem;
+  margin: 0;
+  color: rgba(233, 226, 208, 0.78) !important;
+  font-size: clamp(0.92rem, 1.5vw, 1.04rem);
+  line-height: 1.75 !important;
+}
+
 /* Tablet layout for cards sidebar */
 @media (max-width: 1024px) {
   #lpk .grid.grid-cols-1.lg\:grid-cols-10 {
@@ -748,6 +798,34 @@ nav>.flex-1 {
 
   .country-list-card p {
     font-size: 0.7rem !important;
+  }
+
+  .active-country-text {
+    right: 0;
+  }
+
+  .country-sector-panel {
+    margin-top: 1rem;
+  }
+
+  .country-sector-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.11em;
+  }
+
+  .country-sector-badges {
+    gap: 0.5rem;
+  }
+
+  .country-sector-badge,
+  .country-sector-empty {
+    min-height: 1.9rem;
+    padding: 0.38rem 0.68rem;
+    font-size: 0.7rem;
+  }
+
+  .country-sector-desc {
+    font-size: 0.84rem;
   }
 }
 

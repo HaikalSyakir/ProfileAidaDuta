@@ -172,31 +172,33 @@ const translations = {
     lpk_f2: "Orientasi Negara Tujuan",
     lpk_stat1: "Negara Tujuan",
     lpk_stat2: "Asia Pasifik",
+    country_sector_label: "Sektor Penempatan Tersedia",
+    country_no_sectors: "Belum ada sektor penempatan yang tercatat untuk negara ini.",
     country1_region: "Asia Timur",
     country1_watermark: "Hong Kong",
     country1_title: "Hong Kong",
     country1_desc:
-      "Peluang penempatan untuk sektor domestik, layanan, perawatan, dan kebutuhan rumah tangga profesional.",
+      "Peluang kerja profesional di negara mitra dengan kebutuhan tenaga kerja yang terarah dan stabil.",
     country2_region: "Asia Timur",
     country2_watermark: "Taiwan",
     country2_title: "Taiwan",
     country2_desc:
-      "Tujuan penempatan untuk manufaktur, pabrik, perawatan lansia, dan sektor pendukung industri.",
+      "Tujuan penempatan dengan permintaan tenaga kerja yang beragam sesuai sektor kerja yang tersedia.",
     country3_region: "Asia Tenggara",
     country3_watermark: "Singapore",
     country3_title: "Singapura",
     country3_desc:
-      "Penempatan tenaga kerja untuk domestik, hospitality, layanan umum, dan kebutuhan operasional perkotaan.",
+      "Negara tujuan regional dengan peluang penempatan yang mengikuti kebutuhan sektor resmi perusahaan.",
     country4_region: "Asia Tenggara",
     country4_watermark: "Malaysia",
     country4_title: "Malaysia",
     country4_desc:
-      "Pilihan kerja untuk perkebunan, pabrik, konstruksi, perikanan, dan sektor layanan.",
+      "Negara mitra dengan peluang kerja lintas sektor dan proses penempatan yang terarah.",
     country5_region: "Asia Timur",
     country5_watermark: "Japan",
     country5_title: "Jepang",
     country5_desc:
-      "Program penempatan untuk manufaktur, perawatan, pertanian, pengolahan makanan, dan industri teknis.",
+      "Destinasi kerja internasional dengan standar profesional dan kebutuhan tenaga kerja yang konsisten.",
 
     gal_tag: "DOKUMENTASI",
     gal_title: "Momen Keunggulan",
@@ -424,31 +426,33 @@ const translations = {
     lpk_f2: "Destination Orientation",
     lpk_stat1: "Destination Countries",
     lpk_stat2: "Asia Pacific",
+    country_sector_label: "Available Placement Sectors",
+    country_no_sectors: "No placement sectors are currently listed for this country.",
     country1_region: "East Asia",
     country1_watermark: "Hong Kong",
     country1_title: "Hong Kong",
     country1_desc:
-      "Placement opportunities for domestic work, services, care support, and professional household needs.",
+      "Professional work opportunities in a partner country with focused and stable workforce demand.",
     country2_region: "East Asia",
     country2_watermark: "Taiwan",
     country2_title: "Taiwan",
     country2_desc:
-      "Placement destination for manufacturing, factories, elderly care, and supporting industrial sectors.",
+      "A placement destination with varied workforce demand based on the available work sectors.",
     country3_region: "Southeast Asia",
     country3_watermark: "Singapore",
     country3_title: "Singapore",
     country3_desc:
-      "Worker placement for domestic work, hospitality, public services, and urban operational needs.",
+      "A regional destination where placement opportunities follow the company's official sector needs.",
     country4_region: "Southeast Asia",
     country4_watermark: "Malaysia",
     country4_title: "Malaysia",
     country4_desc:
-      "Work options for plantations, factories, construction, fisheries, and service sectors.",
+      "A partner country with cross-sector work opportunities and a guided placement process.",
     country5_region: "East Asia",
     country5_watermark: "Japan",
     country5_title: "Japan",
     country5_desc:
-      "Placement programs for manufacturing, care work, agriculture, food processing, and technical industries.",
+      "An international work destination with professional standards and consistent workforce demand.",
 
     gal_tag: "DOCUMENTATION",
     gal_title: "Moments of Excellence",
@@ -914,6 +918,16 @@ Object.assign(translations.zh, {
   sector6_benefits: ["依規定提供住宿", "具競爭力薪資", "合約保障", "出發前協助"]
 });
 
+Object.assign(translations.zh, {
+  country_sector_label: "\u53ef\u5b89\u7f6e\u7522\u696d",
+  country_no_sectors: "\u76ee\u524d\u6b64\u570b\u5bb6\u5c1a\u672a\u5217\u51fa\u5b89\u7f6e\u7522\u696d\u3002",
+  country1_desc: "\u5728\u5408\u4f5c\u570b\u5bb6\u63d0\u4f9b\u5c08\u696d\u5de5\u4f5c\u6a5f\u6703\uff0c\u52de\u529b\u9700\u6c42\u660e\u78ba\u4e14\u7a69\u5b9a\u3002",
+  country2_desc: "\u6839\u64da\u73fe\u6709\u5de5\u4f5c\u7522\u696d\uff0c\u63d0\u4f9b\u591a\u6a23\u5316\u52de\u529b\u9700\u6c42\u7684\u5b89\u7f6e\u76ee\u7684\u5730\u3002",
+  country3_desc: "\u5340\u57df\u6027\u76ee\u7684\u5730\uff0c\u5b89\u7f6e\u6a5f\u6703\u4f9d\u64da\u516c\u53f8\u5217\u51fa\u7684\u6b63\u5f0f\u7522\u696d\u9700\u6c42\u3002",
+  country4_desc: "\u5408\u4f5c\u570b\u5bb6\u63d0\u4f9b\u8de8\u7522\u696d\u7684\u5de5\u4f5c\u6a5f\u6703\uff0c\u4e26\u914d\u5408\u660e\u78ba\u7684\u5b89\u7f6e\u6d41\u7a0b\u3002",
+  country5_desc: "\u5177\u5099\u5c08\u696d\u6a19\u6e96\u4e14\u52de\u529b\u9700\u6c42\u7a69\u5b9a\u7684\u570b\u969b\u5de5\u4f5c\u76ee\u7684\u5730\u3002"
+});
+
 // 2. Data Negara Penempatan
 const countriesData = [
   null, // index 0 kosong, karena negara dimulai dari index 1
@@ -921,31 +935,36 @@ const countriesData = [
     id: 1,
     image: "assets/images/hongkong.webp",
     titleKey: "country1_title",
-    regionKey: "country1_region"
+    regionKey: "country1_region",
+    descKey: "country1_desc"
   },
   {
     id: 2,
     image: "assets/images/taiwan.webp",
     titleKey: "country2_title",
-    regionKey: "country2_region"
+    regionKey: "country2_region",
+    descKey: "country2_desc"
   },
   {
     id: 3,
     image: "assets/images/singapore.webp",
     titleKey: "country3_title",
-    regionKey: "country3_region"
+    regionKey: "country3_region",
+    descKey: "country3_desc"
   },
   {
     id: 4,
     image: "assets/images/malaysia.webp",
     titleKey: "country4_title",
-    regionKey: "country4_region"
+    regionKey: "country4_region",
+    descKey: "country4_desc"
   },
   {
     id: 5,
     image: "assets/images/jepang.webp",
     titleKey: "country5_title",
-    regionKey: "country5_region"
+    regionKey: "country5_region",
+    descKey: "country5_desc"
   }
 ];
 
@@ -959,6 +978,64 @@ function preloadHeroImages() {
 }
 
 // Fungsi selectCountry — dipanggil saat kartu negara diklik
+function normalizePlacementName(value) {
+  return String(value || "").trim().toLowerCase();
+}
+
+function getAvailableSectorsForCountry(country, lang) {
+  const t = translations[lang] || translations.id;
+  const countryName = normalizePlacementName(t[country.titleKey]);
+
+  return sectorPlacementData.filter(function(sector) {
+    if (!sector) return false;
+
+    const destinationCountries = t[sector.countriesKey];
+    if (!Array.isArray(destinationCountries)) return false;
+
+    return destinationCountries.some(function(destinationCountry) {
+      return normalizePlacementName(destinationCountry) === countryName;
+    });
+  });
+}
+
+function renderCountryPlacementInfo(index, lang) {
+  const country = countriesData[index];
+  if (!country) return;
+
+  const t = translations[lang] || translations.id;
+  const label = document.getElementById("active-country-sector-label");
+  const badgeContainer = document.getElementById("active-country-sectors");
+  const desc = document.getElementById("active-country-desc");
+  const matchingSectors = getAvailableSectorsForCountry(country, lang);
+
+  if (label) {
+    label.textContent = t.country_sector_label || "Sektor Penempatan Tersedia";
+  }
+
+  if (badgeContainer) {
+    badgeContainer.innerHTML = "";
+
+    if (matchingSectors.length) {
+      matchingSectors.forEach(function(sector) {
+        const badge = document.createElement("span");
+        badge.className = "country-sector-badge";
+        badge.textContent = t[sector.titleKey] || sector.titleKey;
+        badgeContainer.appendChild(badge);
+      });
+    } else {
+      const emptyState = document.createElement("span");
+      emptyState.className = "country-sector-empty";
+      emptyState.textContent = t.country_no_sectors || "Belum ada sektor penempatan yang tercatat untuk negara ini.";
+      badgeContainer.appendChild(emptyState);
+    }
+  }
+
+  if (desc) {
+    desc.setAttribute("data-lang-key", country.descKey);
+    desc.textContent = t[country.descKey] || "";
+  }
+}
+
 function selectCountry(index, clickedCard) {
   const country = countriesData[index];
   if (!country) return;
@@ -967,6 +1044,7 @@ function selectCountry(index, clickedCard) {
   const heroName = document.getElementById("active-country-name");
   const heroRegion = document.getElementById("active-country-region");
   const heroText = document.querySelector(".active-country-text");
+  document.body.dataset.activeCountryIndex = String(index);
 
   // Ambil bahasa aktif saat ini
   const lang = localStorage.getItem("preferredLanguage") || "id";
@@ -1006,6 +1084,8 @@ function selectCountry(index, clickedCard) {
       heroRegion.textContent = t ? (t[country.regionKey] || "") : "";
     }
 
+    renderCountryPlacementInfo(index, lang);
+
     // 5. Fade-in kembali
     if (heroImg) heroImg.classList.remove("transitioning");
     if (heroText) heroText.classList.remove("transitioning");
@@ -1029,6 +1109,9 @@ function applyLanguage(lang) {
   // Update lang attribute
   document.documentElement.lang =
     lang === "zh" ? "zh-TW" : lang;
+
+  const activeCountryIndex = Number(document.body.dataset.activeCountryIndex || "1");
+  renderCountryPlacementInfo(activeCountryIndex, lang);
 }
 
 const sectorPlacementData = [
