@@ -68,20 +68,35 @@ const translations = {
     org_tag: "TENTANG KAMI",
     org_title: "Struktur Organisasi",
     org_director: "Direktur Utama",
+    org_director_name: "Arif Efendi",
     org_director_desc:
-      "Memimpin arah strategis perusahaan dan memastikan seluruh operasional berjalan sesuai visi, misi, serta standar profesional.",
+      "Memimpin perusahaan dan bertanggung jawab terhadap arah strategis serta pengembangan bisnis perusahaan.",
     org_ops: "Direktur Operasional",
+    org_ops_name: "Herlin Susilawati",
     org_ops_desc:
-      "Mengkoordinasikan proses rekrutmen, pelatihan, penempatan, dan administrasi agar layanan berjalan terintegrasi.",
+      "Mengawasi seluruh kegiatan operasional dan memastikan proses berjalan efektif.",
+    org_accounting: "Accounting",
+    org_accounting_name: "Asmaul Tri Cahyati",
+    org_accounting_desc:
+      "Mengelola laporan keuangan dan administrasi keuangan perusahaan.",
+    org_marketing: "Marketing",
+    org_marketing_name: "Emy Firdiana Damayanti",
+    org_marketing_desc:
+      "Bertanggung jawab terhadap promosi, branding, dan pengembangan pasar.",
+    org_admin: "Administrasi",
+    org_admin_name: "Dwi Pangesti Setyorini",
+    org_admin_desc:
+      "Mengelola administrasi perusahaan dan mendukung kelancaran operasional.",
+    org_operational: "Operasional",
+    org_operational_name: "Nurul Qulfadila Khasanah",
+    org_operational_desc:
+      "Mendukung pelaksanaan kegiatan operasional dan pelayanan perusahaan.",
     org_recruitment: "Manajer Rekrutmen",
     org_recruitment_desc:
       "Menangani seleksi, verifikasi, dan kesiapan calon pekerja migran.",
     org_training: "Manajer Pelatihan",
     org_training_desc:
       "Mengelola program peningkatan kompetensi, bahasa, dan adaptasi budaya kerja.",
-    org_admin: "Manajer Administrasi",
-    org_admin_desc:
-      "Mengatur dokumen, perizinan, dan kebutuhan administrasi keberangkatan tenaga kerja.",
     cert_tag: "LEGALITAS KAMI",
     cert_title: "Sertifikat Perusahaan",
     cert_1_label: "Sertifikat Izin Penempatan",
@@ -314,20 +329,35 @@ const translations = {
     org_tag: "ABOUT US",
     org_title: "Organizational Structure",
     org_director: "President Director",
+    org_director_name: "Arif Efendi",
     org_director_desc:
-      "Leads the company's strategic direction and ensures all operations align with the vision, mission, and professional standards.",
+      "Leads the company and is responsible for its strategic direction and business development.",
     org_ops: "Operations Director",
+    org_ops_name: "Herlin Susilawati",
     org_ops_desc:
-      "Coordinates recruitment, training, placement, and administration so services run in an integrated way.",
+      "Oversees all operational activities and ensures each process runs effectively.",
+    org_accounting: "Accounting",
+    org_accounting_name: "Asmaul Tri Cahyati",
+    org_accounting_desc:
+      "Manages the company's financial reports and financial administration.",
+    org_marketing: "Marketing",
+    org_marketing_name: "Emy Firdiana Damayanti",
+    org_marketing_desc:
+      "Responsible for promotion, branding, and market development.",
+    org_admin: "Administration",
+    org_admin_name: "Dwi Pangesti Setyorini",
+    org_admin_desc:
+      "Manages company administration and supports smooth operations.",
+    org_operational: "Operations",
+    org_operational_name: "Nurul Qulfadila Khasanah",
+    org_operational_desc:
+      "Supports the execution of operational activities and company services.",
     org_recruitment: "Recruitment Manager",
     org_recruitment_desc:
       "Handles selection, verification, and readiness of prospective migrant workers.",
     org_training: "Training Manager",
     org_training_desc:
       "Manages competency, language, and workplace culture adaptation programs.",
-    org_admin: "Administration Manager",
-    org_admin_desc:
-      "Manages documents, permits, and administrative needs for worker departure.",
     cert_tag: "OUR LEGALITY",
     cert_title: "Company Certificates",
     cert_1_label: "Placement Permit Certificate",
@@ -570,23 +600,38 @@ const translations = {
     mission_3:
       "Supporting the government in reducing unemployment and expanding overseas job opportunities.",
 
-    org_tag: "About Us",
-    org_title: "Organizational Structure",
-    org_director: "President Director",
+    org_tag: "組織",
+    org_title: "組織架構",
+    org_director: "董事長",
+    org_director_name: "Arif Efendi",
     org_director_desc:
-      "Leads the company's strategic direction and ensures all operations align with the vision, mission, and professional standards.",
-    org_ops: "Operations Director",
+      "領導公司並負責公司的策略方向與業務發展。",
+    org_ops: "營運總監",
+    org_ops_name: "Herlin Susilawati",
     org_ops_desc:
-      "Coordinates recruitment, training, placement, and administration so services run in an integrated way.",
-    org_recruitment: "Recruitment Manager",
-    org_recruitment_desc:
-      "Handles selection, verification, and readiness of prospective migrant workers.",
-    org_training: "Training Manager",
-    org_training_desc:
-      "Manages competency, language, and workplace culture adaptation programs.",
-    org_admin: "Administration Manager",
+      "監督所有營運活動，確保各項流程有效執行。",
+    org_accounting: "會計",
+    org_accounting_name: "Asmaul Tri Cahyati",
+    org_accounting_desc:
+      "管理公司的財務報告與財務行政事務。",
+    org_marketing: "行銷",
+    org_marketing_name: "Emy Firdiana Damayanti",
+    org_marketing_desc:
+      "負責推廣、品牌建設與市場拓展。",
+    org_admin: "行政",
+    org_admin_name: "Dwi Pangesti Setyorini",
     org_admin_desc:
-      "Manages documents, permits, and administrative needs for worker departure.",
+      "管理公司行政事務並支持營運順利進行。",
+    org_operational: "營運",
+    org_operational_name: "Nurul Qulfadila Khasanah",
+    org_operational_desc:
+      "支持公司營運活動與服務的執行。",
+    org_recruitment: "招聘經理",
+    org_recruitment_desc:
+      "負責候選人甄選、驗證與移工準備。",
+    org_training: "培訓經理",
+    org_training_desc:
+      "管理能力、語言與職場文化適應培訓。",
 
     srv_tag: "我們的專業",
 

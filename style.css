@@ -3440,21 +3440,26 @@ section:nth-of-type(3) li p {
 }
 
 #network .sector-card-link {
-  border: 0;
-  padding: 0;
-  background: transparent;
+  min-height: 2.55rem;
+  border: 1px solid rgba(212, 175, 55, 0.35) !important;
+  border-radius: 9999px;
+  padding: 0.72rem 1rem 0.72rem 1.15rem;
+  background: rgba(212, 175, 55, 0.12);
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
+  justify-content: center;
+  gap: 0.55rem;
   margin-top: 1rem;
-  color: #ffffff !important;
+  color: #D4AF37 !important;
   font-size: 0.68rem;
   font-weight: 900;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  opacity: 0.76;
-  transition: opacity 280ms ease, transform 280ms ease, color 280ms ease;
+  line-height: 1;
+  opacity: 1;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.07);
+  transition: all 0.3s ease;
 }
 
 #network .sector-card-link:focus-visible {
@@ -3464,26 +3469,63 @@ section:nth-of-type(3) li p {
 }
 
 #network .sector-card-link::after {
-  content: "";
-  width: 1.5rem;
-  height: 1px;
-  background: #D4AF37;
-  transition: width 280ms ease, background 280ms ease;
+  content: "→";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1rem;
+  height: 1rem;
+  background: transparent;
+  color: currentColor;
+  font-size: 0.9rem;
+  line-height: 1;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
 }
 
 #network .placement-sector-card:hover .sector-card-link,
 #network .placement-sector-card:focus .sector-card-link,
 #network .placement-sector-card:focus-within .sector-card-link {
   opacity: 1;
-  color: #D4AF37 !important;
-  transform: translateX(0.2rem);
+  color: #120102 !important;
+  border-color: rgba(212, 175, 55, 0.92) !important;
+  background: #D4AF37;
+  transform: translateY(-2px);
+  box-shadow:
+    0 14px 30px rgba(212, 175, 55, 0.22),
+    0 0 22px rgba(212, 175, 55, 0.16);
 }
 
 #network .placement-sector-card:hover .sector-card-link::after,
 #network .placement-sector-card:focus .sector-card-link::after,
 #network .placement-sector-card:focus-within .sector-card-link::after {
-  width: 2.25rem;
+  transform: translateX(0.18rem);
+}
+
+#network .sector-card-link:hover {
+  color: #120102 !important;
+  border-color: rgba(212, 175, 55, 0.92) !important;
   background: #D4AF37;
+  transform: translateY(-2px);
+  box-shadow:
+    0 14px 30px rgba(212, 175, 55, 0.22),
+    0 0 22px rgba(212, 175, 55, 0.16);
+}
+
+#network .sector-card-link:hover::after {
+  transform: translateX(0.18rem);
+}
+
+#network .sector-card-link[aria-expanded="true"]::after {
+  content: "↑";
+  transform: translateY(-0.08rem);
+}
+
+#network .sector-card-link:active {
+  transform: scale(0.98);
+  box-shadow:
+    0 8px 18px rgba(212, 175, 55, 0.16),
+    inset 0 2px 8px rgba(18, 1, 2, 0.16);
 }
 
 @media (max-width: 1180px) {
@@ -6035,6 +6077,306 @@ body>nav a[data-lang-key].mobile-menu-link-active,
   #home h1,
   #home .hero-company-title {
     font-size: clamp(1.58rem, 7.6vw, 2.2rem) !important;
+  }
+}
+
+/* Modern organization chart redesign */
+.org-section {
+  background:
+    radial-gradient(circle at 18% 18%, rgba(90, 13, 16, 0.38), transparent 28rem),
+    radial-gradient(circle at 82% 12%, rgba(212, 175, 55, 0.14), transparent 30rem),
+    linear-gradient(180deg, #070303 0%, #160304 52%, #070303 100%) !important;
+}
+
+.org-map {
+  position: relative !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  justify-items: stretch !important;
+  align-items: start !important;
+  gap: 0 !important;
+  max-width: 1220px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+.org-orbit,
+.org-branch {
+  display: none !important;
+}
+
+.org-node {
+  position: relative !important;
+  z-index: 2 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  width: 100% !important;
+  min-height: 100% !important;
+  padding: 24px !important;
+  border: 1px solid rgba(212, 175, 55, 0.20) !important;
+  border-radius: 20px !important;
+  background: rgba(255, 255, 255, 0.04) !important;
+  box-shadow:
+    0 22px 58px rgba(0, 0, 0, 0.32),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
+  text-align: center !important;
+  backdrop-filter: blur(18px) !important;
+  -webkit-backdrop-filter: blur(18px) !important;
+  transition: all 0.3s ease !important;
+}
+
+.org-node::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: -1 !important;
+  border-radius: inherit !important;
+  background: linear-gradient(145deg, rgba(212, 175, 55, 0.12), rgba(90, 13, 16, 0.08)) !important;
+  opacity: 0 !important;
+  transition: opacity 0.3s ease !important;
+}
+
+.org-node:hover,
+.org-node:focus-within {
+  transform: translateY(-6px) !important;
+  border-color: rgba(212, 175, 55, 0.95) !important;
+  box-shadow:
+    0 28px 70px rgba(0, 0, 0, 0.46),
+    0 0 34px rgba(212, 175, 55, 0.18) !important;
+}
+
+.org-node:hover::before,
+.org-node:focus-within::before {
+  opacity: 1 !important;
+}
+
+.org-node-lead {
+  grid-column: 2 / 4 !important;
+  max-width: 420px !important;
+  justify-self: center !important;
+}
+
+.org-grid {
+  position: relative !important;
+  grid-column: 1 / -1 !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 22px !important;
+  width: 100% !important;
+  margin-top: 42px !important;
+}
+
+.org-grid::before {
+  content: "" !important;
+  position: absolute !important;
+  left: calc(12.5% + 11px) !important;
+  right: calc(12.5% + 11px) !important;
+  top: -22px !important;
+  display: block !important;
+  height: 1px !important;
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.54), transparent) !important;
+  box-shadow: 0 0 18px rgba(212, 175, 55, 0.22) !important;
+}
+
+.org-grid::after {
+  content: none !important;
+}
+
+.org-grid > .org-node-team::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: -22px !important;
+  width: 1px !important;
+  height: 22px !important;
+  transform: translateX(-50%) !important;
+  background: linear-gradient(180deg, rgba(212, 175, 55, 0.52), rgba(212, 175, 55, 0.18)) !important;
+  opacity: 1 !important;
+}
+
+.org-connector-main {
+  grid-column: 2 / 4 !important;
+  justify-self: center !important;
+  width: 1px !important;
+  height: 42px !important;
+  margin: 0 !important;
+  background: linear-gradient(180deg, rgba(212, 175, 55, 0.72), rgba(212, 175, 55, 0.18)) !important;
+  box-shadow: 0 0 16px rgba(212, 175, 55, 0.28) !important;
+}
+
+.org-ops-connector {
+  grid-column: 1 / 2 !important;
+  justify-self: center !important;
+  width: 1px !important;
+  height: 42px !important;
+  background: linear-gradient(180deg, rgba(212, 175, 55, 0.62), rgba(212, 175, 55, 0.18)) !important;
+  box-shadow: 0 0 16px rgba(212, 175, 55, 0.22) !important;
+}
+
+.org-operational-row {
+  grid-column: 1 / -1 !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 22px !important;
+  width: 100% !important;
+}
+
+.org-node-operational {
+  grid-column: 1 / 2 !important;
+}
+
+.org-icon,
+.org-node-team .org-icon {
+  width: 104px !important;
+  height: 104px !important;
+  margin: 0 0 18px !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(212, 175, 55, 0.72) !important;
+  border-radius: 999px !important;
+  background: #120102 !important;
+  box-shadow:
+    0 18px 34px rgba(0, 0, 0, 0.36),
+    0 0 0 6px rgba(212, 175, 55, 0.06) !important;
+}
+
+.org-photo {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+  filter: saturate(0.92) contrast(1.05) brightness(0.92) !important;
+  transition: transform 500ms ease, filter 500ms ease !important;
+}
+
+.org-node h3,
+.org-node h4 {
+  margin: 0 0 10px !important;
+  color: #d4af37 !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: clamp(0.78rem, 1vw, 0.9rem) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.12em !important;
+  line-height: 1.25 !important;
+  text-transform: uppercase !important;
+}
+
+.org-node strong {
+  display: block !important;
+  margin-bottom: 12px !important;
+  color: #ffffff !important;
+  font-size: clamp(1.05rem, 1.4vw, 1.28rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.28 !important;
+}
+
+.org-node p {
+  margin: 0 !important;
+  color: rgba(255, 255, 255, 0.68) !important;
+  font-size: 0.86rem !important;
+  line-height: 1.65 !important;
+}
+
+.org-kicker {
+  display: none !important;
+}
+
+@media (max-width: 1024px) {
+  .org-map,
+  .org-grid,
+  .org-operational-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .org-node-lead,
+  .org-connector-main,
+  .org-grid,
+  .org-ops-connector,
+  .org-operational-row {
+    grid-column: 1 / -1 !important;
+  }
+
+  .org-grid::before,
+  .org-grid > .org-node-team::after {
+    display: none !important;
+  }
+
+  .org-node-operational {
+    grid-column: 1 / 2 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .org-section {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .org-map {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0 !important;
+  }
+
+  .org-grid,
+  .org-operational-row {
+    display: contents !important;
+  }
+
+  .org-grid {
+    margin-top: 0 !important;
+  }
+
+  .org-node-lead,
+  .org-node-operational {
+    grid-column: 1 / -1 !important;
+  }
+
+  .org-node-lead {
+    order: 1 !important;
+  }
+
+  .org-connector-main {
+    order: 2 !important;
+  }
+
+  .org-node-ops {
+    order: 3 !important;
+  }
+
+  .org-ops-connector {
+    order: 4 !important;
+  }
+
+  .org-node-operational {
+    order: 5 !important;
+  }
+
+  .org-grid > .org-node-team:not(.org-node-ops) {
+    order: 6 !important;
+    margin-top: 18px !important;
+  }
+
+  .org-connector-main,
+  .org-ops-connector {
+    grid-column: 1 / -1 !important;
+    height: 28px !important;
+  }
+
+  .org-node {
+    margin-bottom: 18px !important;
+  }
+
+  .org-icon,
+  .org-node-team .org-icon {
+    width: 92px !important;
+    height: 92px !important;
+  }
+
+  .org-node {
+    padding: 22px !important;
   }
 }
 
