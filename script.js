@@ -558,13 +558,13 @@ const translations = {
     about_hub_desc:
       "福利優厚，專業可靠，品質優良",
 
-    about_status: "Verified Placement Partner",
+    about_status: "經認證的安置合作夥伴",
     about_metric_1_value: "01",
-    about_metric_1_label: "Guided Process",
+    about_metric_1_label: "引導流程",
     about_metric_2_value: "24/7",
-    about_metric_2_label: "Assistance",
-    about_metric_3_value: "Global",
-    about_metric_3_label: "Partner Network",
+    about_metric_2_label: "協助",
+    about_metric_3_value: "全球的",
+    about_metric_3_label: "合作夥伴網路",
     about_assurance_tag: "服務標準",
     about_assurance_title: "一條流程，從開始全程陪伴",
     about_assurance_1:
@@ -594,11 +594,11 @@ const translations = {
       "與使用海外勞動力的公司建立策略夥伴關係。",
 
     mission_1:
-      "Job vacancies are open to job seekers interested in working abroad.",
+      "招聘職位開放給有意出國工作的求職者。",
     mission_2:
-      "Developing migrant workers with skills, knowledge, and professional attitude.",
+      "培養具備技能、知識和職業態度的外籍勞工。",
     mission_3:
-      "Supporting the government in reducing unemployment and expanding overseas job opportunities.",
+      "支持政府減少失業和擴大海外就業機會",
 
     org_tag: "組織",
     org_title: "組織架構",
@@ -632,6 +632,21 @@ const translations = {
     org_training: "培訓經理",
     org_training_desc:
       "管理能力、語言與職場文化適應培訓。",
+
+    cert_tag: "我們的合法資質",
+    cert_title: "公司證書",
+    cert_1_label: "安置許可證書",
+    cert_1_title: "SIP3MI",
+    cert_1_desc:
+      "印尼移工安置業務的合法營運文件。",
+    cert_2_label: "能力證書",
+    cert_2_title: "培訓認證",
+    cert_2_desc:
+      "證明候選人培訓、行前準備與技能提升符合標準。",
+    cert_3_label: "合規證書",
+    cert_3_title: "公司合法資質",
+    cert_3_desc:
+      "支持公司遵守適用法規的相關文件。",
 
     srv_tag: "我們的專業",
 
@@ -1755,27 +1770,25 @@ document.addEventListener("DOMContentLoaded", function () {
   const mobileMenu =
     document.getElementById("mobile-menu");
 
+  const mobileMenuBackdrop =
+    document.getElementById("mobile-menu-backdrop");
+
   function closeMobileMenu() {
     if (!mobileMenu || !mobileMenuButton) return;
 
     mobileMenu.classList.remove("open");
     mobileMenu.classList.add("hidden");
-    mobileMenu.style.display = "none";
+    document.body.classList.remove("mobile-menu-open");
     mobileMenuButton.setAttribute("aria-expanded", "false");
+
+    if (mobileMenuBackdrop) {
+      mobileMenuBackdrop.classList.remove("open");
+      mobileMenuBackdrop.classList.add("hidden");
+    }
 
     const icon = mobileMenuButton.querySelector(".material-icons-outlined");
     if (icon) {
       icon.textContent = "menu";
-    }
-  }
-
-  function updateMobileMenuDisplay() {
-    if (!mobileMenu) return;
-
-    if (mobileMenu.classList.contains("open")) {
-      mobileMenu.style.display = "block";
-    } else {
-      mobileMenu.style.display = "none";
     }
   }
 
@@ -1787,12 +1800,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
       mobileMenu.classList.toggle("open", !isOpen);
       mobileMenu.classList.toggle("hidden", isOpen);
-      updateMobileMenuDisplay();
+      document.body.classList.toggle("mobile-menu-open", !isOpen);
       mobileMenuButton.setAttribute("aria-expanded", String(!isOpen));
+
+      if (mobileMenuBackdrop) {
+        mobileMenuBackdrop.classList.toggle("open", !isOpen);
+        mobileMenuBackdrop.classList.toggle("hidden", isOpen);
+      }
 
       const icon = mobileMenuButton.querySelector(".material-icons-outlined");
       if (icon) {
         icon.textContent = isOpen ? "menu" : "close";
+      }
+    });
+
+    if (mobileMenuBackdrop) {
+      mobileMenuBackdrop.addEventListener("click", closeMobileMenu);
+    }
+
+    mobileMenu.querySelectorAll(".mobile-menu-link").forEach(link => {
+      link.addEventListener("click", closeMobileMenu);
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        closeMobileMenu();
       }
     });
 
