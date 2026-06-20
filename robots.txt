@@ -1,0 +1,5 @@
+# Ganti domain pada baris Sitemap setelah domain final website tersedia.
+User-agent: *
+Allow: /
+
+Sitemap: https://domain-website-anda.com/sitemap.xml

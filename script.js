@@ -71,26 +71,56 @@ const translations = {
     org_director_name: "Arif Efendi",
     org_director_desc:
       "Memimpin perusahaan dan bertanggung jawab terhadap arah strategis serta pengembangan bisnis perusahaan.",
-    org_ops: "Direktur Operasional",
-    org_ops_name: "Herlin Susilawati",
+    org_ops: "Operational Head",
+    org_ops_name: "Rakha Naufal Mukti",
     org_ops_desc:
       "Mengawasi seluruh kegiatan operasional dan memastikan proses berjalan efektif.",
-    org_accounting: "Accounting",
-    org_accounting_name: "Asmaul Tri Cahyati",
+    org_accounting: "Accounting Head",
+    org_accounting_name: "Yani Lestari",
     org_accounting_desc:
       "Mengelola laporan keuangan dan administrasi keuangan perusahaan.",
-    org_marketing: "Marketing",
+    org_marketing: "Marketing Division",
+    org_marketing_mobile_name: "HKG, SGP, MLY & Taiwan",
     org_marketing_name: "Emy Firdiana Damayanti",
     org_marketing_desc:
-      "Bertanggung jawab terhadap promosi, branding, dan pengembangan pasar.",
+      "Mengelola pengembangan pasar internasional dan komunikasi mitra penempatan.",
+    org_marketing_hkg: "Marketing HKG, SGP & MLY",
+    org_marketing_hkg_desc:
+      "Mengelola relasi pasar Hong Kong, Singapura, dan Malaysia.",
+    org_marketing_taiwan: "Marketing Taiwan",
+    org_marketing_taiwan_name: "Lia Noviana & Lilis Setyorini",
+    org_marketing_taiwan_desc:
+      "Mengembangkan pasar Taiwan dan menjaga komunikasi dengan mitra.",
     org_admin: "Administrasi",
     org_admin_name: "Dwi Pangesti Setyorini",
     org_admin_desc:
       "Mengelola administrasi perusahaan dan mendukung kelancaran operasional.",
     org_operational: "Operasional",
-    org_operational_name: "Nurul Qulfadila Khasanah",
+    org_operational_name: "Rakha Naufal Mukti",
     org_operational_desc:
       "Mendukung pelaksanaan kegiatan operasional dan pelayanan perusahaan.",
+    org_ops_field: "Operasional Lapangan",
+    org_ops_field_name: "Didit Afrianto",
+    org_ops_field_desc:
+      "Mengatur pelaksanaan kebutuhan lapangan dan koordinasi kegiatan operasional.",
+    org_ops_leges: "Operasional Leges & Teto",
+    org_ops_leges_name: "Asmaul Tri Cahyati",
+    org_ops_leges_desc:
+      "Menangani kebutuhan legalisasi, teto, dan koordinasi proses terkait.",
+    org_ops_docs: "Operasional Dokumen & Pendaftaran",
+    org_ops_docs_name: "Riska Dewi Agustina",
+    org_ops_docs_desc:
+      "Mengelola administrasi dokumen dan pendaftaran kandidat secara terarah.",
+    org_ops_passport: "Operasional ID & Paspor",
+    org_ops_passport_name: "Dewi Pangesti Setyo Rini",
+    org_ops_passport_desc:
+      "Mendukung pengurusan identitas, paspor, dan kelengkapan keberangkatan.",
+    org_taiwan_lia_name: "Lia Noviana",
+    org_taiwan_lia_desc:
+      "Menangani komunikasi kandidat dan dukungan kebutuhan pasar Taiwan.",
+    org_taiwan_lilis_name: "Lilis Setyorini",
+    org_taiwan_lilis_desc:
+      "Mendukung pengembangan relasi mitra dan administrasi pemasaran Taiwan.",
     org_recruitment: "Manajer Rekrutmen",
     org_recruitment_desc:
       "Menangani seleksi, verifikasi, dan kesiapan calon pekerja migran.",
@@ -332,26 +362,56 @@ const translations = {
     org_director_name: "Arif Efendi",
     org_director_desc:
       "Leads the company and is responsible for its strategic direction and business development.",
-    org_ops: "Operations Director",
-    org_ops_name: "Herlin Susilawati",
+    org_ops: "Operational Head",
+    org_ops_name: "Rakha Naufal Mukti",
     org_ops_desc:
       "Oversees all operational activities and ensures each process runs effectively.",
-    org_accounting: "Accounting",
-    org_accounting_name: "Asmaul Tri Cahyati",
+    org_accounting: "Accounting Head",
+    org_accounting_name: "Yani Lestari",
     org_accounting_desc:
       "Manages the company's financial reports and financial administration.",
-    org_marketing: "Marketing",
+    org_marketing: "Marketing Division",
+    org_marketing_mobile_name: "HKG, SGP, MLY & Taiwan",
     org_marketing_name: "Emy Firdiana Damayanti",
     org_marketing_desc:
-      "Responsible for promotion, branding, and market development.",
+      "Manages international market development and placement partner communication.",
+    org_marketing_hkg: "Marketing HKG, SGP & MLY",
+    org_marketing_hkg_desc:
+      "Manages market relations for Hong Kong, Singapore, and Malaysia.",
+    org_marketing_taiwan: "Marketing Taiwan",
+    org_marketing_taiwan_name: "Lia Noviana & Lilis Setyorini",
+    org_marketing_taiwan_desc:
+      "Develops the Taiwan market and maintains partner communication.",
     org_admin: "Administration",
     org_admin_name: "Dwi Pangesti Setyorini",
     org_admin_desc:
       "Manages company administration and supports smooth operations.",
     org_operational: "Operations",
-    org_operational_name: "Nurul Qulfadila Khasanah",
+    org_operational_name: "Rakha Naufal Mukti",
     org_operational_desc:
       "Supports the execution of operational activities and company services.",
+    org_ops_field: "Field Operations",
+    org_ops_field_name: "Didit Afrianto",
+    org_ops_field_desc:
+      "Coordinates field needs and operational activities.",
+    org_ops_leges: "Leges & Teto Operations",
+    org_ops_leges_name: "Asmaul Tri Cahyati",
+    org_ops_leges_desc:
+      "Handles legalization, teto, and related process coordination.",
+    org_ops_docs: "Documents & Registration Operations",
+    org_ops_docs_name: "Riska Dewi Agustina",
+    org_ops_docs_desc:
+      "Manages candidate documentation and registration administration.",
+    org_ops_passport: "ID & Passport Operations",
+    org_ops_passport_name: "Dewi Pangesti Setyo Rini",
+    org_ops_passport_desc:
+      "Supports ID, passport, and departure document readiness.",
+    org_taiwan_lia_name: "Lia Noviana",
+    org_taiwan_lia_desc:
+      "Handles candidate communication and Taiwan market support.",
+    org_taiwan_lilis_name: "Lilis Setyorini",
+    org_taiwan_lilis_desc:
+      "Supports partner relations and Taiwan marketing administration.",
     org_recruitment: "Recruitment Manager",
     org_recruitment_desc:
       "Handles selection, verification, and readiness of prospective migrant workers.",
@@ -607,11 +667,11 @@ const translations = {
     org_director_desc:
       "領導公司並負責公司的策略方向與業務發展。",
     org_ops: "營運總監",
-    org_ops_name: "Herlin Susilawati",
+    org_ops_name: "Rakha Naufal Mukti",
     org_ops_desc:
       "監督所有營運活動，確保各項流程有效執行。",
     org_accounting: "會計",
-    org_accounting_name: "Asmaul Tri Cahyati",
+    org_accounting_name: "Yani Lestari",
     org_accounting_desc:
       "管理公司的財務報告與財務行政事務。",
     org_marketing: "行銷",
@@ -623,7 +683,7 @@ const translations = {
     org_admin_desc:
       "管理公司行政事務並支持營運順利進行。",
     org_operational: "營運",
-    org_operational_name: "Nurul Qulfadila Khasanah",
+    org_operational_name: "Rakha Naufal Mukti",
     org_operational_desc:
       "支持公司營運活動與服務的執行。",
     org_recruitment: "招聘經理",
