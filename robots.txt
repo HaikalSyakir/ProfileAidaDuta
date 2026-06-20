@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://domain-website-anda.com/sitemap.xml
+Sitemap: https://aidadutaindonesiasejahtera.com/sitemap.xml
