@@ -112,7 +112,7 @@ const translations = {
     org_ops_docs_desc:
       "Mengelola administrasi dokumen dan pendaftaran kandidat secara terarah.",
     org_ops_passport: "Operasional ID & Paspor",
-    org_ops_passport_name: "Dewi Pangesti Setyo Rini",
+    org_ops_passport_name: "Dwi Pangesti Setyo Rini",
     org_ops_passport_desc:
       "Mendukung pengurusan identitas, paspor, dan kelengkapan keberangkatan.",
     org_taiwan_lia_name: "Lia Noviana",
@@ -223,22 +223,22 @@ const translations = {
     country1_watermark: "Hong Kong",
     country1_title: "Hong Kong",
     country1_desc:
-      "Peluang kerja profesional di negara mitra dengan kebutuhan tenaga kerja yang terarah dan stabil.",
+      "Penempatan untuk perempuan: jaga orang tua dan anak (informal), serta ART (informal).",
     country2_region: "Asia Timur",
     country2_watermark: "Taiwan",
     country2_title: "Taiwan",
     country2_desc:
-      "Tujuan penempatan dengan permintaan tenaga kerja yang beragam sesuai sektor kerja yang tersedia.",
+      "Penempatan untuk laki-laki: pabrik, konstruksi, pertanian, perkebunan, dan perikanan (formal). Untuk perempuan: ART (informal), jaga orang tua dan anak (informal), panti jompo (formal), pabrik (formal), perkebunan (formal), dan pertanian (formal).",
     country3_region: "Asia Tenggara",
     country3_watermark: "Singapore",
     country3_title: "Singapura",
     country3_desc:
-      "Negara tujuan regional dengan peluang penempatan yang mengikuti kebutuhan sektor resmi perusahaan.",
+      "Penempatan untuk perempuan: ART (informal).",
     country4_region: "Asia Tenggara",
     country4_watermark: "Malaysia",
     country4_title: "Malaysia",
     country4_desc:
-      "Negara mitra dengan peluang kerja lintas sektor dan proses penempatan yang terarah.",
+      "Penempatan untuk perempuan: ART (informal).",
   
     gal_tag: "DOKUMENTASI",
     gal_title: "Momen Keunggulan",
@@ -403,7 +403,7 @@ const translations = {
     org_ops_docs_desc:
       "Manages candidate documentation and registration administration.",
     org_ops_passport: "ID & Passport Operations",
-    org_ops_passport_name: "Dewi Pangesti Setyo Rini",
+    org_ops_passport_name: "Dwi Pangesti Setyo Rini",
     org_ops_passport_desc:
       "Supports ID, passport, and departure document readiness.",
     org_taiwan_lia_name: "Lia Noviana",
@@ -517,22 +517,22 @@ const translations = {
     country1_watermark: "Hong Kong",
     country1_title: "Hong Kong",
     country1_desc:
-      "Professional work opportunities in a partner country with focused and stable workforce demand.",
+      "Placement for women: elderly and childcare support (informal), and domestic work/ART (informal).",
     country2_region: "East Asia",
     country2_watermark: "Taiwan",
     country2_title: "Taiwan",
     country2_desc:
-      "A placement destination with varied workforce demand based on the available work sectors.",
+      "Placement for men: factory, construction, agriculture, plantation, and fisheries (formal). For women: domestic work/ART (informal), elderly and childcare support (informal), nursing home care (formal), factory (formal), plantation (formal), and agriculture (formal).",
     country3_region: "Southeast Asia",
     country3_watermark: "Singapore",
     country3_title: "Singapore",
     country3_desc:
-      "A regional destination where placement opportunities follow the company's official sector needs.",
+      "Placement for women: domestic work/ART (informal).",
     country4_region: "Southeast Asia",
     country4_watermark: "Malaysia",
     country4_title: "Malaysia",
     country4_desc:
-      "A partner country with cross-sector work opportunities and a guided placement process.",
+      "Placement for women: domestic work/ART (informal).",
    
     gal_tag: "DOCUMENTATION",
     gal_title: "Moments of Excellence",
@@ -860,6 +860,23 @@ const translations = {
   }
 };
 
+// Organization chart keys used by the image-based structure.
+Object.assign(translations.zh, {
+  org_marketing_hkg: "Marketing HKG, SGP & MLY",
+  org_marketing_taiwan: "Marketing Taiwan",
+  org_marketing_taiwan_name: "Lia Noviana & Lilis Setyorini",
+  org_ops_field: "Operasional Lapangan",
+  org_ops_field_name: "Didit Afrianto",
+  org_ops_leges: "Operasional Leges & Teto",
+  org_ops_leges_name: "Asmaul Tri Cahyati",
+  org_ops_docs: "Operasional Dokumen & Pendaftaran",
+  org_ops_docs_name: "Riska Dewi Agustina",
+  org_ops_passport: "Operasional ID & Paspor",
+  org_ops_passport_name: "Dwi Pangesti Setyo Rini",
+  org_taiwan_lia_name: "Lia Noviana",
+  org_taiwan_lilis_name: "Lilis Setyorini"
+});
+
 // Override Traditional Chinese copy for the redesigned placement showcase.
 Object.assign(translations.zh, {
   net_tag: "安置產業",
@@ -1026,10 +1043,10 @@ Object.assign(translations.zh, {
 Object.assign(translations.zh, {
   country_sector_label: "\u53ef\u5b89\u7f6e\u7522\u696d",
   country_no_sectors: "\u76ee\u524d\u6b64\u570b\u5bb6\u5c1a\u672a\u5217\u51fa\u5b89\u7f6e\u7522\u696d\u3002",
-  country1_desc: "\u5728\u5408\u4f5c\u570b\u5bb6\u63d0\u4f9b\u5c08\u696d\u5de5\u4f5c\u6a5f\u6703\uff0c\u52de\u529b\u9700\u6c42\u660e\u78ba\u4e14\u7a69\u5b9a\u3002",
-  country2_desc: "\u6839\u64da\u73fe\u6709\u5de5\u4f5c\u7522\u696d\uff0c\u63d0\u4f9b\u591a\u6a23\u5316\u52de\u529b\u9700\u6c42\u7684\u5b89\u7f6e\u76ee\u7684\u5730\u3002",
-  country3_desc: "\u5340\u57df\u6027\u76ee\u7684\u5730\uff0c\u5b89\u7f6e\u6a5f\u6703\u4f9d\u64da\u516c\u53f8\u5217\u51fa\u7684\u6b63\u5f0f\u7522\u696d\u9700\u6c42\u3002",
-  country4_desc: "\u5408\u4f5c\u570b\u5bb6\u63d0\u4f9b\u8de8\u7522\u696d\u7684\u5de5\u4f5c\u6a5f\u6703\uff0c\u4e26\u914d\u5408\u660e\u78ba\u7684\u5b89\u7f6e\u6d41\u7a0b\u3002",
+  country1_desc: "女性安置：照顧老人與兒童（非正式），以及家庭幫傭 ART（非正式）。",
+  country2_desc: "男性安置：工廠、建築、農業、種植園與漁業（正式）。女性安置：家庭幫傭 ART（非正式）、照顧老人與兒童（非正式）、養老院（正式）、工廠（正式）、種植園（正式）與農業（正式）。",
+  country3_desc: "女性安置：家庭幫傭 ART（非正式）。",
+  country4_desc: "女性安置：家庭幫傭 ART（非正式）。",
   gal1_title: "\u57f9\u8a13\u8ab2\u7a0b",
   gal1_desc: "\u57f9\u8a13\u8ab2\u7a0b\u3001\u884c\u524d\u8aaa\u660e\u8207\u5b78\u54e1\u6e96\u5099\u60c5\u6cc1\u7d00\u9304\u3002",
   gal2_title: "\u6d77\u5916\u52de\u5de5\u6b61\u9001\u5100\u5f0f",
@@ -1243,8 +1260,23 @@ function normalizePlacementName(value) {
   return String(value || "").trim().toLowerCase();
 }
 
+const countryPlacementSectorKeys = {
+  1: ["sector6_title"],
+  2: ["sector1_title", "sector2_title", "sector3_title", "sector4_title", "sector5_title", "sector6_title"],
+  3: ["sector6_title"],
+  4: ["sector6_title"]
+};
+
 function getAvailableSectorsForCountry(country, lang) {
   const t = translations[lang] || translations.id;
+  const explicitSectorKeys = countryPlacementSectorKeys[country.id];
+
+  if (explicitSectorKeys) {
+    return explicitSectorKeys.map(function(titleKey) {
+      return { titleKey: titleKey };
+    });
+  }
+
   const countryName = normalizePlacementName(t[country.titleKey]);
 
   return sectorPlacementData.filter(function(sector) {
@@ -1293,7 +1325,8 @@ function renderCountryPlacementInfo(index, lang) {
 
   if (desc) {
     desc.setAttribute("data-lang-key", country.descKey);
-    desc.textContent = t[country.descKey] || "";
+    desc.textContent = "";
+    desc.hidden = true;
   }
 }
 

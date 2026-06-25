@@ -308,168 +308,107 @@
         <h2 data-lang-key="org_title" id="org-title" class="text-3xl md:text-5xl text-[#e9e2d0] font-display font-bold">Struktur Organisasi</h2>
       </div>
 
-      <!-- ===== DESKTOP CHART (≥1024px) ===== -->
+      <!-- ===== DESKTOP CHART (>=1024px) ===== -->
       <div class="org-desktop" aria-label="Struktur organisasi PT Aida Duta Indonesia Sejahtera">
+        <div class="org-chart-canvas">
+          <div class="org-lines" aria-hidden="true">
+            <span class="org-line org-line--director-down"></span>
+            <span class="org-line org-line--main-horizontal"></span>
+            <span class="org-line org-line--marketing-down"></span>
+            <span class="org-line org-line--marketing-horizontal"></span>
+            <span class="org-line org-line--emy-tick"></span>
+            <span class="org-line org-line--lia-tick"></span>
+            <span class="org-line org-line--lilis-down"></span>
+            <span class="org-line org-line--ops-down"></span>
+            <span class="org-line org-line--accounting-down"></span>
+            <span class="org-line org-line--ops-child-down"></span>
+            <span class="org-line org-line--ops-child-horizontal"></span>
+            <span class="org-line org-line--didit-tick"></span>
+            <span class="org-line org-line--asmaul-tick"></span>
+            <span class="org-line org-line--riska-down"></span>
+            <span class="org-line org-line--dwi-down"></span>
+          </div>
 
-        <!-- LEVEL 1: Direktur Utama -->
-        <div class="org-l1-row">
-          <article class="org-card org-card--l1" id="org-director" data-aos="fade-up" data-aos-duration="600">
-            <div class="org-photo-ring org-photo-ring--l1">
-              <img loading="lazy" class="org-photo-img"
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=200&q=80"
-                alt="Arif Efendi">
+          <article class="org-image-card org-image-card--director" data-aos="fade-up" data-aos-duration="600">
+            <img loading="lazy" src="assets/images/FOTO-STRUKTUR/DirekturUtama.png" alt="Arif Efendi">
+            <div>
+              <strong data-lang-key="org_director_name">Arif Efendi</strong>
+              <span data-lang-key="org_director">Direktur Utama</span>
             </div>
-            <span data-lang-key="org_director" class="org-card-role">Direktur Utama</span>
-            <strong data-lang-key="org_director_name" class="org-card-name">Arif Efendi</strong>
-            <p data-lang-key="org_director_desc" class="org-card-desc">Memimpin perusahaan dan bertanggung jawab terhadap arah strategis serta pengembangan bisnis perusahaan.</p>
+          </article>
+
+          <article class="org-image-card org-image-card--emy" data-aos="fade-up" data-aos-duration="600" data-aos-delay="80">
+            <img loading="lazy" src="assets/images/FOTO-STRUKTUR/MarketingHkg,Sgp,%26Mly.png" alt="Emy Firdiana Damayanti">
+            <div>
+              <strong data-lang-key="org_marketing_name">Emy Firdiana Damayanti</strong>
+              <span data-lang-key="org_marketing_hkg">Marketing HKG, SGP &amp; MLY</span>
+            </div>
+          </article>
+
+          <article class="org-image-card org-image-card--lia" data-aos="fade-up" data-aos-duration="600" data-aos-delay="120">
+            <img loading="lazy" src="assets/images/FOTO-STRUKTUR/MarketingTaiwan1.png" alt="Lia Noviana">
+            <div>
+              <strong data-lang-key="org_taiwan_lia_name">Lia Noviana</strong>
+              <span data-lang-key="org_marketing_taiwan">Marketing Taiwan</span>
+            </div>
+          </article>
+
+          <article class="org-image-card org-image-card--lilis" data-aos="fade-up" data-aos-duration="600" data-aos-delay="160">
+            <img loading="lazy" src="assets/images/FOTO-STRUKTUR/MarketingTaiwan2.png" alt="Lilis Setyorini">
+            <div>
+              <strong data-lang-key="org_taiwan_lilis_name">Lilis Setyorini</strong>
+              <span data-lang-key="org_marketing_taiwan">Marketing Taiwan</span>
+            </div>
+          </article>
+
+          <article class="org-image-card org-image-card--ops" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+            <img loading="lazy" src="assets/images/FOTO-STRUKTUR/OperasionalHead.png" alt="Rakha Naufal Mukti">
+            <div>
+              <strong data-lang-key="org_ops_name">Rakha Naufal Mukti</strong>
+              <span data-lang-key="org_ops">Operational Head</span>
+            </div>
+          </article>
+
+          <article class="org-image-card org-image-card--accounting" data-aos="fade-up" data-aos-duration="600" data-aos-delay="240">
+            <img loading="lazy" src="assets/images/FOTO-STRUKTUR/AccountingHead.png" alt="Yani Lestari">
+            <div>
+              <strong data-lang-key="org_accounting_name">Yani Lestari</strong>
+              <span data-lang-key="org_accounting">Accounting Head</span>
+            </div>
+          </article>
+
+          <article class="org-image-card org-image-card--didit" data-aos="fade-up" data-aos-duration="600" data-aos-delay="280">
+            <img loading="lazy" src="assets/images/FOTO-STRUKTUR/OperasionalLapangan.png" alt="Didit Afrianto">
+            <div>
+              <strong data-lang-key="org_ops_field_name">Didit Afrianto</strong>
+              <span data-lang-key="org_ops_field">Operasional Lapangan</span>
+            </div>
+          </article>
+
+          <article class="org-image-card org-image-card--asmaul" data-aos="fade-up" data-aos-duration="600" data-aos-delay="320">
+            <img loading="lazy" src="assets/images/FOTO-STRUKTUR/OprasionalLeges%26Teto.png" alt="Asmaul Tri Cahyati">
+            <div>
+              <strong data-lang-key="org_ops_leges_name">Asmaul Tri Cahyati</strong>
+              <span data-lang-key="org_ops_leges">Operasional Leges &amp; Teto</span>
+            </div>
+          </article>
+
+          <article class="org-image-card org-image-card--riska" data-aos="fade-up" data-aos-duration="600" data-aos-delay="360">
+            <img loading="lazy" src="assets/images/FOTO-STRUKTUR/OperasionalDokumen%26Pendaftaran.png" alt="Riska Dewi Agustina">
+            <div>
+              <strong data-lang-key="org_ops_docs_name">Riska Dewi Agustina</strong>
+              <span data-lang-key="org_ops_docs">Operasional Dokumen &amp; Pendaftaran</span>
+            </div>
+          </article>
+
+          <article class="org-image-card org-image-card--dwi" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+            <img loading="lazy" src="assets/images/FOTO-STRUKTUR/OperasionalId%26Paspor.png" alt="Dwi Pangesti Setyo Rini">
+            <div>
+              <strong data-lang-key="org_ops_passport_name">Dwi Pangesti Setyo Rini</strong>
+              <span data-lang-key="org_ops_passport">Operasional ID &amp; Paspor</span>
+            </div>
           </article>
         </div>
-
-        <!-- Connector L1 → L2 -->
-        <div class="org-conn-root" aria-hidden="true">
-          <div class="org-conn-vstem"></div>
-          <div class="org-conn-hbar org-conn-hbar--l1l2"></div>
-        </div>
-
-        <!-- LEVEL 2: 4 branches (Marketing HKG | Ops Head | Accounting | Marketing Taiwan) -->
-        <div class="org-l2-grid" aria-label="Divisi utama perusahaan">
-
-          <!-- Col 1: Marketing HKG, SGP & MLY -->
-          <div class="org-l2-col">
-            <div class="org-conn-tick" aria-hidden="true"></div>
-            <article class="org-card org-card--l2" id="org-mktg-hkg" data-aos="fade-up" data-aos-duration="600" data-aos-delay="80">
-              <div class="org-photo-ring">
-                <img loading="lazy" class="org-photo-img"
-                  src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=200&q=80"
-                  alt="Emy Firdiana Damayanti">
-              </div>
-              <span data-lang-key="org_marketing_hkg" class="org-card-role">Marketing HKG, SGP &amp; MLY</span>
-              <strong data-lang-key="org_marketing_name" class="org-card-name">Emy Firdiana Damayanti</strong>
-              <p data-lang-key="org_marketing_hkg_desc" class="org-card-desc">Mengelola relasi pasar Hong Kong, Singapura, dan Malaysia.</p>
-            </article>
-          </div>
-
-          <!-- Col 2: Operational Head (has sub-tree below) -->
-          <div class="org-l2-col">
-            <div class="org-conn-tick" aria-hidden="true"></div>
-            <article class="org-card org-card--l2 org-card--ops" id="org-ops-head" data-aos="fade-up" data-aos-duration="600" data-aos-delay="160">
-              <div class="org-photo-ring org-photo-ring--ops">
-                <img loading="lazy" class="org-photo-img"
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80"
-                  alt="Rakha Naufal Mukti">
-              </div>
-              <span data-lang-key="org_ops" class="org-card-role">Operational Head</span>
-              <strong data-lang-key="org_ops_name" class="org-card-name">Rakha Naufal Mukti</strong>
-              <p data-lang-key="org_ops_desc" class="org-card-desc">Mengawasi seluruh kegiatan operasional dan memastikan proses berjalan efektif.</p>
-            </article>
-          </div>
-
-          <!-- Col 3: Accounting Head -->
-          <div class="org-l2-col">
-            <div class="org-conn-tick" aria-hidden="true"></div>
-            <article class="org-card org-card--l2" id="org-accounting" data-aos="fade-up" data-aos-duration="600" data-aos-delay="240">
-              <div class="org-photo-ring">
-                <img loading="lazy" class="org-photo-img"
-                  src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=200&q=80"
-                  alt="Yani Lestari">
-              </div>
-              <span data-lang-key="org_accounting" class="org-card-role">Accounting Head</span>
-              <strong data-lang-key="org_accounting_name" class="org-card-name">Yani Lestari</strong>
-              <p data-lang-key="org_accounting_desc" class="org-card-desc">Mengelola laporan keuangan dan administrasi keuangan perusahaan.</p>
-            </article>
-          </div>
-
-          <!-- Col 4: Marketing Taiwan -->
-          <div class="org-l2-col">
-            <div class="org-conn-tick" aria-hidden="true"></div>
-            <article class="org-card org-card--l2" id="org-mktg-tw" data-aos="fade-up" data-aos-duration="600" data-aos-delay="320">
-              <div class="org-photo-ring">
-                <img loading="lazy" class="org-photo-img"
-                  src="https://images.unsplash.com/photo-1573497019418-b400bb3ab074?auto=format&fit=crop&w=200&q=80"
-                  alt="Marketing Taiwan">
-              </div>
-              <span data-lang-key="org_marketing_taiwan" class="org-card-role">Marketing Taiwan</span>
-              <strong data-lang-key="org_marketing_taiwan_name" class="org-card-name">Lia Noviana &amp; Lilis Setyorini</strong>
-              <p data-lang-key="org_marketing_taiwan_desc" class="org-card-desc">Mengembangkan pasar Taiwan dan menjaga komunikasi dengan mitra.</p>
-            </article>
-          </div>
-
-        </div><!-- end org-l2-grid -->
-
-        <!--
-          Connector: Operational Head (col-2 of 4) → L3
-          ─────────────────────────────────────────────
-          In a 4-col equal grid, col-2 center ≈ 37.5% of container.
-          L3 uses margin-left:25%; width:50%.
-            L3 col-1 center = 25% + 12.5% ≈ 37.5%  ← aligns with Ops Head stem
-            L3 col-2 center = 25% + 37.5% ≈ 62.5%
-          Bar spans left:37.5% → right:37.5% (= from 37.5% to 62.5%).
-        -->
-        <div class="org-conn-ops-branch" aria-hidden="true">
-          <div class="org-conn-vstem org-conn-vstem--ops"></div>
-          <div class="org-conn-hbar org-conn-hbar--ops"></div>
-        </div>
-
-        <!-- LEVEL 3 + LEVEL 4: Operational sub-tree centred under Ops Head -->
-        <div class="org-l3-grid" aria-label="Tim di bawah Operational Head">
-
-          <!-- L3 Col 1: Operasional Lapangan + L4 child -->
-          <div class="org-l3-col">
-            <div class="org-conn-tick" aria-hidden="true"></div>
-            <article class="org-card org-card--l3" id="org-ops-field" data-aos="fade-up" data-aos-duration="600" data-aos-delay="320">
-              <div class="org-photo-ring org-photo-ring--sm">
-                <img loading="lazy" class="org-photo-img"
-                  src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=200&q=80"
-                  alt="Didit Afrianto">
-              </div>
-              <span data-lang-key="org_ops_field" class="org-card-role">Operasional Lapangan</span>
-              <strong data-lang-key="org_ops_field_name" class="org-card-name">Didit Afrianto</strong>
-              <p data-lang-key="org_ops_field_desc" class="org-card-desc">Mengatur pelaksanaan kebutuhan lapangan dan koordinasi kegiatan operasional.</p>
-            </article>
-            <!-- L3 → L4 stem -->
-            <div class="org-conn-l4stem" aria-hidden="true"></div>
-            <!-- LEVEL 4 -->
-            <article class="org-card org-card--l4" id="org-ops-docs" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
-              <div class="org-photo-ring org-photo-ring--sm">
-                <img loading="lazy" class="org-photo-img"
-                  src="https://images.unsplash.com/photo-1598550874175-4d0ef436c909?auto=format&fit=crop&w=200&q=80"
-                  alt="Riska Dewi Agustina">
-              </div>
-              <span data-lang-key="org_ops_docs" class="org-card-role">Operasional Dokumen &amp; Pendaftaran</span>
-              <strong data-lang-key="org_ops_docs_name" class="org-card-name">Riska Dewi Agustina</strong>
-              <p data-lang-key="org_ops_docs_desc" class="org-card-desc">Mengelola administrasi dokumen dan pendaftaran kandidat secara terarah.</p>
-            </article>
-          </div>
-
-          <!-- L3 Col 2: Operasional Leges & Teto + L4 child -->
-          <div class="org-l3-col">
-            <div class="org-conn-tick" aria-hidden="true"></div>
-            <article class="org-card org-card--l3" id="org-ops-leges" data-aos="fade-up" data-aos-duration="600" data-aos-delay="360">
-              <div class="org-photo-ring org-photo-ring--sm">
-                <img loading="lazy" class="org-photo-img"
-                  src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80"
-                  alt="Asmaul Tri Cahyati">
-              </div>
-              <span data-lang-key="org_ops_leges" class="org-card-role">Operasional Leges &amp; Teto</span>
-              <strong data-lang-key="org_ops_leges_name" class="org-card-name">Asmaul Tri Cahyati</strong>
-              <p data-lang-key="org_ops_leges_desc" class="org-card-desc">Menangani kebutuhan legalisasi, teto, dan koordinasi proses terkait.</p>
-            </article>
-            <!-- L3 → L4 stem -->
-            <div class="org-conn-l4stem" aria-hidden="true"></div>
-            <!-- LEVEL 4 -->
-            <article class="org-card org-card--l4" id="org-ops-passport" data-aos="fade-up" data-aos-duration="600" data-aos-delay="440">
-              <div class="org-photo-ring org-photo-ring--sm">
-                <img loading="lazy" class="org-photo-img"
-                  src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=200&q=80"
-                  alt="Dewi Pangesti Setyo Rini">
-              </div>
-              <span data-lang-key="org_ops_passport" class="org-card-role">Operasional ID &amp; Paspor</span>
-              <strong data-lang-key="org_ops_passport_name" class="org-card-name">Dewi Pangesti Setyo Rini</strong>
-              <p data-lang-key="org_ops_passport_desc" class="org-card-desc">Mendukung pengurusan identitas, paspor, dan kelengkapan keberangkatan.</p>
-            </article>
-          </div>
-
-        </div><!-- end org-l3-grid -->
 
       </div><!-- end org-desktop -->
 
@@ -480,27 +419,25 @@
         <article class="org-card org-card--l1 org-mobile-card" data-aos="fade-up" data-aos-duration="500">
           <div class="org-photo-ring org-photo-ring--l1">
             <img loading="lazy" class="org-photo-img"
-              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=200&q=80"
+              src="assets/images/FOTO-STRUKTUR/DirekturUtama.png"
               alt="Arif Efendi">
           </div>
           <div class="org-mobile-text">
             <span data-lang-key="org_director" class="org-card-role">Direktur Utama</span>
             <strong data-lang-key="org_director_name" class="org-card-name">Arif Efendi</strong>
-            <p data-lang-key="org_director_desc" class="org-card-desc">Memimpin perusahaan dan bertanggung jawab terhadap arah strategis serta pengembangan bisnis perusahaan.</p>
           </div>
         </article>
         <div class="org-mobile-stem" aria-hidden="true"></div>
 
-        <article class="org-card org-card--ops org-mobile-card" data-aos="fade-up" data-aos-duration="500" data-aos-delay="80">
+        <article class="org-card org-mobile-card" data-aos="fade-up" data-aos-duration="500" data-aos-delay="80">
           <div class="org-photo-ring org-photo-ring--ops">
             <img loading="lazy" class="org-photo-img"
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80"
-              alt="Rakha Naufal Mukti">
+              src="assets/images/FOTO-STRUKTUR/MarketingHkg,Sgp,%26Mly.png"
+              alt="Emy Firdiana Damayanti">
           </div>
           <div class="org-mobile-text">
-            <span data-lang-key="org_ops" class="org-card-role">Operational Head</span>
-            <strong data-lang-key="org_ops_name" class="org-card-name">Rakha Naufal Mukti</strong>
-            <p data-lang-key="org_ops_desc" class="org-card-desc">Mengawasi seluruh kegiatan operasional dan memastikan proses berjalan efektif.</p>
+            <span data-lang-key="org_marketing_hkg" class="org-card-role">Marketing HKG, SGP &amp; MLY</span>
+            <strong data-lang-key="org_marketing_name" class="org-card-name">Emy Firdiana Damayanti</strong>
           </div>
         </article>
         <div class="org-mobile-stem" aria-hidden="true"></div>
@@ -508,13 +445,12 @@
         <article class="org-card org-mobile-card" data-aos="fade-up" data-aos-duration="500" data-aos-delay="160">
           <div class="org-photo-ring">
             <img loading="lazy" class="org-photo-img"
-              src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=200&q=80"
-              alt="Yani Lestari">
+              src="assets/images/FOTO-STRUKTUR/MarketingTaiwan1.png"
+              alt="Lia Noviana">
           </div>
           <div class="org-mobile-text">
-            <span data-lang-key="org_accounting" class="org-card-role">Accounting Head</span>
-            <strong data-lang-key="org_accounting_name" class="org-card-name">Yani Lestari</strong>
-            <p data-lang-key="org_accounting_desc" class="org-card-desc">Mengelola laporan keuangan dan administrasi keuangan perusahaan.</p>
+            <span data-lang-key="org_marketing_taiwan" class="org-card-role">Marketing Taiwan</span>
+            <strong data-lang-key="org_taiwan_lia_name" class="org-card-name">Lia Noviana</strong>
           </div>
         </article>
         <div class="org-mobile-stem" aria-hidden="true"></div>
@@ -522,13 +458,90 @@
         <article class="org-card org-mobile-card" data-aos="fade-up" data-aos-duration="500" data-aos-delay="240">
           <div class="org-photo-ring">
             <img loading="lazy" class="org-photo-img"
-              src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=200&q=80"
-              alt="Marketing Division">
+              src="assets/images/FOTO-STRUKTUR/MarketingTaiwan2.png"
+              alt="Lilis Setyorini">
           </div>
           <div class="org-mobile-text">
-            <span data-lang-key="org_marketing" class="org-card-role">Marketing Division</span>
-            <strong data-lang-key="org_marketing_mobile_name" class="org-card-name">HKG, SGP, MLY &amp; Taiwan</strong>
-            <p data-lang-key="org_marketing_desc" class="org-card-desc">Mengelola pengembangan pasar internasional dan komunikasi mitra penempatan.</p>
+            <span data-lang-key="org_marketing_taiwan" class="org-card-role">Marketing Taiwan</span>
+            <strong data-lang-key="org_taiwan_lilis_name" class="org-card-name">Lilis Setyorini</strong>
+          </div>
+        </article>
+        <div class="org-mobile-stem" aria-hidden="true"></div>
+
+        <article class="org-card org-card--ops org-mobile-card" data-aos="fade-up" data-aos-duration="500" data-aos-delay="320">
+          <div class="org-photo-ring org-photo-ring--ops">
+            <img loading="lazy" class="org-photo-img"
+              src="assets/images/FOTO-STRUKTUR/OperasionalHead.png"
+              alt="Rakha Naufal Mukti">
+          </div>
+          <div class="org-mobile-text">
+            <span data-lang-key="org_ops" class="org-card-role">Operational Head</span>
+            <strong data-lang-key="org_ops_name" class="org-card-name">Rakha Naufal Mukti</strong>
+          </div>
+        </article>
+        <div class="org-mobile-stem" aria-hidden="true"></div>
+
+        <article class="org-card org-mobile-card" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
+          <div class="org-photo-ring">
+            <img loading="lazy" class="org-photo-img"
+              src="assets/images/FOTO-STRUKTUR/AccountingHead.png"
+              alt="Yani Lestari">
+          </div>
+          <div class="org-mobile-text">
+            <span data-lang-key="org_accounting" class="org-card-role">Accounting Head</span>
+            <strong data-lang-key="org_accounting_name" class="org-card-name">Yani Lestari</strong>
+          </div>
+        </article>
+        <div class="org-mobile-stem" aria-hidden="true"></div>
+
+        <article class="org-card org-mobile-card" data-aos="fade-up" data-aos-duration="500" data-aos-delay="480">
+          <div class="org-photo-ring">
+            <img loading="lazy" class="org-photo-img"
+              src="assets/images/FOTO-STRUKTUR/OperasionalLapangan.png"
+              alt="Didit Afrianto">
+          </div>
+          <div class="org-mobile-text">
+            <span data-lang-key="org_ops_field" class="org-card-role">Operasional Lapangan</span>
+            <strong data-lang-key="org_ops_field_name" class="org-card-name">Didit Afrianto</strong>
+          </div>
+        </article>
+        <div class="org-mobile-stem" aria-hidden="true"></div>
+
+        <article class="org-card org-mobile-card" data-aos="fade-up" data-aos-duration="500" data-aos-delay="560">
+          <div class="org-photo-ring">
+            <img loading="lazy" class="org-photo-img"
+              src="assets/images/FOTO-STRUKTUR/OprasionalLeges%26Teto.png"
+              alt="Asmaul Tri Cahyati">
+          </div>
+          <div class="org-mobile-text">
+            <span data-lang-key="org_ops_leges" class="org-card-role">Operasional Leges &amp; Teto</span>
+            <strong data-lang-key="org_ops_leges_name" class="org-card-name">Asmaul Tri Cahyati</strong>
+          </div>
+        </article>
+        <div class="org-mobile-stem" aria-hidden="true"></div>
+
+        <article class="org-card org-mobile-card" data-aos="fade-up" data-aos-duration="500" data-aos-delay="640">
+          <div class="org-photo-ring">
+            <img loading="lazy" class="org-photo-img"
+              src="assets/images/FOTO-STRUKTUR/OperasionalDokumen%26Pendaftaran.png"
+              alt="Riska Dewi Agustina">
+          </div>
+          <div class="org-mobile-text">
+            <span data-lang-key="org_ops_docs" class="org-card-role">Operasional Dokumen &amp; Pendaftaran</span>
+            <strong data-lang-key="org_ops_docs_name" class="org-card-name">Riska Dewi Agustina</strong>
+          </div>
+        </article>
+        <div class="org-mobile-stem" aria-hidden="true"></div>
+
+        <article class="org-card org-mobile-card" data-aos="fade-up" data-aos-duration="500" data-aos-delay="720">
+          <div class="org-photo-ring">
+            <img loading="lazy" class="org-photo-img"
+              src="assets/images/FOTO-STRUKTUR/OperasionalId%26Paspor.png"
+              alt="Dwi Pangesti Setyo Rini">
+          </div>
+          <div class="org-mobile-text">
+            <span data-lang-key="org_ops_passport" class="org-card-role">Operasional ID &amp; Paspor</span>
+            <strong data-lang-key="org_ops_passport_name" class="org-card-name">Dwi Pangesti Setyo Rini</strong>
           </div>
         </article>
 
@@ -802,10 +815,10 @@
               <p id="active-country-sector-label" data-lang-key="country_sector_label" class="country-sector-label">
                 Sektor Penempatan Tersedia
               </p>
-              <div id="active-country-sectors" class="country-sector-badges"></div>
-              <p id="active-country-desc" data-lang-key="country1_desc" class="country-sector-desc">
-                Peluang kerja profesional dengan permintaan tenaga kerja yang stabil.
-              </p>
+              <div id="active-country-sectors" class="country-sector-badges">
+                <span class="country-sector-badge" data-lang-key="sector6_title">Pekerja Domestik (ART)</span>
+              </div>
+              <p id="active-country-desc" data-lang-key="country1_desc" class="country-sector-desc" hidden></p>
             </div>
           </div>
         </div>
