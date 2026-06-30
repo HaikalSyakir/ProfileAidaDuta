@@ -725,14 +725,14 @@
         </article>
 
         <article class="placement-sector-card" data-sector-index="3" data-aos="fade-up" data-aos-delay="200" tabindex="0">
-          <img loading="lazy" src="assets/images/perkebunan.webp" alt="Sektor perkebunan" class="sector-card-image">
+          <img loading="lazy" src="assets/images/perkebunan.webp" alt="Sektor perkebunan dan pertanian" class="sector-card-image">
           <div class="sector-image-overlay"></div>
           <div class="sector-gradient-motion"></div>
           <span class="sector-number">03</span>
           <div class="sector-content">
-            <h3 data-lang-key="sector3_title" class="sector-title">Perkebunan</h3>
+            <h3 data-lang-key="sector3_title" class="sector-title">Perkebunan & Pertanian</h3>
             <p data-lang-key="sector3_desc" class="sector-hover-desc">Program penempatan tenaga kerja pada sektor
-              perkebunan dan agrikultur modern.</p>
+              perkebunan, pertanian, dan agrikultur modern.</p>
             <button data-lang-key="sector_button" type="button" class="sector-card-link" data-sector-trigger data-sector-index="3"></button>
           </div>
         </article>
@@ -800,15 +800,15 @@
           class="country-hero-card lg:col-span-7 relative overflow-hidden rounded-[20px] shadow-2xl min-h-[380px] sm:min-h-[480px] lg:min-h-[550px] border border-[#f39a12]/10 bg-[#0c0a06]"
           data-aos="fade-right" data-aos-duration="1000">
           <img loading="lazy" id="active-country-img"
-            src="https://images.unsplash.com/photo-1591847337409-6c765958e586?auto=format&fit=crop&w=1800&q=90"
+            src="assets/images/taiwan.webp"
             alt="Active country landscape" class="absolute inset-0 w-full h-full object-cover active-country-img"
-            style="object-position: 58% center;">
+            style="object-position: 60% center;">
           <div class="country-hero-overlay absolute inset-0 z-10 pointer-events-none">
           </div>
           <div class="absolute bottom-0 left-0 p-8 sm:p-12 z-20 active-country-text">
             <h3 id="active-country-name" data-lang-key="country1_title"
               class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#e9e2d0] mb-2 font-display uppercase">
-              HONG KONG</h3>
+              TAIWAN</h3>
             <p id="active-country-region" data-lang-key="country1_region"
               class="text-xs sm:text-sm uppercase tracking-[0.2em] text-[#e9e2d0]/60 font-semibold">Asia Timur</p>
             <div class="country-sector-panel" aria-live="polite">
@@ -816,39 +816,39 @@
                 Sektor Penempatan Tersedia
               </p>
               <div id="active-country-sectors" class="country-sector-badges">
-                <span class="country-sector-badge" data-lang-key="sector6_title">Pekerja Domestik (ART)</span>
+                <span class="country-sector-badge" data-lang-key="sector2_title">Pabrik</span>
               </div>
-              <p id="active-country-desc" data-lang-key="country1_desc" class="country-sector-desc" hidden></p>
+              <p id="active-country-desc" class="country-sector-desc" hidden></p>
             </div>
           </div>
         </div>
 
         <!-- SISI KANAN (30%): Daftar kartu vertikal -->
         <div class="lg:col-span-3 flex flex-col gap-4" data-aos="fade-left" data-aos-duration="1000">
-          <!-- Card 1: Hong Kong -->
+          <!-- Card 1: Taiwan -->
           <button type="button" class="country-list-card active" onclick="selectCountry(1, this)"
             data-country-index="1">
-            <img loading="lazy" src="https://images.unsplash.com/photo-1591847337409-6c765958e586?auto=format&fit=crop&w=240&q=80" alt="Hong Kong"
+            <img loading="lazy" src="assets/images/taiwan.webp" alt="Taiwan"
               class="w-16 h-16 rounded-lg object-cover flex-shrink-0">
             <div class="text-left">
-              <h4 data-lang-key="country1_title" class="text-lg font-bold text-[#e9e2d0]">HONG KONG</h4>
+              <h4 data-lang-key="country1_title" class="text-lg font-bold text-[#e9e2d0]">TAIWAN</h4>
               <p data-lang-key="country1_region" class="text-xs text-[#e9e2d0]/60">Asia Timur</p>
             </div>
           </button>
 
-          <!-- Card 2: Taiwan -->
+          <!-- Card 2: Hong Kong -->
           <button type="button" class="country-list-card" onclick="selectCountry(2, this)" data-country-index="2">
-            <img loading="lazy" src="https://images.unsplash.com/photo-1741004419862-5f3600cc7a97?auto=format&fit=crop&w=240&q=80" alt="Taiwan"
+            <img loading="lazy" src="assets/images/hongkong.webp" alt="Hong Kong"
               class="w-16 h-16 rounded-lg object-cover flex-shrink-0">
             <div class="text-left">
-              <h4 data-lang-key="country2_title" class="text-lg font-bold text-[#e9e2d0]">TAIWAN</h4>
+              <h4 data-lang-key="country2_title" class="text-lg font-bold text-[#e9e2d0]">HONG KONG</h4>
               <p data-lang-key="country2_region" class="text-xs text-[#e9e2d0]/60">Asia Timur</p>
             </div>
           </button>
 
           <!-- Card 3: Singapore -->
           <button type="button" class="country-list-card" onclick="selectCountry(3, this)" data-country-index="3">
-            <img loading="lazy" src="https://images.unsplash.com/photo-1706809475944-1fa6bdacfa3b?auto=format&fit=crop&w=240&q=80" alt="Singapore"
+            <img loading="lazy" src="assets/images/singapore.webp" alt="Singapore"
               class="w-16 h-16 rounded-lg object-cover flex-shrink-0">
             <div class="text-left">
               <h4 data-lang-key="country3_title" class="text-lg font-bold text-[#e9e2d0]">SINGAPURA</h4>
@@ -858,7 +858,7 @@
 
           <!-- Card 4: Malaysia -->
           <button type="button" class="country-list-card" onclick="selectCountry(4, this)" data-country-index="4">
-            <img loading="lazy" src="https://images.unsplash.com/photo-1611924779080-d20389c1f56c?auto=format&fit=crop&w=240&q=80" alt="Malaysia"
+            <img loading="lazy" src="assets/images/malaysia.webp" alt="Malaysia"
               class="w-16 h-16 rounded-lg object-cover flex-shrink-0">
             <div class="text-left">
               <h4 data-lang-key="country4_title" class="text-lg font-bold text-[#e9e2d0]">MALAYSIA</h4>
@@ -1091,6 +1091,7 @@
   <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
   <script src="https://unpkg.com/framer-motion@11.14.4/dist/framer-motion.js"></script>
+  <script src="placement-data.js"></script>
   <script src="script.js"></script>
 </body>
 

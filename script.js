@@ -175,9 +175,9 @@ const translations = {
     sector2_title: "Pabrik",
     sector2_desc:
       "Program penempatan tenaga kerja pada sektor manufaktur dan produksi industri.",
-    sector3_title: "Perkebunan dan Pertanian",
+    sector3_title: "Perkebunan & Pertanian",
     sector3_desc:
-      "Program penempatan tenaga kerja pada sektor perkebunan dan agrikultur modern.",
+      "Program penempatan tenaga kerja pada sektor perkebunan, pertanian, dan agrikultur modern.",
     sector4_title: "Panti Jompo",
     sector4_desc:
       "Program penempatan tenaga kerja untuk pelayanan dan perawatan lansia profesional.",
@@ -220,15 +220,15 @@ const translations = {
     country_sector_label: "Sektor Penempatan Tersedia",
     country_no_sectors: "Belum ada sektor penempatan yang tercatat untuk negara ini.",
     country1_region: "Asia Timur",
-    country1_watermark: "Hong Kong",
-    country1_title: "Hong Kong",
+    country1_watermark: "Taiwan",
+    country1_title: "Taiwan",
     country1_desc:
-      "Penempatan untuk perempuan: jaga orang tua dan anak (informal), serta ART (informal).",
+      "",
     country2_region: "Asia Timur",
-    country2_watermark: "Taiwan",
-    country2_title: "Taiwan",
+    country2_watermark: "Hong Kong",
+    country2_title: "Hong Kong",
     country2_desc:
-      "Penempatan untuk laki-laki: pabrik, konstruksi, pertanian, perkebunan, dan perikanan (formal). Untuk perempuan: ART (informal), jaga orang tua dan anak (informal), panti jompo (formal), pabrik (formal), perkebunan (formal), dan pertanian (formal).",
+      "",
     country3_region: "Asia Tenggara",
     country3_watermark: "Singapore",
     country3_title: "Singapura",
@@ -469,9 +469,9 @@ const translations = {
     sector2_title: "Factory Worker",
     sector2_desc:
       "Workforce placement program for manufacturing and industrial production sectors.",
-    sector3_title: "Plantation",
+    sector3_title: "Plantation & Agriculture",
     sector3_desc:
-      "Workforce placement program for plantation and modern agriculture sectors.",
+      "Workforce placement program for plantation, agriculture, and modern agribusiness sectors.",
     sector4_title: "Elderly Care",
     sector4_desc:
       "Workforce placement program for professional elderly care services.",
@@ -907,6 +907,15 @@ Object.assign(translations.id, {
   sector_modal_positions: "Posisi pekerjaan",
   sector_modal_requirements: "Persyaratan umum",
   sector_modal_countries: "Negara tujuan",
+  sector_modal_gender: "Jenis kelamin",
+  sector_modal_status: "Status penempatan",
+  sector_modal_status_info_title: "Informasi Status Penempatan",
+  sector_modal_status_formal_title: "Formal",
+  sector_modal_status_formal_desc:
+    "Menggunakan skema penempatan formal dengan biaya proses sesuai ketentuan perusahaan.",
+  sector_modal_status_informal_title: "Informal",
+  sector_modal_status_informal_desc:
+    "Menggunakan sistem dana talang sesuai kebijakan perusahaan.",
   sector_modal_benefits: "Benefit",
   sector_modal_register: "Hubungi Kami",
   sector_modal_close: "Tutup detail sektor",
@@ -923,11 +932,11 @@ Object.assign(translations.id, {
   sector2_countries: ["Jepang", "Korea Selatan", "Taiwan", "Malaysia"],
   sector2_benefits: ["Gaji kompetitif", "Asuransi", "Pelatihan kerja", "Kontrak kerja resmi"],
   sector3_detail_desc:
-    "Sektor perkebunan menyediakan peluang pada perawatan tanaman, pemupukan, panen, pengolahan hasil, dan dukungan agrikultur modern dengan sistem kerja yang jelas.",
-  sector3_positions: ["Pekerja Perkebunan", "Perawatan Tanaman", "Panen", "Pengolahan Hasil"],
-  sector3_requirements: ["Siap bekerja di lapangan", "Memiliki fisik yang baik", "Disiplin dan kooperatif", "Bersedia tinggal di area kerja"],
-  sector3_countries: ["Malaysia", "Taiwan", "Jepang"],
-  sector3_benefits: ["Akomodasi sesuai program", "Gaji stabil", "Pelatihan keselamatan kerja", "Pendampingan keberangkatan"],
+    "Sektor perkebunan dan pertanian menyediakan peluang pada perawatan tanaman, pengelolaan lahan, pemupukan, panen, sortasi hasil, dan dukungan agrikultur modern dengan sistem kerja yang jelas.",
+  sector3_positions: ["Pekerja Perkebunan", "Pekerja Pertanian", "Perawatan Tanaman", "Panen", "Sortasi Hasil"],
+  sector3_requirements: ["Siap bekerja di lapangan", "Memiliki fisik yang baik", "Disiplin dan kooperatif", "Bersedia mengikuti pelatihan"],
+  sector3_countries: ["Taiwan"],
+  sector3_benefits: ["Akomodasi sesuai program", "Gaji stabil", "Pelatihan keselamatan kerja", "Pendampingan keberangkatan", "Kontrak kerja resmi"],
   sector4_detail_desc:
     "Sektor panti jompo berfokus pada layanan pendampingan dan perawatan lansia, termasuk bantuan aktivitas harian, kebersihan, mobilitas, serta dukungan emosional secara profesional.",
   sector4_positions: ["Caregiver", "Asisten Perawat Lansia", "Pendamping Harian", "Staf Panti Jompo"],
@@ -969,11 +978,11 @@ Object.assign(translations.en, {
   sector2_countries: ["Japan", "South Korea", "Taiwan", "Malaysia"],
   sector2_benefits: ["Competitive salary", "Insurance", "Work training", "Official employment contract"],
   sector3_detail_desc:
-    "The plantation sector provides opportunities in crop care, fertilizing, harvesting, product handling, and modern agricultural support with a clear work system.",
-  sector3_positions: ["Plantation Worker", "Crop Care Staff", "Harvest Worker", "Product Processing Staff"],
-  sector3_requirements: ["Ready for field work", "Good physical condition", "Disciplined and cooperative", "Willing to stay near the work area"],
-  sector3_countries: ["Malaysia", "Taiwan", "Japan"],
-  sector3_benefits: ["Accommodation based on program", "Stable salary", "Work safety training", "Departure assistance"],
+    "The plantation and agriculture sector provides opportunities in crop care, land management, fertilizing, harvesting, sorting, and modern agricultural support with a clear work system.",
+  sector3_positions: ["Plantation Worker", "Agriculture Worker", "Crop Care Staff", "Harvest Worker", "Product Sorting Staff"],
+  sector3_requirements: ["Ready for field work", "Good physical condition", "Disciplined and cooperative", "Willing to join training"],
+  sector3_countries: ["Taiwan"],
+  sector3_benefits: ["Accommodation based on program", "Stable salary", "Work safety training", "Departure assistance", "Official employment contract"],
   sector4_detail_desc:
     "The elderly care sector focuses on professional support for seniors, including daily activity assistance, hygiene, mobility, and emotional care.",
   sector4_positions: ["Caregiver", "Elderly Nursing Assistant", "Daily Care Assistant", "Care Home Staff"],
@@ -1058,41 +1067,22 @@ Object.assign(translations.zh, {
 });
 
 // 2. Data Negara Penempatan
-const countriesData = [
-  null, // index 0 kosong, karena negara dimulai dari index 1
-  {
-    id: 1,
-    image: "https://images.unsplash.com/photo-1591847337409-6c765958e586?auto=format&fit=crop&w=1800&q=90",
-    focalPoint: "58% center",
-    titleKey: "country1_title",
-    regionKey: "country1_region",
-    descKey: "country1_desc"
-  },
-  {
-    id: 2,
-    image: "https://images.unsplash.com/photo-1741004419862-5f3600cc7a97?auto=format&fit=crop&w=1800&q=90",
-    focalPoint: "60% center",
-    titleKey: "country2_title",
-    regionKey: "country2_region",
-    descKey: "country2_desc"
-  },
-  {
-    id: 3,
-    image: "https://images.unsplash.com/photo-1706809475944-1fa6bdacfa3b?auto=format&fit=crop&w=1800&q=90",
-    focalPoint: "62% center",
-    titleKey: "country3_title",
-    regionKey: "country3_region",
-    descKey: "country3_desc"
-  },
-  {
-    id: 4,
-    image: "https://images.unsplash.com/photo-1611924779080-d20389c1f56c?auto=format&fit=crop&w=1800&q=90",
-    focalPoint: "55% center",
-    titleKey: "country4_title",
-    regionKey: "country4_region",
-    descKey: "country4_desc"
-  }
-];
+const placementDataSource = window.placementData || { countries: [], sectors: [], countrySectorOrder: {} };
+const countriesData = [null].concat(placementDataSource.countries.map(function(country, index) {
+  return Object.assign({}, country, {
+    numericId: index + 1,
+    titleKey: "country" + (index + 1) + "_title",
+    regionKey: "country" + (index + 1) + "_region"
+  });
+}));
+const placementCountriesById = placementDataSource.countries.reduce(function(countries, country) {
+  countries[country.id] = country;
+  return countries;
+}, {});
+const placementSectorsById = placementDataSource.sectors.reduce(function(sectors, sector) {
+  sectors[sector.id] = sector;
+  return sectors;
+}, {});
 
 // Preload gambar negara untuk transisi yang mulus
 function preloadHeroImages() {
@@ -1256,37 +1246,19 @@ function initActivityGallery() {
 }
 
 // Fungsi selectCountry — dipanggil saat kartu negara diklik
-function normalizePlacementName(value) {
-  return String(value || "").trim().toLowerCase();
-}
+function getAvailableSectorsForCountry(country) {
+  const orderedSectorIds = placementDataSource.countrySectorOrder[country.id] || [];
+  const fromOrder = orderedSectorIds
+    .map(function(sectorId) {
+      return placementSectorsById[sectorId];
+    })
+    .filter(Boolean);
 
-const countryPlacementSectorKeys = {
-  1: ["sector6_title"],
-  2: ["sector1_title", "sector2_title", "sector3_title", "sector4_title", "sector5_title", "sector6_title"],
-  3: ["sector6_title"],
-  4: ["sector6_title"]
-};
+  if (fromOrder.length) return fromOrder;
 
-function getAvailableSectorsForCountry(country, lang) {
-  const t = translations[lang] || translations.id;
-  const explicitSectorKeys = countryPlacementSectorKeys[country.id];
-
-  if (explicitSectorKeys) {
-    return explicitSectorKeys.map(function(titleKey) {
-      return { titleKey: titleKey };
-    });
-  }
-
-  const countryName = normalizePlacementName(t[country.titleKey]);
-
-  return sectorPlacementData.filter(function(sector) {
-    if (!sector) return false;
-
-    const destinationCountries = t[sector.countriesKey];
-    if (!Array.isArray(destinationCountries)) return false;
-
-    return destinationCountries.some(function(destinationCountry) {
-      return normalizePlacementName(destinationCountry) === countryName;
+  return placementDataSource.sectors.filter(function(sector) {
+    return sector.destinations.some(function(destination) {
+      return destination.countryId === country.id;
     });
   });
 }
@@ -1299,7 +1271,7 @@ function renderCountryPlacementInfo(index, lang) {
   const label = document.getElementById("active-country-sector-label");
   const badgeContainer = document.getElementById("active-country-sectors");
   const desc = document.getElementById("active-country-desc");
-  const matchingSectors = getAvailableSectorsForCountry(country, lang);
+  const matchingSectors = getAvailableSectorsForCountry(country);
 
   if (label) {
     label.textContent = t.country_sector_label || "Sektor Penempatan Tersedia";
@@ -1312,7 +1284,7 @@ function renderCountryPlacementInfo(index, lang) {
       matchingSectors.forEach(function(sector) {
         const badge = document.createElement("span");
         badge.className = "country-sector-badge";
-        badge.textContent = t[sector.titleKey] || sector.titleKey;
+        badge.textContent = sector.name;
         badgeContainer.appendChild(badge);
       });
     } else {
@@ -1324,7 +1296,7 @@ function renderCountryPlacementInfo(index, lang) {
   }
 
   if (desc) {
-    desc.setAttribute("data-lang-key", country.descKey);
+    desc.removeAttribute("data-lang-key");
     desc.textContent = "";
     desc.hidden = true;
   }
@@ -1345,7 +1317,6 @@ function selectCountry(index, clickedCard) {
 
   // Ambil bahasa aktif saat ini
   const lang = localStorage.getItem("preferredLanguage") || "id";
-  const t = translations[lang];
 
   // 1. Hapus kelas active dari semua kartu
   document.querySelectorAll(".country-list-card").forEach(function(card) {
@@ -1366,18 +1337,18 @@ function selectCountry(index, clickedCard) {
 
     if (heroImg) {
       heroImg.src = country.image;
-      heroImg.alt = t ? (t[country.titleKey] || country.titleKey) : country.titleKey;
+      heroImg.alt = country.name;
       heroImg.style.objectPosition = country.focalPoint || "center center";
     }
 
     if (heroName) {
-      heroName.setAttribute("data-lang-key", country.titleKey);
-      heroName.textContent = t ? (t[country.titleKey] || "") : "";
+      heroName.removeAttribute("data-lang-key");
+      heroName.textContent = country.name.toUpperCase();
     }
 
     if (heroRegion) {
-      heroRegion.setAttribute("data-lang-key", country.regionKey);
-      heroRegion.textContent = t ? (t[country.regionKey] || "") : "";
+      heroRegion.removeAttribute("data-lang-key");
+      heroRegion.textContent = country.region;
     }
 
     renderCountryPlacementInfo(index, lang);
@@ -1417,73 +1388,67 @@ function applyLanguage(lang) {
   document.documentElement.lang =
     lang === "zh" ? "zh-TW" : lang;
 
+  document.querySelectorAll(".country-list-card").forEach(card => {
+    const country = countriesData[Number(card.dataset.countryIndex)];
+    if (!country) return;
+
+    const title = card.querySelector("h4");
+    const region = card.querySelector("p");
+    const image = card.querySelector("img");
+
+    if (title) title.textContent = country.name.toUpperCase();
+    if (region) region.textContent = country.region;
+    if (image) {
+      image.src = country.thumb || country.image;
+      image.alt = country.name;
+    }
+  });
+
+  document.querySelectorAll(".placement-sector-card").forEach(card => {
+    const sector = sectorPlacementData[Number(card.dataset.sectorIndex)];
+    if (!sector) return;
+
+    const title = card.querySelector(".sector-title");
+    const desc = card.querySelector(".sector-hover-desc");
+    const image = card.querySelector(".sector-card-image");
+
+    if (title) title.textContent = sector.name;
+    if (desc) desc.textContent = sector.cardDescription;
+    if (image) {
+      image.src = sector.image;
+      image.alt = "Sektor " + sector.name.toLowerCase();
+    }
+  });
+
   const activeCountryIndex = Number(document.body.dataset.activeCountryIndex || "1");
+  const activeCountry = countriesData[activeCountryIndex];
+  const heroName = document.getElementById("active-country-name");
+  const heroRegion = document.getElementById("active-country-region");
+  const heroImg = document.getElementById("active-country-img");
+
+  if (activeCountry) {
+    if (heroName) {
+      heroName.removeAttribute("data-lang-key");
+      heroName.textContent = activeCountry.name.toUpperCase();
+    }
+    if (heroRegion) {
+      heroRegion.removeAttribute("data-lang-key");
+      heroRegion.textContent = activeCountry.region;
+    }
+    if (heroImg) {
+      heroImg.src = activeCountry.image;
+      heroImg.alt = activeCountry.name;
+      heroImg.style.objectPosition = activeCountry.focalPoint || "center center";
+    }
+  }
+
   renderCountryPlacementInfo(activeCountryIndex, lang);
 }
 
-const sectorPlacementData = [
-  null,
-  {
-    index: 1,
-    image: "assets/images/perikanan.webp",
-    titleKey: "sector1_title",
-    descKey: "sector1_detail_desc",
-    positionsKey: "sector1_positions",
-    requirementsKey: "sector1_requirements",
-    countriesKey: "sector1_countries",
-    benefitsKey: "sector1_benefits"
-  },
-  {
-    index: 2,
-    image: "assets/images/pabrik.webp",
-    titleKey: "sector2_title",
-    descKey: "sector2_detail_desc",
-    positionsKey: "sector2_positions",
-    requirementsKey: "sector2_requirements",
-    countriesKey: "sector2_countries",
-    benefitsKey: "sector2_benefits"
-  },
-  {
-    index: 3,
-    image: "assets/images/perkebunan.webp",
-    titleKey: "sector3_title",
-    descKey: "sector3_detail_desc",
-    positionsKey: "sector3_positions",
-    requirementsKey: "sector3_requirements",
-    countriesKey: "sector3_countries",
-    benefitsKey: "sector3_benefits"
-  },
-  {
-    index: 4,
-    image: "assets/images/pantijompo.webp",
-    titleKey: "sector4_title",
-    descKey: "sector4_detail_desc",
-    positionsKey: "sector4_positions",
-    requirementsKey: "sector4_requirements",
-    countriesKey: "sector4_countries",
-    benefitsKey: "sector4_benefits"
-  },
-  {
-    index: 5,
-    image: "assets/images/kontruksi.webp",
-    titleKey: "sector5_title",
-    descKey: "sector5_detail_desc",
-    positionsKey: "sector5_positions",
-    requirementsKey: "sector5_requirements",
-    countriesKey: "sector5_countries",
-    benefitsKey: "sector5_benefits"
-  },
-  {
-    index: 6,
-    image: "assets/images/art.webp",
-    titleKey: "sector6_title",
-    descKey: "sector6_detail_desc",
-    positionsKey: "sector6_positions",
-    requirementsKey: "sector6_requirements",
-    countriesKey: "sector6_countries",
-    benefitsKey: "sector6_benefits"
-  }
-];
+const sectorPlacementData = [null];
+placementDataSource.sectors.forEach(function(sector) {
+  sectorPlacementData[sector.index] = sector;
+});
 
 function initExpandableSectorCards() {
   const rootElement = document.getElementById("sector-expandable-root");
@@ -1516,18 +1481,45 @@ function initExpandableSectorCards() {
     return Array.isArray(value) ? value : [];
   }
 
+  function groupDestinationsByCountry(destinations) {
+    return destinations.reduce(function(groups, destination) {
+      const country = placementCountriesById[destination.countryId];
+      if (!country) return groups;
+
+      let group = groups.find(function(item) {
+        return item.countryId === destination.countryId;
+      });
+
+      if (!group) {
+        group = {
+          countryId: destination.countryId,
+          countryName: country.name,
+          placements: []
+        };
+        groups.push(group);
+      }
+
+      group.placements.push({
+        gender: destination.gender,
+        status: destination.status
+      });
+
+      return groups;
+    }, []);
+  }
+
   function getSector(index, lang) {
     const sector = sectorPlacementData[index];
     if (!sector) return null;
 
     return {
       image: sector.image,
-      title: translate(sector.titleKey, lang),
-      description: translate(sector.descKey, lang),
-      positions: translateList(sector.positionsKey, lang),
-      requirements: translateList(sector.requirementsKey, lang),
-      countries: translateList(sector.countriesKey, lang),
-      benefits: translateList(sector.benefitsKey, lang)
+      title: sector.name,
+      description: sector.description,
+      positions: sector.positions,
+      requirements: sector.requirements,
+      countries: groupDestinationsByCountry(sector.destinations),
+      benefits: sector.benefits
     };
   }
 
@@ -1565,7 +1557,57 @@ function initExpandableSectorCards() {
   }
 
   function renderList(items) {
-    return items.map(item => `<li>${item}</li>`).join("");
+    return items.map(item => `<li>${escapeHtml(item)}</li>`).join("");
+  }
+
+  function escapeHtml(value) {
+    return String(value || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
+  function getStatusClass(status) {
+    return String(status || "").toLowerCase() === "formal"
+      ? "sector-status-badge sector-status-badge-formal"
+      : "sector-status-badge sector-status-badge-informal";
+  }
+
+  function renderDestinationCountries(groups) {
+    return groups.map(function(group) {
+      const rows = group.placements.map(function(placement) {
+        return `
+          <div class="sector-country-row">
+            <span>${escapeHtml(placement.gender)}</span>
+            <span class="${getStatusClass(placement.status)}">${escapeHtml(placement.status)}</span>
+          </div>`;
+      }).join("");
+
+      return `
+        <div class="sector-country-group">
+          <strong>${escapeHtml(group.countryName)}</strong>
+          ${rows}
+        </div>`;
+    }).join("");
+  }
+
+  function renderStatusInfoBox(lang) {
+    return `
+      <div class="sector-status-info-box">
+        <h4><span aria-hidden="true">ⓘ</span>${translate("sector_modal_status_info_title", lang)}</h4>
+        <div class="sector-status-info-list">
+          <div class="sector-status-info-item">
+            <strong><span class="sector-status-dot sector-status-dot-formal" aria-hidden="true"></span>${translate("sector_modal_status_formal_title", lang)}</strong>
+            <p>${translate("sector_modal_status_formal_desc", lang)}</p>
+          </div>
+          <div class="sector-status-info-item">
+            <strong><span class="sector-status-dot sector-status-dot-informal" aria-hidden="true"></span>${translate("sector_modal_status_informal_title", lang)}</strong>
+            <p>${translate("sector_modal_status_informal_desc", lang)}</p>
+          </div>
+        </div>
+      </div>`;
   }
 
   function renderFallback() {
@@ -1596,7 +1638,8 @@ function initExpandableSectorCards() {
                 <div class="sector-detail-grid">
                   <div class="sector-detail-panel"><h4>${translate("sector_modal_positions", lang)}</h4><ul>${renderList(sector.positions)}</ul></div>
                   <div class="sector-detail-panel"><h4>${translate("sector_modal_requirements", lang)}</h4><ul>${renderList(sector.requirements)}</ul></div>
-                  <div class="sector-detail-panel"><h4>${translate("sector_modal_countries", lang)}</h4><ul>${renderList(sector.countries)}</ul></div>
+                  <div class="sector-detail-panel sector-country-panel"><h4>${translate("sector_modal_countries", lang)}</h4><div class="sector-country-list">${renderDestinationCountries(sector.countries)}</div></div>
+                  ${renderStatusInfoBox(lang)}
                   <div class="sector-detail-panel"><h4>${translate("sector_modal_benefits", lang)}</h4><ul>${renderList(sector.benefits)}</ul></div>
                 </div>
                 <button class="sector-register-button" type="button" data-sector-contact>${translate("sector_modal_register", lang)}</button>
@@ -1631,6 +1674,49 @@ function initExpandableSectorCards() {
       return h("div", { className: "sector-detail-panel" },
         h("h4", null, props.title),
         h("ul", null, props.items.map(item => h("li", { key: item }, item)))
+      );
+    }
+
+    function DestinationCountries(props) {
+      return h("div", { className: "sector-detail-panel sector-country-panel" },
+        h("h4", null, props.title),
+        h("div", { className: "sector-country-list" },
+          props.groups.map(group => h("div", { className: "sector-country-group", key: group.countryId },
+            h("strong", null, group.countryName),
+            group.placements.map(placement => h("div", {
+              className: "sector-country-row",
+              key: group.countryId + "-" + placement.gender + "-" + placement.status
+            },
+              h("span", null, placement.gender),
+              h("span", { className: getStatusClass(placement.status) }, placement.status)
+            ))
+          ))
+        )
+      );
+    }
+
+    function StatusInfoBox() {
+      return h("div", { className: "sector-status-info-box" },
+        h("h4", null,
+          h("span", { "aria-hidden": "true" }, "ⓘ"),
+          translate("sector_modal_status_info_title", lang)
+        ),
+        h("div", { className: "sector-status-info-list" },
+          h("div", { className: "sector-status-info-item" },
+            h("strong", null,
+              h("span", { className: "sector-status-dot sector-status-dot-formal", "aria-hidden": "true" }),
+              translate("sector_modal_status_formal_title", lang)
+            ),
+            h("p", null, translate("sector_modal_status_formal_desc", lang))
+          ),
+          h("div", { className: "sector-status-info-item" },
+            h("strong", null,
+              h("span", { className: "sector-status-dot sector-status-dot-informal", "aria-hidden": "true" }),
+              translate("sector_modal_status_informal_title", lang)
+            ),
+            h("p", null, translate("sector_modal_status_informal_desc", lang))
+          )
+        )
       );
     }
 
@@ -1684,7 +1770,8 @@ function initExpandableSectorCards() {
               h("div", { className: "sector-detail-grid" },
                 h(DetailPanel, { title: translate("sector_modal_positions", lang), items: sector.positions }),
                 h(DetailPanel, { title: translate("sector_modal_requirements", lang), items: sector.requirements }),
-                h(DetailPanel, { title: translate("sector_modal_countries", lang), items: sector.countries }),
+                h(DestinationCountries, { title: translate("sector_modal_countries", lang), groups: sector.countries }),
+                h(StatusInfoBox),
                 h(DetailPanel, { title: translate("sector_modal_benefits", lang), items: sector.benefits })
               ),
               h("button", { className: "sector-register-button", type: "button", onClick: scrollToContactSection }, translate("sector_modal_register", lang))
